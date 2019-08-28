@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-13"
+lastupdated: "2019-08-28"
 
 keywords: database monitoring, database cluster, database metrics
 
@@ -10,13 +10,17 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:important: .important}
 {:screen: .screen}
 {:codeblock: .codeblock}
+{:tip: .tip}
+{:pre: .pre}
+{:note: .note}
+{:external: target="_blank" .external}
 
-
-# Database monitoring
+# Monitoring databases
 {: #dbaas-webui-database-monitor}
 
 After you have enabled database monitoring, you can view the database metrics using Grafana.
@@ -30,15 +34,15 @@ After you have enabled database monitoring, you can view the database metrics us
 
 2.  Make sure that all instances of the database cluster are running.
 
-3.  In the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select the Monitoring tab.
+3.  In the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select the **Monitoring** tab.
 
 ## Enabling database monitoring
 {: #webui-enable-database-monitoring}
 
-In case the message **Monitoring is disabled** is displayed in the Monitoring tab:
+In case the message **Monitoring is disabled** is displayed in the **Monitoring** tab:
 
 1. Click **Enable**.
-2. In the Enable Monitoring window, select your organization and space, then click **Submit**.
+2. In the **Enable Monitoring** window, select your organization and space, then click **Submit**.
 
 
 ## Viewing database metrics

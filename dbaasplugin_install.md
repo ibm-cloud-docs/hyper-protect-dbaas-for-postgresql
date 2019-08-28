@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-08-28"
 
 keywords: DBaaS CLI, Python runtime
 
@@ -10,23 +10,35 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:important: .important}
 {:screen: .screen}
 {:codeblock: .codeblock}
-
+{:tip: .tip}
+{:pre: .pre}
+{:note: .note}
+{:external: target="_blank" .external}
 
 # Installing the DBaaS CLI plug-in
 {: #install-dbaas-cli-plugin}
 
-To access a complete set of DBaaS commands when using the {{site.data.keyword.cloud}} CLI, you must install the following components (see [Instructions](#dbaas_cli_instr)):
+You can use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in to create and manage the {{site.data.keyword.ihsdbaas_postgresql_full}} services.
+{:shortdesc: .shortdesc}
+
+## Downloading and installing the {{site.data.keyword.cloud_notm}} CLI
+{: #install-ibm-cli}
+
+The IBM Cloud CLI tool is what you use to communicate with IBM Cloud from your terminal or command line. To download and install the {{site.data.keyword.cloud}} CLI, see [Getting started with {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started). After the installation is completed, the `ibmcloud` command is available on your system console.
+
+To access a complete set of DBaaS commands when using the {{site.data.keyword.cloud}} CLI, you must also install the following components:
 
 - Python runtime (2.7.15 is recommended; 3.x is **not** supported)
 - Python Pip package management system
 - Python Requests library
 - DBaaS CLI plug-in
 
-## Instructions for installing the DBaaS CLI components (by operating system)
+## Installing the DBaaS CLI components (by operating system)
 {: #dbaas_cli_instr}
 
 - [On Linux](#dbaas_cli_linux)

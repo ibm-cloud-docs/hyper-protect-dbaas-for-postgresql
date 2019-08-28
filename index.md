@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-08-28"
 
 keywords: database cluster, Data security, database instance
 
@@ -10,18 +10,41 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:important: .important}
+{:screen: .screen}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:pre: .pre}
+{:note: .note}
+{:external: target="_blank" .external}
 
 # Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #gettingstarted}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is an {{site.data.keyword.cloud_notm}} service that provides PostgreSQL databases on demand. It offers a flexible and scalable platform that allows you to quickly and easily provision and manage your database of choice.
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is an {{site.data.keyword.cloud_notm}} service that provides {{site.data.keyword.postgresql}} databases on demand. It offers a flexible and scalable platform that allows you to quickly and easily provision and manage your database of choice.
 {: shortdesc}
 
-This {{site.data.keyword.cloud_notm}} offering provides PostgreSQL database clusters. Each database cluster comprises one master database instance and two database instance slaves that back up the master one.
+This {{site.data.keyword.cloud_notm}} offering provides {{site.data.keyword.postgresql}} database clusters. Each database cluster comprises one primary database instance and two database instance replicas that back up the primary one (for the convenience of reference, the three instances can all be called replicas).
 
-With {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}, you can create database clusters in the {{site.data.keyword.cloud_notm}}, manage database instances, administer database users, create and monitor databases.
+With {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}, you can create database clusters in the {{site.data.keyword.cloud_notm}}, manage database instances, administer database users, create, and monitor databases.
+
+## Supported version
+{: #postgresql_supported_version}
+
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} currently supports {{site.data.keyword.postgresql}} 3.6. It provides a secure, up-to-date version of the {{site.data.keyword.postgresql}} Enterprise database. We upgrade database maintenance versions `major.minor.maintenance` when appropriate.
+
+For more information about versions, see [{{site.data.keyword.postgresql}} support policy](https://www.postgresql.com/support-policy){: external}.
+
+## Prerequisite
+{: #prerequisite}
+
+Before you start, make sure you are using the [required browser software](/docs/overview?topic=overview-prereqs-platform) for {{site.data.keyword.cloud_notm}}.
+
+For Safari, ensure that the **Prevent cross-site tracking** and **Block all cookies** options under **Safari > Preferences > Privacy** are not selected.
+
+If you encounter problems using one of the required browsers, disable your browser plug-ins.
 
 ## Data security and privacy
 {: #data-security-and-privacy}
@@ -47,8 +70,9 @@ For more information, watch:
 
 To create a database cluster, you simply enter the required values in the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service configuration screen and click **Create**.
 
-After you have created the database cluster, {{site.data.keyword.IBM_notm}} provides you one or more hostnames and port
-numbers of the created database instances. You can now use this information and the user credentials you specified in the catalog to create and access your databases.
+After you have created the database cluster, {{site.data.keyword.IBM_notm}} provides you one or more hostnames and port numbers of the created database instances. You can now use this information and the user credentials you specified in the catalog to create and access your databases.
+
+<!--For new database clusters that are created after August 31, 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).-->
 
 ## Managing the database cluster
 {: #managing-database-cluster-introduction}
@@ -60,15 +84,13 @@ In a database cluster, you can create databases, manage the database instances, 
 You can address requests to the DBaaS Manager through one of these interfaces:
 
 - The [Web User Interface](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service)
-- The [DBaaS Manager APIs (for database cluster management)](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gen_inst_mgr_apis)
-- The [{{site.data.keyword.cloud_notm}} APIs (for service instance management)](https://{DomainName}/apidocs/hyperp-dbaas){: external}
-- The [CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI tool](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-ibm-cli)
-
+- The [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs (for service instance management)](/apidocs/hyperp-dbaas){: external}
+- The [CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI tool](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin)
 
 ## Accessing the database
 {: #accessing-database-introduction}
 
-After creating a PostgreSQL database, you can use pgAdmin or your favorite PostgreSQL tool to manage the databases.
+After creating a {{site.data.keyword.postgresql}} database, you can use pgAdmin or your favorite {{site.data.keyword.postgresql}} tool to manage the databases.
 
 ### Before you begin
 {: #accessing-database-introduction-byb}

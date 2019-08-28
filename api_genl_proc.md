@@ -2,22 +2,25 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-21"
+lastupdated: "2019-8-28"
 
-keywords: DBaaS Manager APIs, DBaaS Manager, API request
+keywords: DBaaS Manager, API request, "{{site.data.keyword.ihsdbaas_full}} APIs"
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:important: .important}
 {:screen: .screen}
 {:codeblock: .codeblock}
+{:tip: .tip}
 {:pre: .pre}
+{:note: .note}
+{:external: target="_blank" .external}
 
-
-# General instructions for using the DBaaS Manager APIs
+# General instructions for using the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs
 {: #gen_inst_mgr_apis}
 <ol>
 <li>Specify the data of your request in JSON format.
@@ -44,7 +47,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 </li>
 </ol>
 
-For more detailed information (methods and parameters), you can see [DBaaS API documentation](https://{DomainName}/apidocs/hyperp-dbaas){: external}.
+For more detailed information (methods and parameters), see the [{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} API documentation](/apidocs/hyperp-dbaas){: external}.
 
 ## Example
 {: #api-example}
@@ -56,6 +59,7 @@ curl -X POST \
 "https://<ip>:<port>/api/v1/services" \
 -d '{"catalog": "hyperp-dbaas-postgresql", "name": "Service_Name", "resource_group": "default", "plan": "postgresql-small", "admin_name": "admin", "password": "passWORD4User19"}'
 -H "x-auth-token: <access_token>" \
+-H "content-type: application/json" \
 -H "accept: application/json" \
 -H "accept-license-agreement: yes"
 ```
@@ -64,7 +68,7 @@ curl -X POST \
 Where:
 <dl>
 <dt> &lt;<em>access_token</em>&gt; </dt>
-<dd>Is the previously obtained access token; see [Setting up authentication to use DBaaS Manager APIs](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-auth). (**Note:** If the access token has expired, return to those instructions and request a new token.) </dd>
+<dd>Is the previously obtained access token; see [Setting up authentication to use {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-auth). (**Note:** If the access token has expired, return to those instructions and request a new token.) </dd>
 <dt> &lt;<em>ip</em>&gt; </dt>
 <dd>Is the host name of a DBaaS Manager. Valid host names are listed in the table above.
 </dd>
@@ -74,5 +78,4 @@ Where:
 </dd>
 </dl>
 
-**Note:** The database administrator does not have SUPERUSER authority.
-The authorities of the database administrator are limited to INHERIT, CREATEROLE, CREATEDB, LOGIN, and REPLICATION.
+**Note:** The database administrator does not have SUPERUSER authority. The authorities of the database administrator are limited to INHERIT, CREATEROLE, CREATEDB, LOGIN, and REPLICATION.

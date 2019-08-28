@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-08-28"
 
 keywords: instance commands, cluster resource, CLI plugin
 
@@ -20,7 +20,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:important: .important}
 
 
-# {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plugin
+# {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in
 {: #dbaas_cli_plugin}
 
 Use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in to create, delete,
@@ -35,7 +35,7 @@ to start and stop instances, and to list and download log files.
 - Install the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started). {{site.data.keyword.cloud_notm}} CLI requires Java SDK 1.7.0. The prefix for running commands by using the {{site.data.keyword.cloud_notm}} CLI is `ibmcloud`. In the terminal, you are notified when updates to the `ibmcloud` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
 
 - Install the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in. You can see [Installing the DBaaS CLI plug-in](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin) for reference. If you want to view the current version of your {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}
-CLI plugin, run `ibmcloud plugin show dbaas-cli`.
+CLI plug-in, run `ibmcloud plugin show dbaas-cli`.
 
 
 ## CLI plug-in usage command
@@ -156,7 +156,7 @@ ibmcloud dbaas user-create <resource_name> <username> <password> [<db_name> [<db
 <dt>*username*</dt>
 <dd>The user name to be assigned to the database user being created.</dd>
 <dt>*db_name*</dt>
-<dd>(Optional)This specifies a database for which the user will have read and write access.</dd>
+<dd>(Optional) This specifies a database for which the user will have read and write access.</dd>
 </dl>
 
 

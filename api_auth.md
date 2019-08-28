@@ -2,23 +2,29 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-08-28"
 
-keywords: access token, DBaaS Manager APIs, API key
+keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:important: .important}
 {:screen: .screen}
 {:codeblock: .codeblock}
+{:tip: .tip}
 {:pre: .pre}
+{:note: .note}
+{:external: target="_blank" .external}
 
-
-# Setting up authentication to use DBaaS Manager APIs
+# Setting up authentication to use {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs
 {: #api-auth}
+
+You can use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} RESTful APIs to create and manage the {{site.data.keyword.ihsdbaas_postgresql_full}} services.
+{:shortdesc: .shortdesc}
 
 For authentication, you need an API key, an access token, and a user ID to issue API requests.
 To do so, follow these instructions:
@@ -29,13 +35,11 @@ To do so, follow these instructions:
 
       The Access (IAM) dashboard is displayed.
 
-   b. In the side navigation panel of the Access (IAM) dashboard, select **{{site.data.keyword.cloud_notm}} API Keys**.
+   b. In the side navigation pane of the Access (IAM) dashboard, select **{{site.data.keyword.cloud_notm}} API Keys**.
 
    c. Click **Create an {{site.data.keyword.cloud_notm}} API Key**.
 
-      The Create API Key dialog is displayed.
-
-   d. In the Create API key dialog, enter a name and a description for the API key and click **Create**.
+   d. In the **Create API key** dialog box, enter a name and a description for the API key and click **Create**.
 
    e. Click **Download** to download and save the API key, or click **Copy** to copy the API key to your clipboard.
 

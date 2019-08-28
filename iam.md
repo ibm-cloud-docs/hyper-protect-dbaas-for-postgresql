@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-13"
+lastupdated: "2019-08-28"
 
 keywords: IAM, identity, access management, role
 
@@ -31,7 +31,7 @@ Policies enable access to be granted at different levels. Some of the options in
 * Access to an individual service instance in your account
 * Access to a specific resource within an instance
 
-After you define the scope of the access policy, you assign a role which determines the user's level of access. Review the following tables which outline what actions each role allows within the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service.
+After you define the scope of the access policy, you assign a role that determines the user's level of access. Review the following tables which outline what actions each role allows within the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service.
 
 The following table details actions that are mapped to platform management roles. Platform management roles enable users to perform tasks on service resources at the platform level, for example assign user access for the service, create or delete instances, and bind instances to applications.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-13"
+lastupdated: "2019-08-28"
 
 keywords: release note, new
 
@@ -19,6 +19,26 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 Stay up-to-date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
+
+<!--
+## September 2019
+{: #Sep-2019}
+
+### Added: PL/Java extension support
+{: #pljava-201908}
+New as of: xxxx 2019
+
+You can use the PL/Java extension for newly provisioned {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} services. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
+-->
+
+## August 2019
+{: #Aug-2019}
+
+### Added: {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} expands into Frankfurt region
+{: #frankfurt-region}
+New as of: 2019-08-28
+
+You can now create {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} resources in the Frankfurt region.
 
 ## June 2019
 {: #June-2019}

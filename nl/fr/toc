@@ -1,0 +1,55 @@
+<!-- Markdown Navigation -->
+
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="hyper-protect-dbaas-for-postgresql" audience="service" arm="3917562" href="/docs/services/hyper-protect-dbaas-for-postgresql/index.html" path="services/hyper-protect-dbaas-for-postgresql"}
+IBM Cloud Hyper Protect DBaaS for PostgreSQL
+
+    {: .navgroup id="learn"}
+    index.md
+    whats_new.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    Utilisation de l'interface utilisateur Web
+        webui-cluster.md
+        webui-db.md
+        webui-dbinst.md
+        webui-dbuser.md
+        webui-dbmonitoring.md
+
+    {: .topicgroup}
+    Utilisation des API DBaaS (pour la gestion d'instance de service)
+        api_auth.md
+        api_genl_proc.md
+
+    {: .topicgroup}
+    Utilisation du plug-in CLI avec l'interface de ligne de commande IBM Cloud
+        download_install.md
+        dbaasplugin_install.md
+        choose_endpoint.md
+        create_serv_inst.md
+        delete_serv_inst.md
+
+    {: .topicgroup}
+    Haute disponibilité et récupération après sinistre
+        ha-dr.md
+        backup.md
+        restore.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [API DBaaS Manager](https://cloud.ibm.com/apidocs/hyperp-dbaas)
+    dbaas_cli.md
+    at_events.md
+    supported_version.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    help-support.md
+    help-issues.md
+    migration.md
+    metering-and-billing.md
+    {: .navgroup-end}
