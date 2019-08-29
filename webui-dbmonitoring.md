@@ -29,7 +29,7 @@ After you have enabled database monitoring, you can view the database metrics us
 ## Before you begin
 {: #webui-database-monitoring-byb}
 
-1.  Be sure to have access to a Cloud Foundry organization and space in Dallas (us-south) and Frankfurt (eu-de).
+1.  Be sure to have access to a Cloud Foundry organization and space in Dallas (us-south) or Frankfurt (eu-de).
     For information about how to obtain such access, see [Managing Cloud Foundry access](https://cloud.ibm.com/docs/iam?topic=iam-mngcf#mngcf){: external}.
 
 2.  Make sure that all instances of the database cluster are running.
