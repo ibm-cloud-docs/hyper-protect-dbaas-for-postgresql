@@ -57,3 +57,13 @@ To display the metrics in a new dashboard in Grafana, select the upper left Graf
 It may take a while until your database cluster ID and instance IDs are displayed, and you might have to reload the dashboard.
 
 For more information about using Grafana, see [{{site.data.keyword.cloud_notm}} Monitoring](/docs/services/cloud-monitoring?topic=cloud-monitoring-getting-started).
+
+## Available metrics
+{: #available-metrics}
+
+The table describes all the available metrics for {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} deployments.
+
+| Metric | Description|
+|----------|-----------|
+| `memory-percent-used` | How much percent of memory that your deployment is using for the instance. |
+{: caption="Table 1. {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} metrics" caption-side="top"}
