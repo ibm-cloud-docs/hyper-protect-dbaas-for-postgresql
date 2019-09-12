@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-09-13"
 
 keywords: database cluster, Data security, database instance
 
@@ -68,7 +68,7 @@ For more information, watch:
 ## Creating a database cluster
 {: #creating-a-database-cluster-introduction}
 
-To create a database cluster, you simply enter the required values in the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service configuration screen and click **Create**.
+To create a database cluster, you simply enter the required values in the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service configuration screen and click **Create**. Free plans are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation.
 
 After you have created the database cluster, {{site.data.keyword.IBM_notm}} provides you one or more hostnames and port numbers of the created database instances. You can now use this information and the user credentials you specified in the catalog to create and access your databases.
 
