@@ -44,7 +44,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 1. In the {{site.data.keyword.cloud_notm}} dashboard, click **View resources** on the **Resource summary** pane, or click the **Resource List** button in the upper left corner, to display all your resources.
 2. Click the service instance on the **Resource list** to display the service dashboard.
-3. On the **Overview** tab page, you can see the overall information of the service instance .
+3. On the **Overview** tab page, you can see the overall information of the service instance.
 4. Select the **Instances** tab to view the detailed information of each replica.
 
 ## Renaming, deleting, or adding tags to a service instance

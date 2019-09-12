@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-09-12"
 
 keywords: Hyper Protect DBaaS, database, data security
 
@@ -35,7 +35,7 @@ Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword
 {: #how_hpdb_works}
 
 The following architectural diagram shows how {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} (for {{site.data.keyword.mongodb}} as an example) works.
-![{{site.data.keyword.ihsdbaas_full}} architecture](images/architecture.png "{{site.data.keyword.ihsdbaas_full}} architecture"){: caption="Figure 1. {{site.data.keyword.ihsdbaas_full}} architecture" caption-side="bottom"}
+![{{site.data.keyword.ihsdbaas_full}} architecture](images/architecture.svg "{{site.data.keyword.ihsdbaas_full}} architecture"){: caption="Figure 1. {{site.data.keyword.ihsdbaas_full}} architecture" caption-side="bottom"}
 
 ## Features
 {: #features}
