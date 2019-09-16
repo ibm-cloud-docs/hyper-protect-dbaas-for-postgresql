@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-09-12"
 
 keywords: Activity tracker events
 
@@ -34,19 +34,19 @@ The following table lists the actions that generate an event:
 
 | Action                 | Description                               |
 | ---------------------- | ----------------------------------------- |
-| `cluster.create` | Create a database cluster                 |
-| `cluster.delete` | Delete a database cluster                 |
-| `database.create` | Create a database                  |
-| `database.delete` | Delete a database                  |
-| `user.create`     | Create a database user                    |
-| `user.delete`     | Delete a database user                    |
-| `instance.start` | Start a database service instance         |
-| `instance.stop`  | Stop a database service instance          |
-| `instance.restart`  | Restart a database service instance          |
-| `log.get`       | Download a log file |
+| `hyperp-dbaas-postgresql.cluster.create` | Create a database cluster                 |
+| `hyperp-dbaas-postgresql.cluster.delete` | Delete a database cluster                 |
+| `hyperp-dbaas-postgresql.database.create` | Create a database                  |
+| `hyperp-dbaas-postgresql.database.delete` | Delete a database                  |
+| `hyperp-dbaas-postgresql.user.create`     | Create a database user                    |
+| `hyperp-dbaas-postgresql.user.delete`     | Delete a database user                    |
+| `hyperp-dbaas-postgresql.instance.start` | Start a database service instance         |
+| `hyperp-dbaas-postgresql.instance.stop`  | Stop a database service instance          |
+| `hyperp-dbaas-postgresql.instance.restart`  | Restart a database service instance          |
+| `hyperp-dbaas-postgresql.log.get`       | Download a log file |
 {: caption="Table 1. Actions that generate {{site.data.keyword.cloudaccesstrailshort}} events"}
 
-For the event of `cluster.create` and `cluster.delete`, the {{site.data.keyword.cloudaccesstrailshort}} service does not record the account name and IP address of the user who performs the action. The value of `initiator.name` and `host.address` in the log indicates the service ID of Cloud Broker and the IP address of Cloud Broker respectively.
+For the event of `hyperp-dbaas-postgresql.cluster.create` and `hyperp-dbaas-postgresql.cluster.delete`, the {{site.data.keyword.cloudaccesstrailshort}} service does not record the account name and IP address of the user who performs the action. The value of `initiator.name` and `host.address` in the log indicates the service ID of Cloud Broker and the IP address of Cloud Broker respectively.
 {: note}
 
 ## Where to view the events

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-09-13"
 
 keywords: release note, new
 
@@ -30,6 +30,15 @@ New as of: xxxx 2019
 
 You can use the PL/Java extension for newly provisioned {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} services. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
 -->
+
+## September 2019
+{: #Sep-2019}
+
+### Added: Free plans are available
+{: #free-plans}
+New as of: 2019-09-13
+
+You can try out free plans for {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}. Free plans are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation.
 
 ## August 2019
 {: #Aug-2019}
