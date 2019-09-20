@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-19"
+lastupdated: "2019-09-23"
 
 keywords: PL/Java extension
 
@@ -63,7 +63,7 @@ The following example shows [how to load and use the `hello` function](https://t
   SET
   ```
 
-3. To install the `hello` function, put the package in an external `http`, `https`, or `ftp` server and then download it with one of the following commands, depending on which type of server you use.
+3. To install the `hello` function, put the package in an external `http`, `https`, or `ftp` server and then download it with one of the following commands, depending on the server type that you use.
   - Command for `http` download
     ```
     select sqlj.install_jar(<http://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>, 'hellojar', true);
@@ -79,7 +79,7 @@ The following example shows [how to load and use the `hello` function](https://t
     select sqlj.install_jar(<ftp://username:password@hostname[:port]/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
     ```
     {: codeblock}
-  
+
   Returns:
   ```
   install_jar
@@ -88,7 +88,7 @@ The following example shows [how to load and use the `hello` function](https://t
   (1 row)
   ```
 
-4.	List functions with the `\df` command.
+4. List functions with the `\df` command.
   Returns:
   ```
                           List of functions
@@ -98,12 +98,23 @@ The following example shows [how to load and use the `hello` function](https://t
   (1 row)
   ```
 
-5. Define a classpath for the `javatest` schema to make sure the Java Virtual Machine gets the path of `.class` files.
+5. To use the `hello` function in a new session without setting the search path again, save your search path with the following command:
+  ```
+  ALTER DATABASE <dbname> SET search_path TO javatest,public;
+  ```
+  {: codeblock}
+
+  Returns:
+  ```
+  ALTER DATABASE
+  ```
+
+6. Define a classpath for the `javatest` schema to make sure the Java Virtual Machine gets the path of `.class` files.
   ```
   select sqlj.set_classpath('javatest', 'hellojar');
   ```
   {: codeblock}
- 
+
   Returns:
   ```
     set_classpath
@@ -112,12 +123,12 @@ The following example shows [how to load and use the `hello` function](https://t
   (1 row)
   ```
 
-6.	Run the `hello` function:
+7. Run the `hello` function:
   ```
   select hello('world');
   ```
   {: codeblock}
-  
+
   Returns:
   ```
           hello

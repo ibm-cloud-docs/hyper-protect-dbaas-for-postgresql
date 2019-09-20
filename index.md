@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-13"
+lastupdated: "2019-09-23"
 
 keywords: database cluster, Data security, database instance
 
@@ -72,7 +72,7 @@ To create a database cluster, you simply enter the required values in the {{site
 
 After you have created the database cluster, {{site.data.keyword.IBM_notm}} provides you one or more hostnames and port numbers of the created database instances. You can now use this information and the user credentials you specified in the catalog to create and access your databases.
 
-<!--For new database clusters that are created after August 31, 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).-->
+For new database clusters that are created after 23 September, 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
 
 ## Managing the database cluster
 {: #managing-database-cluster-introduction}
