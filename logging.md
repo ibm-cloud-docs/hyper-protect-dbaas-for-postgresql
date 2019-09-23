@@ -31,8 +31,16 @@ When you use {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql
 
 You need to create and configure a {{site.data.keyword.loganalysisshort_notm}} instance to receive platform service logs. For more information about configuring a {{site.data.keyword.loganalysisshort_notm}} instance, see [Configuring {{site.data.keyword.cloud_notm}} service logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs){: external}.
 
-For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in Dallas or Frankfurt, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in the same region as your {{site.data.keyword.ihsdbaas_postgresql_full}} instance. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in Sydney, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in Dallas.
-{: note}
+{{site.data.keyword.loganalysisshort_notm}} integration is available for {{site.data.keyword.ihsdbaas_postgresql_full}} deployments according to the following table.
+
+Deployment Region | {{site.data.keyword.loganalysisshort_notm}} Region
+----------|-----------
+`Dallas (us-south)` | `Dallas (us-south)`
+`Frankfurt (eu-de)` | `Frankfurt (eu-de)`
+`Sydney (au-syd)` | `Dallas (us-south)`
+{: caption="Table 1. {{site.data.keyword.loganalysisshort_notm}} regions" caption-side="top"}
+
+To receive logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in the same region, with the exception of `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in Sydney, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in Dallas.
 
 ##Steps
 {: #steps}

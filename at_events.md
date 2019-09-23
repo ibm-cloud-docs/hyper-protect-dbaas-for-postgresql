@@ -30,8 +30,16 @@ Use the {{site.data.keyword.at_full}} service to track how users and application
 ## Viewing events
 {: #view-activity-tracker-events}
 
-For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in Dallas or Frankfurt, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in the same region to capture the {{site.data.keyword.ihsdbaas_postgresql_full}} service logs. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in Sydney, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in Dallas.
-{:note}
+{{site.data.keyword.cloudaccesstrailshort}} integration is available for {{site.data.keyword.ihsdbaas_postgresql_full}} deployments according to the following table.
+
+Deployment Region | {{site.data.keyword.cloudaccesstrailshort}} Region
+----------|-----------
+`Dallas (us-south)` | `Dallas (us-south)`
+`Frankfurt (eu-de)` | `Frankfurt (eu-de)`
+`Sydney (au-syd)` | `Dallas (us-south)`
+{: caption="Table 1. {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
+
+To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in the same region, with the exception of `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in Sydney, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in Dallas.
 
 {{site.data.keyword.cloudaccesstrailshort}} can have only one instance per location. To view events, you must access the web UI of the corresponding {{site.data.keyword.cloudaccesstrailshort}} instance. For detailed instructions, see [Launching the web UI through the {{site.data.keyword.cloud_notm}} UI](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-launch#launch_step2).
 
