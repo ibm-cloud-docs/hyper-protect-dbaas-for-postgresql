@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-8-28"
+lastupdated: "2019-08-28"
 
 keywords: DBaaS Manager, API request, "{{site.data.keyword.ihsdbaas_full}} APIs"
 
