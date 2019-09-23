@@ -39,7 +39,7 @@ Deployment Region | {{site.data.keyword.cloudaccesstrailshort}} Region
 `Sydney (au-syd)` | `Dallas (us-south)`
 {: caption="Table 1. {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
 
-To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in the same region, with the exception of `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in Sydney, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in Dallas.
+To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in the same region, with the exception of `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in `Sydney (au-syd)`, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in `Dallas (us-south)`.
 
 {{site.data.keyword.cloudaccesstrailshort}} can have only one instance per location. To view events, you must access the web UI of the corresponding {{site.data.keyword.cloudaccesstrailshort}} instance. For detailed instructions, see [Launching the web UI through the {{site.data.keyword.cloud_notm}} UI](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-launch#launch_step2).
 

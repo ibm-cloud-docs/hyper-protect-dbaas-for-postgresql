@@ -40,7 +40,7 @@ Deployment Region | {{site.data.keyword.loganalysisshort_notm}} Region
 `Sydney (au-syd)` | `Dallas (us-south)`
 {: caption="Table 1. {{site.data.keyword.loganalysisshort_notm}} regions" caption-side="top"}
 
-To receive logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in the same region, with the exception of `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in Sydney, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in Dallas.
+To receive logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in the same region, with the exception of `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in `Sydney (au-syd)`, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in `Dallas (us-south)`.
 
 ##Steps
 {: #steps}
