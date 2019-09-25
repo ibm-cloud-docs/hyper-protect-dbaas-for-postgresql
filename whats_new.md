@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-23"
+lastupdated: "2019-09-25"
 
 keywords: release note, new
 
@@ -39,7 +39,7 @@ You can view logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instanc
 {: #Sydney-region}
 New as of: 2019-09-23
 
-You can create {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} resources in the Sydney region. To receive logs and events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance in Sydney, use {{site.data.keyword.loganalysisshort_notm}} and {{site.data.keyword.at_full}} instances in Dallas for now.
+You can create {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} resources in the Sydney region. To receive logs and events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance in Sydney, use {{site.data.keyword.cloud_notm}} {{site.data.keyword.loganalysisshort_notm}} and {{site.data.keyword.at_short}} instances in Dallas for now.
 
 ### Changed: Frankfurt support for {{site.data.keyword.cloudaccesstrailshort}}
 {: #at-frankfurt}

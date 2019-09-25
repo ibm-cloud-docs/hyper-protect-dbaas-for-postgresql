@@ -52,5 +52,6 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
 
     {: .navgroup id="help"}
     help-support.md
+    troubleshoot.md
     FAQs.md
     {: .navgroup-end}
