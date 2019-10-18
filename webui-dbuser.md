@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-10-18"
 
 keywords: database user, Users tab, user name
 
@@ -36,7 +36,6 @@ In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}
  - **User name** - The name of the user.
  - **Password** - The password for the user.
  - **Confirm password** - Confirm the password for the user.
- - **Auth Database** - The authentication database for the user.
  - **Databases** - (Optional) Databases that the user has privileges on. You can also specify databases after you create the user.
 3. Click **Create**.
 

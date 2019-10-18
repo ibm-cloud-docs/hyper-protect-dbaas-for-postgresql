@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-10-18"
 
 keywords: database, DBaaS dashboard
 
@@ -35,7 +35,7 @@ In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}
 {: #webui-create-database}
 
 1. Click **Create**.
-2. Enter a database name and a collection name.
+2. Enter a database name.
 3. Click **Create**.
 
 ## Deleting a database
