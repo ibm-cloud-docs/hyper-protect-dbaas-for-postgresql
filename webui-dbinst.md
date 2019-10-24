@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-10-17"
 
 keywords: database instance, DBaaS dashboard
 
@@ -32,27 +32,40 @@ In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}
 {: #webui-start-database-instance}
 
 1. Select a stopped database instance.
-2. Click the three dots at the right end of the line, then select **Start**.
+2. Click the three dots in the upper-right corner of the instance information pane, then select **Start**.
 
 ## Stopping a database instance
 {: #webui-stop-database-instance}
 
 1. Select a running database instance.
-2. Click the three dots at the right end of the line, then select **Stop**. If it is a Primary node, you can also select **Force stop**.
+2. Click the three dots in the upper-right corner of the instance information pane, then select **Stop**. If it is a Primary node, you can also select **Force stop**.
 
 ## Restarting a database instance
 {: #webui-restart-database-instance}
 
 1. Select a running database instance.
-2. Click the three dots at the right end of the line, then select **Restart**.
+2. Click the three dots in the upper-right corner of the instance information pane, then select **Restart**.
 
-## Downloading the log
+## Downloading logs
 {: #webui-download-log}
+
+The **Log Files** list is refreshed at intervals with updated timestamps. Two types of logs are available:
+
+|Type of logs|Maximum retention time|
+|-----------|-----------|
+|postgresql.log|30 days|
+|audit.log |90 days|
+{: caption="Table 1. Type of logs"}
+
+Logs will be deleted when they exceed the maximum retention time.
+
+To download logs:
+
+1. Select a database instance.
 
 1. Select the database instance.
 2. Select the **Start date** and **End date** to filter the logs by time.
-3. Select the logs that you want to download by selecting the check box before the name of the log.
-4. Click the **Download** button.
+3. Select the logs that you want to download and click the **Download** button.
 
 ## Checking instance status
 {: #webui-check-instance-status}

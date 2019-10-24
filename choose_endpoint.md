@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-20"
+lastupdated: "2019-10-09"
 
 keywords: service endpoint, ibmcloud regions
 
@@ -10,20 +10,25 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:important: .important}
 {:screen: .screen}
 {:codeblock: .codeblock}
+{:tip: .tip}
+{:pre: .pre}
 {:note: .note}
-
+{:external: target="_blank" .external}
 
 # Choosing a service endpoint to log in to
 {: #choose-endpoint}
 
 {{site.data.keyword.cloud}} provides many service endpoints in various geographical regions that you can log in to.
 To find a service endpoint near your geographical location, use the `ibmcloud regions` command as shown in this example:
+{: shortdesc}
 
-<pre><code class="hljs">~$ ibmcloud regions
+```
+~$ ibmcloud regions
 Listing regions...
 
 Name       Display name
@@ -33,10 +38,10 @@ eu-de      Frankfurt
 eu-gb      London
 us-south   Dallas
 us-east    Washington DC
+```
+{: codeblock}
 
-</code></pre>
-
-Currently, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} is supported only in the **us-south** region.
+Currently, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} is supported in the `us-south`, `eu-de`, and `au-syd` regions.
 {: note}
 
 To log in to an {{site.data.keyword.cloud_notm}} service endpoint, follow these steps:
@@ -58,7 +63,7 @@ To log in to an {{site.data.keyword.cloud_notm}} service endpoint, follow these 
 
    The passcode is not displayed in the command line. When the password is authenticated, you receive an **OK** message indicating that you are logged in.
 
-For more information about the `ibmcloud login` command parameters, you can see [{{site.data.keyword.cloud_notm}} CLI reference](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login).
+For more information about the `ibmcloud login` command parameters, see [{{site.data.keyword.cloud_notm}} CLI reference](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login).
 
 When you use {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}, you might need to create spaces in more than one region and switch between regions by using the `ibmcloud target` command. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#orgsspacesusers)
 and [General CLI (ibmcloud) commands](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#bluemix_target).

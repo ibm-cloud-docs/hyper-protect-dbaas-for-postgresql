@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-10-09"
 
 keywords: DBaaS CLI, Python runtime
 
@@ -24,7 +24,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {: #install-dbaas-cli-plugin}
 
 You can use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in to create and manage the {{site.data.keyword.ihsdbaas_postgresql_full}} services.
-{:shortdesc: .shortdesc}
+{: shortdesc}
 
 ## Downloading and installing the {{site.data.keyword.cloud_notm}} CLI
 {: #install-ibm-cli}
@@ -155,4 +155,4 @@ To access a complete set of DBaaS commands when using the {{site.data.keyword.cl
 
    The system displays `dbaas` in the list of available commands.
 
-For detailed information about DBaaS CLI plug-in commands, you can refer to [DBaaS CLI reference](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).
+For detailed information about DBaaS CLI plug-in commands, see [DBaaS CLI reference](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-23"
+lastupdated: "2019-10-09"
 
 keywords: PL/Java extension
 
@@ -63,30 +63,18 @@ The following example shows [how to load and use the `hello` function](https://t
   SET
   ```
 
-3. To install the `hello` function, put the package in an external `http`, `https`, or `ftp` server and then download it with one of the following commands, depending on the server type that you use.
-  - Command for `http` download
-    ```
-    select sqlj.install_jar(<http://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>, 'hellojar', true);
-    ```
-    {: codeblock}
-  - Command for `https` download
+3. To install the `hello` function, put the package in an external `https` server and then download it with the following command:
     ```
     select sqlj.install_jar(<https://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
     ```
     {: codeblock}
-  - Command for `ftp` download
+    
+    Returns:
     ```
-    select sqlj.install_jar(<ftp://username:password@hostname[:port]/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
+    install_jar
+    ------------
+    (1 row)
     ```
-    {: codeblock}
-
-  Returns:
-  ```
-  install_jar
-  ------------
-
-  (1 row)
-  ```
 
 4. List functions with the `\df` command.
   Returns:
@@ -131,9 +119,9 @@ The following example shows [how to load and use the `hello` function](https://t
 
   Returns:
   ```
-          hello
+      hello
   ---------------
-       Hello, world!
+    Hello, world!
   (1 row)
   ```
 

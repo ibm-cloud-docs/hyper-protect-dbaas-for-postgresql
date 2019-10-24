@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-25"
+lastupdated: "2019-10-21"
 
 keywords: troubleshoot, troubleshooting, can't get cluster id
 
@@ -30,7 +30,7 @@ General problems with using {{site.data.keyword.cloud}} {{site.data.keyword.ihsd
 {: #troubleshoot-clusterid}
 {: troubleshoot}
 
-You might receive the **Get Cluster ID Failed** error when you use the Safari browser to open the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance dashboard.
+You might receive the error **Get Cluster ID Failed — Cannot get cluster id from cookie. Please make sure cookie is enabled in your browser!** when you use the Safari browser to open the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance dashboard.
 {: tsSymptoms}
 
 Cookies are blocked or cross-site tracking is prevented.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-12"
+lastupdated: "2019-10-22"
 
 keywords: service instance, ibmcloud resource
 
@@ -10,19 +10,23 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:important: .important}
 {:screen: .screen}
 {:codeblock: .codeblock}
+{:tip: .tip}
+{:pre: .pre}
 {:note: .note}
-
+{:external: target="_blank" .external}
 
 # Creating a service instance
 {: #dbaas_cli_create_service}
 
-To create a service instance, use the `ibmcloud resource service-instance-create` command, as shown in the following example. In Windows, it is recommended that you use a Bash terminal such as Cygwin or Git Bash to enter the command.
+To create a {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, use the `ibmcloud resource service-instance-create` command, as shown in the following example. In Windows, it is recommended that you use a Bash terminal such as Cygwin or Git Bash to enter the command.
+{: shortdesc}
 
-```javascript
+```
 ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-small us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "license_agree":["agreed"]}'
 ```
 {: codeblock}
@@ -34,45 +38,18 @@ Where the parameters have the following definitions:
 | *MyDBaaSIns03*   |  The name of the service instance (replace with a name of your own choosing). |
 | *hyperp-dbaas-postgresql* | The catalog name of {{site.data.keyword.ihsdbaas_postgresql_full}}. |
 | *postgresql-small*  | The plan name. Available plans are: **postgresql-small**, **postgresql-medium**, and **postgresql-large**.  (**Note:** Plan names are case-sensitive.) |
-| *us-south*            | The location where your new database will be located. (**Note:** Currently only **us-south** supports {{site.data.keyword.ihsdbaas_postgresql_full}}.) |
-| *-p*               | A valid JSON string, which must contain the parameters in the following table. |
+| *us-south*            | The location where your new database will be located. |
+| *-p*               | A valid JSON string, which must contain the required parameters in the following table. |
+{: caption="Table 1.Parameters used in creating a service instance" caption-side="top"}
 
-<table>
-  <tr>
-    <th>-p parameter</th>
-    <th>Definition</th>
-  </tr>
-  <tr>
-    <td>*name*</td>
-    <td>The name of your database cluster.</td>
-  </tr>
-  <tr>
-    <td>*admin_name*</td>
-    <td>The administrator's user name of the database to be created.</td>
-  </tr>
-  <tr>
-    <td>*password*</td>
-    <td>
-      <p>The administrator's user password of the database to be created. You need to create a strong password with the following attributes:
-        <ul>
-          <li>minimum of **15 characters** in length</li>
-          <li>at least **one uppercase** character</li>
-          <li>at least **one lowercase** character</li>
-          <li>at least **one number**</li>
-          <li>does not contain user name</li>
-        </ul>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td>*confirm_password*</td>
-    <td>The same password.</td>
-  </tr>
-  <tr>
-    <td>*license_agree*</td>
-    <td>A value of **agreed** indicates acceptance of the license agreement, which is required to use {{site.data.keyword.ihsdbaas_postgresql_full}}.</td>
-  </tr>
-</table>
+| Parameter        |  Definition                                                    |
+| ---------------- |  -------------------------------------------------------------- |
+| *name* | The name of your database cluster. |
+| *admin_name* | The administrator's user name of the database to be created. |
+| *password* | The administrator's user password of the database to be created. The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one number**. |
+| *confirm_password* | The same password. |
+| *license_agree* | A value of **agreed** indicates acceptance of the license agreement, which is required to use {{site.data.keyword.ihsdbaas_postgresql_full}}. |
+{: caption="Table 2. -p parameters" caption-side="top"}
 
 After you enter the command, the state of the new service instance might temporarily appear as **inactive**, as shown in this example:
 
@@ -109,3 +86,5 @@ MyDBaaSIns03   us-south   active     service_instance
 
 To even further strengthen security, it is suggested that you update the **database admin password** immediately after the service instance is provisioned. You need to follow the same rules that are previously mentioned to set the new password.
 {: note}
+
+For more DBaaS CLI plug-in commands, see [DBaaS CLI reference](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).
