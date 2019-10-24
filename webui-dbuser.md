@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-18"
+lastupdated: "2019-10-23"
 
 keywords: database user, Users tab, user name
 
@@ -20,16 +20,16 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Managing user access
+# Managing database users
 {: #dbaas-webui-database-users}
 
-## Before you begin
-{: #webui-database-users-byb}
-
-In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select the **Users** tab.
+In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select the **Users** tab to manage database users.
+{: shortdesc}
 
 ## Creating a database user
 {: #webui-create-database-user}
+
+For information about the role attributes and privileges of {{site.data.keyword.postgresql}} database users, see [Role attributes](https://www.postgresql.org/docs/12/role-attributes.html){: external} and [Privileges](https://www.postgresql.org/docs/12/ddl-priv.html){: external}.
 
 1. Click **Create**.
 2. Enter the required values:

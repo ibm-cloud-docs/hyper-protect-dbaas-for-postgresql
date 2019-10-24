@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-10-10"
 
 keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 
@@ -24,10 +24,9 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {: #api-auth}
 
 You can use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} RESTful APIs to create and manage the {{site.data.keyword.ihsdbaas_postgresql_full}} services.
-{:shortdesc: .shortdesc}
+{: shortdesc}
 
-For authentication, you need an API key, an access token, and a user ID to issue API requests.
-To do so, follow these instructions:
+For authentication, you need an API key, an access token, and a user ID to issue API requests. Follow the instructions below:
 
 1. Generate an API key:
 
@@ -55,11 +54,14 @@ To do so, follow these instructions:
        ```
       {: codeblock}
 
-      The value that is assigned to `apiKey` is your API key. **Important:** Make a note of this value before you close the window.
+      The value that is assigned to `apiKey` is your API key. 
+
+      Make a note of this value before you close the window.
+      {: important}
 
 2. To ensure secure data transfer, obtain a Certificate Authority (CA) file from the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, and copy it to an appropriate directory such as **/etc/ssl/certs/**.
 
-3. Get an access token and a user ID by using the GET /auth/token operation:
+3. Get an access token and a user ID by using the `GET /auth/token` operation:
 
     ```curl
     curl -X GET -H "accept: application/json" -H "api_key: icGVY1*** ***UdfcIg4kzE" https://dbaas900.hyperp-dbaas.cloud.ibm.com:20000/api/v1/auth/token

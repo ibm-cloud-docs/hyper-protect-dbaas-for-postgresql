@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-13"
+lastupdated: "2019-10-22"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -34,6 +34,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
   The database administrator does not have SUPERUSER authority. The authorities of the database administrator are limited to INHERIT, CREATEROLE, CREATEDB, LOGIN, and REPLICATION.
   {: note}
+  
 6. Refresh the **Resource List** page after several minutes. When the status of the service instance is **Provisioned**, the instance is ready to use.
 
   To even further strengthen security, it is suggested that you update the **database admin password** immediately after the service instance is provisioned. You need to follow the same rules that are previously mentioned to set the new password.
