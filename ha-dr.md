@@ -49,6 +49,8 @@ The data in your primary database instance are automatically replicated to secon
 
 To protect your data across more than one region against the disaster scenario where the entire region fails, you need to define your own cross-region backup policy. To create cross-region data redundancy, you need to have regular backups of your complete databases from your service instance in a region, and when the region is unavailable, you can provision a new service instance in another available region to restore your database manually. For detailed instructions on backing up and restoring your data in a different region, see [Backing up and restoring your databases using IBM Cloud Object Storage](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-backup_postgresql_databases).
 
+Time of restoration varies, depending on the size of your data and network condition. For your reference, it takes about 45 minutes to restore data of 10G from Poughkeepsie to a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance deployed in Dallas. Therefore, to minimize the impact of region-wide failures, you need to plan ahead, for example, by having a service instance in a second region as a cold standby.
+
 ## Automatic database backups in all availability zones
 {: #automatic-daily-backups}
 
