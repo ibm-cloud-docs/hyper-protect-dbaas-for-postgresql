@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-10"
+lastupdated: "2019-12-18"
 
 keywords: DBaaS Manager, API request, "{{site.data.keyword.ihsdbaas_full}} APIs"
 
@@ -23,7 +23,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # General instructions for using the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs
 {: #gen_inst_mgr_apis}
 
-General procedures for using the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs are as follows:
+General procedures for using the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs are as follows:
 {: shortdesc}
 
 1. Specify the data of your request in JSON format.
@@ -31,14 +31,14 @@ General procedures for using the {{site.data.keyword.cloud_notm}} {{site.data.ke
 
 DBaaS Managers are available in the following regions:
 
-| Host name | Port number | Region | City |
+| Hostname | Port Number | Region | City |
 |-----------|-------------|--------|------|
 | dbaas900.hyperp-dbaas.cloud.ibm.com | 20000 | us-south | Dallas |
 | dbaas902.hyperp-dbaas.cloud.ibm.com | 20000 | eu-de | Frankfurt |
 | dbaas904.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
 {: caption="Table 1. DBaaS Managers" caption-side="top"}
 
-For more detailed information (methods and parameters), see the [{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} API documentation](/apidocs/hyperp-dbaas){: external}.
+For more information about methods and parameters, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas){: external}.
 
 ## Example
 {: #api-example}
@@ -62,12 +62,12 @@ curl -X POST \
 
   The access_token that you obtained when you [set up authentication to use {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-auth).
 
-  If the access token has expired, return to those instructions and request a new token.
+  If the access token expires, return to those instructions and request a new token.
   {: note}
 
 - *ip*
 
-  The host name of a DBaaS Manager. Valid host names are listed in Table 1.
+  The hostname of a DBaaS Manager. Valid hostnames are listed in Table 1.
 
 - *port*
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-09"
+lastupdated: "2019-12-18"
 
 keywords: service endpoint, ibmcloud regions
 
@@ -65,6 +65,6 @@ To log in to an {{site.data.keyword.cloud_notm}} service endpoint, follow these 
 
 For more information about the `ibmcloud login` command parameters, see [{{site.data.keyword.cloud_notm}} CLI reference](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login).
 
-When you use {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}, you might need to create spaces in more than one region and switch between regions by using the `ibmcloud target` command. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#orgsspacesusers)
+When you use {{site.data.keyword.ihsdbaas_postgresql_full}}, you might need to create spaces in more than one region and switch between regions by using the `ibmcloud target` command. For more information, see [Adding orgs and spaces](/docs/account?topic=account-orgsspacesusers#orgsspacesusers)
 and [General CLI (ibmcloud) commands](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#bluemix_target).
 {: note}

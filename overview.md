@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-10"
+lastupdated: "2019-12-18"
 
 keywords: Hyper Protect DBaaS, database, data security
 
@@ -24,30 +24,39 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {: #overview}
 
 Moving confidential and mission critical data to the cloud presents data confidentiality, security, and reliability concerns. {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} offers highly secure database environments for enterprise workloads with sensitive data.
-{:shortdesc: .shortdesc}
+{: shortdesc}
 
 ## Why {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}}?
 {: #why_hpdb}
 
-Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} provides built-in encryption and tamper protection for data at rest and in flight with excellent vertical scalability and performance. With this leading-edge solution, you can deploy your workloads with sensitive data in a highly secure and easy-to-use enterprise cloud database environment. It ensures complete data confidentiality and grants data owners complete control over the data, protecting data from both external and internal threats.
+Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} provides built-in encryption and tamper protection for data at rest and in flight with excellent vertical scalability and performance. With {{site.data.keyword.ihsdbaas_full}}, you can deploy your workloads with sensitive data in a highly secure and easy-to-use enterprise cloud database environment. It ensures complete data confidentiality and grants data owners complete control over the data, protecting data from both external and internal threats.
 
 ## How does {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} work?
 {: #how_hpdb_works}
 
-The following architectural diagram shows how {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} (for {{site.data.keyword.mongodb}} as an example) works.
+The following architectural diagram shows the architecture of {{site.data.keyword.ihsdbaas_full}} in an {{site.data.keyword.cloud_notm}} region.
+
 ![{{site.data.keyword.ihsdbaas_full}} architecture](images/architecture.svg "{{site.data.keyword.ihsdbaas_full}} architecture"){: caption="Figure 1. {{site.data.keyword.ihsdbaas_full}} architecture" caption-side="bottom"}
 
 ## Features
 {: #features}
 
-### Data confidentiality
-{{site.data.keyword.IBM_notm}} LinuxONE Secure Service Container (SSC) provides workload isolation, restricted administrator access and tamper protection. The service allows data owners to maintain complete control over their data in the cloud, and no one, including the cloud administrator, has access to the data at any point. Access to the system is restricted and is only enabled through well-defined RESTful APIs.
+### Data security and confidentiality
+{: #data_security}
 
-### Fully managed
-{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} offers non-disruptive version upgrades and around-the-clock support from {{site.data.keyword.cloud_notm}}. Developers can focus on building applications rather than managing availability, backups, logging, monitoring, scaling, hardware setup, and software patching.
+Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{site.data.keyword.IBM_notm}} Secure Service Container technology, {{site.data.keyword.ihsdbaas_full}} provides workload isolation, restricted administrator access and tamper protection for data at rest and in flight. You can maintain complete control over your data; not even the cloud administrator has access to it at any point.
 
 ### Highly available
-Every {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} deployment is built as a highly available clustered configuration. Three node clusters are available for each deployed instance hosted on LinuxONE in a Multi-Zone Region (MZR) setup within an {{site.data.keyword.cloud_notm}} Region, with automatic daily backups in the local storage.
+{: #highly_available}
+
+When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster consisting of one primary node and two secondary nodes (replicas that back up the primary), each installed in a unique Availability Zone with automatic daily backups in the local storage. It has vertical scalability up to machine limits and ability to scale large databases with no sharding.
+
+### Fully managed
+{: #fully_managed}
+
+{{site.data.keyword.ihsdbaas_full}} offers non-disruptive version upgrades, monitoring of the system by IBM SREs, and around-the-clock support from {{site.data.keyword.cloud_notm}}. You can focus on building applications rather than managing availability, backups, logging, monitoring, scaling, hardware setup, and software patching.
 
 ### Developer friendly
-{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} provides standardized APIs to provision, manage, maintain, and monitor {{site.data.keyword.mongodb}} EA and {{site.data.keyword.postgresql}} databases. For developers, it is easy to get started without the need to have specialized DBA skills.
+{: #developer_friendly}
+
+{{site.data.keyword.ihsdbaas_full}} provides standardized APIs to provision and monitor databases. It‘s easy for you to get started without the need for specialized database skills.

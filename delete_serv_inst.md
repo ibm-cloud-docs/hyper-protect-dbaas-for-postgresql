@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-09"
+lastupdated: "2019-12-18"
 
 keywords: ibmcloud resource, service instance, CLI tool
 
@@ -22,7 +22,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Deleting a service instance
 {: #dbaas_cli_delete_service}
 
-To review the service instances you have created, use the following command:
+To review the service instances you created, use the following command:
 {: shortdesc}
 
 ```

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-12-18"
 
 keywords: frequently asked questions, database
 
@@ -31,6 +31,6 @@ You can use the following FAQs to help you with {{site.data.keyword.cloud}} {{si
 {: #metering-and-billing}
 {: faq}
 
-To obtain information about usage and billing, select **Manage > Billing and usage** on the top menu bar.
+To find information about usage and billing, select **Manage > Billing and usage** on the top menu bar.
 
 For more information, see [How you are charged](/docs/billing-usage?topic=billing-usage-charges#charges).

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-25"
+lastupdated: "2019-12-18"
 
 keywords: Activity tracker events
 
@@ -30,18 +30,18 @@ Use the {{site.data.keyword.cloud}} {{site.data.keyword.at_short}} service to tr
 ## Viewing events
 {: #view-activity-tracker-events}
 
-{{site.data.keyword.cloudaccesstrailshort}} integration is available for {{site.data.keyword.ihsdbaas_postgresql_full}} deployments according to the following table.
+To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in the same region, except for `Sydney (au-syd)`, as the following table shows:
 
-Deployment Region | {{site.data.keyword.cloudaccesstrailshort}} Region
+{{site.data.keyword.ihsdbaas_postgresql_full}} Region | {{site.data.keyword.cloudaccesstrailshort}} Region
 ----------|-----------
 `Dallas (us-south)` | `Dallas (us-south)`
 `Frankfurt (eu-de)` | `Frankfurt (eu-de)`
 `Sydney (au-syd)` | `Dallas (us-south)`
-{: caption="Table 1. {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
+{: caption="Table 1. {{site.data.keyword.cloudaccesstrailshort}} regions" caption-side="top"}
 
-To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in the same region, with the exception of `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in `Sydney (au-syd)`, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in `Dallas (us-south)`.
+[Provision an {{site.data.keyword.cloudaccesstrailshort}} instance](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-provision) if you don't have one. {{site.data.keyword.cloudaccesstrailshort}} can have only one instance per location.
 
-{{site.data.keyword.cloudaccesstrailshort}} can have only one instance per location. To view events, you must access the web UI of the corresponding {{site.data.keyword.cloudaccesstrailshort}} instance. For detailed instructions, see [Launching the web UI through the {{site.data.keyword.cloud_notm}} UI](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-launch#launch_step2).
+To view events, access the web UI of the corresponding {{site.data.keyword.cloudaccesstrailshort}} instance. For detailed instructions, see [Launching the web UI through the {{site.data.keyword.cloud_notm}} UI](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-launch#launch_step2). You can apply search and filtering criteria to define the events that are displayed through a [custom view](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-views).
 
 ## List of events
 {: #list-activity-tracker-events}
@@ -52,15 +52,8 @@ The following table lists the actions that generate an event:
 | ---------------------- | ----------------------------------------- |
 | `hyperp-dbaas-postgresql.cluster.create` | Create a database cluster                 |
 | `hyperp-dbaas-postgresql.cluster.delete` | Delete a database cluster                 |
-| `hyperp-dbaas-postgresql.database.create` | Create a database                  |
-| `hyperp-dbaas-postgresql.database.delete` | Delete a database                  |
-| `hyperp-dbaas-postgresql.user.create`     | Create a database user                    |
-| `hyperp-dbaas-postgresql.user.delete`     | Delete a database user                    |
-| `hyperp-dbaas-postgresql.instance.start` | Start a database service instance         |
-| `hyperp-dbaas-postgresql.instance.stop`  | Stop a database service instance          |
-| `hyperp-dbaas-postgresql.instance.restart`  | Restart a database service instance          |
 | `hyperp-dbaas-postgresql.log.get`       | Download a log file |
 {: caption="Table 1. Actions that generate {{site.data.keyword.cloudaccesstrailshort}} events"}
 
-For the event of `hyperp-dbaas-postgresql.cluster.create` and `hyperp-dbaas-postgresql.cluster.delete`, the {{site.data.keyword.cloudaccesstrailshort}} service does not record the account name and IP address of the user who performs the action. The value of `initiator.name` and `host.address` in the log indicates the service ID of Cloud Broker and the IP address of Cloud Broker respectively.
+For the event of `hyperp-dbaas-postgresql.cluster.create` and `hyperp-dbaas-postgresql.cluster.delete`, the {{site.data.keyword.cloudaccesstrailshort}} service does not record the account name and IP address of the user who performs the action. The value of `initiator.name` and `host.address` in the log indicates the service ID of Cloud Broker and the IP address of Cloud Broker.
 {: note}

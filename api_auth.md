@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-10"
+lastupdated: "2019-12-18"
 
 keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 
@@ -23,10 +23,10 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Setting up authentication to use {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs
 {: #api-auth}
 
-You can use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} RESTful APIs to create and manage the {{site.data.keyword.ihsdbaas_postgresql_full}} services.
+You can use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} RESTful APIs to create and monitor {{site.data.keyword.ihsdbaas_postgresql_full}} services.
 {: shortdesc}
 
-For authentication, you need an API key, an access token, and a user ID to issue API requests. Follow the instructions below:
+For authentication, you need an API key, an access token, and a user ID to issue API requests. Complete the following steps:
 
 1. Generate an API key:
 
@@ -59,7 +59,7 @@ For authentication, you need an API key, an access token, and a user ID to issue
       Make a note of this value before you close the window.
       {: important}
 
-2. To ensure secure data transfer, obtain a Certificate Authority (CA) file from the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, and copy it to an appropriate directory such as **/etc/ssl/certs/**.
+2. To ensure secure data transfer, download a certificate authority (CA) file from the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, and copy it to an appropriate directory such as **/etc/ssl/certs/**.
 
 3. Get an access token and a user ID by using the `GET /auth/token` operation:
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-23"
+lastupdated: "2019-12-18"
 
 keywords: database monitoring, database cluster, database metrics
 
@@ -23,47 +23,40 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Monitoring databases
 {: #dbaas-webui-database-monitor}
 
-After you have enabled database monitoring, you can view the database metrics using Grafana.
+After you enable database monitoring, you can view the database metrics in the Grafana dashboard.
 {: shortdesc}
 
-## Before you begin
+## Prerequisites
 {: #webui-database-monitoring-byb}
 
-1.  Be sure to have access to a Cloud Foundry organization and space in Dallas (us-south), Frankfurt (eu-de), or Sydney (au-syd).
-    For information about how to obtain such access, see [Managing Cloud Foundry access](https://cloud.ibm.com/docs/iam?topic=iam-mngcf#mngcf){: external}.
+1.  Be sure to have access to a Cloud Foundry organization and space in the same region as your service instance.
+    For information about how to obtain such access, see [Adding orgs and spaces](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers){: external}.
 
-2.  Make sure that all instances of the database cluster are running.
-
-3.  In the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select the **Monitoring** tab.
+2.  Make sure that all nodes of the database cluster are running.
 
 ## Enabling database monitoring
 {: #webui-enable-database-monitoring}
 
-In case the message **Monitoring is disabled** is displayed in the **Monitoring** tab:
+In the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Monitoring** in the side navigation pane. Complete the following steps to enable monitoring if you haven't:
 
 1. Click **Enable**.
 2. In the **Enable Monitoring** window, select your organization and space, then click **Submit**.
 
-
 ## Viewing database metrics
 {: #webui-view-database-metrics}
 
-There are two ways to view the metrics in Grafana:
+Click **View monitoring information in Grafana** on the **Monitoring** page.
 
-- Copy the displayed link, then open a new tab or window and paste the link to the browser.
-- Click **View in Grafana**.
+To display the metrics in a new dashboard in Grafana, select the upper left Grafana icon, then select **Dashboards > New**. For more information, see [Configuring a metric query in Grafana](/docs/services/cloud-monitoring/retrieve-metrics?topic=cloud-monitoring-define_query).
 
-To display the metrics in a new dashboard in Grafana, select the upper left Grafana icon, then select **Dashboards > New**.
-It may take a while until your database cluster ID and instance IDs are displayed, and you might have to reload the dashboard.
-
-For more information about using Grafana, see [{{site.data.keyword.cloud_notm}} Monitoring](/docs/services/cloud-monitoring?topic=cloud-monitoring-getting-started).
+It might take a while until your database cluster ID and node IDs are displayed, and you might have to reload the dashboard.
 
 ## Available metrics
 {: #available-metrics}
 
-The table describes all the available metrics for {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} deployments.
+The table describes all the available metrics for {{site.data.keyword.ihsdbaas_postgresql_full}}.
 
 | Metric | Description|
 |----------|-----------|
-| `memory-percent-used` | How much percent of memory that your deployment is using for the instance. |
+| `memory-percent-used` | How much percent of memory that your service instance is using. |
 {: caption="Table 1. {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} metrics" caption-side="top"}

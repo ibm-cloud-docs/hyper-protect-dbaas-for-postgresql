@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-25"
+lastupdated: "2019-12-18"
 
 keywords: help, support
 
@@ -20,7 +20,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Getting help and support
 {: #getting-help-and-support}
 
-If you have problems or questions when you are using {{site.data.keyword.ihsdbaas_postgresql_full}}, consider the following ways to get help and support.
+If you have problems or questions when you are using {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}, consider the following ways to get help and support.
 {: shortdesc}
 
 * Go to [{{site.data.keyword.cloud}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to check the status of [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/status?selected=status){: external}, review common FAQs, search community content, or open support cases.
@@ -29,6 +29,6 @@ If you have problems or questions when you are using {{site.data.keyword.ihsdbaa
   * Submit a question through either of the forums (specifying **{{site.data.keyword.ihsdbaas_postgresql_full}}** in your entry):
     * [{{site.data.keyword.IBM_notm}} Developer Answers](https://developer.ibm.com/answers/index.html){: external}
     * [Stack Overflow](https://stackoverflow.com/){: external}
-  * Contact the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team at this email address: **dbaas.sre@de.ibm.com** 	
+  * Contact the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team at this email address: **dbaas.sre@de.ibm.com** 	
 
 For more information about using {{site.data.keyword.cloud_notm}} Support Center and asking questions on the forums, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support){: external}.
