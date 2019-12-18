@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-12-18"
+lastupdated: "2019-12-20"
 
 keywords: backup, disaster recovery, restore
 
@@ -70,7 +70,7 @@ Complete the following steps to back up your data in a Cloud {{site.data.keyword
 
 For more information about {{site.data.keyword.cos_full_notm}}, see [the {{site.data.keyword.cos_full_notm}} documentation](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started). 
 
-After you complete the steps, you have . If you want to restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_postgresql_full}} instance, complete the following Step 3.
+After you complete the steps, you have backed up your data in a Cloud {{site.data.keyword.cos_short}} instance in a different region. If you want to restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_postgresql_full}} instance, complete the following Step 3.
 
 ## Step 3: Restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_postgresql_full}} instance
 {: #step3_restore_data_from_cos_postgresql}

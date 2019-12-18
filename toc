@@ -51,6 +51,7 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     hpcrypto-byok.md
     key-protect-byok.md
     at_events.md
+    open-source-licenses.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}

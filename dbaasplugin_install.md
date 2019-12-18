@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-12-18"
+lastupdated: "2019-12-20"
 
 keywords: DBaaS CLI, Python runtime
 
@@ -48,10 +48,10 @@ To access a complete set of DBaaS commands when you use the {{site.data.keyword.
 ### On Linux:
 {: #dbaas_cli_linux}
 
-1. Most Linux distributions have Python and Pip preinstalled. If yours does not, use these commands to install them (using Python 3.6 as an example):
+1. Most Linux distributions have Python and Pip preinstalled. If yours does not, use these commands to install them (using the Ubuntu distribution as an example):
 
    ```
-   sudo apt-get install python python3.6 python-dev
+   sudo apt-get install python3 python3-dev
    sudo apt-get install python3-pip
    ```
    {: codeblock}
