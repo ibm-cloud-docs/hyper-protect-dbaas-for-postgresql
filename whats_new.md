@@ -38,10 +38,10 @@ You can create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance
 
 The major changes to the dashboard are navigation and renaming of terms. The new service dashboard uses side navigation. The terms **instance** and **replica** are replaced by **node**.
 
-### Changed: Manage nodes, databases, and database users with only database clients
+### Changed: Manage databases and database users with only database clients
 {: #changed-manage}
 
-To enhance security, use your database client to manage nodes, databases, and users. The corresponding pages in the dashboard are read-only.
+To enhance security, use your database client to manage databases and database users. The **Databases**, **Users**, and **Nodes** pages in the dashboard are read-only.
 
 ### Changed: Python components for using CLI
 {: #change-cli-python}

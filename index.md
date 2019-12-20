@@ -65,11 +65,11 @@ For database clusters that are created after 23 September, 2019, the PL/Java ext
 Each {{site.data.keyword.ihsdbaas_postgresql_full}} cluster contains a DBaaS Manager, which manages and intelligently schedules your requests based on the available resources.
 
 In a database cluster, you can:
-- View information about nodes
 - View information about databases
-- View information about database users
-- Monitor databases
+- View information about users
+- View information about nodes
 - View service logs
+- Monitor databases
 
 You can send the requests to the DBaaS Manager through one of the following interfaces:
 
@@ -77,7 +77,7 @@ You can send the requests to the DBaaS Manager through one of the following inte
 - The [CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI tool](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin)
 - The {{site.data.keyword.ihsdbaas_full}} RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas){: external}
 
-To manage your nodes, databases and users, use your database client.
+To manage your databases and database users, use your database client.
 
 ## Step 3: Connecting to databases
 {: #accessing-database-introduction}

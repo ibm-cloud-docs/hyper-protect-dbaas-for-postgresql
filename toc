@@ -16,11 +16,11 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     {: .topicgroup}
     Using the Web User Interface
         webui-cluster.md
-        webui-dbinst.md
         webui-db.md
-        webui-dbmonitoring.md
         webui-dbuser.md
+        webui-dbinst.md
         logging.md
+        webui-dbmonitoring.md
 
     {: .topicgroup}
     Using the IBM Cloud Hyper Protect DBaaS RESTful APIs
