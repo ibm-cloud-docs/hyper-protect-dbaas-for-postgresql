@@ -20,7 +20,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
 
-## 18 December 2019
+## 20 December 2019
 {: #Dec-2019}
 
 ### Added: Role-based authorization with {{site.data.keyword.cloud_notm}} Identity and Access Management
