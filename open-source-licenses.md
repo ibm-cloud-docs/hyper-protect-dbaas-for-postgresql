@@ -135,5 +135,4 @@ INFORMATION
 Package name | Version | Download URL
 -------------|---------|-------------
 Jq | 1.5+dfsg-1ubuntu0.1 | http://deb.debian.org/debian/pool/main/j/jq/jq_1.5+dfsg-1.3.debian.tar.xz
-
-Table 1. Other CC-BY-SA licenses
+{: caption="Table 1. Other CC-BY-SA licenses" caption-side="top"}
