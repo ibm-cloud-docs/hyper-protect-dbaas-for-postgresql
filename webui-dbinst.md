@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-17"
+lastupdated: "2019-12-20"
 
-keywords: database instance, DBaaS dashboard
+keywords: node, DBaaS dashboard
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
@@ -20,38 +20,25 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Managing database instances
-{: #dbaas-webui-database-instances}
+# Viewing information about nodes
+{: #dbaas-webui-nodes}
 
-## Before you begin
-{: #webui-database-instances-byb}
+In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Nodes** in the side navigation pane to view the information about your nodes and download logs.
+{: shortdesc}
 
-In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select the **Instances** tab.
+## Checking node status
+{: #webui-check-node-status}
 
-## Starting a database instance
-{: #webui-start-database-instance}
+Select the primary node or a secondary node to check its ID, status, and replication lag. If your service instance is protected by an external key, you can also see the key status. If your key is deleted or not connected, the nodes are stopped.
 
-1. Select a stopped database instance.
-2. Click the three dots in the upper-right corner of the instance information pane, then select **Start**.
-
-## Stopping a database instance
-{: #webui-stop-database-instance}
-
-1. Select a running database instance.
-2. Click the three dots in the upper-right corner of the instance information pane, then select **Stop**. If it is a Primary node, you can also select **Force stop**.
-
-## Restarting a database instance
-{: #webui-restart-database-instance}
-
-1. Select a running database instance.
-2. Click the three dots in the upper-right corner of the instance information pane, then select **Restart**.
+The information on the page is read-only. If a node is failed, see [Getting help and support](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support).|
 
 ## Downloading logs
 {: #webui-download-log}
 
-The **Log Files** list is refreshed at intervals with updated timestamps. Two types of logs are available:
+The **Log Files** list is refreshed at intervals with updated time stamps. Two types of logs are available:
 
-|Type of logs|Maximum retention time|
+|Type of Logs|Maximum Retention Time|
 |-----------|-----------|
 |postgresql.log|30 days|
 |audit.log |90 days|
@@ -61,20 +48,6 @@ Logs will be deleted when they exceed the maximum retention time.
 
 To download logs:
 
-1. Select a database instance.
-
-1. Select the database instance.
+1. Select a node
 2. Select the **Start date** and **End date** to filter the logs by time.
-3. Select the logs that you want to download and click the **Download** button.
-
-## Checking instance status
-{: #webui-check-instance-status}
-
-The colored dot on the instance pane indicates the status of the database instance. You can refer to the following table to check the instance status.
-
-|Color|Status|Action|
-|-----|------|------|
-|Green|The instance is running.|You can stop or restart the instance.|
-|Yellow|The instance is stopped.|You can start the instance.|
-|Red|The instance is failed.|You can refer to [Getting help and support](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support).|
-{: caption="Table 1. The status color"}
+3. Select the logs that you want to download and click **Download**.

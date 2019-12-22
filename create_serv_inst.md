@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-22"
+lastupdated: "2019-12-20"
 
 keywords: service instance, ibmcloud resource
 
@@ -27,7 +27,7 @@ To create a {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_
 {: shortdesc}
 
 ```
-ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-small us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "license_agree":["agreed"]}'
+ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-small us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "license_agree":["agreed"], "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c"}'
 ```
 {: codeblock}
 
@@ -40,7 +40,7 @@ Where the parameters have the following definitions:
 | *postgresql-small*  | The plan name. Available plans are: **postgresql-small**, **postgresql-medium**, and **postgresql-large**.  (**Note:** Plan names are case-sensitive.) |
 | *us-south*            | The location where your new database will be located. |
 | *-p*               | A valid JSON string, which must contain the required parameters in the following table. |
-{: caption="Table 1.Parameters used in creating a service instance" caption-side="top"}
+{: caption="Table 1. Parameters used in creating a service instance" caption-side="top"}
 
 | Parameter        |  Definition                                                    |
 | ---------------- |  -------------------------------------------------------------- |
@@ -49,7 +49,14 @@ Where the parameters have the following definitions:
 | *password* | The administrator's user password of the database to be created. The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one number**. |
 | *confirm_password* | The same password. |
 | *license_agree* | A value of **agreed** indicates acceptance of the license agreement, which is required to use {{site.data.keyword.ihsdbaas_postgresql_full}}. |
+| *kms_instance* | (Optional) Valid CRN of the selected KMS (key management service) instance. |
+| *kms_key* | (Optional, paired with *kms instance*) UUID of the selected root key. |
 {: caption="Table 2. -p parameters" caption-side="top"}
+
+The *kms_instance* and *kms_key* parameters are required if you want create a service instance with your own encryption key. For instructions on creating your KMS instance and KMS key, see [{{site.data.keyword.keymanagementserviceshort}} Integration](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok) or [{{site.data.keyword.hscrypto}} Integration](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok).
+
+{{site.data.keyword.ihsdbaas_postgresql_full}} will not verify the *kms_instance* and *kms_key* parameters from CLI. Make sure you copy and paste the correct values in the same format as the example.
+{: important}
 
 After you enter the command, the state of the new service instance might temporarily appear as **inactive**, as shown in this example:
 

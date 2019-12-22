@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-23"
+lastupdated: "2019-12-20"
 
 keywords: logs, logging, Log Analysis, LogDNA
 
@@ -33,21 +33,21 @@ You need to create and configure a {{site.data.keyword.loganalysisshort_notm}} i
 
 {{site.data.keyword.loganalysisshort_notm}} integration is available for {{site.data.keyword.ihsdbaas_postgresql_full}} deployments according to the following table.
 
-Deployment Region | {{site.data.keyword.loganalysisshort_notm}} Region
+{{site.data.keyword.ihsdbaas_postgresql_full}} Region | {{site.data.keyword.loganalysisshort_notm}} Region
 ----------|-----------
 `Dallas (us-south)` | `Dallas (us-south)`
 `Frankfurt (eu-de)` | `Frankfurt (eu-de)`
 `Sydney (au-syd)` | `Dallas (us-south)`
 {: caption="Table 1. {{site.data.keyword.loganalysisshort_notm}} regions" caption-side="top"}
 
-To receive logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in the same region, with the exception of `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in `Sydney (au-syd)`, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in `Dallas (us-south)`.
+To receive logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in the same region, except for `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in `Sydney (au-syd)`, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in `Dallas (us-south)`.
 
-##Steps
+## Steps
 {: #steps}
 
-1. In the service instance dashboard of {{site.data.keyword.ihsdbaas_postgresql_full}}, select the **Logging** tab and click the **Enable** button.
-2. Click **View in logdna** to be directed to the {{site.data.keyword.loganalysisshort_notm}} instance list.
+1. In the service instance dashboard of {{site.data.keyword.ihsdbaas_postgresql_full}}, select **Logging** in the side navigation pane and click **Enable**.
+2. Click **View logs in LogDNA** to be directed to the {{site.data.keyword.loganalysisshort_notm}} instance list.
 
-In Step 2, if you see an error message about failing to enable logging for certain instance(s) under the logging link, it means one or more of your database instances are not running (see the [ **HELP**](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support) section to troubleshoot). You can retry enabling logging for the instance(s) when they are running again.
+In Step 2, if you see an error message about failing to enable logging for certain nodes under the logging link, it means one or more of your nodes are not running (see the [ **HELP**](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support) section to troubleshoot). You can retry enabling logging for the nodes when they are running again.
 
-Now you can view logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance in the {{site.data.keyword.loganalysisshort_notm}} instance that is configured to receive platform service logs. For detailed instructions on viewing logs, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs)
+Now you can view logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in the {{site.data.keyword.loganalysisshort_notm}} instance that is configured to receive platform service logs. For detailed instructions on viewing logs, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs).

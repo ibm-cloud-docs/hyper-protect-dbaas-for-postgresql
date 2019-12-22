@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-09"
+lastupdated: "2019-12-20"
 
 keywords: DBaaS CLI, Python runtime
 
@@ -31,10 +31,10 @@ You can use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgre
 
 The IBM Cloud CLI tool is what you use to communicate with IBM Cloud from your terminal or command line. To download and install the {{site.data.keyword.cloud}} CLI, see [Getting started with {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started). After the installation is completed, the `ibmcloud` command is available on your system console.
 
-To access a complete set of DBaaS commands when using the {{site.data.keyword.cloud}} CLI, you must also install the following components:
+To access a complete set of DBaaS commands when you use the {{site.data.keyword.cloud}} CLI, you must also install the following components:
 
-- Python runtime (2.7.15 is recommended; 3.x is **not** supported)
-- Python Pip package management system
+- Python runtime (**only 3.x is supported**)
+- Python Pip3 package management system
 - Python Requests library
 - DBaaS CLI plug-in
 
@@ -48,31 +48,38 @@ To access a complete set of DBaaS commands when using the {{site.data.keyword.cl
 ### On Linux:
 {: #dbaas_cli_linux}
 
-1. Most Linux distributions have Python and Pip preinstalled. If yours does not, use these commands to install them:
+1. Most Linux distributions have Python and Pip preinstalled. If yours does not, use these commands to install them (using the Ubuntu distribution as an example):
 
-   ```javascript
-   sudo apt-get install python python2.7 python-dev
-   sudo apt-get install python-pip
+   ```
+   sudo apt-get install python3 python3-dev
+   sudo apt-get install python3-pip
    ```
    {: codeblock}
 
 2. To install the Python Requests library, use this command:
 
-   ```javascript
-   sudo pip install requests
+   ```
+   sudo pip3 install requests
    ```
    {: codeblock}
 
-3. To install the DBaaS CLI plug-in, use this command:
+3. To add the Python directory to PATH, use this command:
 
-   ```javascript
+   ```
+   export PATH=/usr/bin/python3:$PATH
+   ```
+   {: codeblock}
+
+4. To install the DBaaS CLI plug-in, use this command:
+
+   ```
    ibmcloud plugin install dbaas-cli
    ```
    {: codeblock}
 
-4. To confirm that the DBaaS CLI plug-in has been installed correctly, use this command:
+5. To confirm that the DBaaS CLI plug-in is installed correctly, use this command:
 
-   ```javascript
+   ```
    ibmcloud
    ```
    {: codeblock}
@@ -82,29 +89,48 @@ To access a complete set of DBaaS commands when using the {{site.data.keyword.cl
 ### On MacOS:
 {: #dbaas_cli_macos}
 
-1. If you do not already have Python, download and install it by following these instructions:
+1. If you don't have Python, download and install it by following these instructions:
 
-    a. Go to the Python website at this URL: https://www.python.org/downloads/release/python-2715/
+    a. Go to the Python website at this URL: https://www.python.org/downloads/mac-osx/
 
-    b. Select the appropriate MacOS installer, download it, and run it. The installation should include Pip.
+    b. Download and run the appropriate MacOS installer. The installation should include Pip3.
 
 2. To install the Python Requests library, use this command:
 
-   ```javascript
-   sudo pip install requests
+   ```
+   sudo pip3 install requests
    ```
    {: codeblock}
 
-3. To install the DBaaS CLI plug-in, use this command:
+3. Make sure that Python is in the PATH environment. If not, use one of the following commands, depending on where your Python is located.
 
-   ```javascript
+    ```
+    export PATH=/usr/bin/python3:$PATH
+    ```
+   {: codeblock}
+
+    ```
+    export PATH = /usr/local/bin/python3:$PATH
+    ```
+   {: codeblock}
+
+4. In some macOS systems, such as 10.15, you may set the PYTHONPATH environment variable to locate the requests module. For example:
+
+    ```
+    export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages
+    ```
+   {: codeblock}
+
+5. To install the DBaaS CLI plug-in, use this command:
+
+   ```
    ibmcloud plugin install dbaas-cli
    ```
    {: codeblock}
 
-4. To confirm that the DBaaS CLI plug-in has been installed correctly, use this command:
+6. To confirm that the DBaaS CLI plug-in is installed correctly, use this command:
 
-   ```javascript
+   ```
    ibmcloud
    ```
    {: codeblock}
@@ -116,43 +142,43 @@ To access a complete set of DBaaS commands when using the {{site.data.keyword.cl
 
 **Note:** Only the x86_64 version of Windows is supported.
 
-1. If you do not already have Python, download and install it by following these instructions:
+1. If you don't have Python, download and install it by following these instructions:
 
-    a. Go to the Python website at this URL: https://www.python.org/downloads/release/python-2715/
+    a. Go to the Python website at this URL: https://www.python.org/downloads/windows/
 
-    b. Select the **Windows x86-64 MSI** installer, download it, and run it.
+    b. Download and run the **Windows x86-64 MSI** installer.
 
     c. On the **Customize Python** menu of the **Python Setup** wizard, specify: **pip Will be installed on local hard disk drive**
 
 2. After installing Python, use your Windows **Edit System Variable** dialog to
-   append the following values to the existing **Path** variable value:
+   append the following values to the existing **Path** variable value (using Python 3.6 as an example):
 
-   ```javascript
-   C:\Python27;C:\Python27\Scripts
+   ```
+   C:\Python36;C:\Python36\Scripts
    ```
    {: codeblock}
 
 3. To install the Python Requests library, open the **Command Prompt** window and enter this command:
 
-   ```javascript
-   pip install requests
+   ```
+   pip3 install requests
    ```
    {: codeblock}
 
 4. To install the DBaaS CLI plug-in, use this command:
 
-   ```javascript
+   ```
    ibmcloud plugin install dbaas-cli
    ```
    {: codeblock}
 
-5. To confirm that the DBaaS CLI plug-in has been installed correctly, use this command:
+5. To confirm that the DBaaS CLI plug-in is installed correctly, use this command:
 
-   ```javascript
+   ```
    ibmcloud
    ```
    {: codeblock}
 
    The system displays `dbaas` in the list of available commands.
 
-For detailed information about DBaaS CLI plug-in commands, see [DBaaS CLI reference](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).
+For more information about DBaaS CLI plug-in commands, see [DBaaS CLI reference](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).
