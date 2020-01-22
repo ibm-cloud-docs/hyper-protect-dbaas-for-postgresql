@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2020
+lastupdated: "2020-01-22"
 
 keywords: DBaaS CLI, Python runtime
 
@@ -45,7 +45,7 @@ To access a complete set of DBaaS commands when you use the {{site.data.keyword.
 - [On MacOS](#dbaas_cli_macos)
 - [On Windows](#dbaas_cli_windows)
 
-### On Linux:
+### On Linux
 {: #dbaas_cli_linux}
 
 1. Most Linux distributions have Python and Pip preinstalled. If yours does not, use these commands to install them (using the Ubuntu distribution as an example):
@@ -86,7 +86,7 @@ To access a complete set of DBaaS commands when you use the {{site.data.keyword.
 
    The system displays `dbaas` in the list of available commands.
 
-### On MacOS:
+### On MacOS
 {: #dbaas_cli_macos}
 
 1. If you don't have Python, download and install it by following these instructions:
@@ -137,7 +137,9 @@ To access a complete set of DBaaS commands when you use the {{site.data.keyword.
 
    The system displays `dbaas` in the list of available commands.
 
-### On Windows:
+**Note:** If the installation fails with message `Unable to obtain plug-in’s metadata. Error: signal: abort trap`, either the installed Python version is not correct (only Python 3.6.x is supported), or the `python-dev` is not included in the installed python package. Make sure to download the python package with the link in step 1 and install Python again.
+
+### On Windows
 {: #dbaas_cli_windows}
 
 **Note:** Only the x86_64 version of Windows is supported.
