@@ -35,7 +35,7 @@ With {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_fu
 
 {{site.data.keyword.ihsdbaas_postgresql_full}} currently supports {{site.data.keyword.postgresql}} 10. It provides a secure, up-to-date version of the {{site.data.keyword.postgresql}} Enterprise database. We upgrade database maintenance versions `major.minor.maintenance` when appropriate.
 
-For more information about versions, see [{{site.data.keyword.postgresql}} support policy](https://www.postgresql.com/support-policy){: external}.
+For more information about versions, see [{{site.data.keyword.postgresql}} support policy](https://www.postgresql.org/support/versioning/){: external}.
 
 ## Prerequisite
 {: #prerequisite}
