@@ -38,7 +38,7 @@ DBaaS Managers are available in the following regions:
 | dbaas904.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
 {: caption="Table 1. DBaaS Managers" caption-side="top"}
 
-For more information about methods and parameters, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas){: external}.
+For more information about methods and parameters, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas){: external}.
 
 ## Example
 {: #api-example}
@@ -60,7 +60,7 @@ curl -X POST \
 
 - *access_token*
 
-  The access_token that you obtained when you [set up authentication to use {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-auth).
+  The access_token that you obtained when you [set up authentication to use {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-auth).
 
   If the access token expires, return to those instructions and request a new token.
   {: note}

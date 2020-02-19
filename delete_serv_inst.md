@@ -39,4 +39,4 @@ If you want to delete one of them, use the `ibmcloud resource service-instance-d
 
 Confirm the deletion by typing **y**.
 
-For more DBaaS CLI plug-in commands, see [DBaaS CLI reference](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).
+For more DBaaS CLI plug-in commands, see [DBaaS CLI reference](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).

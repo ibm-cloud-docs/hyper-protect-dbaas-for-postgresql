@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2019, 2020
+lastupdated: "2020-01-07"
 
 keywords: PL/Java extension
 
@@ -35,6 +35,8 @@ The PL/Java extension is enabled by default when you create a database. To use t
 2. Create your customized schema and add the schema to `search_path`. Your PL/Java code package will be installed in the schema. For more information about schema and search path, see [Schemas](https://www.postgresql.org/docs/10/ddl-schemas.html){: external}.
 
 ## Steps
+{: #pljava_steps}
+
 The following example shows [how to load and use the `hello` function](https://tada.github.io/pljava/use/hello.html){: external}.
 
 1. Use the `CREATE SCHEMA` statement to create a schema for installing your PL/Java code.
@@ -68,7 +70,7 @@ The following example shows [how to load and use the `hello` function](https://t
     select sqlj.install_jar(<https://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
     ```
     {: codeblock}
-    
+
     Returns:
     ```
     install_jar

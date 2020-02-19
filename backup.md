@@ -61,14 +61,14 @@ For more information about user privileges, see [{{site.data.keyword.postgresql}
 
 Complete the following steps to back up your data in a Cloud {{site.data.keyword.cos_short}} instance in a different region:
 
-1. [Create a {{site.data.keyword.cos_short}} {{site.data.keyword.cos_short}} instance](/docs/services/cloud-object-storage?topic=cloud-object-storage-provision).
-2. [Create a bucket](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-region) in a different region.
-3. [Create a service credential](/docs/services/cloud-object-storage?topic=cloud-object-storage-service-credentials) and save the `access_key_id` and `secret_access_key` for later use.
+1. [Create a {{site.data.keyword.cos_short}} {{site.data.keyword.cos_short}} instance](/docs/cloud-object-storage?topic=cloud-object-storage-provision).
+2. [Create a bucket](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-region) in a different region.
+3. [Create a service credential](/docs/cloud-object-storage?topic=cloud-object-storage-service-credentials) and save the `access_key_id` and `secret_access_key` for later use.
 4. Install a S3 client.
 5. Use the S3 client and the access keys to connect to the Cloud {{site.data.keyword.cos_short}} endpoint of the bucket that you create earlier. For detailed instructions on configuring the `.s3cfg` file, see [Use IBM Cloud Object Storage to serve static website content](https://www.ibm.com/cloud/blog/static-websites-cloud-object-storage-cos){: external}.
-6. Use the S3 client to [upload the {{site.data.keyword.postgresql}} backup file](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) that you create in [Step 1](#step1_create_dump_file_backup_postgresql) to the bucket.
+6. Use the S3 client to [upload the {{site.data.keyword.postgresql}} backup file](/docs/cloud-object-storage?topic=cloud-object-storage-upload) that you create in [Step 1](#step1_create_dump_file_backup_postgresql) to the bucket.
 
-For more information about {{site.data.keyword.cos_full_notm}}, see [the {{site.data.keyword.cos_full_notm}} documentation](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started). 
+For more information about {{site.data.keyword.cos_full_notm}}, see [the {{site.data.keyword.cos_full_notm}} documentation](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started). 
 
 After you complete the steps, you have backed up your data in a Cloud {{site.data.keyword.cos_short}} instance in a different region. If you want to restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_postgresql_full}} instance, complete the following Step 3.
 

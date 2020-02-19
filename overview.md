@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2019, 2020
+lastupdated: "2020-02-17"
 
 keywords: Hyper Protect DBaaS, database, data security
 
@@ -29,7 +29,7 @@ Moving confidential and mission critical data to the cloud presents data confide
 ## Why {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}}?
 {: #why_hpdb}
 
-Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} provides built-in encryption and tamper protection for data at rest and in flight with excellent vertical scalability and performance. With {{site.data.keyword.ihsdbaas_full}}, you can deploy your workloads with sensitive data in a highly secure and easy-to-use enterprise cloud database environment. It ensures complete data confidentiality and grants data owners complete control over the data, protecting data from both external and internal threats.
+Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} provides built-in encryption and tamper protection for data at rest and in flight with excellent <!--vertical -->scalability and performance. With {{site.data.keyword.ihsdbaas_full}}, you can deploy your workloads with sensitive data in a highly secure and easy-to-use enterprise cloud database environment. It ensures complete data confidentiality and grants data owners complete control over the data, protecting data from both external and internal threats.
 
 ## How does {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} work?
 {: #how_hpdb_works}
@@ -49,7 +49,7 @@ Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{si
 ### Highly available
 {: #highly_available}
 
-When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster consisting of one primary node and two secondary nodes (replicas that back up the primary), each installed in a unique Availability Zone with automatic daily backups in the local storage. It has vertical scalability up to machine limits and ability to scale large databases with no sharding.
+When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster consisting of one primary node and two secondary nodes (replicas that back up the primary), each installed in a unique Availability Zone with automatic daily backups in the local storage. It has <!--vertical scalability up to machine limits and-->the ability to scale large databases with no sharding.
 
 ### Fully managed
 {: #fully_managed}
