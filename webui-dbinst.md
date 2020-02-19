@@ -31,7 +31,7 @@ In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}
 
 Select the primary node or a secondary node to check its ID, status, and replication lag. If your service instance is protected by an external key, you can also see the key status. If your key is deleted or not connected, the nodes are stopped.
 
-The information on the page is read-only. If a node is failed, see [Getting help and support](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support).|
+The information on the page is read-only. If a node is failed, see [Getting help and support](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support).|
 
 ## Downloading logs
 {: #webui-download-log}

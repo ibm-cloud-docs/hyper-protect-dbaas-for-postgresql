@@ -56,4 +56,4 @@ Make sure to download the python package from https://www.python.org/downloads/m
 {: #getting-help}
 {: troubleshoot}
 
-If you still have problems with using {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}, see [Getting help and support](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support).
+If you still have problems with using {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}, see [Getting help and support](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support).

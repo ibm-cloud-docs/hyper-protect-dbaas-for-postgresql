@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2019, 2020
+lastupdated: "2020-02-19"
 
-keywords: release note, new
+keywords: release note, new, added, changed, deleted
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
@@ -19,6 +19,19 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
+
+## 19 February 2020
+{: #Feb-2020}
+
+### Added: ltree module support
+{: #ltree}
+
+You can use the ltree module for newly provisioned {{site.data.keyword.ihsdbaas_postgresql_full}} services.
+
+### Added: Related links topic under REFERENCE section
+{: #added-related-links}
+
+[Related links](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links) topic lists more resources to help you learn about securing data and resources with {{site.data.keyword.cloud_notm}} Hyper Protect DBaaS.
 
 ## 20 December 2019
 {: #Dec-2019}
@@ -98,4 +111,4 @@ You can create {{site.data.keyword.ihsdbaas_postgresql_full}} resources in the F
 
 {{site.data.keyword.IBM_notm}} hosts your databases in a highly available and secure environment.
 
-For more information, see [Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted).
+For more information, see [Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted).

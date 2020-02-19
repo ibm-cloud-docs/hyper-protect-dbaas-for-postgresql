@@ -53,7 +53,7 @@ Where the parameters have the following definitions:
 | *kms_key* | (Optional, paired with *kms instance*) UUID of the selected root key. |
 {: caption="Table 2. -p parameters" caption-side="top"}
 
-The *kms_instance* and *kms_key* parameters are required if you want create a service instance with your own encryption key. For instructions on creating your KMS instance and KMS key, see [{{site.data.keyword.keymanagementserviceshort}} Integration](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok) or [{{site.data.keyword.hscrypto}} Integration](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok).
+The *kms_instance* and *kms_key* parameters are required if you want create a service instance with your own encryption key. For instructions on creating your KMS instance and KMS key, see [{{site.data.keyword.keymanagementserviceshort}} Integration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok) or [{{site.data.keyword.hscrypto}} Integration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok).
 
 {{site.data.keyword.ihsdbaas_postgresql_full}} will not verify the *kms_instance* and *kms_key* parameters from CLI. Make sure you copy and paste the correct values in the same format as the example.
 {: important}
@@ -94,4 +94,4 @@ MyDBaaSIns03   us-south   active     service_instance
 To even further strengthen security, it is suggested that you update the **database admin password** immediately after the service instance is provisioned. You need to follow the same rules that are previously mentioned to set the new password.
 {: note}
 
-For more DBaaS CLI plug-in commands, see [DBaaS CLI reference](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).
+For more DBaaS CLI plug-in commands, see [DBaaS CLI reference](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin).

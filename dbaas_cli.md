@@ -30,7 +30,7 @@ Use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full
 
 - Install the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started). {{site.data.keyword.cloud_notm}} CLI requires Java SDK 1.7.0. The prefix for running commands by using the {{site.data.keyword.cloud_notm}} CLI is `ibmcloud`. In the terminal, you are notified when updates to the `ibmcloud` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
 
-- Install the {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in. You can see [Installing the DBaaS CLI plug-in](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin) for reference. If you want to view the current version of your {{site.data.keyword.ihsdbaas_postgresql_full}}
+- Install the {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in. You can see [Installing the DBaaS CLI plug-in](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin) for reference. If you want to view the current version of your {{site.data.keyword.ihsdbaas_postgresql_full}}
 CLI plug-in, run `ibmcloud plugin show dbaas-cli`.
 
 ## CLI plug-in usage command
