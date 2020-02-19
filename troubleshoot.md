@@ -26,7 +26,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 General problems with using {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} might include failing to get Cluster ID. In many cases, you can recover from these problems by following a few easy steps.
 {:shortdesc}
 
-## Enable to get Cluster ID
+## Unable to get Cluster ID
 {: #troubleshoot-clusterid}
 {: troubleshoot}
 
