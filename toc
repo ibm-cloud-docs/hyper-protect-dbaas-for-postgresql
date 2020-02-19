@@ -46,7 +46,7 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [IBM Cloud Hyper Protect DBaaS RESTful APIs](/apidocs/hyperp-dbaas)
+    [IBM Cloud Hyper Protect DBaaS RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas)
     dbaas_cli.md
     iam.md
     hpcrypto-byok.md
