@@ -28,8 +28,6 @@ More resources to help you learn about securing data and resources with {{site.d
 ## Videos
 {: #videos}
 
-- [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}} Overview](https://mediacenter.ibm.com/media/Hyper+Protect+DBaaS+Overview/1_na8bdczg){: external}
-- [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}} Overview - Extended](https://mediacenter.ibm.com/media/Hyper+Protect+DBaaS+Overview+-+Extended/1_qshrbi5f){: external}
 - [Getting started with {{site.data.keyword.cloud_notm}} Hyper Protect DBaaS](https://youtu.be/YzQdszTI4Zg){: external}
 - [{{site.data.keyword.cloud_notm}} Hyper Protect DBaaS and Bring Your Own Key](https://youtu.be/DwD_PFXjROM){: external}
 - [IBM THINK 2019: Introduction to Z as a Service](https://www.ibm.com/events/think/watch/replay/120157283/){: external}
