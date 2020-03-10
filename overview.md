@@ -29,7 +29,7 @@ Moving confidential and mission critical data to the cloud presents data confide
 ## Why {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}}?
 {: #why_hpdb}
 
-Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} provides built-in encryption and tamper protection for data at rest and in flight with excellent <!--vertical -->scalability and performance. With {{site.data.keyword.ihsdbaas_full}}, you can deploy your workloads with sensitive data in a highly secure and easy-to-use enterprise cloud database environment. It ensures complete data confidentiality and grants data owners complete control over the data, protecting data from both external and internal threats.
+Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} provides built-in encryption and tamper protection for data at rest and in flight with <!--excellent vertical scalability-->high availability and performance. With {{site.data.keyword.ihsdbaas_full}}, you can deploy your workloads with sensitive data in a highly secure and easy-to-use enterprise cloud database environment. It ensures complete data confidentiality and grants data owners complete control over the data, protecting data from both external and internal threats.
 
 ## How does {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} work?
 {: #how_hpdb_works}
