@@ -3,7 +3,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="hyper-protect-dbaas-for-postgresql" audience="service" arm="3917562" href="/docs/services/hyper-protect-dbaas-for-postgresql/index.html" path="services/hyper-protect-dbaas-for-postgresql"}
+{: .toc subcollection="hyper-protect-dbaas-for-postgresql" category="databases" audience="service" href="/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted" path="hyper-protect-dbaas-for-postgresql"}
 IBM Cloud Hyper Protect DBaaS for PostgreSQL
 
     {: .navgroup id="learn"}
@@ -36,6 +36,7 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
 
     migration.md
     use_pljava.md
+    use-ltree.md
 
     {: .topicgroup}
     High availability and disaster recovery
@@ -50,8 +51,10 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     iam.md
     hpcrypto-byok.md
     key-protect-byok.md
+    [Video: IBM Cloud Hyper Protect DBaaS and Bring Your Own Key](https://youtu.be/DwD_PFXjROM)
     at_events.md
     open-source-licenses.md
+    reference-related-links.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
