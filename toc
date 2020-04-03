@@ -9,6 +9,7 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     {: .navgroup id="learn"}
     index.md
     overview.md
+    [IBM Redbook: Securing Your Critical Workloads with IBM Hyper Protect Services](http://www.redbooks.ibm.com/abstracts/sg248469.html?Open)
     whats_new.md
     {: .navgroup-end}
 
