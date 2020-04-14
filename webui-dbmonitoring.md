@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2019, 2020
+lastupdated: "2020-04-03"
 
 keywords: database monitoring, database cluster, database metrics
 
@@ -23,7 +23,10 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Monitoring databases
 {: #dbaas-webui-database-monitor}
 
-After you enable database monitoring, you can view the database metrics in the Grafana dashboard.
+Unfortunately, monitoring is not available temporarily because {{site.data.keyword.cloud}} Monitoring with Grafana is sunset. [Monitoring with Sysdig](/docs/Monitoring-with-Sysdig?topic=Sysdig-getting-started#getting-started) will be available soon.
+{: shortdesc}
+
+<!--After you enable database monitoring, you can view the database metrics in the Grafana dashboard.
 {: shortdesc}
 
 ## Prerequisites
@@ -61,4 +64,4 @@ The table describes all the available metrics for {{site.data.keyword.ihsdbaas_p
 | Metric | Description|
 |----------|-----------|
 | `memory-percent-used` | How much percent of memory that your service instance is using. |
-{: caption="Table 1. {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} metrics" caption-side="top"}
+{: caption="Table 1. {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} metrics" caption-side="top"}-->
