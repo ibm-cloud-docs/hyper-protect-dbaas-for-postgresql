@@ -33,7 +33,7 @@ The IBM Cloud CLI tool is what you use to communicate with IBM Cloud from your t
 
 To access a complete set of DBaaS commands when you use the {{site.data.keyword.cloud}} CLI, you must also install the following components:
 
-- Python runtime (**only 3.x is supported**)
+- Python runtime (**only 3.6.x is supported**)
 - Python Pip3 package management system
 - Python Requests library
 - DBaaS CLI plug-in
