@@ -3,19 +3,23 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="hyper-protect-dbaas-for-postgresql" category="databases" audience="service" href="/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted" path="hyper-protect-dbaas-for-postgresql"}
+{: .toc subcollection="hyper-protect-dbaas-for-postgresql" category="databases" audience="service" href="/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted" console-page="/catalog/services/hyper-protect-dbaas-for-postgresql" product-page="https://www.ibm.com/cloud/hyper-protect-dbaas" path="hyper-protect-dbaas-for-postgresql"}
 IBM Cloud Hyper Protect DBaaS for PostgreSQL
 
     {: .navgroup id="learn"}
     index.md
     overview.md
+    compliance.md
     [IBM Redbook: Securing Your Critical Workloads with IBM Hyper Protect Services](http://www.redbooks.ibm.com/abstracts/sg248469.html?Open)
+    [What is DBaaS?](https://www.ibm.com/cloud/learn/dbaas)
+    [Database security](https://www.ibm.com/cloud/learn/database-security)
+
     whats_new.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Using the Web User Interface
+    Using the web user interface
         webui-cluster.md
         webui-db.md
         webui-dbuser.md
@@ -24,17 +28,26 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
         webui-dbmonitoring.md
 
     {: .topicgroup}
-    Using the IBM Cloud Hyper Protect DBaaS RESTful APIs
-        api_auth.md
-        api_genl_proc.md
-
-    {: .topicgroup}
-    Using the CLI plug-in with the IBM Cloud CLI
+    Using the CLI
         dbaasplugin_install.md
         choose_endpoint.md
         create_serv_inst.md
         delete_serv_inst.md
 
+    {: .topicgroup}
+    Using the IBM Cloud Hyper Protect DBaaS RESTful APIs
+        api_auth.md
+        api_genl_proc.md
+
+    {: .topicgroup}
+    Enhancing security for IBM Cloud Hyper Protect DBaaS
+        iam.md
+        data-security.md
+        hpcrypto-byok.md
+        key-protect-byok.md
+        [Video: IBM Cloud Hyper Protect DBaaS and Bring Your Own Key](https://youtu.be/DwD_PFXjROM)
+        at_events.md
+        
     migration.md
     use_pljava.md
     use-ltree.md
@@ -47,13 +60,8 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [IBM Cloud Hyper Protect DBaaS RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas)
+    [IBM Cloud Hyper Protect DBaaS RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas/hyperp-dbaas-v1)
     dbaas_cli.md
-    iam.md
-    hpcrypto-byok.md
-    key-protect-byok.md
-    [Video: IBM Cloud Hyper Protect DBaaS and Bring Your Own Key](https://youtu.be/DwD_PFXjROM)
-    at_events.md
     open-source-licenses.md
     reference-related-links.md
     {: .navgroup-end}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-02-17"
+lastupdated: "2020-04-10"
 
 keywords: Hyper Protect DBaaS, database, data security
 
@@ -44,12 +44,12 @@ The following architectural diagram shows the architecture of {{site.data.keywor
 ### Data security and confidentiality
 {: #data_security}
 
-Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{site.data.keyword.IBM_notm}} Secure Service Container technology, {{site.data.keyword.ihsdbaas_full}} provides workload isolation, restricted administrator access and tamper protection for data at rest and in flight. You can maintain complete control over your data; not even the cloud administrator has access to it at any point.
+Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{site.data.keyword.IBM_notm}} [Secure Service Container](https://www.ibm.com/us-en/marketplace/secure-service-container){: external} technology, {{site.data.keyword.ihsdbaas_full}} provides workload isolation, restricted administrator access and tamper protection for data at rest and in flight. You can maintain complete control over your data; not even the cloud administrator has access to it at any point. For more information about security, see [Securing your data](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-mng-data).
 
 ### Highly available
 {: #highly_available}
 
-When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster consisting of one primary node and two secondary nodes (replicas that back up the primary), each installed in a unique Availability Zone with automatic daily backups in the local storage. It has <!--vertical scalability up to machine limits and-->the ability to scale large databases with no sharding.
+When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster consisting of one primary node and two secondary nodes (replicas that back up the primary), each installed in a unique Availability Zone with automatic daily backups in the local storage. <!--It has vertical scalability up to machine limits and the ability to scale large databases with no sharding-->.
 
 ### Fully managed
 {: #fully_managed}
