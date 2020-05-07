@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2019, 2020
+lastupdated: "2020-04-29"
 
 keywords: DBaaS Manager, API request, "{{site.data.keyword.ihsdbaas_full}} APIs"
 
@@ -38,7 +38,7 @@ DBaaS Managers are available in the following regions:
 | dbaas904.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
 {: caption="Table 1. DBaaS Managers" caption-side="top"}
 
-For more information about methods and parameters, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas){: external}.
+For more information about methods and parameters, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v1){: external}.
 
 ## Example
 {: #api-example}

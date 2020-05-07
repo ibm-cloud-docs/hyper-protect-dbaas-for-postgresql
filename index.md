@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-02-19"
+lastupdated: "2020-04-27"
 
 keywords: Hyper Protect DBaaS, postgresql database, data security, cloud database
 
@@ -23,7 +23,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #gettingstarted}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is an {{site.data.keyword.cloud_notm}} service that provides {{site.data.keyword.postgresql}} databases on demand. It offers a flexible and scalable platform that allows you to quickly and easily provision and manage your database of choice.
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} is an {{site.data.keyword.cloud_notm}} service that provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible and scalable platform that allows you to quickly and easily provision and manage your database of choice.
 {: shortdesc}
 
 This {{site.data.keyword.cloud_notm}} offering provides {{site.data.keyword.postgresql}} database clusters. Each database cluster has one primary node and two secondary nodes (replicas that back up the primary).
@@ -57,7 +57,7 @@ When you create a service instance, you create a database cluster (replica set) 
 
 ![A {{site.data.keyword.ihsdbaas_full}} service instance](images/cluster-node-db.svg "A {{site.data.keyword.ihsdbaas_full}} service instance"){: caption="Figure 1. A {{site.data.keyword.ihsdbaas_full}} service instance" caption-side="bottom"}
 
-If you haven't created a service instance yet, you can create one through [the web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service), [the CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI tool](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin), or [the {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas){: external}.
+If you haven't created a service instance yet, you can create one through [the web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service), [the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_create_service), or [the {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v1){: external}.
 
 Free plans are available. They are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation.
 
@@ -82,9 +82,9 @@ In a database cluster, you can:
 
 You can send the requests to the DBaaS Manager through one of the following interfaces:
 
-- The [web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service)
-- The [CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI tool](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin)
-- The [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas){: external}
+- [The web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service)
+- [The CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI tool](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin)
+- [The {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v1){: external}
 
 To manage your databases and database users, use your database client.
 
@@ -118,7 +118,7 @@ psql "host=<host_name> user=<user_name> port=<port> sslmode=verify-full sslrootc
 
 - *user_name*
 
-  The user name for the database admin as specified on the service creating screen.
+  The user name for the database admin as specified on the service creation page.
 
 - *port*
 
