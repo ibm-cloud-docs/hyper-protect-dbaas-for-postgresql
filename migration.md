@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2019, 2020
+lastupdated: "2020-04-15"
 
 keywords: migrate, restore
 
@@ -60,7 +60,7 @@ For more information about user privileges, see [{{site.data.keyword.postgresql}
 Before you restore the data, you need to create a new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance as the target database cluster. You can use one of the following ways to create a new service instance:
 - [The web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service#dbaas_webui_create_service)
 - [The CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_create_service)
-- [The {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas){: external}
+- [The {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v1){: external}
 
 When you create the new service instance, you need to set the cluster name, the administrator name, and password. They are not necessarily to be the same as the ones in your original instance. It does not affect the migration. After the migration is completed, the databases are assigned to the new administrator.
 
@@ -89,7 +89,7 @@ The following table explains the parameters that are used in the command.
 |*cert_file*|The CA file in the `.pem` format that you downloadeded from the **Overview** page in the service dashboard. You can specify the file with a relative or absolute path.|./cert.pem|
 |*user_name*|The username to access the target database. You can use the same user who creates the target database in [Step 3](#step3_create_database).|new_user|
 |*database_name*|The database can be any database that the user has CONNECT privilege on. The `psql` session automatically switches it to the target database that is created in [Step 3](#step3_create_database).|my_database|
-|*dump_file*|The `.dump` file that you create in [Step 1](#step1_create_dump_file). You can use relative or absolute paths to specify the file.|./pgdump.dump|
+|*dump_file*|The `.dump` file that you created in [Step 1](#step1_create_dump_file). You can use relative or absolute paths to specify the file.|./pgdump.dump|
 {: caption="Table 2. Parameters that are needed to restore the data from a dump file"}
 
 ## What's next
