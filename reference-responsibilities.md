@@ -13,10 +13,10 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:important: .important}
-{:screen: .screen}	{:screen: .screen}
+{:screen: .screen}
 {:pre: .pre}	
-{:codeblock: .codeblock}	{:codeblock: .codeblock}
-{:tip: .tip}	{:tip: .tip}
+{:codeblock: .codeblock}
+{:tip: .tip}
 {:pre: .pre}
 {:note: .note}
 {:term: .term}
