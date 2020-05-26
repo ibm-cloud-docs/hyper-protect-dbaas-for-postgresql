@@ -29,7 +29,7 @@ When you use {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql
 ## Prerequisite
 {: #logging-prerequisite}
 
-You need to create and configure a {{site.data.keyword.loganalysisshort_notm}} instance to receive platform service logs. For more information about configuring a {{site.data.keyword.loganalysisshort_notm}} instance, see [Configuring {{site.data.keyword.cloud_notm}} service logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).{: external}.
+You need to create and configure a {{site.data.keyword.loganalysisshort_notm}} instance to receive platform service logs. For more information about configuring a {{site.data.keyword.loganalysisshort_notm}} instance, see [Configuring {{site.data.keyword.cloud_notm}} service logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).
 
 {{site.data.keyword.loganalysisshort_notm}} integration is available for {{site.data.keyword.ihsdbaas_postgresql_full}} deployments according to the following table.
 

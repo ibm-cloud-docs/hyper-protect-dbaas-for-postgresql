@@ -49,7 +49,7 @@ Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{si
 ### Highly available
 {: #highly_available}
 
-When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster that consists of one primary node and two secondary nodes (replicas that back up the primary). Each of them is installed in a unique Availability Zone with automatic daily backups in the local storage. {{site.data.keyword.ihsdbaas_full}} also supports manual scaling of resources.
+When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster that consists of one primary node and two secondary nodes (replicas that back up the primary). Each of them is installed in a unique Availability Zone with automatic daily backups in the local storage.
 
 ### Fully managed
 {: #fully_managed}

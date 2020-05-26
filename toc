@@ -38,12 +38,11 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     {: .topicgroup}
     Using the CLI
         dbaasplugin_install.md
-        choose_endpoint.md
         create_serv_inst.md
         delete_serv_inst.md
 
     {: .topicgroup}
-    Using the IBM Cloud Hyper Protect DBaaS RESTful APIs
+    Using the Hyper Protect DBaaS RESTful APIs
         api_auth.md
         api_genl_proc.md
 
@@ -68,12 +67,12 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [IBM Cloud Hyper Protect DBaaS RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas/hyperp-dbaas-v1)
+    [Hyper Protect DBaaS RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas/hyperp-dbaas-v1)
     dbaas_cli.md
     service-integration
     reference-responsibilities.md
     open-source-licenses.md
-    [IBM Redbook: Securing Your Critical Workloads with IBM Hyper Protect Services](http://www.redbooks.ibm.com/abstracts/sg248469.html?Open)
+    [IBM Redbook: Securing Your Critical Workloads with IBM Hyper Protect Services](https://www.redbooks.ibm.com/abstracts/sg248469.html?Open)
     reference-related-links.md
     {: .navgroup-end}
 
