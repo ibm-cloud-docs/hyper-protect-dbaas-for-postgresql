@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-19"
+lastupdated: "2020-05-21"
 
 keywords: links, Hyper Protect DBaaS, postgresql, mongodb, reference, related information, related topics, related links, blogs, videos
 
@@ -29,7 +29,7 @@ More resources to help you learn about securing data and resources with {{site.d
 {: #videos}
 
 - [Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}}](https://youtu.be/YzQdszTI4Zg){: external}
-- [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} and Bring Your Own Key](https://youtu.be/DwD_PFXjROM){: external}
+- [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} and Keep Your Own Key](https://youtu.be/DwD_PFXjROM){: external}
 - [IBM THINK 2019: Introduction to Z as a Service](https://www.ibm.com/events/think/watch/replay/120157283/){: external}
 - [IBM THINK 2019: {{site.data.keyword.cloud_notm}} Hyper Protect family and Secure Service Container](https://www.ibm.com/events/think/watch/replay/120171746/){: external}
 - [IBM THINK 2019: {{site.data.keyword.cloud_notm}} security](https://www.ibm.com/events/think/watch/replay/120118486/){: external}
@@ -39,23 +39,22 @@ More resources to help you learn about securing data and resources with {{site.d
 
 - [Announcing {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} for MongoDB - General Availability](https://www.ibm.com/blogs/systems/announcing-ibm-cloud-hyper-protect-dbaas-for-mongodb/){: external}
 - [Announcing {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} for PostgreSQL and MongoDB - General Availability](https://www.ibm.com/cloud/blog/announcements/announcing-ibm-cloud-hyper-protect-dbaas-postgresql-and-mongodb){: external}
-- [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} Delivers Complete Data Confidentiality - Beta announcement](https://www.ibm.com/cloud/blog/announcements/ibm-cloud-hyper-protect-dbaas-delivers-complete-data-confidentiality){: external}
-- [{{site.data.keyword.ihsdbaas_full}} – PostgreSQL Now Available - Experimental announcement](https://www.ibm.com/cloud/blog/announcements/hyper-protect-dbaas-postgresql-now-available){: external}
 - [{{site.data.keyword.ihsdbaas_full}}: the evolution of cloud databases](https://www.ibm.com/blogs/systems/hyper-protect-dbaas-evolution-cloud-databases/){: external}
 - [DBaaS + Security @ MongoDB World](https://www.ibm.com/blogs/systems/dbaas-security-mongodb-world/){: external}
-- [{{site.data.keyword.cloud_notm}} Hyper Protect Services: Protect your organization from internal AND external threats](https://developer.ibm.com/technologies/security/blogs/hyper-protect-services-protect-your-org-from-internal-and-external-threats){: external}
 - [Protect sensitive data when disaster strikes and every second counts](https://developer.ibm.com/blogs/keep-your-data-secure-when-disaster-strikes/){: external}
-- [{{site.data.keyword.cloud_notm}} Brings the Most Open and Secure Public Cloud for Business](https://www.ibm.com/cloud/blog/announcing-new-public-cloud-capabilities){: external}
 - [Securing sensitive health data in times of disaster](https://developer.ibm.com/blogs/tech-times-disaster/){: external}
-- [The State of {{site.data.keyword.cloud_notm}} Security: THINK 2019](https://www.ibm.com/cloud/blog/cloud-security-right){: external}
+- [{{site.data.keyword.cloud_notm}} Hyper Protect Services: Protect your organization from internal AND external threats](https://developer.ibm.com/technologies/security/blogs/hyper-protect-services-protect-your-org-from-internal-and-external-threats){: external}
+- [{{site.data.keyword.cloud_notm}} Brings the Most Open and Secure Public Cloud for Business](https://www.ibm.com/cloud/blog/announcing-new-public-cloud-capabilities){: external}
 - [The Best of IBM Z and LinuxONE in the public and private cloud](https://www.ibm.com/blogs/systems/the-best-of-ibm-z-and-linuxone-in-the-public-and-private-cloud/){: external}
+- [The State of {{site.data.keyword.cloud_notm}} Security: THINK 2019](https://www.ibm.com/cloud/blog/cloud-security-right){: external}
 
-## Tutorials and Code Patterns
+## Tutorials and code patterns
 {: #tutorials-code-patterns}
 
 - [Build and deploy a disaster donations website with end-to-end encryption](https://developer.ibm.com/patterns/systems-create-a-secure-disaster-donations-website/){: external}
 - [Create secure microservices writing to a consolidated database](https://developer.ibm.com/patterns/create-a-secured-microservices-and-deploy-it-to-a-consolidated-database/){: external}
-- [Protect cloud-based data with an encrypted database](https://developer.ibm.com/tutorials/hyper-protect-your-data/){: external}
+- [Video: Enabling a shared database while maintaining complete data confidentiality](https://www.youtube.com/watch?v=6LH3OhwI83o){: external}
+- [Video: Running the Digital Banking application with integrated Hyper Protect Services](https://youtu.be/Ci7UFUG7So4){: external}
 
 ## More about {{site.data.keyword.cloud_notm}} Hyper Protect services
 {: #more-websites}

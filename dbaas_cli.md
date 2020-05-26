@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2019, 2020
+lastupdated: "2020-05-21"
 
 keywords: instance commands, cluster resource, CLI plugin
 
@@ -19,19 +19,18 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:note: .note}
 {:important: .important}
 
-# {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in
+# {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in
 {: #dbaas_cli_plugin}
 
-Use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in to show information about your cluster, databases, users, and nodes, and to list and download log files.
+Use the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in to get information about your cluster, databases, users, and nodes, and to list and download log files.
 {: shortdesc}
 
 ## Prerequisites
 {: #prerequisites_dbaas_cli_plugin}
 
-- Install the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started). {{site.data.keyword.cloud_notm}} CLI requires Java SDK 1.7.0. The prefix for running commands by using the {{site.data.keyword.cloud_notm}} CLI is `ibmcloud`. In the terminal, you are notified when updates to the `ibmcloud` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
+- Install the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started). {{site.data.keyword.cloud_notm}} CLI requires Java SDK 1.7.0. The prefix for running commands by using the {{site.data.keyword.cloud_notm}} CLI is `ibmcloud`. In the terminal, you're notified when updates to the `ibmcloud` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
 
-- Install the {{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in. You can see [Installing the DBaaS CLI plug-in](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin) for reference. If you want to view the current version of your {{site.data.keyword.ihsdbaas_postgresql_full}}
-CLI plug-in, run `ibmcloud plugin show dbaas-cli`.
+- Install the [DBaaS CLI plug-in](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin#dbaas_cli_instr). If you want to view the current version of your DBaaS CLI plug-in, run `ibmcloud plugin show dbaas-cli`.
 
 ## CLI plug-in usage command
 {: #plugin_use}
@@ -121,7 +120,7 @@ ibmcloud dbaas user-show <resource_name> <username>
 
 - *username*
 
-  The user name of the database user being shown.
+  The user name of the database user.
 
 ## Node command
 {: #node_cmds}

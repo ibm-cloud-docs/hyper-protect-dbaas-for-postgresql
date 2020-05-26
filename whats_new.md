@@ -44,7 +44,7 @@ You can assign access to other users or services to use your service instance wi
 ### Added: Creating a service instance with your own encryption key
 {: #added-byok}
 
-You can create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance with your own encryption key, using {{site.data.keyword.keymanagementservicelong_notm}} or {{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}.
+You can create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance with your own encryption key by using {{site.data.keyword.keymanagementservicelong_notm}} or {{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}.
 
 ### Changed: Dashboard
 {: #changed-dashboard}
@@ -107,7 +107,7 @@ You can create {{site.data.keyword.ihsdbaas_postgresql_full}} resources in the F
 ### {{site.data.keyword.ihsdbaas_postgresql_full}} is generally available
 {: #ga-201906}
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} is an {{site.data.keyword.cloud_notm}} service that provides {{site.data.keyword.postgresql}} databases on demand. It offers a flexible and scalable platform that allows you to quickly and easily provision and manage your database of choice.
+{{site.data.keyword.ihsdbaas_full}} is an {{site.data.keyword.cloud_notm}} service that provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible platform that allows you to quickly and easily provision and manage your database of choice.
 
 {{site.data.keyword.IBM_notm}} hosts your databases in a highly available and secure environment.
 

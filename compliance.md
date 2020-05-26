@@ -29,18 +29,18 @@ subcollection: hyper-protect-dbaas-for-postgresql
 ## ISO 27001, 27017, 27018
 {: #iso}
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} conforms to the guidelines for information security controls applicable to the provision and use of cloud services defined in [ISO 27001](https://www.iso.org/standard/54534.html){: external}, [ISO 27017](https://www.iso.org/standard/43757.html){: external}, and [ISO 27018](https://www.iso.org/standard/76559.html){: external}.
+{{site.data.keyword.ihsdbaas_postgresql_full}} conforms to the guidelines for information security controls applicable to the provision and use of cloud services that are defined in [ISO 27001](https://www.iso.org/standard/54534.html){: external}, [ISO 27017](https://www.iso.org/standard/43757.html){: external}, and [ISO 27018](https://www.iso.org/standard/76559.html){: external}.
 
 ## General Data Protection Regulation (GDPR)
 {: #gdpr}
 
-The GDPR seeks to create a harmonized data protection law framework across the EU and aims to give citizens back the control of their personal data, while imposing strict rules on those hosting and processing this data, anywhere in the world.
+The GDPR seeks to create a harmonized data protection law framework across the EU and aims to give citizens back the control of their personal data. It imposes strict rules on companies hosting and processing this data, anywhere in the world.
 
 {{site.data.keyword.IBM_notm}} is committed to providing you with innovative data privacy, security, and governance solutions to assist you in your journey to GDPR readiness.
 
 <!--To ensure GDPR compliance for your {{site.data.keyword.ihsdbaas_postgresql_full}} resources, [enable the EU supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported) for your {{site.data.keyword.cloud_notm}} account.--> 
 
-For information about how {{site.data.keyword.ihsdbaas_postgresql_full}} processes and protects personal data, see the following addendums:
+For more information about how {{site.data.keyword.ihsdbaas_postgresql_full}} processes and protects personal data, see the following addendums:
 - [{{site.data.keyword.IBM_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} Data Sheet Addendum (DSA)](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=35C0E2A0605911E982882C5D069DA07A){: external}
 - [{{site.data.keyword.IBM_notm}} Data Processing Addendum (DPA)](https://www.ibm.com/support/customer/csol/terms/?cat=dpa){: external}
 

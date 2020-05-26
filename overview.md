@@ -34,7 +34,7 @@ Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword
 ## How does {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} work?
 {: #how_hpdb_works}
 
-The following architectural diagram shows the architecture of {{site.data.keyword.ihsdbaas_full}} in an {{site.data.keyword.cloud_notm}} region.
+The following architectural diagram shows the architecture of {{site.data.keyword.ihsdbaas_full}} in an {{site.data.keyword.cloud_notm}} region. 
 
 ![{{site.data.keyword.ihsdbaas_full}} architecture](images/architecture.svg "{{site.data.keyword.ihsdbaas_full}} architecture"){: caption="Figure 1. {{site.data.keyword.ihsdbaas_full}} architecture" caption-side="bottom"}
 
@@ -44,12 +44,12 @@ The following architectural diagram shows the architecture of {{site.data.keywor
 ### Data security and confidentiality
 {: #data_security}
 
-Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{site.data.keyword.IBM_notm}} [Secure Service Container](https://www.ibm.com/us-en/marketplace/secure-service-container){: external} technology, {{site.data.keyword.ihsdbaas_full}} provides workload isolation, restricted administrator access and tamper protection for data at rest and in flight. You can maintain complete control over your data; not even the cloud administrator has access to it at any point. For more information about security, see [Securing your data](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-mng-data).
+Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{site.data.keyword.IBM_notm}} [Secure Service Container](https://www.ibm.com/us-en/marketplace/secure-service-container){: external} technology, {{site.data.keyword.ihsdbaas_full}} provides workload isolation, restricted administrator access and tamper protection for data at rest and in flight. You can maintain complete control over your data; not even the cloud administrator has access to it at any point. For more information about security, see [Securing your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-mng-data).
 
 ### Highly available
 {: #highly_available}
 
-When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster consisting of one primary node and two secondary nodes (replicas that back up the primary), each installed in a unique Availability Zone with automatic daily backups in the local storage. <!--It has vertical scalability up to machine limits and the ability to scale large databases with no sharding-->.
+When you create a {{site.data.keyword.ihsdbaas_full}} service instance, you create a cluster that consists of one primary node and two secondary nodes (replicas that back up the primary). Each of them is installed in a unique Availability Zone with automatic daily backups in the local storage. {{site.data.keyword.ihsdbaas_full}} also supports manual scaling of resources.
 
 ### Fully managed
 {: #fully_managed}

@@ -10,9 +10,18 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     index.md
     overview.md
     compliance.md
-    [IBM Redbook: Securing Your Critical Workloads with IBM Hyper Protect Services](http://www.redbooks.ibm.com/abstracts/sg248469.html?Open)
     [What is DBaaS?](https://www.ibm.com/cloud/learn/dbaas)
     [Database security](https://www.ibm.com/cloud/learn/database-security)
+   
+    {: .topicgroup}
+    Tutorials
+        [Enhancing security of your deployed application](https://{DomainName}/docs/tutorials?topic=solution-tutorials-extended-app-security)
+        [Build and deploy a disaster donations website with end-to-end encryption](https://developer.ibm.com/patterns/systems-create-a-secure-disaster-donations-website/)
+        [Create secure microservices writing to a consolidated database](https://developer.ibm.com/patterns/create-a-secured-microservices-and-deploy-it-to-a-consolidated-database/)
+        [Video: Enabling a shared database while maintaining complete data confidentiality](https://www.youtube.com/watch?v=6LH3OhwI83o)
+        [Video: Running the Digital Banking application with integrated Hyper Protect Services](https://youtu.be/Ci7UFUG7So4)
+
+
     whats_new.md
     {: .navgroup-end}
 
@@ -39,12 +48,12 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
         api_genl_proc.md
 
     {: .topicgroup}
-    Enhancing security for IBM Cloud Hyper Protect DBaaS
+    Enhancing security for Hyper Protect DBaaS
         iam.md
         data-security.md
         hpcrypto-byok.md
         key-protect-byok.md
-        [Video: IBM Cloud Hyper Protect DBaaS and Bring Your Own Key](https://youtu.be/DwD_PFXjROM)
+        [Video: IBM Cloud Hyper Protect DBaaS and Keep Your Own Key](https://youtu.be/DwD_PFXjROM)
         at_events.md
         
     migration.md
@@ -61,8 +70,10 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     {: .navgroup id="reference"}
     [IBM Cloud Hyper Protect DBaaS RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas/hyperp-dbaas-v1)
     dbaas_cli.md
+    service-integration
     reference-responsibilities.md
     open-source-licenses.md
+    [IBM Redbook: Securing Your Critical Workloads with IBM Hyper Protect Services](http://www.redbooks.ibm.com/abstracts/sg248469.html?Open)
     reference-related-links.md
     {: .navgroup-end}
 

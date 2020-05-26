@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-20"
+  years: 2019, 2020
+lastupdated: "2020-04-23"
 
 keywords: restore, support
 
@@ -10,11 +10,23 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
+{:codeblock: .codeblock}
+{:important: .important}
+{:screen: .screen}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:pre: .pre}
+{:note: .note}
+{:term: .term}
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Restoring your databases by {{site.data.keyword.IBM_notm}} Support
 {: #restore_postgresql_databases}
+{: help} 
+{: support}
 
 The {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} service automatically triggers a backup of your complete database once every 24 hours. These encrypted backups are available for the last seven days and redundantly available on local storage in all availability zones of the supported regions.
 {: shortdesc}
