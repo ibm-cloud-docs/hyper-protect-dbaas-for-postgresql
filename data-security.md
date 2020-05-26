@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-04-27"
+lastupdated: "2020-05-21"
 
 keywords: data encryption, data security, Hyper Protect DBaaS, postgresql, BYOK, KYOK
 
@@ -21,7 +21,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:term: .term}
 {:important: .important}
 
-# Securing your data in {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}
+# Securing your data in {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #mng-data}
 
 {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is a public multi-tenant service. It implements security protections at all levels, including workload isolation, data encryption (Keep Your Own Key), and identity and administration access control, to ensure that your data is protected in a multi-tenancy environment.
@@ -73,7 +73,7 @@ To delete databases, use your database client. For options to back up your datab
 
 ### Deleting keys
 {: #key-delete}
-If you have enabled BYOK, when you delete the key that is used to encrypt your service, you lose access to the data. For more information, see [Removing {{site.data.keyword.keymanagementserviceshort}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok#kp-remove-key) or [Removing {{site.data.keyword.hscrypto}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok#hpcs-remove-key).
+If you have enabled KYOK or BYOK, when you delete the key that is used to encrypt your service, you lose access to the data. For more information, see [Removing {{site.data.keyword.keymanagementserviceshort}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok#kp-remove-key) or [Removing {{site.data.keyword.hscrypto}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok#hpcs-remove-key).
 
 <!--Include information about whether deleting the service fully erases all data. If deleting the service doesn't remove all personal data, include information about how users can completely delete their data.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-01-09"
+lastupdated: "2020-05-18"
 
 keywords: key protect integration, data encryption, byok
 
@@ -18,6 +18,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:tip: .tip}
 {:pre: .pre}
 {:note: .note}
+{:term: .term}
 {:external: target="_blank" .external}
 
 # {{site.data.keyword.keymanagementserviceshort}} integration
@@ -30,16 +31,16 @@ The following diagram shows how {{site.data.keyword.ihsdbaas_postgresql_full}} i
 
 ![Integration with {{site.data.keyword.keymanagementserviceshort}}](images/DBaaS-BYOK.svg "Integration with {{site.data.keyword.keymanagementserviceshort}}"){: caption="Integration with {{site.data.keyword.keymanagementserviceshort}}" caption-side="bottom"}
 
-## Step 1: Creating or adding a root key in {{site.data.keyword.keymanagementserviceshort}}
+## Step 1. Create or add a root key in {{site.data.keyword.keymanagementserviceshort}}
 {: #kp-create-add-key}
 
-To create or add a root key in {{site.data.keyword.keymanagementserviceshort}}, complete the following steps:
+To create or add a [root key](#x6946961){: term} in {{site.data.keyword.keymanagementserviceshort}}, complete the following steps:
 
- 1. [Provision a {{site.data.keyword.keymanagementserviceshort}} service instance](/docs/key-protect?topic=key-protect-provision) if you don't have one.
+1. [Provision a {{site.data.keyword.keymanagementserviceshort}} service instance](/docs/key-protect?topic=key-protect-provision) if you don't have one.
 
-2. Navigate to your instance of {{site.data.keyword.keymanagementserviceshort}} and [create a root key](/docs/key-protect?topic=key-protect-create-root-keys) or [import an existing root key](/docs/key-protect?topic=key-protect-getting-started-tutorial#import-keys).
+2. Go to your instance of {{site.data.keyword.keymanagementserviceshort}} and [create a root key](/docs/key-protect?topic=key-protect-create-root-keys) or [import an existing root key](/docs/key-protect?topic=key-protect-getting-started-tutorial#import-keys).
 
-## Step 2: Granting service authorization
+## Step 2. Grant service authorization
 {: #kp-grant-authorization}
 
 Authorize {{site.data.keyword.keymanagementserviceshort}} for use with {{site.data.keyword.ihsdbaas_postgresql_full}} service instances:
@@ -57,20 +58,20 @@ Authorize {{site.data.keyword.keymanagementserviceshort}} for use with {{site.da
 
 If you want to remove an authorization, see [Removing an authorization](/docs/iam?topic=iam-serviceauth#remove-auth).
 
-## Step 3: Creating a {{site.data.keyword.ihsdbaas_postgresql_full}} instance with the {{site.data.keyword.keymanagementserviceshort}} Key
+## Step 3. Create a {{site.data.keyword.ihsdbaas_postgresql_full}} instance with the {{site.data.keyword.keymanagementserviceshort}} Key
 {: #use-key-protect}
 
 When you [create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#creating-a-database-cluster-introduction), select your {{site.data.keyword.keymanagementserviceshort}} instance and root key.
 
 The new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance uses your {{site.data.keyword.keymanagementserviceshort}} root key to encrypt your data. To check and manage your root key, click the {{site.data.keyword.keymanagementserviceshort}} service instance on the **Overview** page in your {{site.data.keyword.ihsdbaas_postgresql_full}} service dashboard. You can also see the key status on the [**Nodes** page](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas-webui-nodes#webui-check-node-status).
 
-You can select the {{site.data.keyword.keymanagementserviceshort}} key only when you create the DBaaS instance. Otherwise, a randomly generated key will be used by default.
+You can select the {{site.data.keyword.keymanagementserviceshort}} key only when you create the DBaaS instance. Otherwise, a randomly generated key is used by default.
 {: note}
 
-## Step 4 (Optional): Removing keys and deleting your data
+## Step 4 (Optional). Remove keys and delete your data
 {: #kp-remove-key}
 
-If you delete the key that is used to encrypt your service, you lose access to the data. You can't recover the data from the instance. You might be able to recover your data by restoring a backup into a new service instance.
+If you delete the key that is used to encrypt your service, you lose access to the data. You can't recover the data from the instance (see [Deleting keys](/docs/key-protect?topic=key-protect-delete-keys)). You might be able to recover your data by restoring a backup into a new service instance.
 {: important}
 
 If you want to securely delete your data, you must delete both the service instance and the {{site.data.keyword.keymanagementserviceshort}} key.

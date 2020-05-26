@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019
+  years: 2019, 2020
 lastupdated: "2019-12-20"
 
 keywords: backup, disaster recovery, restore
@@ -33,10 +33,10 @@ If you want to increase your disaster recovery capabilities by making cross-regi
 
 To use the {{site.data.keyword.postgresql}} commands to complete the backup, you need to download and install {{site.data.keyword.postgresql}} of the version compatible with {{site.data.keyword.postgresql}} 10 that is supported by {{site.data.keyword.ihsdbaas_postgresql_full}}. For more information, see [{{site.data.keyword.postgresql}} website](https://www.postgresql.org/download/){: external}.
 
-## Step 1: Create a dump file for backing up the original databases
+## Step 1. Create a dump file for backing up the original databases
 {: #step1_create_dump_file_backup_postgresql}
 
-Use the following `pg_dump` command to create a dump file that contains the databases you want to back up.
+Use the following `pg_dump` command to create a dump file that contains the databases that you want to back up.
 
 ```
 pg_dump -h <host_name> -p <port> -U <user_name> -d <database_name> -f <dump_file>
@@ -56,7 +56,7 @@ The following table explains the parameters that are used in the command.
 
 For more information about user privileges, see [{{site.data.keyword.postgresql}} documentation](https://www.postgresql.org/docs/10/sql-grant.html){: external} for more information.
 
-## Step 2: Create a {{site.data.keyword.cos_full_notm}} instance to upload the dump file
+## Step 2. Create a {{site.data.keyword.cos_full_notm}} instance to upload the dump file
 {: #step2_create_object_storage_backup_postgresql}
 
 Complete the following steps to back up your data in a Cloud {{site.data.keyword.cos_short}} instance in a different region:
@@ -68,11 +68,11 @@ Complete the following steps to back up your data in a Cloud {{site.data.keyword
 5. Use the S3 client and the access keys to connect to the Cloud {{site.data.keyword.cos_short}} endpoint of the bucket that you create earlier. For detailed instructions on configuring the `.s3cfg` file, see [Use IBM Cloud Object Storage to serve static website content](https://www.ibm.com/cloud/blog/static-websites-cloud-object-storage-cos){: external}.
 6. Use the S3 client to [upload the {{site.data.keyword.postgresql}} backup file](/docs/cloud-object-storage?topic=cloud-object-storage-upload) that you create in [Step 1](#step1_create_dump_file_backup_postgresql) to the bucket.
 
-For more information about {{site.data.keyword.cos_full_notm}}, see [the {{site.data.keyword.cos_full_notm}} documentation](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started). 
+For more information about {{site.data.keyword.cos_full_notm}}, see [the {{site.data.keyword.cos_full_notm}} documentation](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage). 
 
 After you complete the steps, you have backed up your data in a Cloud {{site.data.keyword.cos_short}} instance in a different region. If you want to restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_postgresql_full}} instance, complete the following Step 3.
 
-## Step 3: Restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_postgresql_full}} instance
+## Step 3. Restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_postgresql_full}} instance
 {: #step3_restore_data_from_cos_postgresql}
 
 You need to download the backup file from the Cloud {{site.data.keyword.cos_short}} bucket to your local machine first, then use the `psql` command to restore the data.
