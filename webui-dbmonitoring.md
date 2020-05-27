@@ -23,7 +23,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Monitoring databases
 {: #dbaas-webui-database-monitor}
 
-Unfortunately, monitoring is not available temporarily because {{site.data.keyword.cloud}} Monitoring with Grafana is withdrawn from service. [Monitoring with Sysdig](/docs/Monitoring-with-Sysdig?topic=Sysdig-getting-started#getting-started) will be available soon.
+Unfortunately, monitoring is not available temporarily because {{site.data.keyword.cloud}} Monitoring with Grafana is withdrawn from service. [Monitoring with Sysdig](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-getting-started) will be available soon.
 {: shortdesc}
 
 <!--After you enable database monitoring, you can view the database metrics in the Grafana dashboard.
