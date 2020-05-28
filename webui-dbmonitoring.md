@@ -45,7 +45,7 @@ In the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_
 1. Click **Enable**.
 2. In the **Enable Monitoring** window, select your organization and space, then click **Submit**.
 
-In Step 2, if you see an error message about failing to enable monitoring for certain nodes, it means one or more of your nodes are not running (see the [**HELP**](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-getting-help-and-support) section to troubleshoot). You can retry enabling monitoring for the nodes when they are running again.
+In Step 2, if you see an error message about failing to enable monitoring for certain nodes, it means one or more of your nodes are not running (see the [**HELP**](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support) section to troubleshoot). You can retry enabling monitoring for the nodes when they are running again.
 
 ## Viewing database metrics
 {: #webui-view-database-metrics}

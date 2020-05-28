@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-04-15"
+lastupdated: "2020-05-28"
 
-keywords: high availability disaster recovery
+keywords: high availability, disaster recovery
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
@@ -22,7 +22,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:important: .important}
 
 # High availability and disaster recovery
-{: #ha-dr}
+{: #high-availability-disaster-recovery}
 
 {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} provides several ways to protect your data and help keep your applications operational.
 {: shortdesc}
@@ -32,11 +32,11 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 High Availability (HA) means providing the best possible continuous data availability after hardware failure to avoid impact on operations. Disaster Recovery (DR) means the ability to make all the data available on an alternative system as quickly as possible after a severe or extensive hardware failure.
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} provides [automatic in-region data redundancy and failover](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#in-region-redundancy-failover) by default. The service is offered in [Multi-Zone regions](#x9774820){: term} (Dallas, Frankfurt, and Sydney), each with three availability zones for redundancy.
+{{site.data.keyword.ihsdbaas_postgresql_full}} provides [automatic in-region data redundancy and failover](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#in-region-redundancy-failover) by default. The service is offered in [Multi-Zone regions](#x9774820){: term} (Dallas, Frankfurt, and Sydney), each with three availability zones for redundancy.
 
-To prepare for the disaster scenario where the entire region fails (broken network, for example) and the service in that region becomes unavailable, you need to define your own cross-region backup policy to restore your data in another available region. {{site.data.keyword.ihsdbaas_postgresql_full}} supports [manual cross-region backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#cross-region-backups).
+To prepare for the disaster scenario where the entire region fails (broken network, for example) and the service in that region becomes unavailable, you need to define your own cross-region backup policy to restore your data in another available region. {{site.data.keyword.ihsdbaas_postgresql_full}} supports [manual cross-region backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#cross-region-backups).
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} does [automatic database backups in all availability zones](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#automatic-daily-backups) in the region of your service instance every day. You can restore your data from backups in the last seven days.
+{{site.data.keyword.ihsdbaas_postgresql_full}} does [automatic database backups in all availability zones](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#automatic-daily-backups) in the region of your service instance every day. You can restore your data from backups in the last seven days.
 
 ## Automatic in-region data redundancy and failover
 {: #in-region-redundancy-failover}
@@ -55,6 +55,6 @@ Time of restoration varies, depending on the size of your data and network condi
 ## Automatic database backups in all availability zones
 {: #automatic-daily-backups}
 
-[Automatic in-region data redundancy and failover](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#in-region-redundancy-failover) provide high availability within one region. [Manual cross-region backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#cross-region-backups) provide a disaster recovery capability that helps you protect against failures across an entire region. Both of the HA/DR capabilities help you to maintain access to the current copy of your data.
+[Automatic in-region data redundancy and failover](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#in-region-redundancy-failover) provide high availability within one region. [Manual cross-region backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#cross-region-backups) provide a disaster recovery capability that helps you protect against failures across an entire region. Both of the HA/DR capabilities help you to maintain access to the current copy of your data.
 
 You can also choose to restore your data from automatic historical backups. {{site.data.keyword.ihsdbaas_postgresql_full}} automatically triggers a backup of your complete database once every 24 hours. These encrypted backups are available for the last seven days and redundantly available on local storage in all availability zones in the region of your service instance. If you want to restore one of the backups, see [Restoring your databases by IBM Support](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-restore_postgresql_databases).

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-21"
+lastupdated: "2020-05-28"
 
 keywords: frequently asked questions, database
 
@@ -64,7 +64,7 @@ How long can I stay on the current DB version until I have to move to the latest
 {: faq}
 {: support}
 
-Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.ihsdbaas_full}} offers the highest level of protection for customer data in the industry. For more information about security, see [Securing your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-mng-data). It also provides 2X performance compared to x86 based cloud databases. 
+Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.ihsdbaas_full}} offers the highest level of protection for customer data in the industry. For more information about security, see [Securing your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security). It also provides 2X performance compared to x86 based cloud databases. 
 
 ### Can I own and manage my data encryption keys?
 {: #keep-or-bring-your-own-key}
@@ -91,7 +91,7 @@ You can find the pricing information on the [service creation page](https://clou
 {: faq}
 {: support}
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} provides [automatic in-region data redundancy and failover](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#in-region-redundancy-failover) and [automatic database backups in all availability zones](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#automatic-daily-backups). It also supports [manual cross-region backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#cross-region-backups) to prepare for the disaster scenario where the entire region fails.
+{{site.data.keyword.ihsdbaas_postgresql_full}} provides [automatic in-region data redundancy and failover](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#in-region-redundancy-failover) and [automatic database backups in all availability zones](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#automatic-daily-backups). It also supports [manual cross-region backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#cross-region-backups) to prepare for the disaster scenario where the entire region fails.
 
 ### Do I need to enable the replication to secondary nodes manually?
 {: #replication-by-default}
@@ -105,7 +105,7 @@ No. By default, your {{site.data.keyword.ihsdbaas_full}} service instance consis
 {: faq}
 {: support}
 
-Yes. {{site.data.keyword.ihsdbaas_full}} does [automatic database backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-ha-dr#automatic-daily-backups) in all availability zones in the region of your service instance every day. You can restore your data from backups in the last seven days.
+Yes. {{site.data.keyword.ihsdbaas_full}} does [automatic database backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#automatic-daily-backups) in all availability zones in the region of your service instance every day. You can restore your data from backups in the last seven days.
 
 ### Where can I find usage and billing information?
 {: #metering-and-billing}
