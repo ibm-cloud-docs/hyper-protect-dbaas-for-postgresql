@@ -32,7 +32,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 {{site.data.keyword.ihsdbaas_postgresql_full}} uses the following methods to protect your data.
 
-- Built on [{{site.data.keyword.IBM_notm}} Secure Service Container technology](https://www.ibm.com/us-en/marketplace/secure-service-container){: external}, {{site.data.keyword.ihsdbaas_mongodb_full}} provides workload isolation, restricted administrator access and tamper protection for data at rest and in flight. Not even the cloud administrator has access to your data at any point.
+- Built on [{{site.data.keyword.IBM_notm}} Secure Service Container technology](https://www.ibm.com/us-en/marketplace/secure-service-container){: external}, {{site.data.keyword.ihsdbaas_postgresql_full}} provides workload isolation, restricted administrator access and tamper protection for data at rest and in flight. Not even the cloud administrator has access to your data at any point.
 - All {{site.data.keyword.ihsdbaas_postgresql_full}} connections use TLS/SSL encryption for data in transit. The current supported version of this encryption is TLS 1.2.
 - Access to the {{site.data.keyword.cloud_notm}} account, {{site.data.keyword.ihsdbaas_postgresql_full}} management web user interface, CLI, and API is secured via [{{site.data.keyword.cloud_notm}} Identity and Access Management (IAM)](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam).
 - Access to the database is secured and managed through the standard access controls provided by the database. All database access controls are disabled in the service interfaces. IAM users are not able to authenticate to the database itself. This separation provides a higher isolation for your environment. 
