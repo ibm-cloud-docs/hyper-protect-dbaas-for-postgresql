@@ -62,7 +62,7 @@ For detailed instructions on enabling customer-managed keys, see [{{site.data.ke
 ### Deleting service instances
 {: #service-delete}
 
-You can [delete your service instance through the UI, the CLI, and the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service#manage-service).
+You can delete your service instance using [the web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service#dbaas_webui_manage_service), [the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_delete_service), or [the APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v1){: external}.
 
 Deleting the service instance fully erases all data. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support restoring the data for now.
 {: important}
