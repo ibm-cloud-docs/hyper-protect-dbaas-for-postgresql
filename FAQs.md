@@ -73,7 +73,7 @@ Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword
 
 Yes, you can own and manage your data encryption keys by enabling the [integration with {{site.data.keyword.keymanagementserviceshort}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok) or [with {{site.data.keyword.hscrypto}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok) when you create a {{site.data.keyword.ihsdbaas_full}} service instance.
 
-## Where can I find detailed pricing information?
+### Where can I find detailed pricing information?
 {: #pricing-info}
 {: faq}
 
