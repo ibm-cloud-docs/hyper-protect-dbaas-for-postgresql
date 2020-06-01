@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-12-20"
+lastupdated: "2020-06-01"
 
 keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 
@@ -64,7 +64,7 @@ For authentication, you need an API key, an access token, and a user ID to issue
 3. Get an access token and a user ID by using the `GET /auth/token` operation:
 
     ```curl
-    curl -X GET -H "accept: application/json" -H "api_key: icGVY1*** ***UdfcIg4kzE" https://dbaas900.hyperp-dbaas.cloud.ibm.com:20000/api/v1/auth/token
+    curl -X GET -H "accept: application/json" -H "api_key: icGVY1*** ***UdfcIg4kzE" https://dbaas900.hyperp-dbaas.cloud.ibm.com:20000/api/v2/auth/token
     ```
     {: pre}
 

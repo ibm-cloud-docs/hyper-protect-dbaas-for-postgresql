@@ -61,7 +61,7 @@ For more information about user privileges, see [{{site.data.keyword.postgresql}
 Before you restore the data, you need to create a new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance as the target database cluster. You can use one of the following ways to create a new service instance:
 - [The web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service#dbaas_webui_create_service)
 - [The CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_create_service)
-- [The {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v1){: external}
+- [The {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v2){: external}
 
 When you create the new service instance, you need to set the cluster name, the administrator name, and password. They aren't necessarily to be the same as the ones in your original instance. It doesn't affect the migration. After the migration is completed, the databases are assigned to the new administrator.
 
