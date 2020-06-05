@@ -69,7 +69,7 @@ IBM Cloud Hyper Protect DBaaS for PostgreSQL
     {: .navgroup id="reference"}
     [Hyper Protect DBaaS RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas/hyperp-dbaas-v2)
     dbaas_cli.md
-    service-integration
+    service-integration.md
     reference-responsibilities.md
     open-source-licenses.md
     [IBM Redbook: Securing Your Critical Workloads with IBM Hyper Protect Services](https://www.redbooks.ibm.com/abstracts/sg248469.html?Open)
