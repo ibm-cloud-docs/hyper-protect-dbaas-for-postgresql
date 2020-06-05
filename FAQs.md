@@ -41,7 +41,7 @@ You can use the following FAQs to help you with {{site.data.keyword.cloud}} {{si
 {: #supported-databases}
 {: faq}
 
-{{site.data.keyword.postgresql}} and {{site.data.keyword.mongodb}} EE (see [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#postgresql_supported_version) and [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted#mongodb_supported_version).
+{{site.data.keyword.postgresql}} and {{site.data.keyword.mongodb}} EE (see [{{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#postgresql_supported_version) and [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted#mongodb_supported_version)).
 
 <!--## What are the next DB types supported (after {{site.data.keyword.postgresql}} and {{site.data.keyword.postgresql}})?
 
