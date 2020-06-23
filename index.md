@@ -107,7 +107,7 @@ After you create a {{site.data.keyword.postgresql}} database, you can use psql o
 
 The tool that you use needs to be compatible with {{site.data.keyword.postgresql}} 10 that is supported by {{site.data.keyword.ihsdbaas_postgresql_full}}.
 
-To enable verification of the server certificate during database connection, download a [certificate authority (CA)](#x2016383){: term} file from the **Overview** page in the service dashboard, and copy it to the appropriate directory.
+To enable verification of the server certificate during database connection, download the [certificate authority (CA)](#x2016383){: term} file from the **Overview** page in the service dashboard, and copy it to the appropriate directory.
 
 #### Using psql shell
 {: #accessing-database-introduction-connect-psqlshell}
