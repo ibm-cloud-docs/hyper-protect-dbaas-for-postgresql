@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-02-19"
+lastupdated: "2020-06-23"
 
 keywords: release note, new, added, changed, deleted
 
@@ -19,6 +19,14 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
+
+## 23 June 2020
+{: #June-2020}
+
+### Changed: `instance_id` is changed to `node_id`
+{: #cli-v2}
+
+`instance_id` is changed to `node_id` in commands.
 
 ## 19 February 2020
 {: #Feb-2020}

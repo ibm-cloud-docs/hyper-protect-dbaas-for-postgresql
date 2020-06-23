@@ -45,7 +45,7 @@ ibmcloud help dbaas
 ```
 {: pre}
 
-## Cluster commands
+## Cluster command
 {: #cluster_cmds}
 
 ### `ibmcloud dbaas cluster-show`
@@ -63,38 +63,6 @@ ibmcloud dbaas cluster-show <resource_name>
 - *resource_name*
 
   The name of the cluster. To find the resource name, use the {{site.data.keyword.cloud_notm}} command `ibmcloud resource service-instances`.
-
-### `ibmcloud dbaas resource-scale`
-{: #resource-scale}
-
-This command scales the cluster resources (disk, RAM, or vCPU). For the valid value range, see the [value table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#before-scaling).
-
-```
-ibmcloud dbaas resource-scale <resource_name> [--cpu <value>] [--memory <value>] [--storage <value>] [--force]
-```
-{: pre}
-
-**Command options**
-
-- *resource_name*
-
-  The name of the cluster.
-
-- *--cpu <value>*
-
-  Total number of dedicated CPU cores.
-    
-- *--memory <value>*
-
-  Total memory allocation in GB. For example, `--memory 4`.
-
-- *--storage <value>*
-
-  Total storage allocation in GB. For example, `--storage 10`.
-    
-- *--force* (optional)
-
-  Force scaling without the `y/N` confirmation.
 
 ## Database command
 {: #db_cmds}
