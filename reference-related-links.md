@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-05-21"
+lastupdated: "2020-06-24"
 
 keywords: links, Hyper Protect DBaaS, postgresql, mongodb, reference, related information, related topics, related links, blogs, videos
 
@@ -28,7 +28,7 @@ More resources to help you learn about securing data and resources with {{site.d
 ## Videos
 {: #videos}
 
-- [Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}}](https://youtu.be/YzQdszTI4Zg){: external}
+- [Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}}](https://youtu.be/AdA-KFmjUQQ){: external}
 - [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} and Keep Your Own Key](https://youtu.be/DwD_PFXjROM){: external}
 - [IBM THINK 2019: Introduction to Z as a Service](https://www.ibm.com/events/think/watch/replay/120157283/){: external}
 - [IBM THINK 2019: {{site.data.keyword.cloud_notm}} Hyper Protect family and Secure Service Container](https://www.ibm.com/events/think/watch/replay/120171746/){: external}
