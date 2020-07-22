@@ -45,7 +45,7 @@ To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, 
 
 [Provision an {{site.data.keyword.cloudaccesstrailshort}} instance](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-provision) if you don't have one. {{site.data.keyword.cloudaccesstrailshort}} can have only one instance per location.
 
-To view events, access the web UI of the corresponding {{site.data.keyword.cloudaccesstrailshort}} instance. For detailed instructions, see [Launching the web UI through the {{site.data.keyword.cloud_notm}} UI](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-launch#launch_step2). You can apply search and filtering criteria to define the events that are displayed through a [custom view](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-views).
+To view events, access the web UI of the corresponding {{site.data.keyword.cloudaccesstrailshort}} instance. For detailed instructions, see [Launching the web UI through the {{site.data.keyword.cloud_notm}} UI](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-launch#launch_cloud_ui). You can apply search and filtering criteria to define the events that are displayed through a [custom view](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-views).
 
 ## List of events
 {: #list-activity-tracker-events}

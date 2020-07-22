@@ -56,7 +56,7 @@ Authorize {{site.data.keyword.keymanagementserviceshort}} for use with {{site.da
 9. Enable the **Reader** role.
 10. Click **Authorize**.
 
-If you want to remove an authorization, see [Removing an authorization](/docs/iam?topic=iam-serviceauth#remove-auth).
+If you want to remove an authorization, see [Removing access](/docs/account?topic=account-assign-access-resources#removing_access).
 
 ## Step 3. Create a {{site.data.keyword.ihsdbaas_postgresql_full}} instance with the {{site.data.keyword.keymanagementserviceshort}} Key
 {: #use-key-protect}
