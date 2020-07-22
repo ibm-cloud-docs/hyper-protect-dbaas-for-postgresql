@@ -51,7 +51,7 @@ Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{si
 ### Highly available
 {: #highly_available}
 
-When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, you create a cluster that consists of one primary node and two secondary nodes (replicas that back up the primary). Each of them is installed in a unique Availability Zone with automatic daily backups in the local storage. For more information, see [High availability and disaster recovery](docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery).
+When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, you create a cluster that consists of one primary node and two secondary nodes (replicas that back up the primary). Each of them is installed in a unique Availability Zone with automatic daily backups in the local storage. For more information, see [High availability and disaster recovery](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery).
 
 ### Fully managed
 {: #fully_managed}
