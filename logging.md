@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-19"
+lastupdated: "2020-10-13"
 
 keywords: logs, logging, Log Analysis, LogDNA
 

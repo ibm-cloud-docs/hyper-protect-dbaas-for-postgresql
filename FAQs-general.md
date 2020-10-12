@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-28"
+lastupdated: "2020-10-13"
 
 keywords: frequently asked questions, database
 
@@ -22,14 +22,11 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:external: target="_blank" .external}
 {:support: data-reuse='support'}
 
-# FAQs
-{: #faqs}
+# General FAQs
+{: #faqs-general}
 
 You can use the following FAQs to help you with {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
-
-## General
-{: #general}
 
 ## What's {{site.data.keyword.postgresql}}?
 {: #what-is-postgresql}
@@ -80,37 +77,4 @@ Yes, you can own and manage your data encryption keys by enabling the [integrati
 
 You can find the pricing information on the [service creation page](https://cloud.ibm.com/catalog/services/hyper-protect-dbaas-for-postgresql){: external}.
 
-<!--## Is there a pricing example I can refer to?
-
-## Is there a way to deploy the free-plan without providing credit card information?-->
-
-## Usage
-{: #usage}
-
-## How can I prevent data loss from hardware failure?
-{: #protect-from-failure}
-{: faq}
-{: support}
-
-{{site.data.keyword.ihsdbaas_postgresql_full}} provides [automatic in-region data redundancy and failover](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#in-region-redundancy-failover) and [automatic database backups in all availability zones](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#automatic-daily-backups). It also supports [manual cross-region backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#cross-region-backups) to prepare for the disaster scenario where the entire region fails.
-
-## Do I need to enable the replication to secondary nodes manually?
-{: #replication-by-default}
-{: faq}
-{: support}
-
-No. By default, your {{site.data.keyword.ihsdbaas_full}} service instance consists of three nodes, one primary and two secondary nodes in three different availability zones in the {{site.data.keyword.cloud_notm}} region. The data in your primary node is automatically replicated to secondary nodes (replicas) with low latency.
-
-## Can {{site.data.keyword.ihsdbaas_full}} back up my data automatically?
-{: #automatic-backup}
-{: faq}
-{: support}
-
-Yes. {{site.data.keyword.ihsdbaas_full}} does [automatic database backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#automatic-daily-backups) in all availability zones in the region of your service instance every day. You can restore your data from backups in the last seven days.
-
-## Where can I find usage and billing information?
-{: #metering-and-billing}
-{: faq}
-{: support}
-
-Select **Manage > Billing and usage** on the top menu bar in the {{site.data.keyword.cloud_notm}} dashboard. For more information, see [How you're charged](/docs/billing-usage?topic=billing-usage-charges#charges).
+<!--## Is there a pricing example I can refer to?-->

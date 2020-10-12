@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-03-25"
+lastupdated: "2020-10-13"
 
 keywords: Hyper Protect DBaaS, compliance, data encryption, data security
 

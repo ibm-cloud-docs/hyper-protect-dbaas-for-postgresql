@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-05-28"
+lastupdated: "2020-10-13"
 
 keywords: data encryption, data security, Hyper Protect DBaaS, postgresql, BYOK, KYOK
 
@@ -62,30 +62,20 @@ For detailed instructions on enabling customer-managed keys, see [{{site.data.ke
 ### Deleting service instances
 {: #service-delete}
 
-You can delete your service instance using [the web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service#dbaas_webui_manage_service), [the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_delete_service), or [the APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v2){: external}.
+You can delete your service instance through [the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service#webui-manage-service), [the CLI](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete), and [the API](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#delete-a-service-instance){: external}.
 
 Deleting the service instance fully erases all data. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support restoring the data for now.
 {: important}
 
-### Deleting databases
-{: #database-delete}
+When you delete a service instance, all your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up after the retention period of seven days. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
+{: note}
+
+### Deleting and restoring databases
+{: #database-delete-restore}
 
 To delete databases, use your database client. For options to back up your databases, see [Backing up and restoring your databases by using IBM Cloud Object Storage](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-backup_postgresql_databases) and [Restoring your databases by {{site.data.keyword.IBM_notm}} Support](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-restore_postgresql_databases).
 
 ### Deleting keys
 {: #key-delete}
 
-If you have enabled KYOK or BYOK, when you delete the key that is used to encrypt your service, you lose access to the data. For more information, see [Removing {{site.data.keyword.keymanagementserviceshort}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok#kp-remove-key) or [Removing {{site.data.keyword.hscrypto}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok#hpcs-remove-key).
-
-<!--Include information about whether deleting the service fully erases all data. If deleting the service doesn't remove all personal data, include information about how users can completely delete their data.
-
-Information about how long services keep data after instances are deleted is covered in the service description. Include the following reference for users to find their data retention period.
-
-The servicename data retention policy describes how long your data is stored after you delete the service. The data retention policy is included in the service-name service description, which you can find in the {{site.data.keyword.cloud_notm}} Terms and Notices.
-
-### Restoring deleted data for servicename
-{: #data-restore}
-
-If users can restore deleted data within your service, include this optional section and the task that users can complete to do so.
-
-Important: Don't include information about restoring your resource via the reclamation controller because it's available only on a limited basis.-->
+If you have enabled KYOK or BYOK, when you delete the key that is used to encrypt your service, you lose access to the data. For more information, see [Removing {{site.data.keyword.hscrypto}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok#hpcs-remove-key) or [Removing {{site.data.keyword.keymanagementserviceshort}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok#kp-remove-key).

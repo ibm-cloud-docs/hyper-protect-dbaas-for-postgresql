@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-20"
+lastupdated: "2020-10-13"
 
 keywords: DBaaS CLI, Python runtime
 
@@ -20,7 +20,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Installing the {{site.data.keyword.cloud_notm}} CLI and the DBaaS CLI plug-in
+# Setting up the CLI
 {: #install-dbaas-cli-plugin}
 
 Use the {{site.data.keyword.cloud}} CLI to manage your {{site.data.keyword.cloud_notm}} account and resources from your terminal or command line. Use the DBaaS CLI plug-in to get information about your cluster, databases, users, and nodes, and to list and download log files.

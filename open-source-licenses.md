@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2019-12-20"
+lastupdated: "2020-10-13"
 
 keywords: open-source licenses
 
@@ -50,6 +50,7 @@ SECTIONS:
 
 CC-BY-3.0  
 CC-BY-SA-4.0
+Other Licenses
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -72,9 +73,15 @@ the Creative Commons.
 The url to the license is https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 ICON [Node (subset)] (https://github.com/nodejs/node/tree/v8.0.0),
-glob logo [Glob] (http://registry.npmjs.org/glob/-/glob-7.1.4.tgz)
+glob logo [Glob] (http://registry.npmjs.org/glob/-/glob-7.1.6.tgz)
 
 END OF CREATIVE COMMONS ATTRIBUTION SHARE ALIKE 4.0 GENERIC NOTICES AND INFORMATION
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Other Licenses
+
+IBM/Plex Font: The Cloud Service uses the IBM/plex font within the IBM Cloud
+dashboard under the SIL Open Font License: https://opensource.org/licenses/OFL-1.1/.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 END OF IBM NOTICES AND INFORMATION
