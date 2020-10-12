@@ -88,12 +88,3 @@ A user with the `ibm-cloud-admin` role can grant these two roles to other users 
 
   This privilege allows the user or users to end any connections to the database, so assign it with care.
   {: note}
-
-<!--
-## Users created through the CLI and the APIs
-{: #user-created-via-CLI-API}
-
-Users that you create through the {{site.data.keyword.ihsdbaas_postgresql_full}} CLI and the APIs will be members of `ibm-cloud-admin`. They are able to create users and create databases, but cannot log in.
-
-When a user creates a resource in a database, like a table, all users that are in the same group have access to that resource. Resources created by any of the users in `ibm-cloud-admin` are accessible to other users in `ibm-cloud-admin`.
--->

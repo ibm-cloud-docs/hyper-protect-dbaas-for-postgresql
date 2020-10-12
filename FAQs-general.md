@@ -76,5 +76,3 @@ Yes, you can own and manage your data encryption keys by enabling the [integrati
 {: faq}
 
 You can find the pricing information on the [service creation page](https://cloud.ibm.com/catalog/services/hyper-protect-dbaas-for-postgresql){: external}.
-
-<!--## Is there a pricing example I can refer to?-->
