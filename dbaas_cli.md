@@ -45,7 +45,7 @@ ibmcloud help dbaas
 ```
 {: pre}
 
-## Cluster commands
+## Cluster command
 {: #cluster_cmds}
 
 ### `ibmcloud dbaas cluster-show`
