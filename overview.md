@@ -67,7 +67,5 @@ When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instanc
 {: #whats_next}
 
 - Follow the [getting started tutorial](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted) to try out the service for free.
-
 - For the compliance standards that {{site.data.keyword.ihsdbaas_postgresql_full}} follow, see [Compliance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance).
-
 - Stay up to date with the latest features with [What's new](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new).
