@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-06-24"
+lastupdated: "2020-10-14"
 
 keywords: hyper protect dbaas, hyper protect dbaas for postgresql, postgresql, cloud database, data security, secure database, encrypted database
 
@@ -19,6 +19,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:pre: .pre}
 {:note: .note}
 {:term: .term}
+{:video: .video}
 {:external: target="_blank" .external}
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
@@ -37,7 +38,7 @@ With {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_fu
 
 Watch the following video to find how to get started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}:
 
-<iframe width="737" height="415" src="https://www.youtube.com/embed/AdA-KFmjUQQ" title="Getting started with Hyper Protect DBaaS" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![Getting started with Hyper Protect DBaaS](https://www.youtube.com/embed/AdA-KFmjUQQ){: video output="iframe" id="youtubeplayer" frameborder="0" width="560" height="315" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 ## Supported version
 {: #postgresql_supported_version}
@@ -46,14 +47,20 @@ Watch the following video to find how to get started with {{site.data.keyword.cl
 
 For more information about versions, see [{{site.data.keyword.postgresql}} support policy](https://www.postgresql.org/support/versioning/){: external}.
 
-## Prerequisite
+## Prerequisites
 {: #prerequisite}
 
-Before you start, make sure you're using the [required browser software](/docs/overview?topic=overview-prereqs-platform) for {{site.data.keyword.cloud_notm}}.
+1. To use the UI, make sure you're using the [required browser software](/docs/overview?topic=overview-prereqs-platform) for {{site.data.keyword.cloud_notm}}.
 
-For Safari, ensure that the **Prevent cross-site tracking** and **Block all cookies** options under **Safari > Preferences > Privacy** are not selected.
+  For Safari, ensure that the **Prevent cross-site tracking** and **Block all cookies** options under **Safari > Preferences > Privacy** are not selected.
 
-If you encounter problems when you use one of the required browsers, disable your browser plug-ins.
+  If you encounter problems when you use one of the required browsers, disable your browser plug-ins.
+
+2. You can create a 30-day free plan service instance with a Lite {{site.data.keyword.cloud_notm}} account. To create a paid service instance, make sure you have a [Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-accounts).
+
+  To check your account type, go to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/){: external} and click **Management** > **Account** > **Account settings**.
+
+  If you have a Lite account and want to create a paid service instance, [upgrade your account to a Pay-As-You-Go or Subscription account](/docs/account?topic=account-upgrading-account).
 
 ## Step 1. Create a service instance
 {: #creating-a-database-cluster-introduction}
@@ -64,16 +71,12 @@ When you create a service instance, you create a cloud database cluster (replica
 
 ![A {{site.data.keyword.ihsdbaas_full}} service instance](images/cluster-node-db.svg "A {{site.data.keyword.ihsdbaas_full}} service instance with high availability"){: caption="Figure 1. A {{site.data.keyword.ihsdbaas_full}} service instance with high availability" caption-side="bottom"}
 
-If you haven't created a service instance yet, you can create one through [the web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service), [the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_create_service), or [the {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v2){: external}.
+You can create a service instance through the UI, the CLI, and the API. For more information and detailed instructions, see [Creating a service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service).
 
-Free plans are available. They are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation.
-
-You can select a root key that you create in {{site.data.keyword.hscrypto}} or {{site.data.keyword.keymanagementserviceshort}} only when you create the DBaaS instance. Otherwise, a randomly generated key will be used by default.
+Free plans are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation.
 {: note}
 
-For database clusters that are created after 23 September, 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
-
-For database clusters that are created after 19 February, 2020, the ltree module is enabled automatically. For more information about using the ltree module, see [Using ltree module](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use-ltree-module).
+To enable PostrgeSQL extensions, see [Managing PostgreSQL extensions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-extensions). For database clusters that are created after 23 September, 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
 
 ## Step 2. Manage the database cluster
 {: #managing-database-cluster-introduction}
@@ -83,24 +86,20 @@ For database clusters that are created after 19 February, 2020, the ltree module
 Each {{site.data.keyword.ihsdbaas_postgresql_full}} cluster contains a DBaaS Manager, which manages and intelligently schedules your requests based on the available resources.
 
 In a database cluster, you can:
-- View information about databases
-- View information about users
-- View information about nodes
+- Change database configuration
+- View information about databases, users and nodes
 - View service logs
 - Monitor databases
+- ...
 
-You can send the requests to the DBaaS Manager through one of the following interfaces:
+You can send the requests to the DBaaS Manager through the UI, the CLI, and the API. For detailed instructions, see [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service).
 
-- [The web user interface](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_webui_service)
-- [The CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI tool](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin)
-- [The {{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v2){: external}
-
-To manage your databases and database users, use your database client.
+To create or delete your databases and database users, use your database client.
 
 ## Step 3. Connect to databases
 {: #accessing-database-introduction}
 
-After you create a {{site.data.keyword.postgresql}} database, you can use psql or your favorite {{site.data.keyword.postgresql}} tool to connect to your databases. {{site.data.keyword.ihsdbaas_postgresql_full}} allows only [SSL](#x2038004){: term}-secured client connections.
+After you create a {{site.data.keyword.postgresql}} database, you can use psql or your favorite {{site.data.keyword.postgresql}} tool to connect to your databases. {{site.data.keyword.ihsdbaas_postgresql_full}} allows only [SSL](#x2038004){: term}-secured client connections. If you create a service instance with both private and public endpoints, you can connect in either way by choosing from the two commands in the service dashboard.
 
 ### Before you begin
 {: #accessing-database-introduction-byb}

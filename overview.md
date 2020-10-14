@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-28"
+lastupdated: "2020-10-14"
 
 keywords: Hyper Protect DBaaS, cloud database, data security
 
@@ -31,7 +31,7 @@ Moving confidential and mission critical data to the cloud presents data confide
 
 Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.ihsdbaas_postgresql_full}} helps you to alleviate data security and compliance concerns with built-in encryption and tamper protection for data at rest and in flight. You can deploy your workloads with sensitive data and build compliant applications without having to be a security expert.
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} provides a reliable environment that allows you to become more agile in application development. You can quickly get started and move your mission-critical data to the highly-available and fully-managed database clusters, saving time and costs on operations.
+{{site.data.keyword.ihsdbaas_postgresql_full}} provides a reliable environment that allows you to become more agile in application development. You can quickly get started and move your mission-critical data to the highly available and managed database clusters, saving time and costs on operations.
 
 ## How does {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} work?
 {: #how_hpdb_works}
@@ -53,12 +53,19 @@ Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{si
 
 When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, you create a cluster that consists of one primary node and two secondary nodes (replicas that back up the primary). Each of them is installed in a unique Availability Zone with automatic daily backups in the local storage. For more information, see [High availability and disaster recovery](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery).
 
-### Fully managed
-{: #fully_managed}
+### Managed service
+{: #managed}
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} offers non-disruptive version upgrades, monitoring of the system by IBM SREs, and around-the-clock support from {{site.data.keyword.cloud_notm}}. You can focus on building applications rather than managing availability, backups, logging, monitoring, hardware setup, and software patching.
+{{site.data.keyword.ihsdbaas_postgresql_full}} offers non-disruptive version upgrades, monitoring of the system by IBM SREs, and around-the-clock support from {{site.data.keyword.cloud_notm}}. You can focus on building applications rather than managing availability, hardware setup, software patching, etc.
 
 ### Developer friendly
 {: #developer_friendly}
 
 {{site.data.keyword.ihsdbaas_postgresql_full}} provides standardized APIs to provision and monitor databases. It‘s easy for you to [get started](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted) without the need for specialized database skills.
+
+## What's next
+{: #whats_next}
+
+- Follow the [getting started tutorial](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted) to try out the service for free.
+- For the compliance standards that {{site.data.keyword.ihsdbaas_postgresql_full}} follow, see [Compliance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance).
+- Stay up to date with the latest features with [What's new](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new).

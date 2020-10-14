@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-18"
+lastupdated: "2020-10-14"
 
 keywords: help, support
 

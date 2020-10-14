@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-01-07"
+lastupdated: "2020-10-14"
 
 keywords: PL/Java extension
 
@@ -99,7 +99,7 @@ The following example shows [how to load and use the `hello` function](https://t
   ALTER DATABASE
   ```
 
-6. Define a classpath for the `javatest` schema to make sure that the Java Virtual Machine gets the path of `.class` files.
+6. Define a classpath for the `javatest` schema to make sure that the Java virtual machine gets the path of `.class` files.
   ```
   select sqlj.set_classpath('javatest', 'hellojar');
   ```

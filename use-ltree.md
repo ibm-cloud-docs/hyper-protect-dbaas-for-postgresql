@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-19"
+lastupdated: "2020-10-14"
 
-keywords: ltree module, postgresql
+keywords: ltree module, postgresql extension
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
@@ -26,7 +26,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} supports the ltree module. This module implements a data type `ltree` for representing labels of data stored in a hierarchical tree-like structure. You can search for data through label trees in databases.
 {: shortdesc}
 
-The ltree module is enabled by default when you create a database. The following example hierarchy shows the ltree data type in a database table.
+The following example hierarchy shows the ltree data type in a database table.
 
 ```
                       Top
@@ -41,6 +41,10 @@ Astrophysics  Cosmology              Astronomy
 ```
 
 For more information about data types, operators, functions, and indexes of the ltree module, see the [ltree topic](https://www.postgresql.org/docs/10/ltree.html){: external} in PostgreSQL documentation.
+
+## Enabling ltree
+{: #enable-ltree}
+Use the `CREATE EXTENSION ltree;` command to enable the ltree extension. For more information about installing PostgreSQL extensions, see [Installing extensions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-extensions#install-extensions).
 
 ## Creating a table with path ltree
 {: #ltree-create-table}

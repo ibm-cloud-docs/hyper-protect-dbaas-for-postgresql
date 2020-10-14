@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-28"
+lastupdated: "2020-10-14"
 
 keywords: high availability, disaster recovery
 
@@ -37,6 +37,8 @@ High Availability (HA) means providing the best possible continuous data availab
 To prepare for the disaster scenario where the entire region fails (broken network, for example) and the service in that region becomes unavailable, you need to define your own cross-region backup policy to restore your data in another available region. {{site.data.keyword.ihsdbaas_postgresql_full}} supports [manual cross-region backups](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#cross-region-backups).
 
 {{site.data.keyword.ihsdbaas_postgresql_full}} does [automatic database backups in all availability zones](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery#automatic-daily-backups) in the region of your service instance every day. You can restore your data from backups in the last seven days.
+
+The following documentation gives more details on each type of protection.
 
 ## Automatic in-region data redundancy and failover
 {: #in-region-redundancy-failover}
