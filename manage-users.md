@@ -51,7 +51,7 @@ If your databases are created with the default PostgreSQL `template1` after [Oct
 
 When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in {{site.data.keyword.cloud_notm}}, you are the `admin` user and are automatically given the `ibm-cloud-admin` role to access and manage PostgreSQL.
 
-If your {{site.data.keyword.ihsdbaas_postgresql_full}} service instances was created before [October 14, 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020), you need to use a user who has the `Create role` privilege and grant the `ibm-cloud-admin` role to the database admin or any user who needs it.
+If your {{site.data.keyword.ihsdbaas_postgresql_full}} service instances were created before [October 14, 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020), you need to use a user who has the `Create role` privilege and grant the `ibm-cloud-admin` role to the database admin or any user who needs it.
 
 ### What can I do with the `ibm-cloud-admin` role?
 {: #ibm-cloud-admin-role-privileges}
