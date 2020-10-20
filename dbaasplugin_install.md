@@ -137,7 +137,7 @@ To access a complete set of DBaaS commands when you use the {{site.data.keyword.
    {: codeblock}
 
    ```
-   export PATH = /usr/local/bin/python3:$PATH
+   export PATH=/usr/local/bin/python3:$PATH
    ```
    {: codeblock}
 
