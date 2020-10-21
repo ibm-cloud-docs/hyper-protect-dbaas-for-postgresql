@@ -38,7 +38,7 @@ postgres | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
 replicator | Replication | {}
 ```
 
-When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in {{site.data.keyword.cloud_notm}}, you are automatically given the `admin` role to access and manage PostgreSQL databases.
+When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in {{site.data.keyword.cloud_notm}}, you are automatically given the `ibm-cloud-admin` role to access and manage PostgreSQL databases.
 
 If your databases are created with the default PostgreSQL `template1` after [October 14, 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020), the database owner is automatically granted the `ibm-cloud-admin` role to [`CREATE CAST`](https://www.postgresql.org/docs/10/sql-createcast.html){: external}. With `CREATE CAST`, customized data type can be created to build required data models. If your databases are created with other PostgreSQL templates, the superuser `postgres` is the only role who can `CREATE CAST`. For more information about template databases, see [Template Databases](https://www.postgresql.org/docs/10/manage-ag-templatedbs.html){: external} in PostgreSQL documentation.
 {: note}
