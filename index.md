@@ -76,27 +76,7 @@ You can create a service instance through the UI, the CLI, and the API. For more
 Free plans are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation.
 {: note}
 
-To enable PostrgeSQL extensions, see [Managing PostgreSQL extensions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-extensions). For database clusters that are created after 23 September, 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
-
-## Step 2. Manage the database cluster
-{: #managing-database-cluster-introduction}
-{: help} 
-{: support}
-
-Each {{site.data.keyword.ihsdbaas_postgresql_full}} cluster contains a DBaaS Manager, which manages and intelligently schedules your requests based on the available resources.
-
-In a database cluster, you can:
-- Change database configuration
-- View information about databases, users and nodes
-- View service logs
-- Monitor databases
-- ...
-
-You can send the requests to the DBaaS Manager through the UI, the CLI, and the API. For detailed instructions, see [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service).
-
-To create or delete your databases and database users, use your database client.
-
-## Step 3. Connect to databases
+## Step 2. Connect to databases
 {: #accessing-database-introduction}
 
 After you create a {{site.data.keyword.postgresql}} database, you can use psql or your favorite {{site.data.keyword.postgresql}} tool to connect to your databases. {{site.data.keyword.ihsdbaas_postgresql_full}} allows only [SSL](#x2038004){: term}-secured client connections. If you create a service instance with both private and public endpoints, you can connect in either way by choosing from the two commands in the service dashboard.
@@ -148,7 +128,27 @@ It is recommended to always enable full verification of the server certificate w
 
 For other tools, such as pgAdmin, {{site.data.keyword.ihsdbaas_postgresql_full}} supports *SSL server certificate validation* to connect to the host. If needed, use the CA file from the service dashboard.
 
-## Step 4 (Conditional). Migrate from {{site.data.keyword.postgresql}} databases
+## Step 3. Manage the database cluster
+{: #managing-database-cluster-introduction}
+{: help} 
+{: support}
+
+Each {{site.data.keyword.ihsdbaas_postgresql_full}} cluster contains a DBaaS Manager, which manages and intelligently schedules your requests based on the available resources.
+
+In a database cluster, you can:
+- Change database configuration
+- View information about databases, users and nodes
+- View service logs
+- Monitor databases
+- ...
+
+You can send the requests to the DBaaS Manager through the UI, the CLI, and the API. For detailed instructions, see [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service).
+
+To create or delete your databases and database users, use your database client.
+
+To enable PostrgeSQL extensions, see [Managing PostgreSQL extensions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-extensions). For database clusters that are created after 23 September, 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
+
+## Step 4 (Optional). Migrate from {{site.data.keyword.postgresql}} databases
 {: #migrating-from-postgresql}
 
 To migrate from {{site.data.keyword.postgresql}} databases to {{site.data.keyword.ihsdbaas_postgresql_full}}, follow the [migration instructions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre).
