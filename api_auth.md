@@ -90,7 +90,7 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
 1. Specify the data of your request in JSON format.
 2. Send the API request to the DBaaS Manager. You can use a RESTful API client, such as cURL, to handle a request.
 
-DBaaS Managers are available in the following regions:
+DBaaS Managers are available in the following regions for service instances with public endpoints:
 
 | Hostname | Port Number | Region | City |
 |-----------|-------------|--------|------|
@@ -98,5 +98,14 @@ DBaaS Managers are available in the following regions:
 | dbaas902.hyperp-dbaas.cloud.ibm.com | 20000 | eu-de | Frankfurt |
 | dbaas904.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
 {: caption="Table 1. DBaaS Managers" caption-side="top"}
+
+DBaaS Managers are available in the following regions for service instances with private endpoints:
+
+| Hostname | Port Number | Region | City |
+|-----------|-------------|--------|------|
+| dbaas900.private.hyperp-dbaas.cloud.ibm.com | 20000 | us-south | Dallas |
+| dbaas902.private.hyperp-dbaas.cloud.ibm.com | 20000 | eu-de | Frankfurt |
+| dbaas904.private.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
+{: caption="Table 2. DBaaS Managers (private)" caption-side="top"}
 
 For more information about methods and parameters, see [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v3){: external}.
