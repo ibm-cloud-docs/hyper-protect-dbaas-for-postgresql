@@ -4,7 +4,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="hyper-protect-dbaas-for-postgresql" category="databases" audience="service" href="/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted" console-page="/catalog/services/hyper-protect-dbaas-for-postgresql" product-page="https://www.ibm.com/cloud/hyper-protect-dbaas" path="hyper-protect-dbaas-for-postgresql"}
-Hyper Protect DBaaS for PostgreSQL-
+Hyper Protect DBaaS for PostgreSQL
 
     {: .navgroup id="learn"}
     index.md
