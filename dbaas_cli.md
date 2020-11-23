@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-24"
 
 keywords: instance commands, cluster resource, dbaas cli plugin reference
 
@@ -45,7 +45,7 @@ ibmcloud help dbaas
 ```
 {: pre}
 
-## Cluster command
+## Cluster commands
 {: #cluster_cmds}
 
 ### `ibmcloud dbaas cluster-show`
@@ -63,6 +63,38 @@ ibmcloud dbaas cluster-show <resource_name>
 - *resource_name*
 
   The name of the cluster. To find the resource name, use the {{site.data.keyword.cloud_notm}} command `ibmcloud resource service-instances`.
+
+### `ibmcloud dbaas resource-scale`
+{: #resource-scale}
+
+This command scales the cluster resources (disk, RAM, or vCPU). For the valid value range, see the [value table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#before-scaling).
+
+```
+ibmcloud dbaas resource-scale <resource_name> [--cpu <value>] [--memory <value>] [--storage <value>] [--force]
+```
+{: pre}
+
+**Command options**
+
+- *resource_name*
+
+  The name of the cluster.
+
+- *--cpu <value>*
+
+  Total number of dedicated CPU cores.
+    
+- *--memory <value>*
+
+  Total memory allocation in GiB. For example, `--memory 4`.
+
+- *--storage <value>*
+
+  Total storage allocation in GiB. For example, `--storage 10`.
+    
+- *--force* (optional)
+
+  Force scaling without the `y/N` confirmation.
 
 ## Database command
 {: #db_cmds}
@@ -132,9 +164,20 @@ ibmcloud dbaas configuration-update <resource_name> [@JSON_FILE | JSON_STRING]
 	  "configuration":{
 	  	"max_locks_per_transaction":150,
           "deadlock_timeout":1500,
-	  	"shared_buffers":256
+	  	"shared_buffers":256,
+          "max_connections":115
 
   	}
+  }
+  ```
+  {: codeblock}
+
+  If you want to update only one of the settings, you can just specify the one setting that you want to update in the file. For example:
+  ```
+  {
+      "configuration":{
+          "max_locks_per_transaction":150
+      }
   }
   ```
   {: codeblock}

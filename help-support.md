@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-24"
 
 keywords: help, support
 
@@ -31,4 +31,4 @@ If you have problems or questions when you're using {{site.data.keyword.cloud}} 
     * [Stack Overflow](https://stackoverflow.com/){: external}
   * Contact the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team at this email address: **dbaas.sre@de.ibm.com** 	
 
-For more information about using {{site.data.keyword.cloud_notm}} Support Center and asking questions on the forums, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support){: external}.
+For more information about using {{site.data.keyword.cloud_notm}} Support Center and asking questions on the forums, see [Getting support](/docs/get-support?topic=get-support-using-avatar){: external}.

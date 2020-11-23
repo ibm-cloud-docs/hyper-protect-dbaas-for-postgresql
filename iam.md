@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-24"
 
 keywords: IAM, identity, access management, role
 
@@ -44,8 +44,9 @@ The following tables outline what actions each service access role allows for th
 | List DBs | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) |
 | List DB log files | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) |
 | Download a DB log file | | | ![Check mark icon](../icons/checkmark-icon.svg) |
-| Enable DB logging | | | ![Check mark icon](../icons/checkmark-icon.svg) |
-| Enable DB Monitoring | | | ![Check mark icon](../icons/checkmark-icon.svg) |
+| Enable DB logging | | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) |
+| Enable DB Monitoring | | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) |
+| Scale cluster resources | | | ![Check mark icon](../icons/checkmark-icon.svg) |
 | Show DB configuration | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) |
 | Update DB configuration | | | ![Check mark icon](../icons/checkmark-icon.svg) |
 | List cluster tasks | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) | ![Check mark icon](../icons/checkmark-icon.svg) |
@@ -64,6 +65,7 @@ The following tables outline what actions each service access role allows for th
 | Enable DB Monitoring| hyperp-dbaas-postgresql.monitoring.enable |
 | Show DB configuration | hyperp-dbaas-postgresql.clusters.configuration.read |
 | Update DB configuration | hyperp-dbaas-postgresql.clusters.configuration.update |
+| Scale cluster resources | hyperp-dbaas-postgresql.clusters.resource.scale |
 | List cluster tasks | hyperp-dbaas-postgresql.clusters.tasks.list |
 | Get cluster task details | hyperp-dbaas-postgresql.clusters.tasks.read |
 {: caption="Table 2. IAM service access actions" caption-side="top"}

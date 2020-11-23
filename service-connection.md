@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-24"
 
 keywords: service endpoints for Hyper Protect DBaaS, private network for Hyper Protect DBaaS
 

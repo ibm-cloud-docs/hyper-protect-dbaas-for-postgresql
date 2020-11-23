@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-24"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -34,6 +34,8 @@ You can create your {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_pos
 
 - Free plans are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation. Free plans follow [{{site.data.keyword.cloud_notm}} Service Level Agreements (SLAs)](https://www-03.ibm.com/software/sla/sladb.nsf/pdf/6605-18/$file/i126-6605-18_08-2019_en_US.pdf){: external}.
 
+- For the flexible plan, billing is based on the total amount of resources that are allocated to your service instance. For more information about resources and pricing, see [Resource breakdown](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#resources-breakdown).
+
 - If you want to create a service instance with your own encryption key, follow the instructions in [{{site.data.keyword.keymanagementserviceshort}} integration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok) or [{{site.data.keyword.hscrypto}} integration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok). You can select your own key only when you create the service instance. Otherwise, a randomly generated key is used by default.
 
 - If you want to create a service instance with private endpoints or both private and public endpoints, follow the instructions in [Securing your connection to {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-connection#prereq-service-endpoint).
@@ -47,8 +49,8 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click **Catalog** on the top menu bar to view the list of services that are available on the {{site.data.keyword.cloud_notm}}.
 3. Type `{{site.data.keyword.ihsdbaas_full}}` into the search field. Click the **{{site.data.keyword.ihsdbaas_postgresql_full}}** tile.
-4. Choose a pricing plan. 
-5. Enter the required values on the provisioning page and click **Create**. **Tags** are optional and can be added after you create the service instance. 
+4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your allocation values. **Tags** are optional and can be added after you create the service instance.  
+5. Click **Create**.
 6. Refresh the **Resource List** page after several minutes. When the status of the service instance is **Active**, the instance is ready to use.
 
 ## Creating a service instance from the CLI
@@ -59,7 +61,7 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 2. To create a {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, use the `ibmcloud resource service-instance-create` command, as shown in the following example. In Windows, it is recommended that you use a Bash terminal such as Cygwin or Git Bash to enter the command.
 
 ```
-ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-small us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "license_agree":["agreed"], "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c"}' --service-endpoints public-and-private
+ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-flexible us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "cpu":2, "memory":"2GiB", "storage":"5GiB", "license_agree":["agreed"], "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c"}' --service-endpoints public-and-private
 ```
 {: codeblock}
 
@@ -69,7 +71,7 @@ Where the parameters have the following definitions:
 | ---------------- |  -------------------------------------------------------------- |
 | *MyDBaaSIns03*   |  The name of the service instance (replace with a name of your own choosing). |
 | *hyperp-dbaas-postgresql* | The catalog name of {{site.data.keyword.ihsdbaas_postgresql_full}}. |
-| *postgresql-small*  | The plan name. Available plans are `postgresql-small`, `postgresql-medium`, and `postgresql-large`.  (**Note:** Plan names are case-sensitive.) |
+| *postgresql-flexible*  | The plan name. For a 30-day free trial, use `postgresql-free` and omit the values of cpu, memory, and storage in the `-p` JSON string.<!-- (**Note:** Plan names are case-sensitive.)--> |
 | *us-south*            | The location where your new database will be located. |
 | *-p*               | A valid JSON string, which must contain the required parameters in the following table. |
 | *--service-endpoints* | Enter `private`, `public`, or `public-and-private` for the *--service-endpoints* option. If you omit this option, you will create a service instance with public endpoints.|
@@ -82,6 +84,9 @@ Where the parameters have the following definitions:
 | *password* | The administrator's user password of the database to be created. The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one number**. |
 | *confirm_password* | The same password. |
 | *license_agree* | A value of `agreed` indicates acceptance of the license agreement, which is required to use {{site.data.keyword.ihsdbaas_postgresql_full}}. |
+| *cpu* | Total number of dedicated CPU cores. For the valid value range of *cpu*, *memory*, and *storage*, see the [value table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#before-scaling). |
+| *memory* | Total memory allocation in GiB. |
+| *storage* | Total disk allocation in GiB. |
 | *kms_instance* | (Optional) Valid CRN of the selected KMS (key management service) instance. |
 | *kms_key* | (Optional, paired with *kms_instance*) UUID of the selected root key. |
 {: caption="Table 2. -p parameters" caption-side="top"}

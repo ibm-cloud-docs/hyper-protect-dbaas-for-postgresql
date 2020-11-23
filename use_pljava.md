@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-24"
 
 keywords: PL/Java extension
 
@@ -23,7 +23,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Using PL/Java extension
 {: #use_pljava_extension}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} supports PL/Java [1.5.2](https://github.com/tada/pljava/releases){: external} (besides plpgsql 1.0). [PL/Java](https://tada.github.io/pljava/){: external} is a free open-source extension for {{site.data.keyword.postgresql}} that allows stored procedures, triggers, and functions to be written in the Java language and executed in the backend.
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} supports PL/Java [1.5.2](https://github.com/tada/pljava/releases){: external} (besides plpgsql 1.0). [PL/Java](https://tada.github.io/pljava/){: external} is a free open source extension for {{site.data.keyword.postgresql}} that allows stored procedures, triggers, and functions to be written in the Java language and executed in the backend.
 {: shortdesc}
 
 The PL/Java extension is enabled by default when you create a database. To use the extension, complete the following instructions.
@@ -127,4 +127,4 @@ The following example shows [how to load and use the `hello` function](https://t
   (1 row)
   ```
 
-Now you have successfully loaded and excuted the `hello` function by using PL/Java.
+Now you have successfully loaded and executed the `hello` function by using PL/Java.

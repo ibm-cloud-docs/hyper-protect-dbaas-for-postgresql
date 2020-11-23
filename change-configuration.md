@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-24"
 
 keywords: customize configuration, change configuration, configuration parameters
 
@@ -27,7 +27,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 In {{site.data.keyword.ihsdbaas_postgresql_full}}, with the Manager role, you can change some of the PosgreSQL configuration settings of your service instance to tune your PostgreSQL databases to your use case.
 {: shortdesc}
 
-The database admins or users with the [Manager role](#changing-configuration-prerequisite) can update the available configuration parameters with the [CLI](#changing-configuration-cli) or the [API](#changing-configuration-api). The configuration is defined in a schema. To make a change, you send a JSON object with the settings and their new values to the CLI or the API. For example, to change the `deadlock_timeout` setting to 150, you need to provide `{"configuration":{"deadlock_timeout":150}}` to either the CLI or the API.
+The database admins or users with the [Manager role](#changing-configuration-prerequisite) can update the available configuration parameters with the [CLI](#changing-configuration-cli) or the [API](#changing-configuration-api). The configuration is defined in a schema. To make a change, you send a JSON object with the settings and their new values to the CLI or the API.
 
 If a request to change configuration settings fails, the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team will be notified automatically. You can also use the [task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds) or the [API request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks){: external} to view the request status.
 
@@ -38,6 +38,9 @@ Some configuration changes require a restart to the primary and secondary nodes.
 {: #changing-configuration-prerequisite}
 
 You need to have the **Manager** role to change configuration settings, as defined in the [IAM service access roles table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam#service-access-roles). To assign access, see [Managing IAM access for users or services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam#manage-access).
+
+Updating `max_connections` and `max_locks_per_transaction` with one command/API request is only feasible when you make the values both larger or smaller. If you need to make one larger and the other smaller, you need to run two commands/API requests, updating one setting at a time. This limitation will be fixed in the next release.
+{: important}
 
 ## Using the CLI
 {: #changing-configuration-cli}
@@ -107,3 +110,8 @@ There are two deployment-configuration endpoints, one for viewing the configurat
   - Restarts database? - **No**
   - Options - Minimum value of 100
   - Note - The number of milliseconds to wait before checking for deadlock and the duration where lock waits are logged. Logs available through the logging integration. Setting this number too low negatively impacts performance.
+
+[`max_connections`](https://www.postgresql.org/docs/10/runtime-config-connection.html#GUC-MAX-CONNECTIONS){: external}
+  - Default - `115`
+  - Restarts database? - **Yes**
+  - Note: The maximum number of concurrent connections to the database server allowed. The value of `max_connections` depends on the resource of your cluster. If you set it too high, your cluster might become unhealthy.
