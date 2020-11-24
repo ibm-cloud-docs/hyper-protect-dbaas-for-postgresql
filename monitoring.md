@@ -32,10 +32,10 @@ Monitoring for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgres
 ----------|-----------
 `Dallas (us-south)` | `Dallas (us-south)`
 `Frankfurt (eu-de)` | `Frankfurt (eu-de)`
-`Sydney (au-syd)` | `Dallas (us-south)`
+`Sydney (au-syd)` | `Sydney (au-syd)`
 {: caption="Table 1. {{site.data.keyword.mon_short}} regions" caption-side="top"}
 
-To view metrics of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.mon_short}} service instance in the same region, except for `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in `Sydney (au-syd)`, you need to have a {{site.data.keyword.mon_short}} instance in `Dallas (us-south)`.
+To view metrics of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.mon_short}} service instance in the same region.
 
 ## Prerequisite
 {: #monitoring-prerequisite}
@@ -51,7 +51,7 @@ In the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Observ
 
 2. When you see the message that the service instance is enabled to send platform metrics, click **Add monitoring**.
   
-   a. If you don't have a {{site.data.keyword.mon_short}} service instance, you'll be directed to the service creation page to create one. Select the same region as your service instance (if your service instance is in Sydney, select Dallas). For **platform metrics**, leave the **Enable** option selected.
+   a. If you don't have a {{site.data.keyword.mon_short}} service instance, you'll be directed to the service creation page to create one. Select the same region as your service instance. For **platform metrics**, leave the **Enable** option selected.
    
    b. If you already have a {{site.data.keyword.mon_short}} service instance in the same region but it isn't enabled to receive platform metrics, you need to select the Sysdig service instance to receive platform metrics in the pop-up dialog box.
 
