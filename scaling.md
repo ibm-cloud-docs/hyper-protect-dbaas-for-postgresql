@@ -79,7 +79,7 @@ The following information provides what you need to know about the scaling proce
   - One or more resource allocation values aren't in the range.
   - One or more nodes aren't running.
   - Not enough capacity to assign resources.
-  - Your service instance is using the fixed pricing plan. See [Switching from the fixed pricing plan](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#pricing-plan-switch).
+  - Your service instance is using the fixed pricing plan. See [Converting to the flexible pricing plan](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#pricing-plan-switch).
 
 -  The acceptable resource allocation values are as follows:
 
@@ -128,10 +128,10 @@ Use the `ibmcloud dbaas resource-scale` command to scale your resources. Use the
 
 For the API requests to scale your resources and check the scaling status, see [Scale resources](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#scale-resources) and [List tasks](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks).
 
-##  Switching from the fixed pricing plan
+##  Converting to the flexible pricing plan
 {: #pricing-plan-switch}
 
-If you created your service instance with the fixed pricing plan (`Small`, `Medium`, or `Large`), you can switch to the flexible pricing plan in the UI or from the CLI. The resources of your service instance stay the same after conversion. Free service instances can't be converted or scaled.
+If you created your service instance with the fixed pricing plan (`Small`, `Medium`, or `Large`), you can convert your plan to the flexible pricing plan in the UI or from the CLI. The resources of your service instance stay the same after conversion. Free service instances can't be converted or scaled.
 
 Your cluster won't expire if you don't convert the pricing plan. However, if you need to scale your resources, you need to convert before scaling. After you convert to the flexible plan, reload the dashboard to see the **Resources** page.
 {: tip}
