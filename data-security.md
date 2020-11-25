@@ -64,21 +64,10 @@ For detailed instructions on enabling customer-managed keys, see [{{site.data.ke
 
 You can delete your service instance through [the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service#webui-manage-service), [the CLI](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete), and [the API](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#delete-a-service-instance){: external}.
 
-When the service instance is deleted in these ways, it's **disabled** (pending reclamation) rather than deleted completely. You can't find deleted service instances in your service instance list.
+Deleting the service instance fully erases all data. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support restoring the data for now.
+{: important}
 
-You can permanently delete the service instance by using the [`ibmcloud resource reclamation-delete` command](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamation_delete). You can't restore the service instance afterward.
-
-When you delete a service instance, all your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up after the retention period of seven days. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
-{: note}
-
-### Restoring service instances
-{: #service-restore}
-
-You can restore a deleted service instance with no data loss within the retention period of **seven days**. After seven days, the service instance is permanently deleted.
-
-Use the [{{site.data.keyword.cloud_notm}} resource reclamation CLI commands](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamations) to list service instances in the retention period and restore a service instance.
-
-The service instance in the retention period is not billed to your account. The billing starts again when the service instance is restored. 
+When you delete a service instance, all your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
 {: note}
 
 ### Deleting and restoring databases
@@ -90,16 +79,3 @@ To delete databases, use your database client. For options to back up your datab
 {: #key-delete}
 
 If you have enabled KYOK or BYOK, when you delete the key that is used to encrypt your service, you lose access to the data. For more information, see [Removing {{site.data.keyword.hscrypto}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok#hpcs-remove-key) or [Removing {{site.data.keyword.keymanagementserviceshort}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok#kp-remove-key).
-
-<!--Include information about whether deleting the service fully erases all data. If deleting the service doesn't remove all personal data, include information about how users can completely delete their data.
-
-Information about how long services keep data after instances are deleted is covered in the service description. Include the following reference for users to find their data retention period.
-
-The servicename data retention policy describes how long your data is stored after you delete the service. The data retention policy is included in the service-name service description, which you can find in the {{site.data.keyword.cloud_notm}} Terms and Notices.
-
-### Restoring deleted data for servicename
-{: #data-restore}
-
-If users can restore deleted data within your service, include this optional section and the task that users can complete to do so.
-
-Important: Don't include information about restoring your resource via the reclamation controller because it's available only on a limited basis.-->

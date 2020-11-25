@@ -37,11 +37,6 @@ You can manually adjust the amount of resources available to your service instan
 
 You can monitor the disk, memory and vCPU usage of your service instance through [integration with {{site.data.keyword.mon_full_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-monitor).
 
-### Added: Resource reclamation
-{: #added-resource-reclamation}
-
-When you delete a service instance, it's disabled (pending reclamation) rather than deleted completely. You can restore a deleted service instance with no data loss within the retention period of seven days. You can also choose to permanently delete it. See [Deleting service instances](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-delete).
-
 ### Added: Changing `max_connections`
 {: #added-setting-max-connections}
 
