@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-24"
+lastupdated: "2020-11-25"
 
 keywords: users, roles, DBaaS admin user, privileges
 

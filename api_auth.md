@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-24"
+lastupdated: "2020-11-25"
 
 keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 

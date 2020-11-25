@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-24"
+lastupdated: "2020-11-25"
 
 keywords: release note, new, added, changed, deleted
 
@@ -19,7 +19,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
 
-## 24 November 2020
+## 25 November 2020
 {: #nov-2020}
 
 ### Changed: Pricing plan
