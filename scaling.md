@@ -151,3 +151,5 @@ ibmcloud resource service-instance-update MyDBaaSIns03 --service-plan-id c8550ed
 {: codeblock}
 
 You can use the `ibmcloud resource service-instance <resource_name>` command to verify that `Service Plan Name` is updated to `postgresql-flexible`.
+
+After you convert your plan, you can [scale your resources](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling).
