@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-25"
 
 keywords: data encryption, data security, Hyper Protect DBaaS, postgresql, BYOK, KYOK
 
@@ -67,7 +67,7 @@ You can delete your service instance through [the UI](/docs/hyper-protect-dbaas-
 Deleting the service instance fully erases all data. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support restoring the data for now.
 {: important}
 
-When you delete a service instance, all your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up after the retention period of seven days. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
+When you delete a service instance, all your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
 {: note}
 
 ### Deleting and restoring databases

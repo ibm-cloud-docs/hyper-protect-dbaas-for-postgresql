@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-25"
 
 keywords: release note, new, added, changed, deleted
 
@@ -18,6 +18,29 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
+
+## 25 November 2020
+{: #nov-2020}
+
+### Changed: Pricing plan
+{: #changed-pricing-plan}
+
+With the flexible pricing plan, you can select the initial allocation values of RAM, disk, and vCPU. See [Resource breakdown](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#resources-breakdown).
+
+### Added: Vertical scaling
+{: #added-vertical-scaling}
+
+You can manually adjust the amount of resources available to your service instance to suit your workload and the size of your data. You can [scale your resources](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling) using the UI, CLI, or API.
+
+### Added: {{site.data.keyword.mon_short}}
+{: #added-monitoring}
+
+You can monitor the disk, memory and vCPU usage of your service instance through [integration with {{site.data.keyword.mon_full_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-monitor).
+
+### Added: Changing `max_connections`
+{: #added-setting-max-connections}
+
+One more configuration setting that you can change. See [Changing the PostgreSQL configuration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration).
 
 ## 14 October 2020
 {: #october-2020}

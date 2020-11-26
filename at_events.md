@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-25"
 
 keywords: Activity tracker events
 
@@ -57,8 +57,12 @@ The following table lists the actions that generate an event:
 | `hyperp-dbaas-postgresql.cluster.create` | Create a database cluster |
 | `hyperp-dbaas-postgresql.cluster.delete` | Delete a database cluster 
 | `hyperp-dbaas-postgresql.log.get`       | Download a log file |
+| `hyperp-dbaas-postgresql.logging.enable` | Enable logging for the cluster |
+| `hyperp-dbaas-postgresql.monitoring.enable` | Enable monitoring for the cluster |
+| `hyperp-dbaas-postgresql.cluster.resource.scale` | Scale cluster resources | 
 | `hyperp-dbaas-postgresql.configuration.update` | Update PosgreSQL configuration settings |
+| `hyperp-dbaas-postgresql.database.restore` | Restore databases by SRE as delegated by service instance owner |
 {: caption="Table 1. Actions that generate {{site.data.keyword.cloudaccesstrailshort}} events"}
 
-For the events of `hyperp-dbaas-postgresql.cluster.create` and `hyperp-dbaas-postgresql.cluster.delete`, the {{site.data.keyword.cloudaccesstrailshort}} service doesn't record the account name and IP address of the user who performs the action. The values of `initiator.name` and `host.address` in the log indicate the service ID of Cloud Broker and the IP address of Cloud Broker.
+For the events of `hyperp-dbaas-postgresql.cluster.create` and `hyperp-dbaas-postgresql.cluster.delete`, the {{site.data.keyword.cloudaccesstrailshort}} service doesn't record the account name and IP address of the user who performs the action. The values of `initiator.name` and `host.address` in the log indicate the service ID of Cloud Broker and the IP address of Cloud Broker. For the event of `hyperp-dbaas-postgresql.database.restore`, the value of `initiator.name` is `dbaas.sre@de.ibm.com`.
 {: note}

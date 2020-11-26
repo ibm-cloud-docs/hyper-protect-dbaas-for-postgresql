@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-25"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -27,7 +27,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 You can manage your {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance through the UI, the CLI, and the API.
 {: shortdesc}
 
-To change your database configuration, see [Changing the PostgreSQL configuration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration).
+To scale your resources, see [Scaling RAM, disk, and vCPU](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling). To change your database configuration, see [Changing the PostgreSQL configuration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration).
 
 ## Viewing information about your service instance
 {: #show-detail-service}
@@ -38,7 +38,7 @@ You can view information about your service instances, databases, users, and nod
 {: #webui-show-service}
 
 1. In the {{site.data.keyword.cloud_notm}} dashboard, click **View resources** on the **Resource summary** pane, or click **Resource List** in the upper left corner, to display all your resources.
-2. Select the service instance on the **Resource list** to display the service dashboard. On the **Overview** page, you can see the overall information and connection information of the service instance.
+2. Select the service instance on the **Resource list** to display the service dashboard. On the **Manage** page, you can see the overall information and connection information of the service instance.
 3. Select **Databases**, **Users**, and **Nodes** in the side navigation pane to view more information.
 
 ### Viewing information from the CLI
@@ -58,7 +58,7 @@ Use the [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas
 
 With the required access, you can rename, delete, add tags to, and export the access report (a list of users and services that have access to your resource) of your service instance.
 
-Deleting the service instance fully erases all data. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support restoring the data for now. For more information about deleting data, see [Deleting your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#data-delete).
+For more information and detailed instructions on deleting (and restoring) your service instance, see [Deleting your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#data-delete).
 {: important}
 
 To assign access to other users or services to use your service instance, see [Managing access for {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam). To manage {{site.data.keyword.postgresql}} roles and privileges for your database users, see [Managing users, roles, and privileges](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-user-management).

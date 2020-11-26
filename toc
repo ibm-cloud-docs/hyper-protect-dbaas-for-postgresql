@@ -29,6 +29,7 @@ Hyper Protect DBaaS for PostgreSQL
     api_auth.md
     create-service-instance.md
     manage-service-instance.md
+    scaling.md
     database.md
     database-user.md
     node.md
@@ -41,7 +42,6 @@ Hyper Protect DBaaS for PostgreSQL
     Using PostgreSQL extensions
         manage-extensions.md
         use_pljava.md
-        use-ltree.md
 
     {: .topicgroup}
     Enhancing security
@@ -68,7 +68,6 @@ Hyper Protect DBaaS for PostgreSQL
     service-integration.md
     reference-responsibilities.md
     open-source-licenses.md
-    [IBM Redbook: Securing Your Critical Workloads with IBM Hyper Protect Services](https://www.redbooks.ibm.com/abstracts/sg248469.html?Open)
     reference-related-links.md
     {: .navgroup-end}
 

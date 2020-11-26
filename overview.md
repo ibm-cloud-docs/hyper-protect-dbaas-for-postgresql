@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-14"
+lastupdated: "2020-11-25"
 
 keywords: Hyper Protect DBaaS, cloud database, data security
 
@@ -31,7 +31,7 @@ Moving confidential and mission critical data to the cloud presents data confide
 
 Built on {{site.data.keyword.IBM_notm}} LinuxONE technology, {{site.data.keyword.ihsdbaas_postgresql_full}} helps you to alleviate data security and compliance concerns with built-in encryption and tamper protection for data at rest and in flight. You can deploy your workloads with sensitive data and build compliant applications without having to be a security expert.
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} provides a reliable environment that allows you to become more agile in application development. You can quickly get started and move your mission-critical data to the highly available and managed database clusters, saving time and costs on operations.
+{{site.data.keyword.ihsdbaas_postgresql_full}} provides a reliable environment that allows you to become more agile in application development. You can quickly get started and move your mission-critical data to the highly available and managed database clusters, saving time and costs on operations. You can also flexibly adjust the amount of resources to meet your requirements.
 
 ## How does {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} work?
 {: #how_hpdb_works}
@@ -51,7 +51,7 @@ Leveraging {{site.data.keyword.IBM_notm}} LinuxONE pervasive encryption and {{si
 ### Highly available
 {: #highly_available}
 
-When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, you create a cluster that consists of one primary node and two secondary nodes (replicas that back up the primary). Each of them is installed in a unique Availability Zone with automatic daily backups in the local storage. For more information, see [High availability and disaster recovery](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery).
+When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, you create a cluster that consists of one primary node and two secondary nodes (replicas that back up the primary). Each of them is installed in a unique Availability Zone with automatic daily backups in the local storage. For more information, see [High availability and disaster recovery](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-high-availability-disaster-recovery). {{site.data.keyword.ihsdbaas_postgresql_full}} also supports [manual vertical scaling of resources](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling).
 
 ### Managed service
 {: #managed}
