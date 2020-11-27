@@ -42,7 +42,7 @@ Hyper Protect DBaaS for PostgreSQL
         use_pljava.md
 
     {: .topicgroup}
-    Logging and Monitoring
+    Logging and monitoring
         at_events.md
         logging.md
         monitoring.md
