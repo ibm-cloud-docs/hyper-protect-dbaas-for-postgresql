@@ -33,8 +33,6 @@ Hyper Protect DBaaS for PostgreSQL
     database.md
     database-user.md
     node.md
-    logging.md
-    monitoring.md
     manage-users.md
     change-configuration.md
     
@@ -44,6 +42,12 @@ Hyper Protect DBaaS for PostgreSQL
         use_pljava.md
 
     {: .topicgroup}
+    Logging and Monitoring
+        at_events.md
+        logging.md
+        monitoring.md
+
+    {: .topicgroup}
     Enhancing security
         iam.md
         service-connection.md
@@ -51,7 +55,6 @@ Hyper Protect DBaaS for PostgreSQL
         hpcrypto-byok.md
         key-protect-byok.md
         [Video: IBM Cloud Hyper Protect DBaaS and Keep Your Own Key](https://youtu.be/DwD_PFXjROM)
-        at_events.md
 
     {: .topicgroup}
     High availability and disaster recovery
