@@ -8,6 +8,7 @@ Hyper Protect DBaaS for PostgreSQL
 
     {: .navgroup id="learn"}
     index.md
+    [Video: Hyper Protect DBaaS - flexible pricing & vertical scaling](https://mediacenter.ibm.com/media/1_xr1y01a4)
     overview.md
     compliance.md
     [What's PostgreSQL?](https://www.ibm.com/cloud/learn/postgresql)
