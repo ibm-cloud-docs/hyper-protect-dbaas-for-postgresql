@@ -91,7 +91,7 @@ To enable verification of the server certificate during database connection, dow
 #### Using psql shell
 {: #accessing-database-introduction-connect-psqlshell}
 
-To use the [psql shell](https://www.postgresql.org/download/){: external} to connect to your databases, run the following command. You can copy the commmand from the service dashboard.
+To use the [psql shell](https://www.postgresql.org/download/){: external} to connect to your databases, run the following command. You can copy the command from the service dashboard.
 
 ```
 psql "host=<host_name> user=<user_name> port=<port> sslmode=verify-full sslrootcert=<CAFilePath>"

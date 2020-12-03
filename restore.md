@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-03"
 
 keywords: restore, support
 
@@ -32,13 +32,13 @@ The {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} s
 {: shortdesc}
 
 To restore a backup to an existing service instance, open a support request:
-1. Select **Support > Manage Cases > Create new case** on the top action bar, or go to the [support page](https://cloud.ibm.com/unifiedsupport/cases/manage){: external} directly. Click **Create new case**.
-2. Select the type of support you need: **Technical**.
-3. In the **Offering** menu, select **Databases**.
-4. In the **Search offering resources** menu, select your {{site.data.keyword.ihsdbaas_postgresql_full}} service instance.
-5. In the **Subject** field, enter at least **Restore**.
-6. In the **Description** field, enter a date within the last 7 days as the date of the backup from which the {{site.data.keyword.IBM_notm}} team will restore from.
-7. Select the **Email me Updates** checkbox.
-8. Click **Submit**.
+1. Go to the Support Center to [create a new case](https://cloud.ibm.com/unifiedsupport/cases/form){: external}.
+2. Select the type of support you need: **Customer Success > Something else**. Click **Next**. 
+3. In the **Subject** field, enter at least **Restore**.
+4. In the **Description** box, enter a date within the last seven days as the date of the backup from which the {{site.data.keyword.IBM_notm}} team will restore from.
+7. Leave the **Email me Updates** checkbox selected so that you can receive support case notifications.
+8. Click **Next**. Review your case summary, and click **Submit case**. 
 
-When the restore completes successfully, the {{site.data.keyword.IBM_notm}} Support team will inform you. Alternatively you can check the state under the tab **Support > Manage Cases**. For more information about {{site.data.keyword.IBM_notm}} Support, see [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}.
+When the restore completes, the {{site.data.keyword.IBM_notm}} Support team will inform you. Alternatively you can follow the ticket progress on the [Manage cases page](https://cloud.ibm.com/unifiedsupport/cases){: external}.
+
+For more information about support cases, see the [Support Center documentation](/docs/get-support?topic=get-support-open-case){: external}.
