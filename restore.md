@@ -33,9 +33,11 @@ The {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} s
 
 To restore a backup to an existing service instance, open a support request:
 1. Go to the Support Center to [create a new case](https://cloud.ibm.com/unifiedsupport/cases/form){: external}.
-2. Select the type of support you need: **Customer Success > Something else**. Click **Next**. 
-3. In the **Subject** field, enter at least **Restore**.
-4. In the **Description** box, enter a date within the last seven days as the date of the backup from which the {{site.data.keyword.IBM_notm}} team will restore from.
+2. Select the type of support you need: **Your resources**. Click **Next**. 
+3. Enter **{{site.data.keyword.ihsdbaas_postgresql_full}}** in the product name field or scroll down to select the product.
+4. Select the service instance you want to restore. Click **Next**.
+5. In the **Subject** field, enter at least **Restore**.
+6. In the **Description** box, enter a date within the last seven days as the date of the backup from which the {{site.data.keyword.IBM_notm}} team will restore from.
 7. Leave the **Email me Updates** checkbox selected so that you can receive support case notifications.
 8. Click **Next**. Review your case summary, and click **Submit case**. 
 
