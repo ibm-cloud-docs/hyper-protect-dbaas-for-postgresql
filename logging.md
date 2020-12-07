@@ -40,7 +40,7 @@ To receive logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance,
 ## Prerequisite
 {: #logging-prerequisite}
 
-To enable logging, all three nodes of the database cluster need to be running. If one or more nodes aren't running, see [Getting help and support](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support). You can retry enabling monitoring for the nodes when they're running again.
+To enable logging, all three nodes of the database cluster need to be running. If one or more nodes aren't running, see [Getting help and support](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support). You can retry enabling logging for the nodes when they're running again.
 
 ## Add logging
 {: #add-logging}
