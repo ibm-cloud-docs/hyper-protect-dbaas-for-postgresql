@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-15"
 
 keywords: release note, new, added, changed, deleted
 
@@ -18,6 +18,14 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
+
+## 15 December 2020
+{: #dec-2020}
+
+### Added: Resource reclamation
+{: #added-resource-reclamation}
+
+When you delete a service instance, it's disabled (pending reclamation) rather than deleted completely. You can restore a deleted service instance with no data loss within the retention period of seven days. You can also choose to permanently delete it. See [Deleting service instances](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-delete).
 
 ## 25 November 2020
 {: #nov-2020}
