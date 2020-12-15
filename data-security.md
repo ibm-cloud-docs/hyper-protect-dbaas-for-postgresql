@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-15"
 
 keywords: data encryption, data security, Hyper Protect DBaaS, postgresql, BYOK, KYOK
 
@@ -64,10 +64,21 @@ For detailed instructions on enabling customer-managed keys, see [{{site.data.ke
 
 You can delete your service instance through [the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service#webui-manage-service), [the CLI](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete), and [the API](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#delete-a-service-instance){: external}.
 
-Deleting the service instance fully erases all data. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support restoring the data for now.
-{: important}
+When the service instance is deleted in these ways, it's **disabled** (pending reclamation) rather than deleted completely. You can't find deleted service instances in your service instance list.
 
-When you delete a service instance, all your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
+You can permanently delete the service instance by using the [`ibmcloud resource reclamation-delete` command](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamation_delete). You can't restore the service instance afterward.
+
+When you delete a service instance, all your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up after the retention period of seven days. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
+{: note}
+
+### Restoring service instances
+{: #service-restore}
+
+You can restore a deleted service instance with no data loss within the retention period of **seven days**. After seven days, the service instance is permanently deleted.
+
+Use the [{{site.data.keyword.cloud_notm}} resource reclamation CLI commands](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamations) to list service instances in the retention period and restore a service instance.
+
+The service instance in the retention period is not billed to your account. The billing starts again when the service instance is restored. 
 {: note}
 
 ### Deleting and restoring databases
