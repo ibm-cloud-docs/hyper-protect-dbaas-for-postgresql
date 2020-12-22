@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-22"
 
 keywords: Hyper Protect DBaaS, scaling, resource scaling, RAM, disk, vCPU
 
@@ -133,7 +133,9 @@ For the API requests to scale your resources and check the scaling status, see [
 
 If you created your service instance with the fixed pricing plan (`Small`, `Medium`, or `Large`), you can convert your plan to the flexible pricing plan in the UI or from the CLI. The resources of your service instance stay the same after conversion. Free service instances can't be converted or scaled.
 
-Your cluster won't expire if you don't convert the pricing plan. However, if you need to scale your resources, you need to convert before scaling. After you convert to the flexible plan, reload the dashboard to see the **Resources** page.
+You don't need to restart your service instance or the applications bound to it after you convert your pricing plan.
+
+Your cluster won't expire if you don't convert the pricing plan. However, if you need to scale your resources, you need to convert before scaling. Your fixed pricing plan service instance has a monthly charge and therefore, we recommend converting the cluster close to the end of the monthly time-frame to prevent double charges. After you convert to the flexible plan, reload the dashboard to see the **Resources** page.
 {: tip}
 
 ### Using the UI

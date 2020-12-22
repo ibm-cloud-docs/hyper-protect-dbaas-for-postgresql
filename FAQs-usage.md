@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-22"
 
 keywords: frequently asked questions, database
 
@@ -54,4 +54,4 @@ Yes. {{site.data.keyword.ihsdbaas_full}} does [automatic database backups](/docs
 {: faq}
 {: support}
 
-Select **Manage > Billing and usage** on the top menu bar in the {{site.data.keyword.cloud_notm}} dashboard. For more information, see [How you're charged](/docs/billing-usage?topic=billing-usage-charges#charges).
+Go to **Manage > Billing and usage** in the {{site.data.keyword.cloud_notm}} console. For more information, see [How you're charged](/docs/billing-usage?topic=billing-usage-charges).

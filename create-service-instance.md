@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-22"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -49,7 +49,7 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click **Catalog** on the top menu bar to view the list of services that are available on the {{site.data.keyword.cloud_notm}}.
 3. Type `{{site.data.keyword.ihsdbaas_full}}` into the search field. Click the **{{site.data.keyword.ihsdbaas_postgresql_full}}** tile.
-4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your allocation values. **Tags** are optional and can be added after you create the service instance.  
+4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your allocation values. **Tags** are optional and can be added after you create the service instance.  
 5. Click **Create**.
 6. Refresh the **Resource List** page after several minutes. When the status of the service instance is **Active**, the instance is ready to use.
 
@@ -61,7 +61,7 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 2. To create a {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, use the `ibmcloud resource service-instance-create` command, as shown in the following example. In Windows, it is recommended that you use a Bash terminal such as Cygwin or Git Bash to enter the command.
 
 ```
-ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-flexible us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "cpu":2, "memory":"2GiB", "storage":"5GiB", "license_agree":["agreed"], "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c"}' --service-endpoints public-and-private
+ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-flexible us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "cpu":2, "memory":"2GiB", "storage":"5GiB", "license_agree":["agreed"], "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c", "db_version":"10"}' --service-endpoints public-and-private
 ```
 {: codeblock}
 
@@ -89,6 +89,7 @@ Where the parameters have the following definitions:
 | *storage* | Total disk allocation in GiB. |
 | *kms_instance* | (Optional) Valid CRN of the selected KMS (key management service) instance. |
 | *kms_key* | (Optional, paired with *kms_instance*) UUID of the selected root key. |
+| *db_version*| (Optional) Supports {{site.data.keyword.postgresql}} 10 only. |
 {: caption="Table 2. -p parameters" caption-side="top"}
 
 The *kms_instance* and *kms_key* parameters are required if you want to create a service instance with your own encryption key. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't verify the *kms_instance* and *kms_key* parameters from the CLI. Make sure you copy and paste the correct values in the same format as the example.

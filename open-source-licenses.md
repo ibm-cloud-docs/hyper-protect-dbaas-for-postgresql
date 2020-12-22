@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-22"
 
 keywords: open-source licenses
 
@@ -48,22 +48,22 @@ TABLE OF CONTENTS
 THE REMAINDER OF THIS IBM NOTICES FILE CONSISTS OF THE FOLLOWING
 SECTIONS:
 
-CC-BY-3.0  
+CC-BY-SA-2.5  
 CC-BY-SA-4.0
+CC-BY-3.0  
 Other Licenses
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-CREATIVE COMMONS ATTRIBUTION 3.0 GENERIC
+CREATIVE COMMONS ATTRIBUTION SHARE ALIKE 2.5 GENERIC
 
 The Program includes some or all of the following works licensed under
 the Creative Commons.
-The url to the license is https://creativecommons.org/licenses/by/3.0/legalcode
+The url to the license is https://creativecommons.org/licenses/by-sa/2.5/legalcode
 
-SPDX-EXCEPTIONS (https://www.npmjs.com/package/spdx-exceptions),
-SPDX-standard [spdx-expression-parse] (https://www.npmjs.com/package/spdx-expression-parse)
+NPM-DISPUTES.HTML [npm] (http://registry.npmjs.org/npm/-/npm-6.14.6.tgz)
 
-END OF CREATIVE COMMONS ATTRIBUTION 3.0 GENERIC NOTICES AND INFORMATION
+END OF CREATIVE COMMONS ATTRIBUTION SHARE ALIKE 2.5 GENERIC NON-IBM-LICENSE
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 CREATIVE COMMONS ATTRIBUTION SHARE ALIKE 4.0 GENERIC
@@ -76,6 +76,20 @@ ICON [Node (subset)] (https://github.com/nodejs/node/tree/v8.0.0),
 glob logo [Glob] (http://registry.npmjs.org/glob/-/glob-7.1.6.tgz)
 
 END OF CREATIVE COMMONS ATTRIBUTION SHARE ALIKE 4.0 GENERIC NOTICES AND INFORMATION
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CREATIVE COMMONS ATTRIBUTION 3.0 GENERIC
+
+The Program includes some or all of the following works licensed under
+the Creative Commons.
+The url to the license is https://creativecommons.org/licenses/by/3.0/legalcode
+
+SPDX-EXCEPTIONS (https://www.npmjs.com/package/spdx-exceptions),
+SPDX-standard [spdx-expression-parse] (https://www.npmjs.com/package/spdx-expression-parse),
+SPDX [npm] (http://registry.npmjs.org/npm/-/npm-6.14.6.tgz),
+JQ DOCS [libjq1] (http://archive.ubuntu.com/ubuntu/pool/universe/j/jq/jq_1.5+dfsg-2build1.debian.tar.xz)
+
+END OF CREATIVE COMMONS ATTRIBUTION 3.0 GENERIC NOTICES AND INFORMATION
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Other Licenses
