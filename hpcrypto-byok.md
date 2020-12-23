@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-12-22"
+lastupdated: "2020-12-23"
 
 keywords: hyper protect crypto integration, data encryption, byok, kyok
 
