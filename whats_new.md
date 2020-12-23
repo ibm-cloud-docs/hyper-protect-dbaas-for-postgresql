@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-12-15"
+lastupdated: "2020-12-23"
 
 keywords: release note, new, added, changed, deleted
 
@@ -18,6 +18,14 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
+
+## 23 December 2020
+{: #dec-23-2020}
+
+### Added: Database version parameter
+{: #added-db-version}
+
+The database version parameter `db_version` is added in the service creation command. Currently it's optional and only version `10` is supported. For example, if you omit the parameter in the command, you create a service instance running {{site.data.keyword.postgresql}} 10 by default. 
 
 ## 15 December 2020
 {: #dec-2020}

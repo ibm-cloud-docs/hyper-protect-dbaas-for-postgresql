@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-12-01"
+lastupdated: "2020-12-23"
 
 keywords: hyper protect dbaas, hyper protect dbaas for postgresql, postgresql, cloud database, data security, secure database, encrypted database
 
@@ -118,7 +118,7 @@ psql "host=<host_name> user=<user_name> port=<port> sslmode=verify-full sslrootc
 
 - *CAFilePath*
 
-  The path of the `cert.pem` file you downloaded from the service dashboard.
+  The path of the `cert.pem` file that you downloaded from the service dashboard.
 
 It is recommended to always enable full verification of the server certificate when you use psql. To do so, specify the parameter `sslmode = verify-full` and provide the `sslrootcert` parameter. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support non-secure client connections and the connection will fail if you specify the `sslmode` parameter as `disable`.
 {: note}

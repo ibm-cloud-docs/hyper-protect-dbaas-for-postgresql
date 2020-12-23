@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-23"
 
 keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 
@@ -34,7 +34,7 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
 
 1. Generate an API key:
 
-   a. In the {{site.data.keyword.cloud_notm}} dashboard, select **Manage > Access (IAM)**.
+   a. In the {{site.data.keyword.cloud_notm}} console, go to **Manage > Access (IAM)**.
 
    b. In the side navigation pane of the **Access (IAM)** dashboard, select **API Keys**.
 

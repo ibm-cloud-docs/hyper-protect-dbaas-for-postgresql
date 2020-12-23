@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-23"
 
 keywords: key protect integration, data encryption, byok
 
@@ -45,7 +45,7 @@ To create or add a [root key](#x6946961){: term} in {{site.data.keyword.keymanag
 
 Authorize {{site.data.keyword.keymanagementserviceshort}} for use with {{site.data.keyword.ihsdbaas_postgresql_full}} service instances:
 
-1. Open your {{site.data.keyword.cloud_notm}} dashboard.
+1. Go to the {{site.data.keyword.cloud_notm}} console.
 2. From the menu bar, click **Manage** > **Access (IAM)**.
 3. In the side navigation, click **Authorizations**.
 4. Click **Create**.

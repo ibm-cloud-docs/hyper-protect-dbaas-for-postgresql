@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-23"
 
 keywords: IAM, identity, access management, role
 
@@ -103,7 +103,7 @@ If you have multiple {{site.data.keyword.ihsdbaas_postgresql_full}} instances in
 
   You can create [{{site.data.keyword.cloud_notm}} API keys](/docs/account?topic=account-manapikey) for users or services to track and control API usage. The user API key is associated with the user identity and inherits all access that the user is assigned. The service API key is granted the access that is associated with a specific service ID. API keys can also be used to [generate IAM tokens](/docs/account?topic=account-iamtoken_from_apikey) for API calls authentication. For how to manage API keys, see [Managing user API keys](/docs/account?topic=account-userapikey) and [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys).
 
-The following is an example of how to use the enterprise to manage multiple instances and user access. Assume that your organization has two {{site.data.keyword.ihsdbaas_postgresql_full}} instances for development and production, and two separate teams that manage and operate the instances. You can create the following enterprise hierarchy to better manage accounts, instances, and user access:
+The following example shows how to use the enterprise to manage multiple instances and user access. Assume that your organization has two {{site.data.keyword.ihsdbaas_postgresql_full}} instances for development and production, and two separate teams that manage and operate the instances. You can create the following enterprise hierarchy to better manage accounts, instances, and user access:
 
 ![An example of the enterprise hierarchy and user access management](/images/enterprise_hierarchy_example.svg "An example of the enterprise hierarchy and user access management"){: caption="Figure 1. An example of the enterprise hierarchy and user access management" caption-side="bottom"}
 

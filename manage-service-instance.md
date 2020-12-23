@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-25"
+lastupdated: "2020-12-23"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -37,7 +37,7 @@ You can view information about your service instances, databases, users, and nod
 ### Viewing information in the UI
 {: #webui-show-service}
 
-1. In the {{site.data.keyword.cloud_notm}} dashboard, click **View resources** on the **Resource summary** pane, or click **Resource List** in the upper left corner, to display all your resources.
+1. In the {{site.data.keyword.cloud_notm}} console, click **View all** on the **Resource summary** pane, or click **Resource List** in the upper left corner, to display all your resources.
 2. Select the service instance on the **Resource list** to display the service dashboard. On the **Manage** page, you can see the overall information and connection information of the service instance.
 3. Select **Databases**, **Users**, and **Nodes** in the side navigation pane to view more information.
 
@@ -66,7 +66,7 @@ To assign access to other users or services to use your service instance, see [M
 ### Managing your service instance in the UI
 {: #webui-manage-service}
 
-1. In the {{site.data.keyword.cloud_notm}} dashboard, go to the **Resource list** page.
+1. Go to the **Resource list** page in the {{site.data.keyword.cloud_notm}} console.
 2. Expand **Services**. Find the target service instance and click the overflow icon.
 3. Select the action that you want to complete.
 
