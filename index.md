@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-02"
 
 keywords: hyper protect dbaas, hyper protect dbaas for postgresql, postgresql, cloud database, data security, secure database, encrypted database
 
@@ -27,7 +27,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #gettingstarted}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible and scalable platform that allows you to easily provision and manage your database of choice, without data security concerns.
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible and scalable platform that allows you to easily provision and manage your database of choice ({{site.data.keyword.postgresql}} and [{{site.data.keyword.mongodb}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted)), without data security concerns.
 {: shortdesc}
 
 For more information about the industry-leading data security level of {{site.data.keyword.ihsdbaas_postgresql_full}}, see [Securing your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security).
@@ -56,11 +56,11 @@ For more information about versions, see [{{site.data.keyword.postgresql}} suppo
 
   If you encounter problems when you use one of the required browsers, disable your browser plug-ins.
 
-2. You can create a 30-day free plan service instance with a Lite {{site.data.keyword.cloud_notm}} account. To create a paid service instance, make sure you have a [Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-accounts).
+2. You can create a 30-day free plan service instance (or a paid service instance) with three types of accounts: [Pay-As-You-Go, Subscription](/docs/account?topic=account-accounts), or [trial accounts](/docs/account?topic=account-accountfaqs#freetrial) (trial accounts are available for faculty and students at accredited academic institutions).
 
-  To check your account type, go to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/){: external} and click **Management** > **Account** > **Account settings**.
+  To check your account type, go to the [Account settings](https://cloud.ibm.com/account/settings){: external} page.
 
-  If you have a Lite account and want to create a paid service instance, [upgrade your account to a Pay-As-You-Go or Subscription account](/docs/account?topic=account-upgrading-account).
+  If you have a Lite account, you need to [upgrade your account to a Pay-As-You-Go or Subscription account](/docs/account?topic=account-upgrading-account), or [convert it to a trial account](/docs/account?topic=account-accountfaqs#convertacct).
 
 ## Step 1. Create a service instance
 {: #creating-a-database-cluster-introduction}
@@ -73,20 +73,20 @@ When you create a service instance, you create a cloud database cluster (replica
 
 You can create a service instance through the UI, the CLI, and the API. For more information and detailed instructions, see [Creating a service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service).
 
-Free plans are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation.
+Free plans are designed for evaluation purposes and are not suitable for production usage. Free-plan service instances will be automatically deleted 30 days after creation.
 {: note}
 
 ## Step 2. Connect to databases
 {: #accessing-database-introduction}
 
-After you create a {{site.data.keyword.postgresql}} database, you can use psql or your favorite {{site.data.keyword.postgresql}} tool to connect to your databases. {{site.data.keyword.ihsdbaas_postgresql_full}} allows only [SSL](#x2038004){: term}-secured client connections. If you create a service instance with both private and public endpoints, you can connect in either way by choosing from the two commands in the service dashboard.
+After you create a {{site.data.keyword.postgresql}} database, you can use psql or your favorite {{site.data.keyword.postgresql}} tool to connect to your databases. {{site.data.keyword.ihsdbaas_postgresql_full}} allows only [SSL](#x2038004){: term}-secured client connections. If you create a service instance with both private and public endpoints, you can connect in either way by choosing from the two commands on the service dashboard.
 
 ### Before you begin
 {: #accessing-database-introduction-byb}
 
 The tool that you use needs to be compatible with {{site.data.keyword.postgresql}} 10 that is supported by {{site.data.keyword.ihsdbaas_postgresql_full}}.
 
-To enable verification of the server certificate during database connection, download the [certificate authority (CA)](#x2016383){: term} file from the **Manage** page in the service dashboard, and copy it to the appropriate directory.
+To enable verification of the server certificate during database connection, download the [certificate authority (CA)](#x2016383){: term} file from the **Manage** page on the service dashboard, and copy it to the appropriate directory.
 
 #### Using psql shell
 {: #accessing-database-introduction-connect-psqlshell}
@@ -123,10 +123,20 @@ psql "host=<host_name> user=<user_name> port=<port> sslmode=verify-full sslrootc
 It is recommended to always enable full verification of the server certificate when you use psql. To do so, specify the parameter `sslmode = verify-full` and provide the `sslrootcert` parameter. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support non-secure client connections and the connection will fail if you specify the `sslmode` parameter as `disable`.
 {: note}
 
-#### Using other tools
+#### Using pgAdmin or other tools
 {: #accessing-database-introduction-connect-other}
 
-For other tools, such as pgAdmin, {{site.data.keyword.ihsdbaas_postgresql_full}} supports *SSL server certificate validation* to connect to the host. If needed, use the CA file from the service dashboard.
+For other tools, such as pgAdmin, {{site.data.keyword.ihsdbaas_postgresql_full}} supports *SSL server certificate validation* to connect to the host.
+
+For example, to use pgAdmin to connect to your databases, complete the following steps:
+1. Download and install [pgAdmin](https://www.pgadmin.org/download/){: external}.
+2. Download the certificate authority (CA) file from the **Manage** page on the {{site.data.keyword.ihsdbaas_postgresql_full}} service dashboard.
+3. Open pgAdmin.
+4. On the pgAdmin dashboard, select **Add New Server** from the **Quick links** section. In the **Create - Server** dialog, provide the required values.
+  - On the **General** page, fill in **Name** and leave the **Connect now?** option checked.
+  - On the **Connection** page, fill out the basic connection information.
+  - On the **SSL** page, for **SSL mode**, select any option but not **Disable**. **Verify-Full** is recommended. For **Root certificate**, select the CA file downloaded in step 2.
+5. Click **Save**.
 
 ## Step 3. Manage the database cluster
 {: #managing-database-cluster-introduction}
