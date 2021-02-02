@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-02"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -30,9 +30,12 @@ You can create your {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_pos
 ## Before you begin
 {: #create-service-prerequisite}
 
-- You can create a 30-day free plan service instance with a Lite {{site.data.keyword.cloud_notm}} account. To create a paid service instance, make sure you have a [Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-accounts). To check your account type, go to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/){: external} and click **Management** > **Account** > **Account settings**. If you have a Lite account and want to create a paid service instance, [upgrade your account to a Pay-As-You-Go or Subscription account](/docs/account?topic=account-upgrading-account).
+Make sure you are familiarized with the following information. **Especially if you want to use your own encryption key or use private endpoints**, you need to follow the instructions in the corresponding topics (see the last two points) **before** you create a service instance.
+{: note}
 
-- Free plans are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation. Free plans follow [{{site.data.keyword.cloud_notm}} Service Level Agreements (SLAs)](https://www-03.ibm.com/software/sla/sladb.nsf/pdf/6605-18/$file/i126-6605-18_08-2019_en_US.pdf){: external}.
+- You can create a 30-day free plan service instance (or a paid service instance) with three types of accounts: [Pay-As-You-Go, Subscription](/docs/account?topic=account-accounts), or [trial accounts](/docs/account?topic=account-accountfaqs#freetrial) (trial accounts are available for faculty and students at accredited academic institutions). To check your account type, go to the [Account settings](https://cloud.ibm.com/account/settings){: external} page. If you have a Lite account, you need to [upgrade your account to a Pay-As-You-Go or Subscription account](/docs/account?topic=account-upgrading-account), or [convert it to a trial account](/docs/account?topic=account-accountfaqs#convertacct).
+
+- Free plans are designed for evaluation purposes and are not suitable for production usage. Free-plan service instances will be automatically deleted 30 days after creation. Free plans follow [{{site.data.keyword.cloud_notm}} Service Level Agreements (SLAs)](https://www-03.ibm.com/software/sla/sladb.nsf/pdf/6605-18/$file/i126-6605-18_08-2019_en_US.pdf){: external}.
 
 - For the flexible plan, billing is based on the total amount of resources that are allocated to your service instance. For more information about resources and pricing, see [Resource breakdown](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#resources-breakdown).
 
@@ -49,7 +52,7 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click **Catalog** on the top menu bar to view the list of services that are available on the {{site.data.keyword.cloud_notm}}.
 3. Type `{{site.data.keyword.ihsdbaas_full}}` into the search field. Click the **{{site.data.keyword.ihsdbaas_postgresql_full}}** tile.
-4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your allocation values. **Tags** are optional and can be added after you create the service instance.  
+4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your allocation values. **Tags** are optional and can be added after you create the service instance. Don't use special characters such as & and # in your password.
 5. Click **Create**.
 6. Refresh the **Resource List** page after several minutes. When the status of the service instance is **Active**, the instance is ready to use.
 
@@ -81,7 +84,7 @@ Where the parameters have the following definitions:
 | ---------------- |  -------------------------------------------------------------- |
 | *name* | The name of your database cluster. |
 | *admin_name* | The administrator's user name of the database to be created. |
-| *password* | The administrator's user password of the database to be created. The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one number**. |
+| *password* | The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one number**. Don't use special characters such as & and #. |
 | *confirm_password* | The same password. |
 | *license_agree* | A value of `agreed` indicates acceptance of the license agreement, which is required to use {{site.data.keyword.ihsdbaas_postgresql_full}}. |
 | *cpu* | Total number of dedicated CPU cores. For the valid value range of *cpu*, *memory*, and *storage*, see the [value table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#before-scaling). |
@@ -95,7 +98,7 @@ Where the parameters have the following definitions:
 The *kms_instance* and *kms_key* parameters are required if you want to create a service instance with your own encryption key. {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't verify the *kms_instance* and *kms_key* parameters from the CLI. Make sure you copy and paste the correct values in the same format as the example.
 {: important}
 
-After you enter the command, the state of the new service instance might temporarily appear as **inactive** because it takes a few minutes to prepare the cluster. To get an update of the cluster status, use the `ibmcloud resource service-instance` command:
+After you enter the command, the state of the new service instance might temporarily appear as **inactive** because it takes a few minutes to prepare the cluster. To get an update of the cluster status, use the `ibmcloud resource service-instance` command.
 
 ```
 ibmcloud resource service-instance MyDBaaSIns03
@@ -109,7 +112,7 @@ For more {{site.data.keyword.cloud_notm}} CLI commands, see the [REFERENCE secti
 
 1. [Set up authentication to use the APIs.](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#api-auth)
 
-2. For the detailed API request, see [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#create-a-service-instance){: external}.
+2. For the detailed API request, see [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#create-service){: external}.
 
 ## What's next
 {: #create-connect}
