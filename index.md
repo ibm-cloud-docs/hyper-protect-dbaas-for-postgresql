@@ -56,7 +56,7 @@ For more information about versions, see [{{site.data.keyword.postgresql}} suppo
 
   If you encounter problems when you use one of the required browsers, disable your browser plug-ins.
 
-2. You can create a 30-day free plan service instance (or a paid service instance) with three types of accounts: [Pay-As-You-Go, Subscription](/docs/account?topic=account-accounts), or [trial accounts](/docs/account?topic=account-accountfaqs#freetrial) (trial accounts are available for faculty and students at accredited academic institutions).
+2. You can create a 30-day free plan service instance with three types of accounts: [Pay-As-You-Go, Subscription](/docs/account?topic=account-accounts), or [trial accounts](/docs/account?topic=account-accountfaqs#freetrial) (trial accounts are available for faculty and students at accredited academic institutions).
 
   To check your account type, go to the [Account settings](https://cloud.ibm.com/account/settings){: external} page.
 
