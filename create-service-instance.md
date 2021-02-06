@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-02"
+lastupdated: "2021-02-06"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: database monitoring, database cluster, database metrics
 
@@ -45,7 +45,7 @@ To enable monitoring, all three nodes of the database cluster need to be running
 ## Add monitoring
 {: #add-monitoring}
 
-In the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Observability** in the side navigation pane. Complete the following steps to add monitoring.
+On the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Observability** in the side navigation pane. Complete the following steps to add monitoring.
 
 1. In the **Monitoring** Pane, select the checkbox to agree to sending metrics to {{site.data.keyword.mon_short}} and click **Enable for monitoring**.
 
@@ -68,3 +68,6 @@ The table describes all the available metrics for {{site.data.keyword.ihsdbaas_p
 | Memory Usage | Memory usage measured in percentage |
 | Database Disk Usage | Disk usage measured in percentage |
 {: caption="Table 1. {{site.data.keyword.ihsdbaas_postgresql_full}} metrics" caption-side="top"}
+
+If you need to view all metrics of your databases, use any other monitoring tools that you prefer to connect to your databases. For more information, see [Monitoring](https://wiki.postgresql.org/wiki/Monitoring){: external}.
+{: note}

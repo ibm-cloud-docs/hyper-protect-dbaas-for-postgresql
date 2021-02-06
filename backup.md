@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: backup, disaster recovery, restore
 
@@ -47,14 +47,14 @@ The following table explains the parameters that are used in the command.
 
 |Parameter|Description|Example|
 |---------|-----------|-------|
-|*host_name*|The remote server that hosts the original databases. You need to connect to the host to get the data. You can find the host address on the **Manage** page in the service dashboard.|4e.52.37a9.ip4.static.sl-reverse.com|
-|*port*|The port number to establish a connection to the host. You can find the port on the **Manage** page in the service dashboard.|25050|
+|*host_name*|The remote server that hosts the original databases. You need to connect to the host to get the data. You can find the host address on the **Manage** page on the service dashboard.|4e.52.37a9.ip4.static.sl-reverse.com|
+|*port*|The port number to establish a connection to the host. You can find the port on the **Manage** page on the service dashboard.|25050|
 |*user_name*|The username to access the original databases. The user needs to have CONNECT privilege on the database and SELECT privilege to the tables.|my_user|
 |*database_name*|The name of the database that you want to back up.|my_database|
 |*dump_file*|The `.dump` file to store the original data. You can use relative or absolute paths to specify the file.|./pgdump.dump|
 {: caption="Table 1. Parameters that are needed to create a dump file"}
 
-For more information about user privileges, see [{{site.data.keyword.postgresql}} documentation](https://www.postgresql.org/docs/10/sql-grant.html){: external} for more information.
+For more information about user privileges, see [{{site.data.keyword.postgresql}} documentation](https://www.postgresql.org/docs/10/sql-grant.html){: external}.
 
 ## Step 2. Create a {{site.data.keyword.cos_full_notm}} instance to upload the dump file
 {: #step2_create_object_storage_backup_postgresql}
@@ -86,8 +86,8 @@ The following table explains the parameters that are used in the command.
 
 |Parameter|Description|Example|
 |---------|-----------|-------|
-|*host_name*|The DBaaS manager server that hosts the target cluster. You can find the host address on the **Manage** page in the service dashboard.|4e.52.37a9.ip4.static.sl-reverse.com|
-|*port*|The port number to establish a connection to the host. You can find the port number address on the **Manage** page in the service dashboard.|25003|
+|*host_name*|The DBaaS manager server that hosts the target cluster. You can find the host address on the **Manage** page on the service dashboard.|4e.52.37a9.ip4.static.sl-reverse.com|
+|*port*|The port number to establish a connection to the host. You can find the port number address on the **Manage** page on the service dashboard.|25003|
 |*user_name*|The username to access the target database.|new_user|
 |*database_name*|The database can be any database that the user has CONNECT privilege on. The `psql` session automatically switches it to the target database that you want to restore the data into.|my_database|
 |*dump_file*|The `.dump` file that you download from your Cloud {{site.data.keyword.cos_short}} bucket. You can use relative or absolute paths to specify the file.|./pgdump.dump|

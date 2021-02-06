@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: release note, new, added, changed, deleted
 
@@ -13,7 +13,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 
-# What's new
+# Release notes
 {: #what-new}
 
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
@@ -133,7 +133,7 @@ The major changes to the dashboard are navigation and renaming of terms. The new
 ### Changed: Manage databases and database users with only database clients
 {: #changed-manage}
 
-To enhance security, use your database client to manage databases and database users. The **Databases**, **Users**, and **Nodes** pages in the dashboard are read-only.
+To enhance security, use your database client to manage databases and database users. The **Databases**, **Users**, and **Nodes** pages on the dashboard are read-only.
 
 ### Changed: Python components for using CLI
 {: #changed-cli-python}
@@ -170,7 +170,7 @@ You can use your {{site.data.keyword.cloudaccesstrailshort}} instance in Frankfu
 ### Added: Free plans are available
 {: #added-free-plans}
 
-You can try out free plans for {{site.data.keyword.ihsdbaas_postgresql_full}}. Free plans are designed for evaluation purposes and are not suitable for production usage. If you create free-plan instances, note that they will be automatically deleted 30 days after creation.
+You can try out free plans for {{site.data.keyword.ihsdbaas_postgresql_full}}. They're designed for evaluation purposes and are not suitable for production usage. Free-plan service instances will be automatically deleted 30 days after creation.
 
 ## 28 August 2019
 {: #Aug-2019}

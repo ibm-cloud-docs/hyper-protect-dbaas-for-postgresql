@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-23"
+  years: 2020, 2021
+lastupdated: "2021-02-06"
 
 keywords: Hyper Protect DBaaS, scaling, resource scaling, RAM, disk, vCPU
 
@@ -114,7 +114,7 @@ You can scale your resources through the UI, the CLI, and the API.
 ### Scaling in the UI
 {: #webui-scaling}
 
-1. In the service dashboard, select **Resources** in the side navigation pane. 
+1. On the service dashboard, select **Resources** in the side navigation pane. 
 2. Select new allocation values for RAM, Disk, or vCPU.
 3. Click **Apply changes**. If your request is accepted, you can see the scaling status of each node. 
 
@@ -141,7 +141,7 @@ Your cluster won't expire if you don't convert the pricing plan. However, if you
 ### Using the UI
 {: #switch-plan-ui}
 
-Go to the **Plan** page in the service dashboard. Choose **PostgreSQL Flexible** and save.
+Go to the **Plan** page on the service dashboard. Choose **PostgreSQL Flexible** and save.
 
 ### Using the CLI
 {: #switch-plan-cli}

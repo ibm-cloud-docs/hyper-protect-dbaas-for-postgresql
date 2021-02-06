@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: database user, Users page, user name
 
@@ -33,7 +33,7 @@ For more information about the role attributes and privileges of {{site.data.key
 ## Viewing information about database users in the UI
 {: webui-database-users}
 
-In the service dashboard, select **Users** in the side navigation pane to view the information about your database users.
+On the service dashboard, select **Users** in the side navigation pane to view the information about your database users.
 
 ## Viewing information about database users from the CLI
 {: cli-database-users}

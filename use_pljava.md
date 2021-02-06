@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: PL/Java extension
 
@@ -65,7 +65,7 @@ The following example shows [how to load and use the `hello` function](https://t
   SET
   ```
 
-3. To install the `hello` function, put the package in an external `https` server and then download it with the following command:
+3. To install the `hello` function, put the package in an external `https` server and then download it with the following command.
     ```
     select sqlj.install_jar(<https://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
     ```
@@ -88,7 +88,7 @@ The following example shows [how to load and use the `hello` function](https://t
   (1 row)
   ```
 
-5. To use the `hello` function in a new session without setting the search path again, save your search path with the following command:
+5. To use the `hello` function in a new session without setting the search path again, save your search path with the following command.
   ```
   ALTER DATABASE <dbname> SET search_path TO javatest,public;
   ```

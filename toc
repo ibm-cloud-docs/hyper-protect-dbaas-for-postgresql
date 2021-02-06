@@ -19,8 +19,8 @@ Hyper Protect DBaaS for PostgreSQL
 
     {: .navgroup id="tutorial"}
     [Enhancing security of your deployed application](https://{DomainName}/docs/tutorials?topic=solution-tutorials-extended-app-security)
-    [Build and deploy a disaster donations website with end-to-end encryption](https://developer.ibm.com/patterns/systems-create-a-secure-disaster-donations-website/)
-    [Create secure microservices writing to a consolidated database](https://developer.ibm.com/patterns/create-a-secured-microservices-and-deploy-it-to-a-consolidated-database/)
+    [Building and deploying a disaster donations website with end-to-end encryption](https://developer.ibm.com/patterns/systems-create-a-secure-disaster-donations-website/)
+    [Creating secure microservices writing to a consolidated database](https://developer.ibm.com/patterns/create-a-secured-microservices-and-deploy-it-to-a-consolidated-database/)
     [Video: Enabling a shared database while maintaining complete data confidentiality](https://www.youtube.com/watch?v=6LH3OhwI83o)
     [Video: Running the Digital Banking application with integrated Hyper Protect Services](https://youtu.be/Ci7UFUG7So4)
     {: .navgroup-end}
@@ -84,7 +84,6 @@ Hyper Protect DBaaS for PostgreSQL
     {: .topicgroup}
     Troubleshooting
         ts-clusterid.md
-        ts-cli-error.md
 
     help-support.md
     {: .navgroup-end}
