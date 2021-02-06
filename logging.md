@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: logs, logging, Log Analysis, LogDNA
 
@@ -45,7 +45,7 @@ To enable logging, all three nodes of the database cluster need to be running. I
 ## Add logging
 {: #add-logging}
 
-In the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Observability** in the side navigation pane. Complete the following steps to add logging.
+On the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Observability** in the side navigation pane. Complete the following steps to add logging.
 
 1. In the **Logging** pane, select the checkbox to agree to sending logs to {{site.data.keyword.loganalysisshort_notm}} and click **Enable for logging**.
 

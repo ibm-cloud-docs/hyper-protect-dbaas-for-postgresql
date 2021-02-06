@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-23"
+  years: 2020, 2021
+lastupdated: "2021-02-06"
 
 keywords: Hyper Protect DBaaS, compliance, data encryption, data security
 
@@ -34,7 +34,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 ## General Data Protection Regulation (GDPR)
 {: #gdpr}
 
-The GDPR seeks to create a harmonized data protection law framework across the EU and aims to give citizens back the control of their personal data. It imposes strict rules on companies hosting and processing this data, anywhere in the world.
+The GDPR seeks to create a harmonized data protection law framework across the EU and aims to give citizens back the control of their personal data. It imposes strict rules on companies that host and process this data, anywhere in the world.
 
 {{site.data.keyword.IBM_notm}} is committed to providing you with innovative data privacy, security, and governance solutions to assist you in your journey to GDPR readiness.
 

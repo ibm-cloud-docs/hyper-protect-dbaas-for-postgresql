@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: IAM, identity, access management, role
 
@@ -73,7 +73,7 @@ The following tables outline what actions each service access role allows for th
 ## Difference between IAM service access and database user privileges
 {: #compare-IAM-dbuser-access}
 
-IAM service access applies to {{site.data.keyword.ihsdbaas_postgresql_full}} service instances. It manages the authorization of the service APIs. Database user privileges (as you see on the **Users** page in the service dashboard) apply to databases within your database cluster.
+IAM service access applies to {{site.data.keyword.ihsdbaas_postgresql_full}} service instances. It manages the authorization of the service APIs. Database user privileges (as you see on the **Users** page on the service dashboard) apply to databases within your database cluster.
 
 ## Managing IAM access for users or services
 {: #manage-access}

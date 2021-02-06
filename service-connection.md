@@ -33,7 +33,7 @@ You can choose one of the following options when you create a service instance o
 - Both public and private endpoints
 
 {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support changing your service endpoint configuration after service creation for now. If you choose both public and private endpoints, you can connect with either of them; public endpoints can't be disabled later.
-{:note}
+{: note}
 
 ## Public endpoints
 {: #public-service-endpoint}

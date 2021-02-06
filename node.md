@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: node, DBaaS dashboard
 
@@ -36,7 +36,7 @@ The information is read-only. If a node is failed, see [Getting help and support
 ### Checking node status in the UI
 {: #webui-check-node-status}
 
-1. In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Nodes** in the side navigation pane to view information about your nodes and download logs.
+1. On the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Nodes** in the side navigation pane to view information about your nodes and download logs.
 
 2. Select the primary node or a secondary node to check its ID, status, and replication lag. 
 

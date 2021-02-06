@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-23"
+  years: 2020, 2021
+lastupdated: "2021-02-06"
 
 keywords: users, roles, DBaaS admin user, privileges
 
@@ -40,7 +40,7 @@ replicator | Replication | {}
 
 When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in {{site.data.keyword.cloud_notm}}, you are automatically given the `ibm-cloud-admin` role to access and manage PostgreSQL databases.
 
-If your databases are created with the default PostgreSQL `template1` after [October 14, 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020), the database owner is automatically granted the `ibm-cloud-admin` role to [`CREATE CAST`](https://www.postgresql.org/docs/10/sql-createcast.html){: external}. With `CREATE CAST`, customized data type can be created to build required data models. If your databases are created with other PostgreSQL templates, the superuser `postgres` is the only role who can `CREATE CAST`. For more information about template databases, see [Template Databases](https://www.postgresql.org/docs/10/manage-ag-templatedbs.html){: external} in PostgreSQL documentation.
+If your databases are created with the default PostgreSQL `template1` after [14 October, 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020), the database owner is automatically granted the `ibm-cloud-admin` role to [`CREATE CAST`](https://www.postgresql.org/docs/10/sql-createcast.html){: external}. With `CREATE CAST`, customized data type can be created to build required data models. If your databases are created with other PostgreSQL templates, the superuser `postgres` is the only role who can `CREATE CAST`. For more information about template databases, see [Template Databases](https://www.postgresql.org/docs/10/manage-ag-templatedbs.html){: external} in PostgreSQL documentation.
 {: note}
 
 ## The `ibm-cloud-admin` role
@@ -51,7 +51,7 @@ If your databases are created with the default PostgreSQL `template1` after [Oct
 
 When you create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in {{site.data.keyword.cloud_notm}}, you are the `admin` user and are automatically given the `ibm-cloud-admin` role to access and manage PostgreSQL.
 
-If your {{site.data.keyword.ihsdbaas_postgresql_full}} service instances were created before [October 14, 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020), you need to use a user who has the `Create role` privilege and grant the `ibm-cloud-admin` role to the database admin or any user who needs it.
+If your {{site.data.keyword.ihsdbaas_postgresql_full}} service instances were created before [14 October, 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020), you need to use a user who has the `Create role` privilege and grant the `ibm-cloud-admin` role to the database admin or any user who needs it.
 
 ### What can I do with the `ibm-cloud-admin` role?
 {: #ibm-cloud-admin-role-privileges}
@@ -62,13 +62,13 @@ The biggest difference between the `ibm-cloud-admin` role user and other users y
 
 A user with the `ibm-cloud-admin` role can grant these two roles to other users or roles in your service instance. For example:
 
-- If you want to set up a specific monitoring user, `deb`, run the following command:
+- If you want to set up a specific monitoring user, `deb`, run the following command.
   ```
   GRANT pg_monitor TO deb;
   ```
   {: codeblock}
 
-  You can also grant `pg_monitor` to all the users with the `admin` role with the following command:
+  You can also grant `pg_monitor` to all the users with the `admin` role with the following command.
   ```
   GRANT pg_monitor TO "admin";
   ```
@@ -80,7 +80,7 @@ A user with the `ibm-cloud-admin` role can grant these two roles to other users 
   ```
   {: codeblock}
 
-  You can also grant `pg_signal_backend` to all the users with the `admin` role with the following command:
+  You can also grant `pg_signal_backend` to all the users with the `admin` role with the following command.
   ```
   GRANT pg_signal_backend TO "admin";
   ```

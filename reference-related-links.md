@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-23"
+  years: 2020, 2021
+lastupdated: "2021-02-06"
 
 keywords: postgresql, mongodb, reference, related information, related topics, related links, blogs, videos
 
@@ -74,6 +74,7 @@ More resources to help you learn about securing data and resources with {{site.d
 ## Related {{site.data.keyword.IBM_notm}} service documentation
 {: #related-service-doc}
 
+- [{{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted){: external}
 - [{{site.data.keyword.hscrypto}}](/docs/hs-crypto){: external}
 - [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect){: external}
 - [{{site.data.keyword.hpvs}}](/docs/hp-virtual-servers){: external}

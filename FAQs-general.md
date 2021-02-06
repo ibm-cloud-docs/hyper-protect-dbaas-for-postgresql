@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: frequently asked questions, database
 
@@ -55,7 +55,7 @@ How long can I stay on the current DB version until I have to move to the latest
 {: #what-is-pervasive-encryption}
 {: faq}
 
-{{site.data.keyword.ihsdbaas_full}} is built on the {{site.data.keyword.IBM_notm}} LinuxONE platform, which provides pervasive encryption of data at rest and in transit. Pervasive encryption is an infrastructure for an end-to-end data protection. In particular, it includes data volume encryption with protected and secure keys. For more information, see [Pervasive encryption](https://www.ibm.com/support/knowledgecenter/linuxonibm/liaaf/lnz_r_crypt.html){: external}.
+{{site.data.keyword.ihsdbaas_full}} is built on {{site.data.keyword.IBM_notm}} LinuxONE, which provides pervasive encryption of data at rest and in transit. Pervasive encryption is an infrastructure for an end-to-end data protection. In particular, it includes data volume encryption with protected and secure keys. For more information, see [Pervasive encryption](https://www.ibm.com/support/knowledgecenter/linuxonibm/liaaf/lnz_r_crypt.html){: external}.
 
 ## How is {{site.data.keyword.ihsdbaas_full}} different from other cloud databases, including {{site.data.keyword.cloud_notm}} databases?
 {: #hyper-protect-dbaas-difference}

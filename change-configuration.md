@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-23"
+  years: 2020, 2021
+lastupdated: "2021-02-06"
 
 keywords: customize configuration, change configuration, configuration parameters
 
@@ -31,7 +31,7 @@ The database admins or users with the [Manager role](#changing-configuration-pre
 
 If a request to change configuration settings fails, the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team will be notified automatically. You can also use the [task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds) or the [API request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks){: external} to view the request status.
 
-Some configuration changes require a restart to the primary and secondary nodes. The secondary nodes will be restarted first, then the primary node. You can find the `requires_restart` information in [Available configuration settings](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#available-config-settings).
+Some configuration changes require a restart to the primary and secondary nodes. The secondary nodes are restarted first, then the primary node. You can find the `requires_restart` information in [Available configuration settings](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#available-config-settings).
 {: note}
 
 ## Prerequisite
@@ -39,7 +39,7 @@ Some configuration changes require a restart to the primary and secondary nodes.
 
 You need to have the **Manager** role to change configuration settings, as defined in the [IAM service access roles table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam#service-access-roles). To assign access, see [Managing IAM access for users or services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam#manage-access).
 
-Updating `max_connections` and `max_locks_per_transaction` with one command/API request is only feasible when you make the values both larger or smaller. If you need to make one larger and the other smaller, you need to run two commands/API requests, updating one setting at a time. This limitation will be fixed in the next release.
+Updating `max_connections` and `max_locks_per_transaction` with one command/API request is only feasible when you make the values both larger or smaller. If you need to make one larger and the other smaller, you need to run two commands/API requests, updating one setting at a time.
 {: important}
 
 ## Using the CLI
@@ -69,7 +69,7 @@ ibmcloud dbaas task-show <resource_name> <task_id>
 ## Using the API
 {: #changing-configuration-api}
 
-There are two deployment-configuration endpoints, one for viewing the configuration schema and one for changing the configuration:
+Two API requests are available, one for viewing the current configuration and one for changing the configuration:
 
 1. To view the configuration schema, use the [API request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#get-configuration){: external}.
 2. To change the configuration, specify the settings as a JSON object in the [request to update configuration](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#update-configuration){: external}. You can use the [request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks){: external} to check the task status.
@@ -84,7 +84,7 @@ There are two deployment-configuration endpoints, one for viewing the configurat
 [`shared_buffers`](https://www.postgresql.org/docs/10/runtime-config-resource.html#GUC-SHARED-BUFFERS){: external}
   - Default - `128` (MB)
   - Restarts database? - **Yes**
-  - Note - Shared memory buffers that the server use. The recommended memory allocation for `shared_buffers` is 1/4 of the service intance's RAM. Setting `shared_buffers` any higher can result in memory issues that cause the database to crash. Setting `shared_buffers` equal, close to equal, or higher than the amount of allocated memory prevents the database from starting. <!--The maximum amount of total space for `shared_buffers` is 8 GB or 1048576 buffers based on recommendations from the PostgreSQL community. Your service instance can make use of additional RAM for caching and performance, even without allocating it to `shared_buffers`. You do not have to configure the database to use all of the allocated RAM in order for your deployment to use it.-->
+  - Note - Shared memory buffers that the server use. The memory allocation for `shared_buffers` can't excceed 40% of the service instance's RAM. Setting `shared_buffers` any higher can result in memory issues that cause the database to crash. Setting `shared_buffers` equal, close to equal, or higher than the amount of allocated memory prevents the database from starting. <!--The maximum amount of total space for `shared_buffers` is 8 GB or 1048576 buffers based on recommendations from the PostgreSQL community. Your service instance can make use of additional RAM for caching and performance, even without allocating it to `shared_buffers`. You do not have to configure the database to use all of the allocated RAM in order for your deployment to use it.-->
 
 <!--
 ### General Settings

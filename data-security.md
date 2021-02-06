@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-23"
+  years: 2020, 2021
+lastupdated: "2021-02-06"
 
 keywords: data encryption, data security, Hyper Protect DBaaS, postgresql, BYOK, KYOK
 
@@ -35,7 +35,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 - Built on [{{site.data.keyword.IBM_notm}} Secure Service Container technology](https://www.ibm.com/us-en/marketplace/secure-service-container){: external}, {{site.data.keyword.ihsdbaas_postgresql_full}} provides workload isolation, restricted administrator access and tamper protection for data at rest and in flight. Not even the cloud administrator has access to your data at any point.
 - All {{site.data.keyword.ihsdbaas_postgresql_full}} connections use TLS/SSL encryption for data in transit. The current supported version of this encryption is TLS 1.2.
 - Access to the {{site.data.keyword.cloud_notm}} account, {{site.data.keyword.ihsdbaas_postgresql_full}} management web user interface, CLI, and API is secured via [{{site.data.keyword.cloud_notm}} Identity and Access Management (IAM)](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam).
-- Access to the database is secured and managed through the standard access controls provided by the database. All database access controls are disabled in the service interfaces. IAM users are not able to authenticate to the database itself. This separation provides a higher isolation for your environment. 
+- Access to the database is secured and managed through the standard access controls provided by the database. All database access controls are unavailable in the service interfaces. IAM users are not able to authenticate to the database itself. This separation provides a higher isolation for your environment. 
 - All {{site.data.keyword.ihsdbaas_postgresql_full}} storage is provided on storage encrypted with LUKS using AES-256. The default keys are managed within the locked down environment within [Secure Service Containers](https://www.ibm.com/us-en/marketplace/secure-service-container){: external}. Bring Your Own Key (BYOK) for encryption is also available through [{{site.data.keyword.keymanagementservicelong_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok), and Keep Your Own Key (KYOK) through [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok).
 
 ## Protecting your sensitive data in {{site.data.keyword.ihsdbaas_postgresql_full}}
@@ -89,4 +89,4 @@ To delete databases, use your database client. For options to back up your datab
 ### Deleting keys
 {: #key-delete}
 
-If you have enabled KYOK or BYOK, when you delete the key that is used to encrypt your service, you lose access to the data. For more information, see [Removing {{site.data.keyword.hscrypto}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok#hpcs-remove-key) or [Removing {{site.data.keyword.keymanagementserviceshort}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok#kp-remove-key).
+If you enabled KYOK or BYOK, when you delete the key that is used to encrypt your service, you lose access to the data. For more information, see [Removing {{site.data.keyword.hscrypto}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-hpcs-byok#hpcs-remove-key) or [Removing {{site.data.keyword.keymanagementserviceshort}} keys](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-key-protect-byok#kp-remove-key).

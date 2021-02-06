@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-06"
 
 keywords: database, DBaaS dashboard
 
@@ -31,7 +31,7 @@ You can view information about your databases through the UI, the CLI, and the A
 ## Viewing information about databases in the UI
 {: webui-databases}
 
-In the service dashboard, select **Databases** in the side navigation pane to view the name and size of your databases. 
+On the service dashboard, select **Databases** in the side navigation pane to view the name and size of your databases. 
 
 ## Viewing information about databases from the CLI
 {: cli-databases}

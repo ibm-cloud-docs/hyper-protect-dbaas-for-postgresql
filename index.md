@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-02"
+lastupdated: "2021-02-06"
 
 keywords: hyper protect dbaas, hyper protect dbaas for postgresql, postgresql, cloud database, data security, secure database, encrypted database
 
@@ -38,7 +38,47 @@ With {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_fu
 
 Watch the following video to find out how to get started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}}:
 
-![Getting started with {{site.data.keyword.ihsdbaas_full}}](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=0_2wa8vkxt){: video output="iframe" data-script="none" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+![Getting started with {{site.data.keyword.ihsdbaas_full}}](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=0_2wa8vkxt){: video output="iframe" data-script="#video-transcript-gettingstarted" id="mediacenterplayer" frameborder="0" width="560" height="315" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
+
+## Video transcript
+{: #video-transcript-gettingstarted}
+{: notoc}
+
+Hi, welcome to this getting started video for IBM Cloud™ Hyper Protect DBaaS, an offering that allows you to easily provision and manage highly secure, high volume databases for your sensitive data without sacrificing performance.
+
+Every Hyper Protect DBaaS service instance contains a highly available three-node cluster with multi-zone region support. Built on LinuxONE technology, Hyper Protect DBaaS encrypts both data at rest and data in flight. It offers complete data confidentiality; not even the cloud admin has access to your data. It also supports many industry certifications, GDPR for example, and client regulatory compliance activities. And as you will see in the rest of this video, you can easily provision and monitor secure MongoDB or PostgreSQL databases without specialized database skills.
+
+In the following demo, you will learn how to create a Hyper protect DBaaS service instance, connect to your databases, and navigate the service dashboard.
+
+Before you start, you need to have an IBM Cloud account and log in. Go to the IBM Cloud service Catalog and find Hyper Protect DBaaS. You can choose between MongoDB and PostgreSQL. In this video, we’ll use MongoDB as an example.
+
+On the service provisioning page, select a region and a pricing plan. With the flexible plan, you can select your initial resource allocation values.
+
+You can also try out the service with the free plan. The service name is auto-generated. Select a resource group to organize your resources, which can't be changed after you create the instance. Tags are optional. Name the cluster and the admin. Enter and confirm your password. You can choose to use your own KMS instance with a root key for more secure encryption. You also have the option of using private service endpoints to enhance control and security over your data.
+
+You can find the service instance you just created on the Resource list page. It takes a few minutes for the provisioning to complete. Select your service instance to open the service dashboard.
+
+Click Getting started to read the getting started documentation. If you need more information and detailed instructions, select View docs in Actions to go to the full documentation.
+
+To connect to the databases, you can run the mongo shell command or use MongoDB Compass. In this video, we'll use MongoDB Compass. In the service dashboard, download the certificate authority file, and copy the cluster URL.
+
+Open MongoDB Compass. Paste your connection string. Click Fill in connection fields individually. In the Authentication dropdown list, choose Username / Password, enter your admin name and password. In the More options tab, for SSL, select Server Validation. Upload the certificate authority file you just downloaded, and click Connect. Now you have connected to your databases.
+
+Let’s go back to the service dashboard.
+
+If you are using the flexible pricing plan, you can see the Resources label. On the resources page, you can manually adjust the amount of resources to suit your workload and the size of your data. If you are using the old fixed pricing plan (aka. Small, Medium, or Large), go to the Plan page first to convert you fixed pricing plan to the flexible plan and reload the dashboard to see the Resources page and scale your resources. Free service instances can't be converted or scaled.
+
+On the Manage page, you can see the overall information of your service instance.
+
+Select Databases and Users to view the information about your databases and users.
+
+Select Nodes to view the information of your primary and secondary nodes, and download audit and mongod logs.
+
+Select Observability to go to monitoring and logging. To use monitoring or logging, first you need to agree to sending your metrics or logs to the monitoring or logging service. The steps to add monitoring and logging are similar. Here we’ll use logging as an example. Click Add logging. If you don't have a Log Analysis service instance, you'll be directed to the service creation page to create one. Select the same region as your service instance. After you add the Log Analysis service instance, click Launch logging to be directed to the Log Analysis dashboard to view the logs.
+
+Similarly, you can add the IBM Cloud Monitoring with Sysdig service to monitor your CPU, memory and disk usage.
+
+Now you have a general idea about the service. Go to the [Hyper Protect DBaaS homepage](https://www.ibm.com/cloud/hyper-protect-dbaas){: external} to learn more and get started for free.
 
 ## Supported version
 {: #postgresql_supported_version}
