@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-25"
 
 keywords: Activity tracker events
 
@@ -39,6 +39,7 @@ To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, 
 {{site.data.keyword.ihsdbaas_postgresql_full}} Region | {{site.data.keyword.cloudaccesstrailshort}} Region
 ----------|-----------
 `Dallas (us-south)` | `Dallas (us-south)`
+`Washington DC (us-east)` | `Washington DC (us-east)`
 `Frankfurt (eu-de)` | `Frankfurt (eu-de)`
 `Sydney (au-syd)` | `Dallas (us-south)`
 {: caption="Table 1. {{site.data.keyword.cloudaccesstrailshort}} regions" caption-side="top"}

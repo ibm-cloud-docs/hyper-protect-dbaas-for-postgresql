@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-02-25"
 
 keywords: DBaaS CLI, Python runtime
 
@@ -33,7 +33,7 @@ Use the {{site.data.keyword.cloud}} CLI to manage your {{site.data.keyword.cloud
  
 2. Log in to the {{site.data.keyword.cloud_notm}}.
 
-   {{site.data.keyword.cloud_notm}} provides various geographical regions that you can log in to. Use the `ibmcloud regions` command to list all the regions. Currently, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} is supported in the `us-south`, `eu-de`, and `au-syd` regions.
+   {{site.data.keyword.cloud_notm}} provides various geographical regions that you can log in to. Use the `ibmcloud regions` command to list all the regions. Currently, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} is supported in the `us-south` (Dallas), `us-east` (Washington DC), `eu-de` (Frankfurt), and `au-syd` (Sydney) regions.
    {: note}
 
    1. Enter the `ibmcloud login` command, indicating that you're using Single Sign-On (SSO) and specifying the URL of the endpoint you want to log in to, as shown in this example:

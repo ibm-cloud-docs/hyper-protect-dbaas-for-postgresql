@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-02-25"
 
 keywords: database monitoring, database cluster, database metrics
 
@@ -31,6 +31,7 @@ Monitoring for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgres
 {{site.data.keyword.ihsdbaas_postgresql_full}} Region | {{site.data.keyword.mon_short}} Region
 ----------|-----------
 `Dallas (us-south)` | `Dallas (us-south)`
+`Washington DC (us-east)` | `Washington DC (us-east)`
 `Frankfurt (eu-de)` | `Frankfurt (eu-de)`
 `Sydney (au-syd)` | `Sydney (au-syd)`
 {: caption="Table 1. {{site.data.keyword.mon_short}} regions" caption-side="top"}

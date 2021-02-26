@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-02-25"
 
 keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 
@@ -95,6 +95,7 @@ DBaaS Managers are available in the following regions for service instances with
 | Hostname | Port Number | Region | City |
 |-----------|-------------|--------|------|
 | dbaas900.hyperp-dbaas.cloud.ibm.com | 20000 | us-south | Dallas |
+| dbaas906.hyperp-dbaas.cloud.ibm.com | 20000 | us-east | Washington DC |
 | dbaas902.hyperp-dbaas.cloud.ibm.com | 20000 | eu-de | Frankfurt |
 | dbaas904.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
 {: caption="Table 1. DBaaS Managers" caption-side="top"}
@@ -104,6 +105,7 @@ DBaaS Managers are available in the following regions for service instances with
 | Hostname | Port Number | Region | City |
 |-----------|-------------|--------|------|
 | dbaas900.private.hyperp-dbaas.cloud.ibm.com | 20000 | us-south | Dallas |
+| dbaas906.private.hyperp-dbaas.cloud.ibm.com | 20000 | us-east | Washington DC |
 | dbaas902.private.hyperp-dbaas.cloud.ibm.com | 20000 | eu-de | Frankfurt |
 | dbaas904.private.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
 {: caption="Table 2. DBaaS Managers (private)" caption-side="top"}
