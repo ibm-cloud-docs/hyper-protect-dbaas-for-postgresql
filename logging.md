@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-02-25"
 
 keywords: logs, logging, Log Analysis, LogDNA
 
@@ -31,6 +31,7 @@ When you use {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql
 {{site.data.keyword.ihsdbaas_postgresql_full}} Region | {{site.data.keyword.loganalysisshort_notm}} Region
 ----------|-----------
 `Dallas (us-south)` | `Dallas (us-south)`
+`Washington DC (us-east)` | `Washington DC (us-east)`
 `Frankfurt (eu-de)` | `Frankfurt (eu-de)`
 `Sydney (au-syd)` | `Dallas (us-south)`
 {: caption="Table 1. {{site.data.keyword.loganalysisshort_notm}} regions" caption-side="top"}
