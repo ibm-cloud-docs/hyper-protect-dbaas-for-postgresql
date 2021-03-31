@@ -4,7 +4,7 @@ copyright:
   years: 2019, 2021
 lastupdated: "2021-02-25"
 
-keywords: logs, logging, Log Analysis, LogDNA
+keywords: logs, logging, Log Analysis
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
