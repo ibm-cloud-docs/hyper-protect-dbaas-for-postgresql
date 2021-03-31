@@ -54,7 +54,7 @@ On the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Observ
   
    a. If you don't have a {{site.data.keyword.mon_short}} service instance, you'll be directed to the service creation page to create one. Select the same region as your service instance. For **platform metrics**, leave the **Enable** option selected.
    
-   b. If you already have a {{site.data.keyword.mon_short}} service instance in the same region but it isn't enabled to receive platform metrics, you need to select the Sysdig service instance to receive platform metrics in the pop-up dialog box.
+   b. If you already have a {{site.data.keyword.mon_short}} service instance in the same region but it isn't enabled to receive platform metrics, you need to select the {{site.data.keyword.mon_short}} service instance to receive platform metrics in the pop-up dialog box.
 
 3. After you add a {{site.data.keyword.mon_short}} service instance, click **Launch monitoring** to be directed to the {{site.data.keyword.mon_short}} dashboard to view the metrics. For more information about using the {{site.data.keyword.mon_short}} dashboard and configuring alerts, see the [Getting started tutorial](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-getting-started-monitor#getting-started-monitor_step5).
 

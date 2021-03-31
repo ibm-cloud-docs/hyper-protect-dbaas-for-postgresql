@@ -76,7 +76,7 @@ Select Nodes to view the information of your primary and secondary nodes, and do
 
 Select Observability to go to monitoring and logging. To use monitoring or logging, first you need to agree to sending your metrics or logs to the monitoring or logging service. The steps to add monitoring and logging are similar. Here we’ll use logging as an example. Click Add logging. If you don't have a Log Analysis service instance, you'll be directed to the service creation page to create one. Select the same region as your service instance. After you add the Log Analysis service instance, click Launch logging to be directed to the Log Analysis dashboard to view the logs.
 
-Similarly, you can add the IBM Cloud Monitoring with Sysdig service to monitor your CPU, memory and disk usage.
+Similarly, you can add the IBM Cloud Monitoring service to monitor your CPU, memory and disk usage.
 
 Now you have a general idea about the service. Go to the [Hyper Protect DBaaS homepage](https://www.ibm.com/cloud/hyper-protect-dbaas){: external} to learn more and get started for free.
 
