@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-04-07"
 
 keywords: Hyper Protect DBaaS, scaling, resource scaling, RAM, disk, vCPU
 
@@ -22,6 +22,9 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:external: target="_blank" .external}
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Scaling RAM, disk, and vCPU
 {: #resources-scaling}
@@ -109,10 +112,11 @@ The following information provides what you need to know about the scaling proce
 ## Scaling instructions
 {: #scaling-instructions}
 
-You can scale your resources through the UI, the CLI, and the API.
+You can scale your resources through the UI, CLI, and API.
 
 ### Scaling in the UI
 {: #webui-scaling}
+{: ui}
 
 1. On the service dashboard, select **Resources** in the side navigation pane. 
 2. Select new allocation values for RAM, Disk, or vCPU.
@@ -120,11 +124,13 @@ You can scale your resources through the UI, the CLI, and the API.
 
 ### Scaling from the CLI 
 {: #cli-scaling}
+{: cli}
 
 Use the `ibmcloud dbaas resource-scale` command to scale your resources. Use the `ibmcloud dbaas task-show` command to check the status of the scaling task. For more information about how to use the commands, see [ibmcloud dbaas resource-scale](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#resource-scale) and the [task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds).
 
 ### Scaling with the API
 {: #api-scaling}
+{: api}
 
 For the API requests to scale your resources and check the scaling status, see [Scale resources](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#scale-resources) and [List tasks](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks).
 

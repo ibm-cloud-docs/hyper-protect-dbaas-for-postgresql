@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-23"
+  years: 2020, 2021
+lastupdated: "2021-04-07"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -20,11 +20,14 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:note: .note}
 {:term: .term}
 {:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Managing your service instance
 {: #manage-service}
 
-You can manage your {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance through the UI, the CLI, and the API.
+You can manage your {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance through the UI, CLI, and API.
 {: shortdesc}
 
 To scale your resources, see [Scaling RAM, disk, and vCPU](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling). To change your database configuration, see [Changing the PostgreSQL configuration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration).
@@ -32,17 +35,19 @@ To scale your resources, see [Scaling RAM, disk, and vCPU](/docs/hyper-protect-d
 ## Viewing information about your service instance
 {: #show-detail-service}
 
-You can view information about your service instances, databases, users, and nodes. To enable logging and monitoring, see [Sending logs to {{site.data.keyword.la_full_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-sendlogs) and [Monitoring databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-monitor).
+You can view information about your service instances, databases, users, and nodes. To enable logging and monitoring, see [Logging for {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-sendlogs) and [Monitoring metrics for {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-monitor).
 
 ### Viewing information in the UI
 {: #webui-show-service}
+{: ui}
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **View all** on the **Resource summary** pane, or click **Resource List** in the upper left corner, to display all your resources.
-2. Select the service instance on the **Resource list** to display the service dashboard. On the **Manage** page, you can see the overall information and connection information of the service instance.
+2. Select the service instance on the **Resource list** to display the service dashboard. On the **Overview** page, you can see the overall information and connection information of the service instance.
 3. Select **Databases**, **Users**, and **Nodes** in the side navigation pane to view more information.
 
 ### Viewing information from the CLI
 {: #cli-show-service}
+{: cli}
 
 - [List your service instances.](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
 - [Show the details of your service instance.](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance)
@@ -50,6 +55,7 @@ You can view information about your service instances, databases, users, and nod
 
 ### Viewing information with the API
 {: #api-show-service}
+{: api}
 
 Use the [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#get-service-instances){: external} to list your service instances, get detailed information about your service instance, etc.
 
@@ -65,6 +71,7 @@ To assign access to other users or services to use your service instance, see [M
 
 ### Managing your service instance in the UI
 {: #webui-manage-service}
+{: ui}
 
 1. Go to the **Resource list** page in the {{site.data.keyword.cloud_notm}} console.
 2. Expand **Services**. Find the target service instance and click the overflow icon.
@@ -72,6 +79,7 @@ To assign access to other users or services to use your service instance, see [M
 
 ### Managing your service instance from the CLI
 {: #cli-manage-service}
+{: cli}
 
 - [Rename your service instance.](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_update)
 - [Delete your service instance.](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete)
@@ -80,5 +88,6 @@ To assign access to other users or services to use your service instance, see [M
 
 ### Managing your service instance with the API
 {: #api-manage-service}
+{: api}
 
-Use the [request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#delete-a-service-instance){: external} to delete your service instance.
+Use the [request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#delete-a-service-instance){: external} to delete your service instance. For the other tasks, see the UI or CLI instructions.

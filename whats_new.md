@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-04-07"
 
 keywords: release note, new, added, changed, deleted
 
@@ -18,6 +18,34 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
+
+## 7 April 2021
+{: #apr-2021}
+
+### Added: Tolerance in creating/disabling/restoring service instances
+{: #added-tolerance}
+
+The processes of [creating](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service), [disabling](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-delete), and [restoring](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-restore) service instances are fault-tolerant in the case that one Availability Zone is unavailable. The operation is considered successful when it's completed on two of the three nodes. Operation on the other node will be completed later by SRE.
+
+### Added: Downstream service calls over IBM Cloud Private Network
+{: #added-downstream-service-private-network}
+
+Traffic to [integrated {{site.data.keyword.cloud_notm}} services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) (except for {{site.data.keyword.keymanagementserviceshort}} and {{site.data.keyword.hscrypto}}) goes over IBM Cloud Private Network by default, regardless of your endpoint choice during service creation.
+
+### Changed: dashboard
+{: #changed-dashboard}
+
+The **Manage** page on the service dashboard is renamed to **Overview**. Dashboard improvements are also implemented.
+
+### Added: UI/CLI/API switcher in documentation
+{: #added-interface-switcher}
+
+An interface switcher is implemented in documentation about tasks that can be completed in multiple interfaces. You can select between the **UI**, **CLI**, and **API** tabs on the top of the topic depending on which interface you want to use.
+
+### Added: What's the difference between using template0 and template1?
+{: #added-template-difference}
+
+Added difference between using `template0` and `template1` in [FAQs about usage](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-faqs-usage#database-template-difference).
 
 ## 25 February 2021
 {: #feb-2021}
@@ -54,7 +82,7 @@ With the flexible pricing plan, you can select the initial allocation values of 
 ### Added: Vertical scaling
 {: #added-vertical-scaling}
 
-You can manually adjust the amount of resources available to your service instance to suit your workload and the size of your data. You can [scale your resources](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling) using the UI, CLI, or API.
+You can manually adjust the amount of resources available to your service instance to suit your workload and the size of your data. You can [scale your resources](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling) by using the UI, CLI, and API.
 
 ### Added: {{site.data.keyword.mon_short}}
 {: #added-monitoring}
@@ -97,7 +125,7 @@ You can leverage [{{site.data.keyword.cloud_notm}} enterprises](/docs/hyper-prot
 ### Changed: Task documentation structure
 {: #changed-task-doc-reorg}
 
-For a task that can be completed in multiple interfaces (UI, CLI, or API), the instructions for different interfaces are incorporated in the same topic for the task.
+For a task that can be completed in multiple interfaces (UI, CLI, and API), the instructions for different interfaces are incorporated in the same topic for the task.
 
 ## 23 June 2020
 {: #June-2020}

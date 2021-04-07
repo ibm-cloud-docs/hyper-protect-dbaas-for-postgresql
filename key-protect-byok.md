@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-04-07"
 
 keywords: key protect integration, data encryption, byok
 
@@ -27,7 +27,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 The data that you store in {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} databases is encrypted by default by randomly generated keys. If you need full control over your encryption keys, you can use [{{site.data.keyword.keymanagementservicelong_notm}}](/docs/key-protect?topic=key-protect-about) to create, add, and manage encryption keys and associate the keys with your {{site.data.keyword.ihsdbaas_postgresql_full}} service instance to encrypt your databases.
 {: shortdesc}
 
-The following diagram shows how {{site.data.keyword.ihsdbaas_postgresql_full}} integrates with {{site.data.keyword.hscrypto}}.
+The following diagram shows how {{site.data.keyword.ihsdbaas_postgresql_full}} integrates with {{site.data.keyword.keymanagementserviceshort}}.
 
 ![Integration with {{site.data.keyword.keymanagementserviceshort}}](images/DBaaS-BYOK.svg "Integration with {{site.data.keyword.keymanagementserviceshort}}"){: caption="Integration with {{site.data.keyword.keymanagementserviceshort}}" caption-side="bottom"}
 
@@ -56,14 +56,14 @@ Authorize {{site.data.keyword.keymanagementserviceshort}} for use with {{site.da
 9. Enable the **Reader** role.
 10. Click **Authorize**.
 
-If you want to remove an authorization, see [Removing access](/docs/account?topic=account-assign-access-resources#removing_access).
+If you want to remove an authorization, see [Removing access](/docs/account?topic=account-assign-access-resources#removing-access-console).
 
 ## Step 3. Create a {{site.data.keyword.ihsdbaas_postgresql_full}} instance with the {{site.data.keyword.keymanagementserviceshort}} Key
 {: #use-key-protect}
 
 When you [create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#creating-a-database-cluster-introduction), select your {{site.data.keyword.keymanagementserviceshort}} instance and root key.
 
-The new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance uses your {{site.data.keyword.keymanagementserviceshort}} root key to encrypt your data. To check and manage your root key, click the {{site.data.keyword.keymanagementserviceshort}} service instance on the **Manage** page on your {{site.data.keyword.ihsdbaas_postgresql_full}} service dashboard. You can also see the key status on the [**Nodes** page](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes).
+The new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance uses your {{site.data.keyword.keymanagementserviceshort}} root key to encrypt your data. To check and manage your root key, click the {{site.data.keyword.keymanagementserviceshort}} service instance on the **Overview** page on your {{site.data.keyword.ihsdbaas_postgresql_full}} service dashboard. You can also see the key status on the [**Nodes** page](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes).
 
 You can select the {{site.data.keyword.keymanagementserviceshort}} key only when you create the DBaaS instance. Otherwise, a randomly generated key is used by default.
 {: note}

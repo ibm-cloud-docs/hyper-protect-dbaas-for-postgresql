@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-04-07"
 
 keywords: hyper protect dbaas, hyper protect dbaas for postgresql, postgresql, cloud database, data security, secure database, encrypted database
 
@@ -111,7 +111,7 @@ When you create a service instance, you create a cloud database cluster (replica
 
 ![A {{site.data.keyword.ihsdbaas_full}} service instance](images/cluster-node-db.svg "A {{site.data.keyword.ihsdbaas_full}} service instance with high availability"){: caption="Figure 1. A {{site.data.keyword.ihsdbaas_full}} service instance with high availability" caption-side="bottom"}
 
-You can create a service instance through the UI, the CLI, and the API. For more information and detailed instructions, see [Creating a service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service).
+You can create a service instance through the UI, CLI, and API. For more information and detailed instructions, see [Creating a service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service).
 
 Free plans are designed for evaluation purposes and are not suitable for production usage. Free-plan service instances will be automatically deleted 30 days after creation.
 {: note}
@@ -126,7 +126,10 @@ After you create a {{site.data.keyword.postgresql}} database, you can use psql o
 
 The tool that you use needs to be compatible with {{site.data.keyword.postgresql}} 10 that is supported by {{site.data.keyword.ihsdbaas_postgresql_full}}.
 
-To enable verification of the server certificate during database connection, download the [certificate authority (CA)](#x2016383){: term} file from the **Manage** page on the service dashboard, and copy it to the appropriate directory.
+To enable verification of the server certificate during database connection, download the [certificate authority (CA)](#x2016383){: term} file from the **Overview** page on the service dashboard, and copy it to the appropriate directory.
+
+The CA file you download from the dashboard contains root and intermediate certificates, which are both required for certificate validation.
+{: note}
 
 #### Using psql shell
 {: #accessing-database-introduction-connect-psqlshell}
@@ -170,7 +173,7 @@ For other tools, such as pgAdmin, {{site.data.keyword.ihsdbaas_postgresql_full}}
 
 For example, to use pgAdmin to connect to your databases, complete the following steps:
 1. Download and install [pgAdmin](https://www.pgadmin.org/download/){: external}.
-2. Download the certificate authority (CA) file from the **Manage** page on the {{site.data.keyword.ihsdbaas_postgresql_full}} service dashboard.
+2. Download the certificate authority (CA) file from the **Overview** page on the {{site.data.keyword.ihsdbaas_postgresql_full}} service dashboard.
 3. Open pgAdmin.
 4. On the pgAdmin dashboard, select **Add New Server** from the **Quick links** section. In the **Create - Server** dialog, provide the required values.
   - On the **General** page, fill in **Name** and leave the **Connect now?** option checked.
@@ -193,7 +196,7 @@ In a database cluster, you can:
 - Monitor databases
 - ...
 
-You can send the requests to the DBaaS Manager through the UI, the CLI, and the API. For detailed instructions, see [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service).
+You can send the requests to the DBaaS Manager through the UI, CLI, and API. For detailed instructions, see [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service).
 
 To create or delete your databases and database users, use your database client.
 

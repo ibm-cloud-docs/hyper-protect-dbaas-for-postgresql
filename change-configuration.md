@@ -27,7 +27,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 In {{site.data.keyword.ihsdbaas_postgresql_full}}, with the Manager role, you can change some of the PosgreSQL configuration settings of your service instance to tune your PostgreSQL databases to your use case.
 {: shortdesc}
 
-The database admins or users with the [Manager role](#changing-configuration-prerequisite) can update the available configuration parameters with the [CLI](#changing-configuration-cli) or the [API](#changing-configuration-api). The configuration is defined in a schema. To make a change, you send a JSON object with the settings and their new values to the CLI or the API.
+The database admins or users with the [Manager role](#changing-configuration-prerequisite) can update the available configuration parameters with the [CLI](#changing-configuration-cli) or [API](#changing-configuration-api). The configuration is defined in a schema. To make a change, you send a JSON object with the settings and their new values to the CLI or the API.
 
 If a request to change configuration settings fails, the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team will be notified automatically. You can also use the [task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds) or the [API request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks){: external} to view the request status.
 

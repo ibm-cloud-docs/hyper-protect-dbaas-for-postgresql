@@ -8,6 +8,8 @@ keywords: frequently asked questions, database
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
+content-type: faq
+
 ---
 
 {:shortdesc: .shortdesc}
