@@ -1,12 +1,14 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-12-23"
+  years: 2019, 2021
+lastupdated: "2021-04-07"
 
 keywords: frequently asked questions, database
 
 subcollection: hyper-protect-dbaas-for-postgresql
+
+content-type: faq
 
 ---
 
@@ -27,6 +29,15 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 You can use the following FAQs to help you with {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
+
+## What's the difference between using template0 and template1?
+{: #database-template-difference}
+{: faq}
+{: support}
+
+To have the following functions, you need to create your databases with the default PostgreSQL `template1`, not `template0`:
+- Have the [PL/Java extension](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension) installed in your databases by default.
+- `CREATE CAST` using the [`ibm-cloud-admin` role](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-user-management#ibm-cloud-admin-role-privileges).
 
 ## How can I prevent data loss from hardware failure?
 {: #protect-from-failure}
@@ -54,4 +65,4 @@ Yes. {{site.data.keyword.ihsdbaas_full}} does [automatic database backups](/docs
 {: faq}
 {: support}
 
-Go to **Manage > Billing and usage** in the {{site.data.keyword.cloud_notm}} console. For more information, see [How you're charged](/docs/billing-usage?topic=billing-usage-charges).
+Go to **Manage > Billing and usage** in the {{site.data.keyword.cloud_notm}} console. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).

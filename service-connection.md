@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-12-23"
+  years: 2020, 2021
+lastupdated: "2021-04-07"
 
 keywords: service endpoints for Hyper Protect DBaaS, private network for Hyper Protect DBaaS
 
@@ -35,6 +35,8 @@ You can choose one of the following options when you create a service instance o
 {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't support changing your service endpoint configuration after service creation for now. If you choose both public and private endpoints, you can connect with either of them; public endpoints can't be disabled later.
 {: note}
 
+Traffic to [integrated {{site.data.keyword.cloud_notm}} services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) (except for {{site.data.keyword.keymanagementserviceshort}} and {{site.data.keyword.hscrypto}}) goes over private routes by default, regardless of your endpoint choice during service creation.
+
 ## Public endpoints
 {: #public-service-endpoint}
 
@@ -47,7 +49,7 @@ You don't need to do any service endpoint setting on your {{site.data.keyword.cl
 
 A service instance with a service endpoint on the private network gets an endpoint that isn't accessible from the public internet. All traffic is routed to hardware dedicated to {{site.data.keyword.ihsdbaas_postgresql_full}} service instances and remains on the {{site.data.keyword.cloud_notm}} private network. All traffic to and from this endpoint is free and unmetered as long as the traffic remains in {{site.data.keyword.cloud_notm}}. When your environment has access to the {{site.data.keyword.cloud_notm}} private network, an internet connection isn't required to connect to your service instance. By using the {{site.data.keyword.cloud_notm}} private service endpoints feature, you can protect your data against threats from the public network. 
 
-If you create a service instance with private endpoints, your database data will go over private routes; the data you enter on the service creation page (Database admin name, etc.), your metrics, logs, and events will still go over public routes.
+If you create a service instance with private endpoints, the connection with your databases will go over private routes; the data you enter on the service creation page (Database admin name, etc.) will still go over public routes.
 
 ### Before you begin
 {: #prereq-service-endpoint}

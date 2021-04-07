@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-04-07"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -20,17 +20,20 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:note: .note}
 {:term: .term}
 {:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Creating a service instance
 {: #create-service}
 
-You can create your {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance through the UI, the CLI, and the API.
+You can create your {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance through the UI, CLI, and API.
 {: shortdesc}
 
 ## Before you begin
 {: #create-service-prerequisite}
 
-Make sure you are familiarized with the following information. **Especially if you want to use your own encryption key or use private endpoints**, you need to follow the instructions in the corresponding topics (see the last two points) **before** you create a service instance.
+Make sure you are familiarized with the following information. **Especially if you want to use your own encryption key or use private endpoints**, you need to follow the instructions in the corresponding topics **before** you create a service instance.
 {: note}
 
 - You can create a 30-day free plan service instance with three types of accounts: [Pay-As-You-Go, Subscription](/docs/account?topic=account-accounts), or [trial accounts](/docs/account?topic=account-accountfaqs#freetrial) (trial accounts are available for faculty and students at accredited academic institutions). To check your account type, go to the [Account settings](https://cloud.ibm.com/account/settings){: external} page. If you have a Lite account, you need to [upgrade your account to a Pay-As-You-Go or Subscription account](/docs/account?topic=account-upgrading-account), or [convert it to a trial account](/docs/account?topic=account-accountfaqs#convertacct).
@@ -43,21 +46,24 @@ Make sure you are familiarized with the following information. **Especially if y
 
 - If you want to create a service instance with private endpoints or both private and public endpoints, follow the instructions in [Securing your connection to {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-connection#prereq-service-endpoint).
 
+- In some cases, your service instance might be provisioned with two nodes available at first, which is considered successful provisoning because it doesn't affect the functioning of your cluster. The SRE team will be notified and provision the pending node. Metering for service instances with 2 nodes provisioned is the same as metering for 3 nodes.
+
 The database administrator doesn't have SUPERUSER authority. The authorities of the database administrator are limited to INHERIT, CREATEROLE, CREATEDB, LOGIN, and REPLICATION.
 {: note}
 
 ## Creating a service instance in the UI
 {: #webui-create-service}
+{: ui}
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click **Catalog** on the top menu bar to view the list of services that are available on the {{site.data.keyword.cloud_notm}}.
 3. Type `{{site.data.keyword.ihsdbaas_full}}` into the search field. Click the **{{site.data.keyword.ihsdbaas_postgresql_full}}** tile.
-4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your allocation values. **Tags** are optional and can be added after you create the service instance. Don't use special characters such as & and # in your password.
+4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your total allocation values. **Tags** are optional and can be added after you create the service instance. Don't use special characters such as & and # in your password.
 5. Click **Create**.
-6. Refresh the **Resource List** page after several minutes. When the status of the service instance is **Active**, the instance is ready to use.
 
 ## Creating a service instance from the CLI
 {: #cli-create-service}
+{: cli}
 
 1. [Set up the CLI.](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin)
 
@@ -109,6 +115,7 @@ For more {{site.data.keyword.cloud_notm}} CLI commands, see the [REFERENCE secti
 
 ## Creating a service instance with the API
 {: #api-create-service}
+{: api}
 
 1. [Set up authentication to use the APIs.](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#api-auth)
 

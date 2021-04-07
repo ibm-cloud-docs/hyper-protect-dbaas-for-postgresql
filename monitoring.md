@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-04-07"
 
 keywords: database monitoring, database cluster, database metrics
 
@@ -20,7 +20,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Monitoring databases
+# Monitoring metrics for {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #monitor}
 
 Monitoring for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is provided through integration with [{{site.data.keyword.mon_full_notm}}](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-getting-started). Your {{site.data.keyword.ihsdbaas_postgresql_full}} service instance forwards selected information so you can monitor its health and resource usage.

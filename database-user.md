@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-04-07"
 
 keywords: database user, Users page, user name
 
@@ -19,29 +19,35 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:pre: .pre}
 {:note: .note}
 {:external: target="_blank" .external}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
 
 # Viewing information about database users
 {: #database-users}
 
-You can view information about your database users and manage their roles and privileges through the UI, the CLI, and the API. To create or delete the database users, use your database client.
+You can view information about your database users and manage their roles and privileges through the UI, CLI, and API. To create or delete the database users, use your database client.
 {: shortdesc}
 
 To manage user roles and privileges, see [Managing users, roles, and privileges](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-user-management).
 
-For more information about the role attributes and privileges of {{site.data.keyword.postgresql}} database users, see [Role attributes](https://www.postgresql.org/docs/12/role-attributes.html){: external} and [Privileges](https://www.postgresql.org/docs/12/ddl-priv.html){: external}.
+For more information about the role attributes and privileges of {{site.data.keyword.postgresql}} database users, see [Role attributes](https://www.postgresql.org/docs/10/role-attributes.html){: external} and [Privileges](https://www.postgresql.org/docs/10/ddl-priv.html){: external}.
 
 ## Viewing information about database users in the UI
 {: webui-database-users}
+{: ui}
 
 On the service dashboard, select **Users** in the side navigation pane to view the information about your database users.
 
 ## Viewing information about database users from the CLI
 {: cli-database-users}
+{: cli}
 
 Use the [commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#user_cmds) to list all your database users in the service instance and get detailed information about the database users.
 
 ## Viewing information about database users with the API
 {: api-database-users}
+{: api}
 
 - Use the [request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-database-users){: external} to list all your database users in the service instance. 
 - Use the [request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#get-database-user-details){: external} to get detailed information about the database users.

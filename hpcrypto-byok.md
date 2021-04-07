@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-04-07"
 
 keywords: hyper protect crypto integration, data encryption, byok, kyok
 
@@ -60,14 +60,14 @@ Authorize {{site.data.keyword.hscrypto}} for use with {{site.data.keyword.ihsdba
 9. Enable the **Reader** role.
 10. Click **Authorize**.
 
-If you want to remove an authorization, see [Removing access](/docs/account?topic=account-assign-access-resources#removing_access).
+If you want to remove an authorization, see [Removing access](/docs/account?topic=account-assign-access-resources#removing-access-console).
 
 ## Step 3. Create a {{site.data.keyword.ihsdbaas_postgresql_full}} instance with the {{site.data.keyword.hscrypto}} Key
 {: #use-hpcs}
 
 When you [create a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#creating-a-database-cluster-introduction), select your {{site.data.keyword.hscrypto}} instance and root key.
 
-The new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance uses your {{site.data.keyword.hscrypto}} root key to encrypt your data. To check and manage your root key, click the {{site.data.keyword.hscrypto}} service instance on the **Manage** page on your {{site.data.keyword.ihsdbaas_postgresql_full}} service dashboard. You can also see the key status on the [**Nodes** page](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes).
+The new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance uses your {{site.data.keyword.hscrypto}} root key to encrypt your data. To check and manage your root key, click the {{site.data.keyword.hscrypto}} service instance on the **Overview** page on your {{site.data.keyword.ihsdbaas_postgresql_full}} service dashboard. You can also see the key status on the [**Nodes** page](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes).
 
 You can select the {{site.data.keyword.hscrypto}} key only when you create the DBaaS instance. Otherwise, a randomly generated key is used by default.
 {: note}

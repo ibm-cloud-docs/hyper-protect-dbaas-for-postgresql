@@ -8,6 +8,8 @@ keywords: troubleshoot, troubleshooting, can't get cluster id
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
+content-type: troubleshoot
+
 ---
 
 {:tsSymptoms: .tsSymptoms}

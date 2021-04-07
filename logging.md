@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-04-07"
 
 keywords: logs, logging, Log Analysis
 
@@ -20,7 +20,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Sending logs to {{site.data.keyword.la_full_notm}}
+# Logging for {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #sendlogs}
 
 When you use {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}, you can forward your database logs and database audit logs to your chosen {{site.data.keyword.la_full_notm}} instance.
