@@ -32,7 +32,7 @@ The processes of [creating](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper
 
 Traffic to [integrated {{site.data.keyword.cloud_notm}} services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) (except for {{site.data.keyword.keymanagementserviceshort}} and {{site.data.keyword.hscrypto}}) goes over IBM Cloud Private Network by default, regardless of your endpoint choice during service creation.
 
-### Changed: dashboard
+### Changed: Dashboard
 {: #changed-dashboard}
 
 The **Manage** page on the service dashboard is renamed to **Overview**. Dashboard improvements are also implemented.
