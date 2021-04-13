@@ -95,7 +95,9 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Pricing
 {: #pricing}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is priced based on the total amount of RAM, disk, and number of vCPUs allocated to your service instance, prorated hourly. The cost includes daily backups and there're no additional charges for ingress, egress, or IOPS. For more information about RAM, disk, and vCPUs, see [Resource breakdown](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#resources-breakdown).
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} offers two different pricing plans:
+- A 30-day free plan is available for evaluation purposes.
+- A flexible pricing plan is designed to host production data with flexible resource allocations.
 {: shortdesc} 
 
 ## Estimating costs
@@ -103,7 +105,18 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 You can find the pricing plans for {{site.data.keyword.ihsdbaas_postgresql_full}} on the [service creation page](https://cloud.ibm.com/catalog/services/hyper-protect-dbaas-for-postgresql){: external}.
 
-A 30-day free plan is available for evaluation purposes. For the flexible plan, billing is based on the total amount of resources that are allocated to your service instance. The total resource allocation is three times the amount you select for each node because one {{site.data.keyword.ihsdbaas_postgresql_full}} service instance has three nodes in a cluster for high availability. The following is a pricing example.
+For the flexible plan, billing is based on the total amount of RAM, disk, and number of vCPUs allocated to your service instance, prorated hourly. The cost includes daily backups and there're no additional charges for ingress, egress, or IOPS. For more information about RAM, disk, and vCPUs, see [Resource breakdown](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#resources-breakdown).
+
+The following are prices per unit and per month.
+
+Resource | Price
+----------|-----------
+RAM | $7.50 USD/GB
+Disk | $0.89 USD/GB
+vCPU | $46.00 USD/vCPU
+{: caption="Table 1. Price per unit" caption-side="top"}
+
+The total resource allocation is three times the amount you select for each node because one {{site.data.keyword.ihsdbaas_postgresql_full}} service instance has three nodes in a cluster for high availability. See the following pricing example.
 
 Resource | Price (per month)
 ----------|-----------
@@ -111,7 +124,7 @@ RAM - 2 GB/node | $7.5 USD/GB x 2 GB/node x 3 nodes = $45 USD
 Disk - 5 GB/node | $0.89 USD/GB x 5 GB/node x 3 nodes = $13.35 USD
 vCPU - 1 vCPU/node | $46 USD/vCPU x 1 vCPU/node x 3 nodes = $138 USD
 Total | $45 + $13.35 + $138 = $196.35 USD
-{: caption="Table 1. Pricing example" caption-side="top"}
+{: caption="Table 2. Pricing example" caption-side="top"}
 
 You can use the cost estimator on the service creation page to estimate your costs. Click **Add to estimate** or **Estimate costs** and input your total allocation values (three times the values per node). Click **Calculate cost**. The estimated cost doesn’t include tax or discounts.
 
