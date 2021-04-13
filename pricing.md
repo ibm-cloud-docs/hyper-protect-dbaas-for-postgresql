@@ -114,7 +114,7 @@ Resource | Price
 RAM | $7.50 USD/GB
 Disk | $0.89 USD/GB
 vCPU | $46.00 USD/vCPU
-{: caption="Table 1. Price per unit" caption-side="top"}
+{: caption="Table 1. Price per unit per month" caption-side="top"}
 
 The total resource allocation is three times the amount you select for each node because one {{site.data.keyword.ihsdbaas_postgresql_full}} service instance has three nodes in a cluster for high availability. See the following pricing example.
 
