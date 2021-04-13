@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2021
+  years: 2021, 2021
 lastupdated: "2021-04-13"
 
-keywords: node, DBaaS dashboard
+keywords: dbaas pricing
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
@@ -92,68 +92,39 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:video: .video}
 
 
-# Viewing information about nodes
-{: #nodes}
+# Pricing
+{: #pricing}
 
-You can view your node status and download logs through the UI, CLI, and API. 
-{: shortdesc}
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is priced based on the total amount of RAM, disk, and number of vCPUs allocated to your service instance, prorated hourly. The cost includes daily backups and there're no additional charges for ingress, egress, or IOPS. For more information about RAM, disk, and vCPUs, see [Resource breakdown](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#resources-breakdown).
+{: shortdesc} 
 
-## Checking node status
-{: #check-node-status}
+## Estimating costs
+{: #estimate-costs}
 
-If a node is failed, see [Getting help and support](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-getting-help-and-support). If your service instance is protected by an external key and the key is deleted or not connected, the nodes are stopped.
+You can find the pricing plans for {{site.data.keyword.ihsdbaas_postgresql_full}} on the [service creation page](https://cloud.ibm.com/catalog/services/hyper-protect-dbaas-for-postgresql){: external}.
 
-### Checking node status in the UI
-{: #webui-check-node-status}
-{: ui}
+A 30-day free plan is available for evaluation purposes. For the flexible plan, billing is based on the total amount of resources that are allocated to your service instance. The total resource allocation is three times the amount you select for each node because one {{site.data.keyword.ihsdbaas_postgresql_full}} service instance has three nodes in a cluster for high availability. The following is a pricing example.
 
-1. On the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Nodes** in the side navigation pane to view information about your nodes and download logs.
+Resource | Price (per month)
+----------|-----------
+RAM - 2 GB/node | $7.5 USD/GB x 2 GB/node x 3 nodes = $45 USD
+Disk - 5 GB/node | $0.89 USD/GB x 5 GB/node x 3 nodes = $13.35 USD
+vCPU - 1 vCPU/node | $46 USD/vCPU x 1 vCPU/node x 3 nodes = $138 USD
+Total | $45 + $13.35 + $138 = $196.35 USD
+{: caption="Table 1. Pricing example" caption-side="top"}
 
-2. Select the primary node or a secondary node to check its ID and status.
+You can use the cost estimator on the service creation page to estimate your costs. Click **Add to estimate** or **Estimate costs** and input your total allocation values (three times the values per node). Click **Calculate cost**. The estimated cost doesn’t include tax or discounts.
 
-### Checking node status from the CLI
-{: #cli-check-node-status}
-{: cli}
+![Using the cost estimator](images/postgresql-pricing.png "Using the cost estimator"){: caption="Figure 1. Using the cost estimator" caption-side="bottom"}
 
-Use the [command](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#cluster_show) to show the details of the specified cluster, including information about each node. 
+## Scaling resources
+{: #scale-resources}
 
-### Checking node status with the API
-{: #api-check-node-status}
-{: api}
+You can manually scale the amount of RAM, disk, and number of vCPUs allocated to your {{site.data.keyword.ihsdbaas_postgresql_full}} service instance to suit your workload and the size of your data. For more information and detailed instructions, see [Scaling RAM, disk, and vCPU](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling).
 
-Use the [request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#get-database-cluster-details) to show the details of the specified cluster, including information about each node. 
+You can see the estimated cost in the UI when you select new resource values. The new billing takes effect when all three nodes are scaled.
 
-## Getting logs
-{: #get-logs}
+## Viewing usage
+{: #view-usage}
 
-The **Log files** list is refreshed at intervals with updated time stamps. Two types of logs are available:
-
-|Type of Logs|Maximum Retention Time|
-|-----------|-----------|
-|postgresql.log|30 days|
-|audit.log |90 days|
-{: caption="Table 1. Type of logs"}
-
-Logs are deleted when they exceed the maximum retention time.
-
-### Getting logs in the UI
-{: #webui-download-logs}
-{: ui}
-
-To download logs in the UI:
-1. Select a node.
-2. Select the **Start date** and **End date** to filter the logs by time.
-3. Select the logs that you want to download and click the download button.
-
-### Getting logs from the CLI
-{: cli-download-logs}
-{: cli}
-
-Use the [log commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#log-commands) to list and download logs.
-
-### Getting logs with the API
-{: api-download-logs}
-{: api}
-
-1. [List log files of a node.](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-database-log-files){: external}
-2. [Get the content of the specified log.](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#get-log-details){: external}
+Go to **Manage > Billing and usage** in the {{site.data.keyword.cloud_notm}} console. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
