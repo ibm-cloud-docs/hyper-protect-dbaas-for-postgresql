@@ -17,6 +17,7 @@ Hyper Protect DBaaS for PostgreSQL
         [What‘s DBaaS?](https://www.ibm.com/cloud/learn/dbaas)
         [Database security](https://www.ibm.com/cloud/learn/database-security)
     
+    pricing.md
     compliance.md
     whats_new.md
     {: .navgroup-end}
@@ -90,4 +91,5 @@ Hyper Protect DBaaS for PostgreSQL
         ts-clusterid.md
 
     help-support.md
+    sitemap.md
     {: .navgroup-end}

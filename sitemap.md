@@ -138,6 +138,19 @@ Find what you are looking for in the compilation of topics that are available in
 [Database security](https://www.ibm.com/cloud/learn/database-security){: external}
 
 
+## Pricing
+{: #sitemap_pricing}
+
+
+[Pricing](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing)
+
+[Estimating costs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#estimate-costs)
+
+[Scaling resources](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#scale-resources)
+
+[Viewing usage](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#view-usage)
+
+
 ## Compliance
 {: #sitemap_compliance}
 
