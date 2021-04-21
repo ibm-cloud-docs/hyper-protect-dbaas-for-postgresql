@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-04-21"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -192,8 +192,8 @@ For more {{site.data.keyword.cloud_notm}} CLI commands, see the [REFERENCE secti
 ## What's next
 {: #create-connect}
 
-To even further strengthen security, it is suggested that you update the **database admin password** immediately after the service instance is created. You need to follow the same rules to set the new password.
-{: note}
-
 1. To connect to your databases, see [Connecting to databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#accessing-database-introduction).
 2. To manage your service instance, see [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service).
+
+To even further strengthen security, it's suggested that you update the database admin password immediately after you create the service instance and connect to the databases. You need to follow the same rules to set the new password.
+{: note}
