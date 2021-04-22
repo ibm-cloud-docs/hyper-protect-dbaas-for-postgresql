@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-04-21"
+lastupdated: "2021-04-22"
 
 keywords: hyper protect dbaas for postgresql doc sitemap
 
@@ -550,6 +550,7 @@ Find what you are looking for in the compilation of topics that are available in
 
 [FAQs about usage](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-faqs-usage)
 * [What's the difference between using template0 and template1?](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-faqs-usage#database-template-difference)
+* [How can I change my password?](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-faqs-usage#change-password)
 * [How can I prevent data loss from hardware failure?](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-faqs-usage#protect-from-failure)
 * [Do I need to enable the replication to secondary nodes manually?](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-faqs-usage#replication-by-default)
 * [Can {{site.data.keyword.ihsdbaas_full}} back up my data automatically?](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-faqs-usage#automatic-backup)

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-21"
+lastupdated: "2021-04-22"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -126,7 +126,7 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click **Catalog** on the top menu bar to view the list of services that are available on the {{site.data.keyword.cloud_notm}}.
 3. Type `{{site.data.keyword.ihsdbaas_full}}` into the search field. Click the **{{site.data.keyword.ihsdbaas_postgresql_full}}** tile.
-4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your total allocation values. **Tags** are optional and can be added after you create the service instance. Don't use special characters such as & and # in your password.
+4. Choose the free plan or the flexible plan. Enter the required values on the service creation page. For **Database admin password**, don't use special characters such as & and #. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your total allocation values. **Tags** are optional and can be added after you create the service instance. Don't use special characters such as & and # in your password.
 5. Click **Create**.
 
 ## Creating a service instance from the CLI
@@ -158,7 +158,7 @@ Where the parameters have the following definitions:
 | ---------------- |  -------------------------------------------------------------- |
 | *name* | The name of your database cluster. |
 | *admin_name* | The administrator's user name of the database to be created. |
-| *password* | The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one number**. Don't use special characters such as & and #. |
+| *password* | The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one digit**. Don't use special characters such as & and #. |
 | *confirm_password* | The same password. |
 | *license_agree* | A value of `agreed` indicates acceptance of the license agreement, which is required to use {{site.data.keyword.ihsdbaas_postgresql_full}}. |
 | *cpu* | Total number of dedicated CPU cores. For the valid value range of *cpu*, *memory*, and *storage*, see the [value table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#before-scaling). |
@@ -195,5 +195,5 @@ For more {{site.data.keyword.cloud_notm}} CLI commands, see the [REFERENCE secti
 1. To connect to your databases, see [Connecting to databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#accessing-database-introduction).
 2. To manage your service instance, see [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service).
 
-To even further strengthen security, it's suggested that you update the database admin password immediately after you create the service instance and connect to the databases. You need to follow the same rules to set the new password.
+To even further strengthen security, it's suggested that you update the database admin password immediately after you create the service instance and connect to the databases. You can use the `\password` command in [psql](https://www.postgresql.org/docs/10/app-psql.html){: external}. You need to follow the same rules to set the new password. The password needs to contain 15 characters minimum, at least one uppercase character, one lowercase character, and one digit. Don't use special characters such as & and #.
 {: note}

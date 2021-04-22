@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-04-22"
 
 keywords: frequently asked questions, database
 
@@ -108,6 +108,13 @@ You can use the following FAQs to help you with {{site.data.keyword.cloud}} {{si
 To have the following functions, you need to create your databases with the default PostgreSQL `template1`, not `template0`:
 - Have the [PL/Java extension](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension) installed in your databases by default.
 - `CREATE CAST` using the [`ibm-cloud-admin` role](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-user-management#ibm-cloud-admin-role-privileges).
+
+## How can I change my password?
+{: #change-password}
+{: faq}
+{: support}
+
+After you connect to the databases, you can use the `\password` command in [psql](https://www.postgresql.org/docs/10/app-psql.html){: external} to change the database admin password that you set when you created the service instance. You need to follow the same rules to set the new password. The password needs to contain 15 characters minimum, at least one uppercase character, one lowercase character, and one digit. Don't use special characters such as & and #.
 
 ## How can I prevent data loss from hardware failure?
 {: #protect-from-failure}
