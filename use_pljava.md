@@ -139,9 +139,8 @@ The following example shows [how to load and use the `hello` function](https://t
 
 3. To install the `hello` function, put the package in an external `https` server and then download it with the following command.
 
-For security reasons, only ports 80 and 443 are allowed to connect from PL/Java.
-{:note}
-
+    For security reasons, only ports 80 and 443 are allowed to connect from PL/Java.
+   {:note}
     ```
     select sqlj.install_jar(<https://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
     ```
