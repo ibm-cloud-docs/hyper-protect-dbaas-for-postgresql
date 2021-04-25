@@ -137,21 +137,18 @@ The following example shows [how to load and use the `hello` function](https://t
   SET
   ```
 
-3. To install the `hello` function, put the package in an external `https` server and then download it with the following command.
+3. To install the `hello` function, put the package in an external `https` server and then download it with the following command. Note that for security reasons, only ports 80 and 443 are allowed to connect from PL/Java.
+  ```
+  select sqlj.install_jar(<https://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
+  ```
+  {: codeblock}
 
-    For security reasons, only ports 80 and 443 are allowed to connect from PL/Java.
-   {:note}
-    ```
-    select sqlj.install_jar(<https://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
-    ```
-    {: codeblock}
-
-    Returns:
-    ```
-    install_jar
-    ------------
-    (1 row)
-    ```
+  Returns:
+  ```
+  install_jar
+  ------------
+  (1 row)
+  ```
 
 4. List functions with the `\df` command.
   Returns:
