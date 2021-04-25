@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-04-25"
 
 keywords: PL/Java extension
 
@@ -95,7 +95,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Using PL/Java extension
 {: #use_pljava_extension}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} supports PL/Java [1.5.2](https://github.com/tada/pljava/releases){: external} (besides plpgsql 1.0). [PL/Java](https://tada.github.io/pljava/){: external} is a free open source extension for {{site.data.keyword.postgresql}} that allows stored procedures, triggers, and functions to be written in the Java language and executed in the backend.
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} supports PL/Java [1.6.2](https://github.com/tada/pljava/releases){: external} (besides plpgsql 1.0). [PL/Java](https://tada.github.io/pljava/){: external} is a free open source extension for {{site.data.keyword.postgresql}} that allows stored procedures, triggers, and functions to be written in the Java language and executed in the backend.
 {: shortdesc}
 
 The PL/Java extension is enabled by default when you create a database with `template1`. To use the extension, complete the following instructions.
@@ -103,7 +103,7 @@ The PL/Java extension is enabled by default when you create a database with `tem
 ## Prerequisites
 {: #pljava_extension_prereq}
 
-1. You need IBM Java SDK 8.0.5.37 or above to build your PL/Java code, as PL/Java uses IBM JRE 8.0.5.37.
+1. You need [AdoptOpenJDK 11](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/){:external} or above to build your PL/Java code, as PL/Java in {{site.data.keyword.ihsdbaas_postgresql_full}} uses AdoptOpenJDK 11.
 2. Create your customized schema and add the schema to `search_path`. Your PL/Java code package will be installed in the schema. For more information about schema and search path, see [Schemas](https://www.postgresql.org/docs/10/ddl-schemas.html){: external}.
 
 ## Steps
@@ -138,6 +138,10 @@ The following example shows [how to load and use the `hello` function](https://t
   ```
 
 3. To install the `hello` function, put the package in an external `https` server and then download it with the following command.
+
+For security reasons, only ports 80 and 443 are allowed to connect from PL/Java.
+{:note}
+
     ```
     select sqlj.install_jar(<https://hostname:port/path/proj-0.0.1-SNAPSHOT.jar>,'hellojar','true');
     ```
