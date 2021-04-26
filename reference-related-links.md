@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-04-26"
 
 keywords: postgresql, mongodb, reference, related information, related topics, related links, blogs, videos
 
@@ -105,9 +105,6 @@ More resources to help you learn about securing data and resources with {{site.d
 - [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} – flexible pricing & vertical scaling](https://mediacenter.ibm.com/media/1_xr1y01a4){: external}
 - [{{site.data.keyword.ihsdbaas_full}} Overview - Extended](https://mediacenter.ibm.com/media/1_qshrbi5f){: external}
 - [{{site.data.keyword.ihsdbaas_full}} Overview](https://mediacenter.ibm.com/media/1_na8bdczg){: external}
-- [IBM THINK 2019: Introduction to Z as a Service](https://www.ibm.com/events/think/watch/replay/120157283/){: external}
-- [IBM THINK 2019: {{site.data.keyword.cloud_notm}} Hyper Protect family and Secure Service Container](https://www.ibm.com/events/think/watch/replay/120171746/){: external}
-- [IBM THINK 2019: {{site.data.keyword.cloud_notm}} security](https://www.ibm.com/events/think/watch/replay/120118486/){: external}
 
 ## Blogs
 {: #blogs}
