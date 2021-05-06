@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-22"
+lastupdated: "2021-05-06"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -114,7 +114,7 @@ Make sure you are familiarized with the following information. **Especially if y
 
 - If you want to create a service instance with private endpoints or both private and public endpoints, follow the instructions in [Securing your connection to {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-connection#prereq-service-endpoint).
 
-- In some cases, your service instance might be provisioned with two nodes available at first, which is considered successful provisoning because it doesn't affect the functioning of your cluster. The SRE team will be notified and provision the pending node. Metering for service instances with 2 nodes provisioned is the same as metering for 3 nodes.
+- In some cases, your service instance might be provisioned with two nodes available at first, which is considered successful provisoning because it doesn't affect the functioning of your cluster. The pending node will be provisioned automatically later. Metering for service instances with 2 nodes provisioned is the same as metering for 3 nodes.
 
 The database administrator doesn't have SUPERUSER authority. The authorities of the database administrator are limited to INHERIT, CREATEROLE, CREATEDB, LOGIN, and REPLICATION.
 {: note}

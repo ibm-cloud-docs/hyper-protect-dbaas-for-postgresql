@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-04-26"
+lastupdated: "2021-05-06"
 
 keywords: hyper protect dbaas for postgresql doc sitemap
 
@@ -106,17 +106,17 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted)
 
-[Supported version](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#postgresql_supported_version)
+* [Supported version](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#postgresql_supported_version)
 
-[Prerequisites](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#prerequisite)
+* [Prerequisites](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#prerequisite)
 
-[Step 1. Create a service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#creating-a-database-cluster-introduction)
+* [Step 1. Create a service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#creating-a-database-cluster-introduction)
 
-[Step 2. Connect to databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#accessing-database-introduction)
+* [Step 2. Connect to databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#accessing-database-introduction)
 
-[Step 3. Manage the database cluster](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#managing-database-cluster-introduction)
+* [Step 3. Manage the database cluster](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#managing-database-cluster-introduction)
 
-[Step 4 (Optional). Migrate from {{site.data.keyword.postgresql}} databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#migrating-from-postgresql)
+* [Step 4 (Optional). Migrate from {{site.data.keyword.postgresql}} databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#migrating-from-postgresql)
 
 
 ## About
@@ -144,11 +144,11 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Pricing](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing)
 
-[Estimating costs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#estimate-costs)
+* [Estimating costs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#estimate-costs)
 
-[Scaling resources](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#scale-resources)
+* [Scaling resources](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#scale-resources)
 
-[Viewing usage](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#view-usage)
+* [Viewing usage](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-pricing#view-usage)
 
 
 ## Compliance
@@ -157,11 +157,11 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Compliance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance)
 
-[ISO 27001, 27017, 27018](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance#iso)
+* [ISO 27001, 27017, 27018](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance#iso)
 
-[General Data Protection Regulation (GDPR)](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance#gdpr)
+* [General Data Protection Regulation (GDPR)](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance#gdpr)
 
-[HIPAA-ready](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance#hipaa-ready)
+* [HIPAA-ready](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-compliance#hipaa-ready)
 
 
 ## Release notes
@@ -170,31 +170,33 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Release notes](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new)
 
-[7 April 2021](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#apr-2021)
+* [TBD May 2021](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#may-2021)
 
-[25 February 2021](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#feb-2021)
+* [7 April 2021](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#apr-2021)
 
-[23 December 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#dec-23-2020)
+* [25 February 2021](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#feb-2021)
 
-[15 December 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#dec-2020)
+* [23 December 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#dec-23-2020)
 
-[25 November 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#nov-2020)
+* [15 December 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#dec-2020)
 
-[14 October 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020)
+* [25 November 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#nov-2020)
 
-[23 June 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#June-2020)
+* [14 October 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#october-2020)
 
-[19 February 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Feb-2020)
+* [23 June 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#June-2020)
 
-[20 December 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Dec-2019)
+* [19 February 2020](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Feb-2020)
 
-[23 September 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Sep23-2019)
+* [20 December 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Dec-2019)
 
-[13 September 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Sep13-2019)
+* [23 September 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Sep23-2019)
 
-[28 August 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Aug-2019)
+* [13 September 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Sep13-2019)
 
-[21 June 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#June-2019)
+* [28 August 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#Aug-2019)
+
+* [21 June 2019](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new#June-2019)
 
 
 ## Enhancing security of your deployed application
@@ -228,9 +230,9 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Setting up the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin)
 
-[Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin#install-ibm-cli)
+* [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin#install-ibm-cli)
 
-[Installing the DBaaS CLI components (by operating system)](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin#dbaas_cli_instr)
+* [Installing the DBaaS CLI components (by operating system)](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-install-dbaas-cli-plugin#dbaas_cli_instr)
 
 
 ## Setting up the APIs
@@ -239,9 +241,9 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Setting up the APIs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup)
 
-[Setting up authentication](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#api-auth)
+* [Setting up authentication](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#api-auth)
 
-[General instructions for using the APIs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#gen_inst_mgr_apis)
+* [General instructions for using the APIs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#gen_inst_mgr_apis)
 
 
 ## Creating a service instance
@@ -250,15 +252,15 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Creating a service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service)
 
-[Before you begin](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#create-service-prerequisite)
+* [Before you begin](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#create-service-prerequisite)
 
-[Creating a service instance in the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#webui-create-service)
+* [Creating a service instance in the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#webui-create-service)
 
-[Creating a service instance from the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#cli-create-service)
+* [Creating a service instance from the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#cli-create-service)
 
-[Creating a service instance with the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#api-create-service)
+* [Creating a service instance with the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#api-create-service)
 
-[What's next](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#create-connect)
+* [What's next](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#create-connect)
 
 
 ## Managing your service instance
@@ -267,9 +269,9 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service)
 
-[Viewing information about your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service#show-detail-service)
+* [Viewing information about your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service#show-detail-service)
 
-[Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service#manage-service-how)
+* [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service#manage-service-how)
 
 
 ## Scaling RAM, disk, and vCPU
@@ -278,13 +280,13 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Scaling RAM, disk, and vCPU](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling)
 
-[Resource breakdown](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#resources-breakdown)
+* [Resource breakdown](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#resources-breakdown)
 
-[Scaling considerations](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#scaling-considerations)
+* [Scaling considerations](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#scaling-considerations)
 
-[Scaling instructions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#scaling-instructions)
+* [Scaling instructions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#scaling-instructions)
 
-[ Converting to the flexible pricing plan](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#pricing-plan-switch)
+* [ Converting to the flexible pricing plan](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#pricing-plan-switch)
 
 
 ## Viewing information about databases
@@ -293,11 +295,11 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Viewing information about databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-databases)
 
-[Viewing information about databases in the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-databases#viewing-information-about-databases-in-the-ui)
+* [Viewing information about databases in the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-databases#viewing-information-about-databases-in-the-ui)
 
-[Viewing information about databases from the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-databases#viewing-information-about-databases-from-the-cli)
+* [Viewing information about databases from the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-databases#viewing-information-about-databases-from-the-cli)
 
-[Viewing information about databases with the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-databases#viewing-information-about-databases-with-the-api)
+* [Viewing information about databases with the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-databases#viewing-information-about-databases-with-the-api)
 
 
 ## Viewing information about database users
@@ -306,11 +308,11 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Viewing information about database users](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-database-users)
 
-[Viewing information about database users in the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-database-users#viewing-information-about-database-users-in-the-ui)
+* [Viewing information about database users in the UI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-database-users#viewing-information-about-database-users-in-the-ui)
 
-[Viewing information about database users from the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-database-users#viewing-information-about-database-users-from-the-cli)
+* [Viewing information about database users from the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-database-users#viewing-information-about-database-users-from-the-cli)
 
-[Viewing information about database users with the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-database-users#viewing-information-about-database-users-with-the-api)
+* [Viewing information about database users with the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-database-users#viewing-information-about-database-users-with-the-api)
 
 
 ## Viewing information about nodes
@@ -319,9 +321,9 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Viewing information about nodes](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes)
 
-[Checking node status](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes#check-node-status)
+* [Checking node status](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes#check-node-status)
 
-[Getting logs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes#get-logs)
+* [Getting logs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-nodes#get-logs)
 
 
 ## Managing users, roles, and privileges
@@ -330,7 +332,7 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Managing users, roles, and privileges](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-user-management)
 
-[The `ibm-cloud-admin` role](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-user-management#role-ibm-cloud-admin)
+* [The `ibm-cloud-admin` role](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-user-management#role-ibm-cloud-admin)
 
 
 ## Changing the PostgreSQL configuration
@@ -339,13 +341,13 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Changing the PostgreSQL configuration](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration)
 
-[Prerequisite](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#changing-configuration-prerequisite)
+* [Prerequisite](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#changing-configuration-prerequisite)
 
-[Using the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#changing-configuration-cli)
+* [Using the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#changing-configuration-cli)
 
-[Using the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#changing-configuration-api)
+* [Using the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#changing-configuration-api)
 
-[Available configuration settings](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#available-config-settings)
+* [Available configuration settings](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#available-config-settings)
 
 
 ## Using PostgreSQL extensions
@@ -441,17 +443,17 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Migrating {{site.data.keyword.postgresql}} databases to {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre)
 
-[Before you begin](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#migration_postgre_before_begin)
+* [Before you begin](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#migration_postgre_before_begin)
 
-[Step 1. Create a dump file for restoring the original databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#step1_create_dump_file)
+* [Step 1. Create a dump file for restoring the original databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#step1_create_dump_file)
 
-[Step 2. Create a new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#step2_creat_new_service_instance)
+* [Step 2. Create a new {{site.data.keyword.ihsdbaas_postgresql_full}} service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#step2_creat_new_service_instance)
 
-[Step 3. Create databases in the new service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#step3_create_database)
+* [Step 3. Create databases in the new service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#step3_create_database)
 
-[Step 4. Restore the data from the dump file to a new service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#step4_restore_data)
+* [Step 4. Restore the data from the dump file to a new service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#step4_restore_data)
 
-[What's next](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#whats_next_migration_postgre)
+* [What's next](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-migration_postgre#whats_next_migration_postgre)
 
 
 ## Hyper Protect DBaaS RESTful APIs
@@ -465,23 +467,23 @@ Find what you are looking for in the compilation of topics that are available in
 
 [{{site.data.keyword.ihsdbaas_postgresql_full}} CLI plug-in](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin)
 
-[Prerequisites](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#prerequisites_dbaas_cli_plugin)
+* [Prerequisites](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#prerequisites_dbaas_cli_plugin)
 
-[CLI plug-in usage command](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#plugin_use)
+* [CLI plug-in usage command](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#plugin_use)
 
-[Cluster commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#cluster_cmds)
+* [Cluster commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#cluster_cmds)
 
-[Database command](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#db_cmds)
+* [Database command](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#db_cmds)
 
-[Database configuration commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#db-config-cmds)
+* [Database configuration commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#db-config-cmds)
 
-[Database user commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#user_cmds)
+* [Database user commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#user_cmds)
 
-[Node command](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#node_cmds)
+* [Node command](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#node_cmds)
 
-[Log commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#log-commands)
+* [Log commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#log-commands)
 
-[Task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds)
+* [Task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds)
 
 
 ## Service integration
@@ -497,13 +499,13 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Understanding your responsibilities when using {{site.data.keyword.ihsdbaas_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass)
 
-[Incident and operations management](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass#incident-and-ops-responsibilities)
+* [Incident and operations management](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass#incident-and-ops-responsibilities)
 
-[Change management](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass#change-management-responsibilities)
+* [Change management](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass#change-management-responsibilities)
 
-[Security and regulation compliance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass#security-responsibilities)
+* [Security and regulation compliance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass#security-responsibilities)
 
-[Disaster recovery](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass#disaster-recovery-responsibilities)
+* [Disaster recovery](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-responsibilities-hpdbass#disaster-recovery-responsibilities)
 
 
 ## Open-source licenses
@@ -512,11 +514,11 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Open-source licenses](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-open-source-licenses)
 
-[{{site.data.keyword.ihsdbaas_postgresql_full}} notices and information](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-open-source-licenses#hpdbaas-postgresql-notice)
+* [{{site.data.keyword.ihsdbaas_postgresql_full}} notices and information](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-open-source-licenses#hpdbaas-postgresql-notice)
 
-[Host Appliance notices and information](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-open-source-licenses#host-appliance-notices)
+* [Host Appliance notices and information](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-open-source-licenses#host-appliance-notices)
 
-[Other CC-BY-SA licenses](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-open-source-licenses#other-ccbysa-licenses)
+* [Other CC-BY-SA licenses](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-open-source-licenses#other-ccbysa-licenses)
 
 
 ## Related links
@@ -525,15 +527,15 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Related links](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links)
 
-[Videos](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#videos)
+* [Videos](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#videos)
 
-[Blogs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#blogs)
+* [Blogs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#blogs)
 
-[Tutorials and code patterns](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#tutorials-code-patterns)
+* [Tutorials and code patterns](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#tutorials-code-patterns)
 
-[More about {{site.data.keyword.cloud_notm}} Hyper Protect services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#more-websites)
+* [More about {{site.data.keyword.cloud_notm}} Hyper Protect services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#more-websites)
 
-[Related {{site.data.keyword.IBM_notm}} service documentation](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#related-service-doc)
+* [Related {{site.data.keyword.IBM_notm}} service documentation](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-related-links#related-service-doc)
 
 
 ## FAQs

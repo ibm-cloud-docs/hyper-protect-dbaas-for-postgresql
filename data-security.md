@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-06"
 
 keywords: data encryption, data security, Hyper Protect DBaaS, postgresql, BYOK, KYOK
 
@@ -137,7 +137,7 @@ You can delete your service instance through the [UI](/docs/hyper-protect-dbaas-
 
 When the service instance is deleted in these ways, it's **disabled** (pending reclamation) rather than deleted completely. You can't find deleted service instances in your service instance list. All your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up after the retention period of seven days. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
 
-In some cases, two nodes in your service instance are disabled at first, which is considered successful disabling. The SRE team will be notified and disable the pending node. This tolerance situation (with one pending node to be disabled) doesn't affect the permanent deletion of service instances described in the following paragraph or the [restoration of service instances](#service-restore).
+In some cases, two nodes in your service instance are disabled at first, which is considered successful disabling. The pending node will be disabled automatically later. This tolerance situation (with one pending node to be disabled) doesn't affect the permanent deletion of service instances described in the following paragraph or the [restoration of service instances](#service-restore).
 {: note}
 
 You can permanently delete the service instance by using the [`ibmcloud resource reclamation-delete` command](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamation_delete). You can't restore the service instance afterward.
@@ -151,7 +151,7 @@ Use the [{{site.data.keyword.cloud_notm}} resource reclamation CLI commands](/do
 
 The service instance in the retention period is not billed to your account. The billing starts again when the service instance is restored. 
 
-In some cases, two nodes in your service instance are restored at first, which is considered successful restoration. The SRE team will be notified and restore the pending node.
+In some cases, two nodes in your service instance are restored at first, which is considered successful restoration. The pending node will be restored automatically later.
 {: note}
 
 ### Deleting and restoring databases
