@@ -104,12 +104,12 @@ Stay up to date with the new features that are available for {{site.data.keyword
 ### Changed: PL/Java version
 {: #pljava-version}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} supports [PL/Java 1.6.2](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension) (previously 1.5.2).
+{{site.data.keyword.ihsdbaas_postgresql_full}} supports [PL/Java 1.6.2](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension) (previously 1.5.2).
 
 ### Changed: Automatic handling in tolerance situations
 {: #changed-tolerance}
 
-In the tolerance situation during [creating](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service), [disabling](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-delete), and [restoring](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-restore) service instances, operations on the pending node will be completed automatically later instead of by SRE.
+In the tolerance situation during [creating](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service), [disabling](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-delete), and [restoring](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-restore) service instances, operations on the pending node will be completed automatically later (previously by SRE).
 
 ## 7 April 2021
 {: #apr-2021}
