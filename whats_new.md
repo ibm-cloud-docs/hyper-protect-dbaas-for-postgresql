@@ -104,7 +104,7 @@ Stay up to date with the new features that are available for {{site.data.keyword
 ### Changed: PL/Java version
 {: #pljava-version}
 
-{{site.data.keyword.ihsdbaas_postgresql_full}} supports [PL/Java 1.6.2](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension) (previously 1.5.2). Note that for security reasons, only ports 80 and 443 are allowed to connect from PL/Java.
+{{site.data.keyword.ihsdbaas_postgresql_full}} supports [PL/Java 1.6.2](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension) (previously 1.5.2). Note that for security reasons, **only ports 80 and 443 are allowed** to connect from PL/Java.
 
 ### Changed: Automatic handling in tolerance situations
 {: #changed-tolerance}
