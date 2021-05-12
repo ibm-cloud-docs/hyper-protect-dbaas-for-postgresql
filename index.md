@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-12"
 
 keywords: hyper protect dbaas, hyper protect dbaas for postgresql, postgresql, cloud database, data security, secure database, encrypted database
 
@@ -95,7 +95,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #gettingstarted}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible and scalable platform that allows you to easily provision and manage your database of choice ({{site.data.keyword.postgresql}} and [{{site.data.keyword.mongodb}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted)), without data security concerns.
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_full}} provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible and scalable platform where you can easily provision and manage your database of choice ({{site.data.keyword.postgresql}} and [{{site.data.keyword.mongodb}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted)), without data security concerns.
 {: shortdesc}
 
 For more information about the industry-leading data security level of {{site.data.keyword.ihsdbaas_postgresql_full}}, see [Securing your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security).
@@ -114,7 +114,7 @@ Watch the following video to find out how to get started with {{site.data.keywor
 
 Hi, welcome to this getting started video for IBM Cloud™ Hyper Protect DBaaS, an offering that allows you to easily provision and manage highly secure, high volume databases for your sensitive data without sacrificing performance.
 
-Every Hyper Protect DBaaS service instance contains a highly available three-node cluster with multi-zone region support. Built on LinuxONE technology, Hyper Protect DBaaS encrypts both data at rest and data in flight. It offers complete data confidentiality; not even the cloud admin has access to your data. It also supports many industry certifications, GDPR for example, and client regulatory compliance activities. And as you will see in the rest of this video, you can easily provision and monitor secure MongoDB or PostgreSQL databases without specialized database skills.
+Every Hyper Protect DBaaS service instance contains a highly available three-node cluster with multi-zone region support. Built on LinuxONE technology, Hyper Protect DBaaS encrypts both data at rest and data in flight. It offers complete data confidentiality; not even the cloud admin has access to your data. It also supports many industry certifications, GDPR, for example, and client regulatory compliance activities. And as you will see in the rest of this video, you can easily provision and monitor secure MongoDB or PostgreSQL databases without specialized database skills.
 
 In the following demo, you will learn how to create a Hyper protect DBaaS service instance, connect to your databases, and navigate the service dashboard.
 
@@ -134,7 +134,7 @@ Open MongoDB Compass. Paste your connection string. Click Fill in connection fie
 
 Let’s go back to the service dashboard.
 
-If you are using the flexible pricing plan, you can see the Resources label. On the resources page, you can manually adjust the amount of resources to suit your workload and the size of your data. If you are using the old fixed pricing plan (aka. Small, Medium, or Large), go to the Plan page first to convert you fixed pricing plan to the flexible plan and reload the dashboard to see the Resources page and scale your resources. Free service instances can't be converted or scaled.
+If you are using the flexible pricing plan, you can see the Resources label. On the resources page, you can manually adjust the amount of resources to suit your workload and the size of your data. If you are using the old fixed pricing plan (Small, Medium, or Large), go to the Plan page first to convert you fixed pricing plan to the flexible plan and reload the dashboard to see the Resources page and scale your resources. Free service instances can't be converted or scaled.
 
 On the Manage page, you can see the overall information of your service instance.
 
@@ -196,7 +196,7 @@ The tool that you use needs to be compatible with {{site.data.keyword.postgresql
 
 To enable verification of the server certificate during database connection, download the [certificate authority (CA)](#x2016383){: term} file from the **Overview** page on the service dashboard, and copy it to the appropriate directory.
 
-The CA file you download from the dashboard contains root and intermediate certificates, which are both required for certificate validation.
+The CA file that you download from the dashboard contains root and intermediate certificates, which are both required for certificate validation.
 {: note}
 
 #### Using psql shell
@@ -259,7 +259,7 @@ Each {{site.data.keyword.ihsdbaas_postgresql_full}} cluster contains a DBaaS Man
 In a database cluster, you can:
 - Scale your resources
 - Change database configuration
-- View information about databases, users and nodes
+- View information about databases, users, and nodes
 - View service logs
 - Monitor databases
 - ...
@@ -268,7 +268,7 @@ You can send the requests to the DBaaS Manager through the UI, CLI, and API. For
 
 To create or delete your databases and database users, use your database client.
 
-To enable PostrgeSQL extensions, see [Managing PostgreSQL extensions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-extensions). For database clusters that are created after 23 September, 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
+To enable PostrgeSQL extensions, see [Managing PostgreSQL extensions](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-extensions). For database clusters that are created after 23 September 2019, the PL/Java extension is enabled automatically. For more information about using the PL/Java extension, see [Using PL/Java extension](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension).
 
 ## Step 4 (Optional). Migrate from {{site.data.keyword.postgresql}} databases
 {: #migrating-from-postgresql}

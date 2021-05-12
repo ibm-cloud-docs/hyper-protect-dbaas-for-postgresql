@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-12"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -125,14 +125,14 @@ You can view information about your service instances, databases, users, and nod
 {: #api-show-service}
 {: api}
 
-Use the [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#get-service-instances){: external} to list your service instances, get detailed information about your service instance, etc.
+Use the [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#get-service-instances){: external} to list your service instances, get detailed information about your service instance, and so on.
 
 ## Managing your service instance
 {: #manage-service-how}
 
 With the required access, you can rename, delete, add tags to, and export the access report (a list of users and services that have access to your resource) of your service instance.
 
-For more information and detailed instructions on deleting (and restoring) your service instance, see [Deleting your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#data-delete).
+For more information about deleting (and restoring) your service instance, see [Deleting your data in {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#data-delete).
 {: important}
 
 To assign access to other users or services to use your service instance, see [Managing access for {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam). To manage {{site.data.keyword.postgresql}} roles and privileges for your database users, see [Managing users, roles, and privileges](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-user-management).

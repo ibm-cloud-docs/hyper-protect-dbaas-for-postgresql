@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-12"
 
 keywords: customize configuration, change configuration, configuration parameters
 
@@ -100,7 +100,7 @@ In {{site.data.keyword.ihsdbaas_postgresql_full}}, with the Manager role, you ca
 
 The database admins or users with the [Manager role](#changing-configuration-prerequisite) can update the available configuration parameters with the [CLI](#changing-configuration-cli) or [API](#changing-configuration-api). The configuration is defined in a schema. To make a change, you send a JSON object with the settings and their new values to the CLI or the API.
 
-If a request to change configuration settings fails, the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team will be notified automatically. You can also use the [task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds) or the [API request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks){: external} to view the request status.
+If a request to change configuration settings fails, the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team is notified automatically. You can also use the [task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds) or the [API request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks){: external} to view the request status.
 
 Some configuration changes require a restart to the primary and secondary nodes. The secondary nodes are restarted first, then the primary node. You can find the `requires_restart` information in [Available configuration settings](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#available-config-settings).
 {: note}
@@ -110,7 +110,7 @@ Some configuration changes require a restart to the primary and secondary nodes.
 
 You need to have the **Manager** role to change configuration settings, as defined in the [IAM service access roles table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam#service-access-roles). To assign access, see [Managing IAM access for users or services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam#manage-access).
 
-Updating `max_connections` and `max_locks_per_transaction` with one command/API request is only feasible when you make the values both larger or smaller. If you need to make one larger and the other smaller, you need to run two commands/API requests, updating one setting at a time.
+Updating `max_connections` and `max_locks_per_transaction` with one command or API request is only feasible when you make the values both larger or smaller. If you need to make one larger and the other smaller, you need to run two commands or API requests, updating one setting at a time.
 {: important}
 
 ## Using the CLI
@@ -152,7 +152,7 @@ Two API requests are available, one for viewing the current configuration and on
 [`shared_buffers`](https://www.postgresql.org/docs/10/runtime-config-resource.html#GUC-SHARED-BUFFERS){: external}
   - Default - `128` (MB)
   - Restarts database? - **Yes**
-  - Note - Shared memory buffers that the server use. The memory allocation for `shared_buffers` can't excceed 40% of the service instance's RAM. Setting `shared_buffers` any higher can result in memory issues that cause the database to crash. Setting `shared_buffers` equal, close to equal, or higher than the amount of allocated memory prevents the database from starting. 
+  - Note - Shared memory buffers that the server use. The memory allocation for `shared_buffers` can't exceed 40% of the service instance's RAM. Setting `shared_buffers` any higher can result in memory issues that cause the database to crash. Setting `shared_buffers` equal, close to equal, or higher than the amount of allocated memory prevents the database from starting. 
 
 
 [`max_locks_per_transaction`](https://www.postgresql.org/docs/10/runtime-config-locks.html){: external}

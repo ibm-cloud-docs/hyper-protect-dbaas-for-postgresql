@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-12"
 
 keywords: frequently asked questions, database
 
@@ -118,7 +118,7 @@ You can use the following FAQs to help you with {{site.data.keyword.cloud}} {{si
 {: #whats-secure-service-container}
 {: faq}
 
-{{site.data.keyword.ihsdbaas_full}} is built with [{{site.data.keyword.IBM_notm}} Secure Service Container (SSC)](https://www.ibm.com/us-en/marketplace/secure-service-container){: external} technology. SSC provides the base infrastructure for an integration of operating system, middleware and software components, which are packaged to work autonomously and provide core services and infrastructure with a focus on consumability and security. It protects data and applications from internal or external threats, including misuse of privileged infrastructure admin credentials.  
+{{site.data.keyword.ihsdbaas_full}} is built with [{{site.data.keyword.IBM_notm}} Secure Service Container (SSC)](https://www.ibm.com/us-en/marketplace/secure-service-container){: external} technology. SSC provides the base infrastructure for an integration of operating system, middleware and software components. They're packaged to work autonomously and provide core services and infrastructure with a focus on consumability and security. It protects data and applications from internal or external threats, including misuse of privileged infrastructure admin credentials.  
 
 ## What's pervasive encryption?
 {: #what-is-pervasive-encryption}

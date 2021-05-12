@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-12"
 
 keywords: users, roles, DBaaS admin user, privileges
 
@@ -142,13 +142,13 @@ Member roles that have the `INHERIT` attribute not only have the privileges of r
 
 Users/roles with the `ibm-cloud-admin` role can grant these two roles to other users/roles in your service instance. For example:
 
-- To set up a specific monitoring user `deb`, run the following command using users/roles with the `pg_monitor` role (for example, a member of `ibm-cloud-admin`).
+- To set up a specific monitoring user `deb`, run the following command by using users/roles with the `pg_monitor` role (for example, a member of `ibm-cloud-admin`).
   ```
   GRANT pg_monitor TO deb;
   ```
   {: codeblock}
 
-- To expose the ability to cancel queries to a user `stan`, run the following command using users/roles with the `pg_signal_backend` role (for example, a member of `ibm-cloud-admin`).
+- To expose the ability to cancel queries to a user `stan`, run the following command by using users/roles with the `pg_signal_backend` role (for example, a member of `ibm-cloud-admin`).
   ```
   GRANT pg_signal_backend TO stan;
   ```

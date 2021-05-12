@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-11"
+lastupdated: "2021-05-12"
 
 keywords: release note, new, added, changed, deleted
 
@@ -132,7 +132,7 @@ The **Manage** page on the service dashboard is renamed to **Overview**. Dashboa
 ### Added: UI/CLI/API switcher in documentation
 {: #added-interface-switcher}
 
-An interface switcher is implemented in documentation about tasks that can be completed in multiple interfaces. You can select between the **UI**, **CLI**, and **API** tabs on the top of the topic depending on which interface you want to use.
+An interface switcher is implemented in documentation about tasks that can be completed in multiple interfaces. You can select between the **UI**, **CLI**, and **API** tabs on the top of the topic, depending on which interface you want to use.
 
 ### Added: What's the difference between using template0 and template1?
 {: #added-template-difference}
@@ -153,7 +153,7 @@ You can [create](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-db
 ### Added: Database version parameter
 {: #added-db-version}
 
-The database version parameter `db_version` is added in the service creation command. Currently it's optional and only version `10` is supported. For example, if you omit the parameter in the command, you create a service instance running {{site.data.keyword.postgresql}} 10 by default. 
+The database version parameter `db_version` is added in the service creation command. Currently, it's optional and only version `10` is supported. For example, if you omit the parameter in the command, you create a service instance running {{site.data.keyword.postgresql}} 10 by default. 
 
 ## 15 December 2020
 {: #dec-2020}
@@ -179,7 +179,7 @@ You can manually adjust the amount of resources available to your service instan
 ### Added: {{site.data.keyword.mon_short}}
 {: #added-monitoring}
 
-You can monitor the disk, memory and vCPU usage of your service instance through [integration with {{site.data.keyword.mon_full_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-monitor).
+You can monitor the disk, memory, and vCPU usage of your service instance through [integration with {{site.data.keyword.mon_full_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-monitor).
 
 ### Added: Changing `max_connections`
 {: #added-setting-max-connections}
@@ -314,7 +314,7 @@ You can create {{site.data.keyword.ihsdbaas_postgresql_full}} service instances 
 ### {{site.data.keyword.ihsdbaas_postgresql_full}} is generally available
 {: #ga-201906}
 
-{{site.data.keyword.ihsdbaas_full}} is an {{site.data.keyword.cloud_notm}} service that provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible platform that allows you to quickly and easily provision and manage your database of choice.
+{{site.data.keyword.ihsdbaas_full}} is an {{site.data.keyword.cloud_notm}} service that provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible platform where you can quickly and easily provision and manage your database of choice.
 
 {{site.data.keyword.IBM_notm}} hosts your databases in a highly available and secure environment.
 

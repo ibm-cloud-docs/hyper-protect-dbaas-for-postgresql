@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-12"
 
 keywords: migrate, restore
 
@@ -95,7 +95,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Migrating {{site.data.keyword.postgresql}} databases to {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #migration_postgre}
 
-If you're using {{site.data.keyword.postgresql}} databases and want to migrate to {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}, follow the instructions below. It doesn't matter where your {{site.data.keyword.postgresql}} databases are hosted, as long as the platform provides {{site.data.keyword.postgresql}} database services.
+If you're using {{site.data.keyword.postgresql}} databases and want to migrate to {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}, follow the instructions in this topic. It doesn't matter where your {{site.data.keyword.postgresql}} databases are hosted, as long as the platform provides {{site.data.keyword.postgresql}} database services.
 {: shortdesc}
 
 ## Before you begin

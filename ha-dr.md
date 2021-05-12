@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-12"
 
 keywords: high availability, disaster recovery
 
@@ -116,7 +116,7 @@ The following documentation gives more details on each type of protection.
 
 You can create {{site.data.keyword.ihsdbaas_postgresql_full}} service instances in one of the supported {{site.data.keyword.cloud_notm}} regions, which represent the geographic area where your service requests are handled and processed. By default, your {{site.data.keyword.ihsdbaas_postgresql_full}} service instance consists of three nodes, one primary and two secondary nodes in three different availability zones in the {{site.data.keyword.cloud_notm}} region.
 
-The data in your primary node is automatically replicated to secondary nodes (replicas) with low latency. You don't need to do anything to enable the replication. When your primary node fails, a secondary node in the cluster will be elected as the primary to prevent your applications from being affected. In this way, you have automatic high availability within one region for your data.
+The data in your primary node is automatically replicated to secondary nodes (replicas) with low latency. You don't need to do anything to enable the replication. When your primary node fails, a secondary node in the cluster is elected as the primary to prevent your applications from being affected. In this way, you have automatic high availability within one region for your data.
 
 ## Manual cross-region backups
 {: #cross-region-backups}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-12"
 
 keywords: Hyper Protect DBaaS, scaling, resource scaling, RAM, disk, vCPU
 
@@ -109,7 +109,7 @@ While GB is shown in the UI, GiB is used in the backend.
 ### Disk
 {: #resources-disk}
 
-Disk allocation is for database storage only. Additional storage for backup and logs is allocated internally based on database storage. The additional storage is also included in the storage cost.
+Disk allocation is for database storage only. Storage for backup and logs is allocated internally based on database storage. The additional storage is also included in the storage cost.
 
 Your disk allocation has to be enough to store all of your data. Disk allocation also affects the performance of the disk, with larger disks having higher performance.
 
