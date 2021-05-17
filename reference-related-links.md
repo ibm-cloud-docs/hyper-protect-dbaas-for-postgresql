@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-26"
+lastupdated: "2021-05-17"
 
 keywords: postgresql, mongodb, reference, related information, related topics, related links, blogs, videos
 
@@ -101,7 +101,7 @@ More resources to help you learn about securing data and resources with {{site.d
 {: #videos}
 
 - [Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}}](https://mediacenter.ibm.com/media/0_2wa8vkxt){: external}
-- [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} and Keep Your Own Key](https://youtu.be/DwD_PFXjROM){: external}
+- [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} and Keep Your Own Key](https://mediacenter.ibm.com/media/0_35qih8zo){: external}
 - [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} – flexible pricing & vertical scaling](https://mediacenter.ibm.com/media/1_xr1y01a4){: external}
 - [{{site.data.keyword.ihsdbaas_full}} Overview - Extended](https://mediacenter.ibm.com/media/1_qshrbi5f){: external}
 - [{{site.data.keyword.ihsdbaas_full}} Overview](https://mediacenter.ibm.com/media/1_na8bdczg){: external}

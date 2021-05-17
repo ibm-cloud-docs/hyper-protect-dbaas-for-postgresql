@@ -1,0 +1,71 @@
+{
+    "title": "Hyper Protect DBaaS for PostgreSQL docs",
+    "lastupdated": "2021-05-17",
+    "introduction": "Welcome to the Hyper Protect DBaaS for PostgreSQL documentation, where you can find information about how to create and use Hyper Protect DBaaS for PostgreSQL service instances. This page also provides other related content for your reference. Hyper Protect DBaaS for PostgreSQL offers secure cloud database environments that have technology-enforced protection and high availability.",
+    "section_devtools": {
+      "api": "/apidocs/hyperp-dbaas/hyperp-dbaas-v3", 
+      "cli": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin"
+    },
+    "section_recommended": [
+      {
+        "title": "Getting started with IBM Cloud Hyper Protect DBaaS for PostgreSQL",
+        "description": "Get started with a few steps without the need for specialized database skills.",
+        "href": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted"
+      },
+      {
+        "title": "Securing your data",
+        "description": "Learn about how your data is protected in Hyper Protect DBaaS and how you can securely delete your data.",
+        "href": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security"
+      },
+      {
+        "title": "Scaling RAM, disk, and vCPU",
+        "description": "You can manually adjust the amount of resources available to your service instance to suit your workload and the size of your data.",
+        "href": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling"
+      }
+    ],
+    "section_videos": [
+      {
+        "title": "Getting Started with IBM Cloud Hyper Protect DBaaS",
+        "href": "https://mediacenter.ibm.com/media/0_2wa8vkxt", 
+        "thumbnail": "/images/video-thumbnail-gettingstarted.png" 
+      },
+      {
+        "title": "IBM Cloud Hyper Protect DBaaS–flexible pricing & vertical scaling",
+        "href": "https://mediacenter.ibm.com/media/1_xr1y01a4",
+        "thumbnail": "/images/video-thumbnail-scaling.png"
+      },
+      {
+        "title": "IBM Cloud Hyper Protect DBaaS and Keep Your Own Key",
+        "href": "https://mediacenter.ibm.com/media/0_35qih8zo",
+        "thumbnail": "/images/video-thumbnail-KYOK.png"
+      },
+      {
+        "title": "Hyper Protect DBaaS Overview - Extended",
+        "href": "https://mediacenter.ibm.com/media/1_qshrbi5f",
+        "thumbnail": "/images/video-thumbnail-overviewextended.png"
+      },
+      {
+        "title": "Hyper Protect DBaaS Overview",
+        "href": "https://mediacenter.ibm.com/media/1_na8bdczg",
+        "thumbnail": "/images/video-thumbnail-overview.png"
+      }
+    ],
+    "section_learn": {
+      "developer": "https://developer.ibm.com/components/hyper-protect/"
+    },
+    "section_updates": {
+      "view_more": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new",
+      "tiles": [
+        {
+          "date": "TBD May 2021",
+          "title": "Automatic handling in tolerance situations",
+          "description": "In the tolerance situation during creating, disabling, and restoring service instances, operations on the pending node will be completed automatically later (previously by SRE)."
+        },
+        {
+          "date": "TBD May 2021",
+          "title": "PL/Java version",
+          "description": "Hyper Protect DBaaS for PostgreSQL supports PL/Java 1.6.2 (previously 1.5.2). Note that for security reasons, only ports 80 and 443 are allowed to connect from PL/Java."
+        }
+      ]
+    }
+  }

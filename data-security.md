@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-05-12"
+lastupdated: "2021-05-17"
 
 keywords: data encryption, data security, Hyper Protect DBaaS, postgresql, BYOK, KYOK
 
@@ -95,7 +95,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Securing your data in {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #data-security}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is a public multi-tenant cloud database service. It implements security protections at all levels, including workload isolation, data encryption (Keep Your Own Key), and identity and administration access control, to ensure that your data is protected in a multi-tenancy environment.
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is a public multi-tenant cloud database service. It implements security protections at all levels, including workload isolation, data encryption (Keep Your Own Key), and identity and administration access control, to ensure that your data is protected in a multi-tenancy environment. Learn more in the following documentation about how your data is protected and how you can securely delete your data.
 {: shortdesc}
 
 ## How your data is stored and encrypted in {{site.data.keyword.ihsdbaas_postgresql_full}}
