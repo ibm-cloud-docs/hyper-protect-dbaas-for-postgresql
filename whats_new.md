@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-12"
+lastupdated: "2021-05-17"
 
 keywords: release note, new, added, changed, deleted
 
@@ -110,6 +110,16 @@ Stay up to date with the new features that are available for {{site.data.keyword
 {: #changed-tolerance}
 
 In the tolerance situation during [creating](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service), [disabling](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-delete), and [restoring](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-restore) service instances, operations on the pending node will be completed automatically later (previously by SRE).
+
+### Added: Landing page
+{: #added-landing-page}
+
+A [landing page](/docs/hyper-protect-dbaas-for-postgresql) is added to the documentation. It's a place where you can get oriented with the content available for {{site.data.keyword.ihsdbaas_mongodb_full}}.
+
+### Added: Site map
+{: #added-site-map}
+
+A [site map](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-sitemap) is added for easy `CTRL`+`F` search of the documentation. The site map displays all topic groups, topics (H1 headings), and H2 headings with hyperlinks in this documentation set.
 
 ## 7 April 2021
 {: #apr-2021}
