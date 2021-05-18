@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-18"
 
 keywords: logs, logging, Log Analysis
 
@@ -105,10 +105,10 @@ When you use {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql
 `Dallas (us-south)` | `Dallas (us-south)`
 `Washington DC (us-east)` | `Washington DC (us-east)`
 `Frankfurt (eu-de)` | `Frankfurt (eu-de)`
-`Sydney (au-syd)` | `Dallas (us-south)`
+`Sydney (au-syd)` | `Sydney (au-syd)`
 {: caption="Table 1. {{site.data.keyword.loganalysisshort_notm}} regions" caption-side="top"}
 
-To receive logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in the same region, except for `Sydney (au-syd)`. For {{site.data.keyword.ihsdbaas_postgresql_full}} instances in `Sydney (au-syd)`, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in `Dallas (us-south)`.
+To receive logs of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have a {{site.data.keyword.loganalysisshort_notm}} instance in the same region.
 
 ## Prerequisite
 {: #logging-prerequisite}
@@ -124,7 +124,7 @@ On the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, select **Observ
 
 2. When you see the message that the service instance is enabled to send platform metrics, click **Add logging**.
 
-   a. If you don't have a {{site.data.keyword.loganalysisshort_notm}} service instance, you'll be directed to the service creation page to create one. Select the same region as your service instance (if your service instance is in Sydney, select Dallas).
+   a. If you don't have a {{site.data.keyword.loganalysisshort_notm}} service instance, you'll be directed to the service creation page to create one. Select the same region as your service instance.
    
    b. If you already have a {{site.data.keyword.loganalysisshort_notm}} service instance in the same region but it isn't enabled to receive platform logs, you need to select the {{site.data.keyword.loganalysisshort_notm}} service instance to receive platform logs in the pop-up dialog box.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-18"
 
 keywords: Activity tracker events
 
@@ -105,14 +105,14 @@ Use the {{site.data.keyword.cloud}} {{site.data.keyword.at_short}} service to tr
 {: help}
 {: support}
 
-To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in the same region, except for `Sydney (au-syd)`, as the following table shows:
+To view events of your {{site.data.keyword.ihsdbaas_postgresql_full}} instance, you need to have an {{site.data.keyword.cloudaccesstrailshort}} instance in the same region, as the following table shows:
 
 {{site.data.keyword.ihsdbaas_postgresql_full}} Region | {{site.data.keyword.cloudaccesstrailshort}} Region
 ----------|-----------
 `Dallas (us-south)` | `Dallas (us-south)`
 `Washington DC (us-east)` | `Washington DC (us-east)`
 `Frankfurt (eu-de)` | `Frankfurt (eu-de)`
-`Sydney (au-syd)` | `Dallas (us-south)`
+`Sydney (au-syd)` | `Sydney (au-syd)`
 {: caption="Table 1. {{site.data.keyword.cloudaccesstrailshort}} regions" caption-side="top"}
 
 1. [Provision an {{site.data.keyword.cloudaccesstrailshort}} instance](/docs/activity-tracker?topic=activity-tracker-provision) if you don't have one. {{site.data.keyword.cloudaccesstrailshort}} can have only one instance per location.
