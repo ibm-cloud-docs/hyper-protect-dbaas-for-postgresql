@@ -246,6 +246,15 @@ Find what you are looking for in the compilation of topics that are available in
 * [General instructions for using the APIs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#gen_inst_mgr_apis)
 
 
+## Setting up Terraform for Hyper Protect DBaaS
+{: #sitemap_setting_up_terraform_for_hyper_protect_dbaas}
+
+
+[Setting up Terraform for Hyper Protect DBaaS](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup)
+
+* [Working with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup#working-with-{{site.data.keyword.ihsdbaas_postgresql_full}}-resources-in-terraform)
+
+
 ## Creating a service instance
 {: #sitemap_creating_a_service_instance}
 
