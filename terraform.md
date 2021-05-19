@@ -95,8 +95,6 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Setting up Terraform for Hyper Protect DBaaS
 {: #terraform-setup}
 
-_The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Summarize your offering's processes for handling and deleting data._
-
 Terraform on {{site.data.keyword.cloud}} enables predictable and consistent provisioning of {{site.data.keyword.cloud_notm}} services so that you can rapidly build complex, multi-tier cloud environments following Infrastructure as Code (IaC) principles. Similar to using the {{site.data.keyword.cloud_notm}} CLI or API, you can automate the provisioning, update, and deletion of your {{site.data.keyword.ihsdbaas_postgresql_full}} service instances by using HashiCorp Configuration Language (HCL).
 {: shortdesc}
 
