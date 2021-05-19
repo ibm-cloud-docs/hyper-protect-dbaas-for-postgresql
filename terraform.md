@@ -102,7 +102,7 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
 
 
 
-## Installing the Terraform CLI and configure the IBM Cloud Provider plug-in
+## Step 1. Install the Terraform CLI and configure the IBM Cloud Provider plug-in
 {: #setup-configure}
 
 1. [Install the Terraform CLI and the {{site.data.keyword.cloud_notm}} Provider plug-in](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started).
@@ -128,12 +128,12 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
    ```
    {: codeblock}
 
-## Working with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform
+## Step 2. Work with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform
 {: #work-with-dbaas-resources}
 
 The following is an example of creating a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in Terraform.
 
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you declare the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that you want to provision. The following example creates a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that is named `0001-postgresql` in the `us-south` region. For detailed parameter reference, see the tables in the [documentation](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#cli-create-service). For more information about `ibm_resource_instance`, see the [`ibm_resource_instance` documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external}. 
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you declare the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that you want to provision. The following example creates a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that is named `0001-postgresql` in the `us-south` region. For **detailed parameter reference**, see the tables in the [documentation](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#cli-create-service). For more information about `ibm_resource_instance`, see the [`ibm_resource_instance` documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external}. 
    
    ```
    data "ibm_resource_group" "group" {

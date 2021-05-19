@@ -252,9 +252,9 @@ Find what you are looking for in the compilation of topics that are available in
 
 [Setting up Terraform for Hyper Protect DBaaS](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup)
 
-* [Installing the Terraform CLI and configure the IBM Cloud Provider plug-in](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup#setup-configure)
+* [Step 1. Install the Terraform CLI and configure the IBM Cloud Provider plug-in](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup#setup-configure)
 
-* [Working with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup#work-with-dbaas-resources)
+* [Step 2. Work with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup#work-with-dbaas-resources)
 
 
 ## Creating a service instance
