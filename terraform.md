@@ -102,6 +102,9 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
 
 
 
+## Installing the Terraform CLI and configure the IBM Cloud Provider plug-in
+{: #setup-configure}
+
 1. [Install the Terraform CLI and the {{site.data.keyword.cloud_notm}} Provider plug-in](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started).
 2. [Create or retrieve an {{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey#create_user_key). The API key is used to authenticate with the {{site.data.keyword.cloud_notm}} platform and to determine your permissions for {{site.data.keyword.cloud_notm}} services.
 3. Create a variables file that is named `terraform.tfvars` and specify the {{site.data.keyword.cloud_notm}} API key that you retrieved. Variables that are defined in the `terraform.tfvars` file are automatically loaded by Terraform when the {{site.data.keyword.cloud_notm}} Provider plug-in is initialized and you can reference them in every Terraform configuration file that you use. 
@@ -126,6 +129,7 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
    {: codeblock}
 
 ## Working with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform
+{: #work-with-dbaas-resources}
 
 The following is an example of creating a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in Terraform.
 
