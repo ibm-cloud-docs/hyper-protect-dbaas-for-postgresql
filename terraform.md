@@ -133,7 +133,7 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
 
 The following is an example of creating a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in Terraform.
 
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you declare the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that you want to provision. The following example creates a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that is named `0001-postgresql` in the `us-south` region. For **detailed parameter reference**, see the tables in the [documentation](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#cli-create-service). For more information about `ibm_resource_instance`, see the [`ibm_resource_instance` documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external}. 
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you declare the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that you want to provision. The following example creates a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that is named `0001-postgresql` in the `us-south` region. For more information about `ibm_resource_instance`, see the [`ibm_resource_instance` documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external}. 
    
 ```
 data "ibm_resource_group" "group" {
@@ -176,7 +176,7 @@ resource "ibm_resource_instance" "myhpdbcluster" {
 | *kms_key* | (Optional, paired with *kms_instance*) UUID of the selected root key. |
 | *db_version*| (Optional) Supports {{site.data.keyword.postgresql}} 10 only. |
 {: caption="Table 1. Parameter reference" caption-side="top"}
-   
+
 2. Initialize the Terraform CLI. 
 ```
 terraform init
