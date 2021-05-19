@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-12"
+lastupdated: "2021-05-19"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -138,7 +138,7 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 2. To create a {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, use the `ibmcloud resource service-instance-create` command, as shown in the following example. In Windows, it is recommended that you use a Bash terminal such as Cygwin or Git Bash to enter the command.
 
 ```
-ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-flexible us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "cpu":2, "memory":"2GiB", "storage":"5GiB", "license_agree":["agreed"], "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c", "db_version":"10"}' --service-endpoints public-and-private
+ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-flexible us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "cpu":2, "memory":"2GiB", "storage":"5GiB", "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c", "db_version":"10"}' --service-endpoints public-and-private
 ```
 {: codeblock}
 
@@ -160,7 +160,6 @@ Where the parameters have the following definitions:
 | *admin_name* | The administrator's user name of the database to be created. |
 | *password* | The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one digit**. Don't use special characters such as `&` and `#`. |
 | *confirm_password* | The same password. |
-| *license_agree* | A value of `agreed` indicates acceptance of the license agreement, which is required to use {{site.data.keyword.ihsdbaas_postgresql_full}}. |
 | *cpu* | Total number of dedicated CPU cores. For the valid value range of *cpu*, *memory*, and *storage*, see the [value table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#before-scaling). |
 | *memory* | Total memory allocation in GiB. |
 | *storage* | Total disk allocation in GiB. |
