@@ -157,8 +157,8 @@ The following is an example of creating a {{site.data.keyword.ihsdbaas_postgresq
        "admin_name": "admin",
        "password": "Hyperprotectdbaas0001"
        "confirm_password": "Hyperprotectdbaas0001",
-      "db_version": "10"
-    }
+       "db_version": "10"
+     }
    }
    ```
    {: codeblock}
