@@ -4,7 +4,7 @@ copyright:
   years: 2020, 2021
 lastupdated: "2021-05-19"
 
-keywords: service integration
+keywords: terraform for dbaas
 
 subcollection: hyper-protect-dbaas-for-postgresql
 
