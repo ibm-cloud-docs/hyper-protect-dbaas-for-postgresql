@@ -133,7 +133,7 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
 
 The following is an example of creating a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in Terraform.
 
-1. Create a Terraform configuration file that is named `main.tf`. In this file, you declare the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that you want to provision. The following example creates a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that is named `0001-postgresql` in the `us-south` region. For more information about `ibm_resource_instance`, see the [`ibm_resource_instance` documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external}. 
+1. Create a Terraform configuration file that is named `main.tf`. In this file, you declare the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that you want to provision. The following example creates a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that is named `0001-postgresql` in the `us-south` region. For other options that you can declare for this resource, see the [`ibm_resource_instance` documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external}. 
    
 ```
 data "ibm_resource_group" "group" {
