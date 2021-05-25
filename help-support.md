@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-25"
 
 keywords: help, support
 
@@ -77,6 +77,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:swift: data-hd-programlang="swift"}
 {:table: .aria-labeledby="caption"}
 {:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
 {:tip: .tip}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
@@ -98,12 +99,10 @@ subcollection: hyper-protect-dbaas-for-postgresql
 If you have problems or questions when you're using {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}, consider the following ways to get help and support.
 {: shortdesc}
 
-* Go to the [{{site.data.keyword.cloud_notm}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to check the status of [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/status?selected=status){: external}, review common FAQs, search community content, or [open support cases](/docs/get-support?topic=get-support-open-case){: external}.
+- Go to the [{{site.data.keyword.cloud_notm}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to check the status of [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/status?selected=status){: external}, review common FAQs, search community content, or [open support cases](/docs/get-support?topic=get-support-open-case){: external}.
 
-* Get in contact with the team through one of the following options:
-  * Submit a question through either of the forums (specifying **{{site.data.keyword.ihsdbaas_postgresql_full}}** in your entry):
-    * [{{site.data.keyword.IBM_notm}} Developer Answers](https://developer.ibm.com/answers/index.html){: external}
-    * [Stack Overflow](https://stackoverflow.com/){: external}
-  * Contact the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team at this email address: **dbaas.sre@de.ibm.com** 	
+- Get in contact with the team through one of the following options:
+  - Go to [Stack Overflow](https://stackoverflow.com/){: external} to ask a question. When you create a question, add the `ibm-cloud` tag at least to your question and specify **{{site.data.keyword.ihsdbaas_postgresql_full}}** in your entry to ensure it's seen by the development team.
+  - Contact the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team at this email address: **dbaas.sre@de.ibm.com**.	
 
 For more information about using {{site.data.keyword.cloud_notm}} Support Center and asking questions on the forums, see [Getting support](/docs/get-support?topic=get-support-using-avatar){: external}.
