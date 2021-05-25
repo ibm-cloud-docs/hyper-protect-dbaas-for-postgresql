@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-18"
+lastupdated: "2021-05-25"
 
 keywords: release note, new, added, changed, deleted
 
@@ -77,6 +77,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:swift: data-hd-programlang="swift"}
 {:table: .aria-labeledby="caption"}
 {:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
 {:tip: .tip}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
@@ -140,7 +141,7 @@ The processes of [creating](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper
 Traffic to [integrated {{site.data.keyword.cloud_notm}} services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) (except for {{site.data.keyword.keymanagementserviceshort}} and {{site.data.keyword.hscrypto}}) goes over IBM Cloud Private Network by default, regardless of your endpoint choice during service creation.
 
 ### Changed: Dashboard
-{: #changed-dashboard}
+{: #changed-dashboard-manage-overview}
 
 The **Manage** page on the service dashboard is renamed to **Overview**. Dashboard improvements are also implemented.
 
