@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-05-25"
+lastupdated: "2021-05-26"
 
 keywords: hyper protect dbaas for postgresql doc sitemap
 
@@ -245,17 +245,6 @@ Find what you are looking for in the compilation of topics that are available in
 * [Setting up authentication](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#api-auth)
 
 * [General instructions for using the APIs](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#gen_inst_mgr_apis)
-
-
-## Setting up Terraform for Hyper Protect DBaaS
-{: #sitemap_setting_up_terraform_for_hyper_protect_dbaas}
-
-
-[Setting up Terraform for Hyper Protect DBaaS](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup)
-
-* [Step 1. Install the Terraform CLI and configure the IBM Cloud Provider plug-in](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup#setup-configure)
-
-* [Step 2. Work with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup#work-with-dbaas-resources)
 
 
 ## Creating a service instance
