@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-05-12"
+lastupdated: "2021-05-31"
 
 keywords: users, roles, DBaaS admin user, privileges
 
@@ -77,6 +77,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:swift: data-hd-programlang="swift"}
 {:table: .aria-labeledby="caption"}
 {:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
 {:tip: .tip}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
@@ -100,14 +101,17 @@ PostgreSQL uses the concept of roles to manage database permissions. When a sing
 
 ```
 admin=> \du
+```
+```
                                                  List of roles
     Role name    |                        Attributes                          |        Member of    
------------------+------------------------------------------------------------+-------------------------
+-----------------+------------------------------------------------------------+-------------------------------
  admin           | Create role, Create DB                                     | {ibm-cloud-admin}
  ibm-cloud-admin | Create role, Create DB, Cannot login                       | {pg_monitor,pg_signal_backend}
  postgres        | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
  replicator      | Replication                                                | {}                            
 ```
+{: screen}
 
 As a managed cloud database service, {{site.data.keyword.ihsdbaas_postgresql_full}} doesn't grant you the {{site.data.keyword.postgresql}} super user role `postgres` when you create a service instance. Instead, it assigns you to the `ibm-cloud-admin` role that has some super user privileges.
 

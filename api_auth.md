@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-12"
+lastupdated: "2021-05-31"
 
 keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 
@@ -77,6 +77,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:swift: data-hd-programlang="swift"}
 {:table: .aria-labeledby="caption"}
 {:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
 {:tip: .tip}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
@@ -125,7 +126,7 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
        "apiKey": "**Pt...Y**"
       }
        ```
-      {: codeblock}
+      {: screen}
 
       The value that is assigned to `apiKey` is your API key. 
 
@@ -138,7 +139,7 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
 
 3. Get an access token and a user ID by using the `GET /auth/token` operation:
 
-    ```curl
+    ```sh
     curl -X GET -H "accept: application/json" -H "api_key: icGVY1*** ***UdfcIg4kzE" https://dbaas900.hyperp-dbaas.cloud.ibm.com:20000/api/v3/auth/token
     ```
     {: pre}
@@ -151,7 +152,7 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
      "user_id":"e9433*** ***b188"
     }
     ```
-    {: codeblock}
+    {: screen}
 
 4. Save the values of the access token and the user ID for future use.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-11"
+lastupdated: "2021-05-31"
 
 keywords: PL/Java extension
 
@@ -77,6 +77,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:swift: data-hd-programlang="swift"}
 {:table: .aria-labeledby="caption"}
 {:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
 {:tip: .tip}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
@@ -126,6 +127,7 @@ The following example shows [how to load and use the `hello` function](https://t
   ```
   CREATE SCHEMA
   ```
+  {: screen}
 
 2. Add the `javatest` schema to `search_path` and make it the first schema in the search path with the following command. Your PL/Java code will be installed in this first schema.
   ```
@@ -136,6 +138,7 @@ The following example shows [how to load and use the `hello` function](https://t
   ```
   SET
   ```
+  {: screen}
 
 3. To install the `hello` function, put the package in an external `https` server and then download it with the following command.
 
@@ -153,6 +156,7 @@ The following example shows [how to load and use the `hello` function](https://t
   ------------
   (1 row)
   ```
+  {: screen}
 
 4. List functions with the `\df` command.
   Returns:
@@ -163,6 +167,7 @@ The following example shows [how to load and use the `hello` function](https://t
   javatest  | hello | character varying | towhom character varying | normal
   (1 row)
   ```
+  {: screen}
 
 5. To use the `hello` function in a new session without setting the search path again, save your search path with the following command.
   ```
@@ -174,6 +179,7 @@ The following example shows [how to load and use the `hello` function](https://t
   ```
   ALTER DATABASE
   ```
+  {: screen}
 
 6. Define a classpath for the `javatest` schema to make sure that the Java virtual machine gets the path of `.class` files.
   ```
@@ -187,6 +193,7 @@ The following example shows [how to load and use the `hello` function](https://t
   ---------------
   (1 row)
   ```
+  {: screen}
 
 7. Run the `hello` function:
   ```
@@ -201,5 +208,6 @@ The following example shows [how to load and use the `hello` function](https://t
     Hello, world!
   (1 row)
   ```
+  {: screen}
 
 Now you have successfully loaded and executed the `hello` function by using PL/Java.
