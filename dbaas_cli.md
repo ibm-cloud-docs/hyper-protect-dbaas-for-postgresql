@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-13"
+lastupdated: "2021-05-31"
 
 keywords: instance commands, cluster resource, dbaas cli plugin reference
 
@@ -77,6 +77,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:swift: data-hd-programlang="swift"}
 {:table: .aria-labeledby="caption"}
 {:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
 {:tip: .tip}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
@@ -235,7 +236,7 @@ The [configuration parameters](/docs/hyper-protect-dbaas-for-postgresql?topic=hy
   {: codeblock}
 
   Content in the JSON file:
-  ```
+  ```json
   {
 	  "configuration":{
 	  	"max_locks_per_transaction":150,
@@ -249,7 +250,7 @@ The [configuration parameters](/docs/hyper-protect-dbaas-for-postgresql?topic=hy
   {: codeblock}
 
   If you want to update only one of the settings, you can just specify the one setting that you want to update in the file. For example:
-  ```
+  ```json
   {
       "configuration":{
           "max_locks_per_transaction":150

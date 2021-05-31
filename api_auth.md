@@ -137,9 +137,9 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
 
    For Windows and MacOS, the CA file is in the operating system. If not, download it from the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, and add `--cacert <cert_file>` to the command in the following step.
 
-3. Get an access token and a user ID by using the `GET /auth/token` operation:
+3. Get an access token and a user ID by using the `GET /auth/token` operation. For IP and port, see the tables in [General instructions for using the APIs](#gen_inst_mgr_apis).
 
-    ```sh
+    ```
     curl -X GET -H "accept: application/json" -H "api_key: icGVY1*** ***UdfcIg4kzE" https://dbaas900.hyperp-dbaas.cloud.ibm.com:20000/api/v3/auth/token
     ```
     {: pre}
