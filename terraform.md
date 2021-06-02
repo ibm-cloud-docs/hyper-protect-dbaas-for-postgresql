@@ -142,6 +142,7 @@ The following is an example of creating a {{site.data.keyword.ihsdbaas_postgresq
     }
   }
   ```
+  
   {: codeblock}
 
 2. Initialize the Terraform CLI. 
