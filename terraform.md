@@ -104,7 +104,7 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
 ## Step 1. Install the Terraform CLI and configure the IBM Cloud Provider plug-in
 {: #setup-configure}
 
-Follow the [Terraform on {{site.data.keyword.cloud}} getting started tutorial](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) to install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to provision, update, or delete {{site.data.keyword.ihsdbaas_postgresql_full}} service instances and resources.
+Follow the [Terraform on {{site.data.keyword.cloud_notm}} getting started tutorial](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) to install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to provision, update, or delete {{site.data.keyword.ihsdbaas_postgresql_full}} service instances and resources.
 
 ## Step 2. Work with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform
 {: #work-with-dbaas-resources}
