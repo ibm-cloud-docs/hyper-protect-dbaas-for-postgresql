@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-05-19"
+lastupdated: "2021-06-02"
 
 keywords: terraform for dbaas
 
@@ -77,6 +77,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:swift: data-hd-programlang="swift"}
 {:table: .aria-labeledby="caption"}
 {:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
 {:tip: .tip}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
@@ -105,27 +106,7 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
 ## Step 1. Install the Terraform CLI and configure the IBM Cloud Provider plug-in
 {: #setup-configure}
 
-1. [Install the Terraform CLI and the {{site.data.keyword.cloud_notm}} Provider plug-in](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started).
-2. [Create or retrieve an {{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey#create_user_key). The API key is used to authenticate with the {{site.data.keyword.cloud_notm}} platform and to determine your permissions for {{site.data.keyword.cloud_notm}} services.
-3. Create a variables file that is named `terraform.tfvars` and specify the {{site.data.keyword.cloud_notm}} API key that you retrieved. Variables that are defined in the `terraform.tfvars` file are automatically loaded by Terraform when the {{site.data.keyword.cloud_notm}} Provider plug-in is initialized and you can reference them in every Terraform configuration file that you use. 
-
-   Because the `terraform.tfvars` file contains confidential information, do not push this file to a version control system. This file is meant to be on your local system only.
-   {: important}
-   
-   ```
-   ibmcloud_api_key = "<ibmcloud_api_key>"
-   ```
-   {: codeblock}
-   
-4. Create a provider configuration file that is named `provider.tf`. Use this file to configure the {{site.data.keyword.cloud_notm}} Provider plug-in with the {{site.data.keyword.cloud_notm}} API key from your `terraform.tfvars` file. The plug-in uses this key to access {{site.data.keyword.cloud_notm}} and to provision your {{site.data.keyword.ihsdbaas_postgresql_full}} service instance. To access a variable value from the `terraform.tfvars` file, you must first declare the variable in the `provider.tf` file and then reference the variable by using the `var.<variable_name>` syntax . 
-   ```
-   variable "ibmcloud_api_key" {}
- 
-   provider "ibm" {
-       ibmcloud_api_key   = var.ibmcloud_api_key
-      }
-   ```
-   {: codeblock}
+Follow the [Terraform on {{site.data.keyword.cloud}} getting started tutorial](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) to install the Terraform CLI and configure the {{site.data.keyword.cloud}} Provider plug-in for Terraform. The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to provision, update, or delete {{site.data.keyword.ihsdbaas_postgresql_full}} service instances and resources.
 
 ## Step 2. Work with {{site.data.keyword.ihsdbaas_postgresql_full}} resources in Terraform
 {: #work-with-dbaas-resources}
@@ -135,28 +116,30 @@ The following is an example of creating a {{site.data.keyword.ihsdbaas_postgresq
 1. Create a Terraform configuration file that is named `main.tf`. In this file, you declare the {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that you want to provision. The following example creates a {{site.data.keyword.ihsdbaas_postgresql_full}} service instance that is named `0001-postgresql` in the `us-south` region. For other options that you can declare for this resource, see the [`ibm_resource_instance` documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_instance){: external}. For parameter reference, see the tables in the [CLI documentation](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#cli-create-service).
   ```
   data "ibm_resource_group" "group" {
-    name = "default"
+     name = "default"
   }
 
   resource "ibm_resource_instance" "myhpdbcluster" {
-   name = "0001-postgresql"
-   service = "hyperp-dbaas-postgresql"
-   plan = "postgresql-free"
-   location = "us-south"
-    resource_group_id = data.ibm_resource_group.group.id
+     name = "0001-postgresql"
+     service = "hyperp-dbaas-postgresql"
+     plan = "postgresql-free"
+     location = "us-south"
+     resource_group_id = data.ibm_resource_group.group.id
 
+    //User can increase timeouts
     timeouts {
       create = "15m"
       update = "15m"
       delete = "15m"
-   }
+    }
+
     parameters = {
-      "name": "cluster01",
-      "admin_name": "admin",
-      "password": "Hyperprotectdbaas0001"
-      "confirm_password": "Hyperprotectdbaas0001",
-      "db_version": "10"
-   }
+      name: "cluster01",
+      admin_name: "admin",
+      password: "Hyperprotectdbaas0001"
+      confirm_password: "Hyperprotectdbaas0001",
+      db_version: "10"
+    }
   }
   ```
   {: codeblock}
