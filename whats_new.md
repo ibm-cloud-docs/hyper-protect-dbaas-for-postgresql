@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-25"
+lastupdated: "2021-06-02"
 
 keywords: release note, new, added, changed, deleted
 
@@ -99,8 +99,8 @@ subcollection: hyper-protect-dbaas-for-postgresql
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
 
-## TBD May 2021
-{: #may-2021}
+## 2 June 2021
+{: #june-2021}
 
 ### Changed: PL/Java version
 {: #pljava-version}

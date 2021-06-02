@@ -57,17 +57,17 @@
       "view_more": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new",
       "tiles": [
         {
-          "date": "TBD May 2021",
+          "date": "2 June 2021",
           "title": "Changed: Automatic handling in tolerance situations",
           "description": "In the tolerance situation during creating, disabling, and restoring service instances, operations on the pending node will be completed automatically later (previously by SRE)."
         },
         {
-          "date": "TBD May 2021",
+          "date": "2 June 2021",
           "title": "Changed: PL/Java version",
           "description": "Hyper Protect DBaaS for PostgreSQL supports PL/Java 1.6.2 (previously 1.5.2). Note that for security reasons, only ports 80 and 443 are allowed to connect from PL/Java."
         },
         {
-          "date": "TBD May 2021",
+          "date": "2 June 2021",
           "title": "Changed: Activity Tracker and Log Analysis are available in Sydney for Hyper Protect DBaaS for PostgreSQL",
           "description": "If you want to integrate Activity Tracker or Log Analysis with your Hyper Protect DBaaS for PostgreSQL service instance in `Sydney (au-syd)`, you need to have an Activity Tracker or Log Analysis service instance also in `Sydney (au-syd)` (previously `Dallas (us-south)`)."
         }
