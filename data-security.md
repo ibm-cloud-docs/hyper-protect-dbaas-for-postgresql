@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-07"
+lastupdated: "2021-05-17"
 
 keywords: data encryption, data security, Hyper Protect DBaaS, postgresql, BYOK, KYOK
 
@@ -10,21 +10,92 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:shortdesc: .shortdesc}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
+{:android: data-hd-operatingsystem="android"}
+{:api: .ph data-hd-interface='api'}
+{:apikey: data-credential-placeholder='apikey'}
+{:app_key: data-hd-keyref="app_key"}
+{:app_name: data-hd-keyref="app_name"}
+{:app_secret: data-hd-keyref="app_secret"}
+{:app_url: data-hd-keyref="app_url"}
+{:authenticated-content: .authenticated-content}
+{:beta: .beta}
+{:c#: data-hd-programlang="c#"}
+{:cli: .ph data-hd-interface='cli'}
+{:codeblock: .codeblock}
+{:curl: .ph data-hd-programlang='curl'}
+{:deprecated: .deprecated}
+{:dotnet-standard: .ph data-hd-programlang='dotnet-standard'}
+{:download: .download}
 {:external: target="_blank" .external}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:note: .note}
-{:term: .term}
+{:faq: data-hd-content-type='faq'}
+{:fuzzybunny: .ph data-hd-programlang='fuzzybunny'}
+{:generic: data-hd-operatingsystem="generic"}
+{:generic: data-hd-programlang="generic"}
+{:gif: data-image-type='gif'}
+{:go: .ph data-hd-programlang='go'}
+{:help: data-hd-content-type='help'}
+{:hide-dashboard: .hide-dashboard}
+{:hide-in-docs: .hide-in-docs}
 {:important: .important}
+{:ios: data-hd-operatingsystem="ios"}
+{:java: .ph data-hd-programlang='java'}
+{:java: data-hd-programlang="java"}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:javascript: data-hd-programlang="javascript"}
+{:new_window: target="_blank"}
+{:note .note}
+{:note: .note}
+{:objectc data-hd-programlang="objectc"}
+{:org_name: data-hd-keyref="org_name"}
+{:php: data-hd-programlang="php"}
+{:pre: .pre}
+{:preview: .preview}
+{:python: .ph data-hd-programlang='python'}
+{:python: data-hd-programlang="python"}
+{:route: data-hd-keyref="route"}
+{:row-headers: .row-headers}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:ruby: data-hd-programlang="ruby"}
+{:runtime: architecture="runtime"}
+{:runtimeIcon: .runtimeIcon}
+{:runtimeIconList: .runtimeIconList}
+{:runtimeLink: .runtimeLink}
+{:runtimeTitle: .runtimeTitle}
+{:screen: .screen}
+{:script: data-hd-video='script'}
+{:service: architecture="service"}
+{:service_instance_name: data-hd-keyref="service_instance_name"}
+{:service_name: data-hd-keyref="service_name"}
+{:shortdesc: .shortdesc}
+{:space_name: data-hd-keyref="space_name"}
+{:step: data-tutorial-type='step'}
+{:subsection: outputclass="subsection"}
+{:support: data-reuse='support'}
+{:swift: .ph data-hd-programlang='swift'}
+{:swift: data-hd-programlang="swift"}
+{:table: .aria-labeledby="caption"}
+{:term: .term}
+{:tip: .tip}
+{:tooling-url: data-tooling-url-placeholder='tooling-url'}
+{:troubleshoot: data-hd-content-type='troubleshoot'}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:tsSymptoms: .tsSymptoms}
+{:tutorial: data-hd-content-type='tutorial'}
+{:ui: .ph data-hd-interface='ui'}
+{:unity: .ph data-hd-programlang='unity'}
+{:url: data-credential-placeholder='url'}
+{:user_ID: data-hd-keyref="user_ID"}
+{:vbnet: .ph data-hd-programlang='vb.net'}
+{:video: .video}
+
 
 # Securing your data in {{site.data.keyword.ihsdbaas_postgresql_full}}
 {: #data-security}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is a public multi-tenant cloud database service. It implements security protections at all levels, including workload isolation, data encryption (Keep Your Own Key), and identity and administration access control, to ensure that your data is protected in a multi-tenancy environment.
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}} is a public multi-tenant cloud database service. It implements security protections at all levels, including workload isolation, data encryption (Keep Your Own Key), and identity and administration access control, to ensure that your data is protected in a multi-tenancy environment. Learn more in the following documentation about how your data is protected and how you can securely delete your data.
 {: shortdesc}
 
 ## How your data is stored and encrypted in {{site.data.keyword.ihsdbaas_postgresql_full}}
@@ -66,7 +137,7 @@ You can delete your service instance through the [UI](/docs/hyper-protect-dbaas-
 
 When the service instance is deleted in these ways, it's **disabled** (pending reclamation) rather than deleted completely. You can't find deleted service instances in your service instance list. All your data in {{site.data.keyword.ihsdbaas_full}} components is cleaned up after the retention period of seven days. The data in the [services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) that you integrate with {{site.data.keyword.ihsdbaas_postgresql_full}} isn't deleted. See their respective documentation to delete the data if necessary.
 
-In some cases, two nodes in your service instance are disabled at first, which is considered successful disabling. The SRE team will be notified and disable the pending node. This tolerance situation (with one pending node to be disabled) doesn't affect the permanent deletion of service instances described in the following paragraph or the [restoration of service instances](#service-restore).
+In some cases, two nodes in your service instance are disabled at first, which is considered successful disabling. The pending node will be disabled automatically later. This tolerance situation (with one pending node to be disabled) doesn't affect the permanent deletion of service instances (described in the following paragraph) or the [restoration of service instances](#service-restore).
 {: note}
 
 You can permanently delete the service instance by using the [`ibmcloud resource reclamation-delete` command](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_reclamation_delete). You can't restore the service instance afterward.
@@ -80,7 +151,7 @@ Use the [{{site.data.keyword.cloud_notm}} resource reclamation CLI commands](/do
 
 The service instance in the retention period is not billed to your account. The billing starts again when the service instance is restored. 
 
-In some cases, two nodes in your service instance are restored at first, which is considered successful restoration. The SRE team will be notified and restore the pending node.
+In some cases, two nodes in your service instance are restored at first, which is considered successful restoration. The pending node will be restored automatically later.
 {: note}
 
 ### Deleting and restoring databases

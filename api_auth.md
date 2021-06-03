@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-02-25"
+lastupdated: "2021-05-31"
 
 keywords: access token, "{{site.data.keyword.ihsdbaas_full}} APIs", API key
 
@@ -10,16 +10,88 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:shortdesc: .shortdesc}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
+{:android: data-hd-operatingsystem="android"}
+{:api: .ph data-hd-interface='api'}
+{:apikey: data-credential-placeholder='apikey'}
+{:app_key: data-hd-keyref="app_key"}
+{:app_name: data-hd-keyref="app_name"}
+{:app_secret: data-hd-keyref="app_secret"}
+{:app_url: data-hd-keyref="app_url"}
+{:authenticated-content: .authenticated-content}
+{:beta: .beta}
+{:c#: data-hd-programlang="c#"}
+{:cli: .ph data-hd-interface='cli'}
 {:codeblock: .codeblock}
-{:important: .important}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:pre: .pre}
-{:note: .note}
-{:term: .term}
+{:curl: .ph data-hd-programlang='curl'}
+{:deprecated: .deprecated}
+{:dotnet-standard: .ph data-hd-programlang='dotnet-standard'}
+{:download: .download}
 {:external: target="_blank" .external}
+{:faq: data-hd-content-type='faq'}
+{:fuzzybunny: .ph data-hd-programlang='fuzzybunny'}
+{:generic: data-hd-operatingsystem="generic"}
+{:generic: data-hd-programlang="generic"}
+{:gif: data-image-type='gif'}
+{:go: .ph data-hd-programlang='go'}
+{:help: data-hd-content-type='help'}
+{:hide-dashboard: .hide-dashboard}
+{:hide-in-docs: .hide-in-docs}
+{:important: .important}
+{:ios: data-hd-operatingsystem="ios"}
+{:java: .ph data-hd-programlang='java'}
+{:java: data-hd-programlang="java"}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:javascript: data-hd-programlang="javascript"}
+{:new_window: target="_blank"}
+{:note .note}
+{:note: .note}
+{:objectc data-hd-programlang="objectc"}
+{:org_name: data-hd-keyref="org_name"}
+{:php: data-hd-programlang="php"}
+{:pre: .pre}
+{:preview: .preview}
+{:python: .ph data-hd-programlang='python'}
+{:python: data-hd-programlang="python"}
+{:route: data-hd-keyref="route"}
+{:row-headers: .row-headers}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:ruby: data-hd-programlang="ruby"}
+{:runtime: architecture="runtime"}
+{:runtimeIcon: .runtimeIcon}
+{:runtimeIconList: .runtimeIconList}
+{:runtimeLink: .runtimeLink}
+{:runtimeTitle: .runtimeTitle}
+{:screen: .screen}
+{:script: data-hd-video='script'}
+{:service: architecture="service"}
+{:service_instance_name: data-hd-keyref="service_instance_name"}
+{:service_name: data-hd-keyref="service_name"}
+{:shortdesc: .shortdesc}
+{:space_name: data-hd-keyref="space_name"}
+{:step: data-tutorial-type='step'}
+{:subsection: outputclass="subsection"}
+{:support: data-reuse='support'}
+{:swift: .ph data-hd-programlang='swift'}
+{:swift: data-hd-programlang="swift"}
+{:table: .aria-labeledby="caption"}
+{:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
+{:tip: .tip}
+{:tooling-url: data-tooling-url-placeholder='tooling-url'}
+{:troubleshoot: data-hd-content-type='troubleshoot'}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:tsSymptoms: .tsSymptoms}
+{:tutorial: data-hd-content-type='tutorial'}
+{:ui: .ph data-hd-interface='ui'}
+{:unity: .ph data-hd-programlang='unity'}
+{:url: data-credential-placeholder='url'}
+{:user_ID: data-hd-keyref="user_ID"}
+{:vbnet: .ph data-hd-programlang='vb.net'}
+{:video: .video}
+
 
 # Setting up the APIs
 {: #api-setup}
@@ -54,7 +126,7 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
        "apiKey": "**Pt...Y**"
       }
        ```
-      {: codeblock}
+      {: screen}
 
       The value that is assigned to `apiKey` is your API key. 
 
@@ -65,9 +137,9 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
 
    For Windows and MacOS, the CA file is in the operating system. If not, download it from the {{site.data.keyword.ihsdbaas_postgresql_full}} dashboard, and add `--cacert <cert_file>` to the command in the following step.
 
-3. Get an access token and a user ID by using the `GET /auth/token` operation:
+3. Get an access token and a user ID by using the `GET /auth/token` operation. For IP and port, see the tables in [General instructions for using the APIs](#gen_inst_mgr_apis).
 
-    ```curl
+    ```
     curl -X GET -H "accept: application/json" -H "api_key: icGVY1*** ***UdfcIg4kzE" https://dbaas900.hyperp-dbaas.cloud.ibm.com:20000/api/v3/auth/token
     ```
     {: pre}
@@ -80,7 +152,7 @@ For authentication, you need an API key, an [access token](#x2113001){: term}, a
      "user_id":"e9433*** ***b188"
     }
     ```
-    {: codeblock}
+    {: screen}
 
 4. Save the values of the access token and the user ID for future use.
 
@@ -94,20 +166,20 @@ DBaaS Managers are available in the following regions for service instances with
 
 | Hostname | Port Number | Region | City |
 |-----------|-------------|--------|------|
-| dbaas900.hyperp-dbaas.cloud.ibm.com | 20000 | us-south | Dallas |
-| dbaas906.hyperp-dbaas.cloud.ibm.com | 20000 | us-east | Washington DC |
-| dbaas902.hyperp-dbaas.cloud.ibm.com | 20000 | eu-de | Frankfurt |
-| dbaas904.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
+| dbaas900.hyperp-dbaas.cloud.ibm.com | 20000 | `us-south` | Dallas |
+| dbaas906.hyperp-dbaas.cloud.ibm.com | 20000 | `us-east` | Washington DC |
+| dbaas902.hyperp-dbaas.cloud.ibm.com | 20000 | `eu-de` | Frankfurt |
+| dbaas904.hyperp-dbaas.cloud.ibm.com | 20000 | `au-syd` | Sydney |
 {: caption="Table 1. DBaaS Managers" caption-side="top"}
 
 DBaaS Managers are available in the following regions for service instances with private endpoints:
 
 | Hostname | Port Number | Region | City |
 |-----------|-------------|--------|------|
-| dbaas900.private.hyperp-dbaas.cloud.ibm.com | 20000 | us-south | Dallas |
-| dbaas906.private.hyperp-dbaas.cloud.ibm.com | 20000 | us-east | Washington DC |
-| dbaas902.private.hyperp-dbaas.cloud.ibm.com | 20000 | eu-de | Frankfurt |
-| dbaas904.private.hyperp-dbaas.cloud.ibm.com | 20000 | au-syd | Sydney |
+| dbaas900.private.hyperp-dbaas.cloud.ibm.com | 20000 | `us-south` | Dallas |
+| dbaas906.private.hyperp-dbaas.cloud.ibm.com | 20000 | `us-east` | Washington DC |
+| dbaas902.private.hyperp-dbaas.cloud.ibm.com | 20000 | `eu-de` | Frankfurt |
+| dbaas904.private.hyperp-dbaas.cloud.ibm.com | 20000 | `au-syd` | Sydney |
 {: caption="Table 2. DBaaS Managers (private)" caption-side="top"}
 
 For more information about methods and parameters, see [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v3){: external}.

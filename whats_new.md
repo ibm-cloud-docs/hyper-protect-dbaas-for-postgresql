@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-07"
+lastupdated: "2021-06-03"
 
 keywords: release note, new, added, changed, deleted
 
@@ -10,14 +10,122 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
+{:android: data-hd-operatingsystem="android"}
+{:api: .ph data-hd-interface='api'}
+{:apikey: data-credential-placeholder='apikey'}
+{:app_key: data-hd-keyref="app_key"}
+{:app_name: data-hd-keyref="app_name"}
+{:app_secret: data-hd-keyref="app_secret"}
+{:app_url: data-hd-keyref="app_url"}
+{:authenticated-content: .authenticated-content}
+{:beta: .beta}
+{:c#: data-hd-programlang="c#"}
+{:cli: .ph data-hd-interface='cli'}
+{:codeblock: .codeblock}
+{:curl: .ph data-hd-programlang='curl'}
+{:deprecated: .deprecated}
+{:dotnet-standard: .ph data-hd-programlang='dotnet-standard'}
+{:download: .download}
 {:external: target="_blank" .external}
+{:faq: data-hd-content-type='faq'}
+{:fuzzybunny: .ph data-hd-programlang='fuzzybunny'}
+{:generic: data-hd-operatingsystem="generic"}
+{:generic: data-hd-programlang="generic"}
+{:gif: data-image-type='gif'}
+{:go: .ph data-hd-programlang='go'}
+{:help: data-hd-content-type='help'}
+{:hide-dashboard: .hide-dashboard}
+{:hide-in-docs: .hide-in-docs}
+{:important: .important}
+{:ios: data-hd-operatingsystem="ios"}
+{:java: .ph data-hd-programlang='java'}
+{:java: data-hd-programlang="java"}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:javascript: data-hd-programlang="javascript"}
+{:new_window: target="_blank"}
+{:note .note}
+{:note: .note}
+{:objectc data-hd-programlang="objectc"}
+{:org_name: data-hd-keyref="org_name"}
+{:php: data-hd-programlang="php"}
+{:pre: .pre}
+{:preview: .preview}
+{:python: .ph data-hd-programlang='python'}
+{:python: data-hd-programlang="python"}
+{:route: data-hd-keyref="route"}
+{:row-headers: .row-headers}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:ruby: data-hd-programlang="ruby"}
+{:runtime: architecture="runtime"}
+{:runtimeIcon: .runtimeIcon}
+{:runtimeIconList: .runtimeIconList}
+{:runtimeLink: .runtimeLink}
+{:runtimeTitle: .runtimeTitle}
+{:screen: .screen}
+{:script: data-hd-video='script'}
+{:service: architecture="service"}
+{:service_instance_name: data-hd-keyref="service_instance_name"}
+{:service_name: data-hd-keyref="service_name"}
 {:shortdesc: .shortdesc}
+{:space_name: data-hd-keyref="space_name"}
+{:step: data-tutorial-type='step'}
+{:subsection: outputclass="subsection"}
+{:support: data-reuse='support'}
+{:swift: .ph data-hd-programlang='swift'}
+{:swift: data-hd-programlang="swift"}
+{:table: .aria-labeledby="caption"}
+{:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
+{:tip: .tip}
+{:tooling-url: data-tooling-url-placeholder='tooling-url'}
+{:troubleshoot: data-hd-content-type='troubleshoot'}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:tsSymptoms: .tsSymptoms}
+{:tutorial: data-hd-content-type='tutorial'}
+{:ui: .ph data-hd-interface='ui'}
+{:unity: .ph data-hd-programlang='unity'}
+{:url: data-credential-placeholder='url'}
+{:user_ID: data-hd-keyref="user_ID"}
+{:vbnet: .ph data-hd-programlang='vb.net'}
+{:video: .video}
+
 
 # Release notes
 {: #what-new}
 
 Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
+
+## 3 June 2021
+{: #june-2021}
+
+### Changed: PL/Java version
+{: #pljava-version}
+
+{{site.data.keyword.ihsdbaas_postgresql_full}} supports [PL/Java 1.6.2](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-use_pljava_extension) (previously 1.5.2). Note that for security reasons, **only ports 80 and 443 are allowed** to connect from PL/Java.
+
+### Changed: Automatic handling in tolerance situations
+{: #changed-tolerance}
+
+In the tolerance situation during [creating](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service), [disabling](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-delete), and [restoring](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-data-security#service-restore) service instances, operations on the pending node will be completed automatically later (previously by SRE).
+
+### Changed: {{site.data.keyword.cloudaccesstrailshort}} and {{site.data.keyword.loganalysisshort_notm}} are available in Sydney for {{site.data.keyword.ihsdbaas_postgresql_full}}
+{: #changed-at-loganalysis-regions}
+
+If you want to integrate [{{site.data.keyword.cloudaccesstrailshort}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-activity-tracker-events) or [{{site.data.keyword.loganalysisshort_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-sendlogs) with your {{site.data.keyword.ihsdbaas_postgresql_full}} service instance in `Sydney (au-syd)`, you need to have an {{site.data.keyword.cloudaccesstrailshort}} or {{site.data.keyword.loganalysisshort_notm}} service instance also in `Sydney (au-syd)` (previously `Dallas (us-south)`).
+
+### Added: Landing page
+{: #added-landing-page}
+
+A [landing page](/docs/hyper-protect-dbaas-for-postgresql) is added to the documentation. It's a place where you can get oriented with the content available for {{site.data.keyword.ihsdbaas_mongodb_full}}.
+
+### Added: Site map
+{: #added-site-map}
+
+A [site map](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-sitemap) is added for easy `CTRL`+`F` search of the documentation. The site map displays all topic groups, topics (H1 headings), and H2 headings with hyperlinks in this documentation set.
 
 ## 7 April 2021
 {: #apr-2021}
@@ -33,14 +141,14 @@ The processes of [creating](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper
 Traffic to [integrated {{site.data.keyword.cloud_notm}} services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-integration) (except for {{site.data.keyword.keymanagementserviceshort}} and {{site.data.keyword.hscrypto}}) goes over IBM Cloud Private Network by default, regardless of your endpoint choice during service creation.
 
 ### Changed: Dashboard
-{: #changed-dashboard}
+{: #changed-dashboard-manage-overview}
 
 The **Manage** page on the service dashboard is renamed to **Overview**. Dashboard improvements are also implemented.
 
 ### Added: UI/CLI/API switcher in documentation
 {: #added-interface-switcher}
 
-An interface switcher is implemented in documentation about tasks that can be completed in multiple interfaces. You can select between the **UI**, **CLI**, and **API** tabs on the top of the topic depending on which interface you want to use.
+An interface switcher is implemented in documentation about tasks that can be completed in multiple interfaces. You can select between the **UI**, **CLI**, and **API** tabs on the top of the topic, depending on which interface you want to use.
 
 ### Added: What's the difference between using template0 and template1?
 {: #added-template-difference}
@@ -61,7 +169,7 @@ You can [create](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-db
 ### Added: Database version parameter
 {: #added-db-version}
 
-The database version parameter `db_version` is added in the service creation command. Currently it's optional and only version `10` is supported. For example, if you omit the parameter in the command, you create a service instance running {{site.data.keyword.postgresql}} 10 by default. 
+The database version parameter `db_version` is added in the service creation command. Currently, it's optional and only version `10` is supported. For example, if you omit the parameter in the command, you create a service instance running {{site.data.keyword.postgresql}} 10 by default. 
 
 ## 15 December 2020
 {: #dec-2020}
@@ -87,7 +195,7 @@ You can manually adjust the amount of resources available to your service instan
 ### Added: {{site.data.keyword.mon_short}}
 {: #added-monitoring}
 
-You can monitor the disk, memory and vCPU usage of your service instance through [integration with {{site.data.keyword.mon_full_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-monitor).
+You can monitor the disk, memory, and vCPU usage of your service instance through [integration with {{site.data.keyword.mon_full_notm}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-monitor).
 
 ### Added: Changing `max_connections`
 {: #added-setting-max-connections}
@@ -222,7 +330,7 @@ You can create {{site.data.keyword.ihsdbaas_postgresql_full}} service instances 
 ### {{site.data.keyword.ihsdbaas_postgresql_full}} is generally available
 {: #ga-201906}
 
-{{site.data.keyword.ihsdbaas_full}} is an {{site.data.keyword.cloud_notm}} service that provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible platform that allows you to quickly and easily provision and manage your database of choice.
+{{site.data.keyword.ihsdbaas_full}} is an {{site.data.keyword.cloud_notm}} service that provides tamper-proof, enterprise cloud database environments with high availability for workloads with sensitive data. It offers a flexible platform where you can quickly and easily provision and manage your database of choice.
 
 {{site.data.keyword.IBM_notm}} hosts your databases in a highly available and secure environment.
 

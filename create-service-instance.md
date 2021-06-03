@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-07"
+lastupdated: "2021-05-19"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -10,19 +10,87 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:important: .important}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:pre: .pre}
-{:note: .note}
-{:term: .term}
-{:external: target="_blank" .external}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
+{:android: data-hd-operatingsystem="android"}
 {:api: .ph data-hd-interface='api'}
+{:apikey: data-credential-placeholder='apikey'}
+{:app_key: data-hd-keyref="app_key"}
+{:app_name: data-hd-keyref="app_name"}
+{:app_secret: data-hd-keyref="app_secret"}
+{:app_url: data-hd-keyref="app_url"}
+{:authenticated-content: .authenticated-content}
+{:beta: .beta}
+{:c#: data-hd-programlang="c#"}
+{:cli: .ph data-hd-interface='cli'}
+{:codeblock: .codeblock}
+{:curl: .ph data-hd-programlang='curl'}
+{:deprecated: .deprecated}
+{:dotnet-standard: .ph data-hd-programlang='dotnet-standard'}
+{:download: .download}
+{:external: target="_blank" .external}
+{:faq: data-hd-content-type='faq'}
+{:fuzzybunny: .ph data-hd-programlang='fuzzybunny'}
+{:generic: data-hd-operatingsystem="generic"}
+{:generic: data-hd-programlang="generic"}
+{:gif: data-image-type='gif'}
+{:go: .ph data-hd-programlang='go'}
+{:help: data-hd-content-type='help'}
+{:hide-dashboard: .hide-dashboard}
+{:hide-in-docs: .hide-in-docs}
+{:important: .important}
+{:ios: data-hd-operatingsystem="ios"}
+{:java: .ph data-hd-programlang='java'}
+{:java: data-hd-programlang="java"}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:javascript: data-hd-programlang="javascript"}
+{:new_window: target="_blank"}
+{:note .note}
+{:note: .note}
+{:objectc data-hd-programlang="objectc"}
+{:org_name: data-hd-keyref="org_name"}
+{:php: data-hd-programlang="php"}
+{:pre: .pre}
+{:preview: .preview}
+{:python: .ph data-hd-programlang='python'}
+{:python: data-hd-programlang="python"}
+{:route: data-hd-keyref="route"}
+{:row-headers: .row-headers}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:ruby: data-hd-programlang="ruby"}
+{:runtime: architecture="runtime"}
+{:runtimeIcon: .runtimeIcon}
+{:runtimeIconList: .runtimeIconList}
+{:runtimeLink: .runtimeLink}
+{:runtimeTitle: .runtimeTitle}
+{:screen: .screen}
+{:script: data-hd-video='script'}
+{:service: architecture="service"}
+{:service_instance_name: data-hd-keyref="service_instance_name"}
+{:service_name: data-hd-keyref="service_name"}
+{:shortdesc: .shortdesc}
+{:space_name: data-hd-keyref="space_name"}
+{:step: data-tutorial-type='step'}
+{:subsection: outputclass="subsection"}
+{:support: data-reuse='support'}
+{:swift: .ph data-hd-programlang='swift'}
+{:swift: data-hd-programlang="swift"}
+{:table: .aria-labeledby="caption"}
+{:term: .term}
+{:tip: .tip}
+{:tooling-url: data-tooling-url-placeholder='tooling-url'}
+{:troubleshoot: data-hd-content-type='troubleshoot'}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:tsSymptoms: .tsSymptoms}
+{:tutorial: data-hd-content-type='tutorial'}
+{:ui: .ph data-hd-interface='ui'}
+{:unity: .ph data-hd-programlang='unity'}
+{:url: data-credential-placeholder='url'}
+{:user_ID: data-hd-keyref="user_ID"}
+{:vbnet: .ph data-hd-programlang='vb.net'}
+{:video: .video}
+
 
 # Creating a service instance
 {: #create-service}
@@ -46,7 +114,7 @@ Make sure you are familiarized with the following information. **Especially if y
 
 - If you want to create a service instance with private endpoints or both private and public endpoints, follow the instructions in [Securing your connection to {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-service-connection#prereq-service-endpoint).
 
-- In some cases, your service instance might be provisioned with two nodes available at first, which is considered successful provisoning because it doesn't affect the functioning of your cluster. The SRE team will be notified and provision the pending node. Metering for service instances with 2 nodes provisioned is the same as metering for 3 nodes.
+- In some cases, your service instance might be provisioned with two nodes available at first, which is considered successful provisioning because it doesn't affect the functioning of your cluster. The pending node will be provisioned automatically later. Metering for service instances with two nodes provisioned is the same as metering for three nodes.
 
 The database administrator doesn't have SUPERUSER authority. The authorities of the database administrator are limited to INHERIT, CREATEROLE, CREATEDB, LOGIN, and REPLICATION.
 {: note}
@@ -58,7 +126,7 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click **Catalog** on the top menu bar to view the list of services that are available on the {{site.data.keyword.cloud_notm}}.
 3. Type `{{site.data.keyword.ihsdbaas_full}}` into the search field. Click the **{{site.data.keyword.ihsdbaas_postgresql_full}}** tile.
-4. Choose the free plan or the flexible plan. Enter the required values on the provisioning page. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your total allocation values. **Tags** are optional and can be added after you create the service instance. Don't use special characters such as & and # in your password.
+4. Choose the free plan or the flexible plan. Enter the required values on the service creation page. For **Database admin password**, don't use special characters such as `&` and `#`. If you choose the flexible plan, select the initial allocation values of RAM, disk, and vCPU. To estimate your costs, click **Add to estimate** or **Estimate costs** and input your total allocation values. **Tags** are optional and can be added after you create the service instance. Don't use special characters such as `&` and `#` in your password.
 5. Click **Create**.
 
 ## Creating a service instance from the CLI
@@ -70,7 +138,7 @@ The database administrator doesn't have SUPERUSER authority. The authorities of 
 2. To create a {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} service instance, use the `ibmcloud resource service-instance-create` command, as shown in the following example. In Windows, it is recommended that you use a Bash terminal such as Cygwin or Git Bash to enter the command.
 
 ```
-ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-flexible us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "cpu":2, "memory":"2GiB", "storage":"5GiB", "license_agree":["agreed"], "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c", "db_version":"10"}' --service-endpoints public-and-private
+ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-postgresql postgresql-flexible us-south -p '{"name":"DBaaSTestCLICluster03", "admin_name":"admin","password":"passWORD4User19", "confirm_password":"passWORD4User19", "cpu":2, "memory":"2GiB", "storage":"5GiB", "kms_instance":"crn:v1:bluemix:public:kms:us-south:a/5b9cd17284125db65be173928b05bd50:e0e6a08c-f751-45ce-835f-9db8d01ff54a::", "kms_key":"66f22ec7-1ca9-4ad4-bdae-4ad949470a7c", "db_version":"10"}' --service-endpoints public-and-private
 ```
 {: codeblock}
 
@@ -80,7 +148,7 @@ Where the parameters have the following definitions:
 | ---------------- |  -------------------------------------------------------------- |
 | *MyDBaaSIns03*   |  The name of the service instance (replace with a name of your own choosing). |
 | *hyperp-dbaas-postgresql* | The catalog name of {{site.data.keyword.ihsdbaas_postgresql_full}}. |
-| *postgresql-flexible*  | The plan name. For a 30-day free trial, use `postgresql-free` and omit the values of cpu, memory, and storage in the `-p` JSON string.<!-- (**Note:** Plan names are case-sensitive.)--> |
+| *postgresql-flexible*  | The plan name. For a 30-day free trial, use `postgresql-free` and omit the values of cpu, memory, and storage in the `-p` JSON string. |
 | *us-south*            | The location of your new databases. Available regions are `us-south` (Dallas), `us-east` (Washington DC), `eu-de` (Frankfurt), and `au-syd` (Sydney). |
 | *-p*               | A valid JSON string, which must contain the required parameters in the following table. |
 | *--service-endpoints* | Enter `private`, `public`, or `public-and-private` for the *--service-endpoints* option. If you omit this option, you will create a service instance with public endpoints.|
@@ -90,9 +158,8 @@ Where the parameters have the following definitions:
 | ---------------- |  -------------------------------------------------------------- |
 | *name* | The name of your database cluster. |
 | *admin_name* | The administrator's user name of the database to be created. |
-| *password* | The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one number**. Don't use special characters such as & and #. |
+| *password* | The administrator's user password of the database to be created. You need to create a strong password with a minimum of **15 characters**, at least **one uppercase** character, **one lowercase** character, and **one digit**. Don't use special characters such as `&` and `#`. |
 | *confirm_password* | The same password. |
-| *license_agree* | A value of `agreed` indicates acceptance of the license agreement, which is required to use {{site.data.keyword.ihsdbaas_postgresql_full}}. |
 | *cpu* | Total number of dedicated CPU cores. For the valid value range of *cpu*, *memory*, and *storage*, see the [value table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-resources-scaling#before-scaling). |
 | *memory* | Total memory allocation in GiB. |
 | *storage* | Total disk allocation in GiB. |
@@ -124,8 +191,8 @@ For more {{site.data.keyword.cloud_notm}} CLI commands, see the [REFERENCE secti
 ## What's next
 {: #create-connect}
 
-To even further strengthen security, it is suggested that you update the **database admin password** immediately after the service instance is created. You need to follow the same rules to set the new password.
-{: note}
-
 1. To connect to your databases, see [Connecting to databases](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted#accessing-database-introduction).
 2. To manage your service instance, see [Managing your service instance](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-manage-service).
+
+To even further strengthen security, it's suggested that you update the database admin password immediately after you create the service instance and connect to the databases. You can use the `\password` command in [psql](https://www.postgresql.org/docs/10/app-psql.html){: external}. You need to follow the same rules to set the new password. The password needs to contain 15 characters minimum, at least one uppercase character, one lowercase character, and one digit. Don't use special characters such as `&` and `#`.
+{: note}

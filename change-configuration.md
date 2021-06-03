@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-02-06"
+lastupdated: "2021-05-12"
 
 keywords: customize configuration, change configuration, configuration parameters
 
@@ -10,16 +10,87 @@ subcollection: hyper-protect-dbaas-for-postgresql
 
 ---
 
-{:shortdesc: .shortdesc}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
+{:android: data-hd-operatingsystem="android"}
+{:api: .ph data-hd-interface='api'}
+{:apikey: data-credential-placeholder='apikey'}
+{:app_key: data-hd-keyref="app_key"}
+{:app_name: data-hd-keyref="app_name"}
+{:app_secret: data-hd-keyref="app_secret"}
+{:app_url: data-hd-keyref="app_url"}
+{:authenticated-content: .authenticated-content}
+{:beta: .beta}
+{:c#: data-hd-programlang="c#"}
+{:cli: .ph data-hd-interface='cli'}
 {:codeblock: .codeblock}
-{:important: .important}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:pre: .pre}
-{:note: .note}
-{:term: .term}
+{:curl: .ph data-hd-programlang='curl'}
+{:deprecated: .deprecated}
+{:dotnet-standard: .ph data-hd-programlang='dotnet-standard'}
+{:download: .download}
 {:external: target="_blank" .external}
+{:faq: data-hd-content-type='faq'}
+{:fuzzybunny: .ph data-hd-programlang='fuzzybunny'}
+{:generic: data-hd-operatingsystem="generic"}
+{:generic: data-hd-programlang="generic"}
+{:gif: data-image-type='gif'}
+{:go: .ph data-hd-programlang='go'}
+{:help: data-hd-content-type='help'}
+{:hide-dashboard: .hide-dashboard}
+{:hide-in-docs: .hide-in-docs}
+{:important: .important}
+{:ios: data-hd-operatingsystem="ios"}
+{:java: .ph data-hd-programlang='java'}
+{:java: data-hd-programlang="java"}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:javascript: data-hd-programlang="javascript"}
+{:new_window: target="_blank"}
+{:note .note}
+{:note: .note}
+{:objectc data-hd-programlang="objectc"}
+{:org_name: data-hd-keyref="org_name"}
+{:php: data-hd-programlang="php"}
+{:pre: .pre}
+{:preview: .preview}
+{:python: .ph data-hd-programlang='python'}
+{:python: data-hd-programlang="python"}
+{:route: data-hd-keyref="route"}
+{:row-headers: .row-headers}
+{:ruby: .ph data-hd-programlang='ruby'}
+{:ruby: data-hd-programlang="ruby"}
+{:runtime: architecture="runtime"}
+{:runtimeIcon: .runtimeIcon}
+{:runtimeIconList: .runtimeIconList}
+{:runtimeLink: .runtimeLink}
+{:runtimeTitle: .runtimeTitle}
+{:screen: .screen}
+{:script: data-hd-video='script'}
+{:service: architecture="service"}
+{:service_instance_name: data-hd-keyref="service_instance_name"}
+{:service_name: data-hd-keyref="service_name"}
+{:shortdesc: .shortdesc}
+{:space_name: data-hd-keyref="space_name"}
+{:step: data-tutorial-type='step'}
+{:subsection: outputclass="subsection"}
+{:support: data-reuse='support'}
+{:swift: .ph data-hd-programlang='swift'}
+{:swift: data-hd-programlang="swift"}
+{:table: .aria-labeledby="caption"}
+{:term: .term}
+{:tip: .tip}
+{:tooling-url: data-tooling-url-placeholder='tooling-url'}
+{:troubleshoot: data-hd-content-type='troubleshoot'}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:tsSymptoms: .tsSymptoms}
+{:tutorial: data-hd-content-type='tutorial'}
+{:ui: .ph data-hd-interface='ui'}
+{:unity: .ph data-hd-programlang='unity'}
+{:url: data-credential-placeholder='url'}
+{:user_ID: data-hd-keyref="user_ID"}
+{:vbnet: .ph data-hd-programlang='vb.net'}
+{:video: .video}
+
 
 # Changing the PostgreSQL configuration
 {: #changing-configuration}
@@ -29,7 +100,7 @@ In {{site.data.keyword.ihsdbaas_postgresql_full}}, with the Manager role, you ca
 
 The database admins or users with the [Manager role](#changing-configuration-prerequisite) can update the available configuration parameters with the [CLI](#changing-configuration-cli) or [API](#changing-configuration-api). The configuration is defined in a schema. To make a change, you send a JSON object with the settings and their new values to the CLI or the API.
 
-If a request to change configuration settings fails, the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team will be notified automatically. You can also use the [task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds) or the [API request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks){: external} to view the request status.
+If a request to change configuration settings fails, the {{site.data.keyword.ihsdbaas_postgresql_full}} SRE team is notified automatically. You can also use the [task commands](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin#task-cmds) or the [API request](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#list-tasks){: external} to view the request status.
 
 Some configuration changes require a restart to the primary and secondary nodes. The secondary nodes are restarted first, then the primary node. You can find the `requires_restart` information in [Available configuration settings](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-changing-configuration#available-config-settings).
 {: note}
@@ -39,7 +110,7 @@ Some configuration changes require a restart to the primary and secondary nodes.
 
 You need to have the **Manager** role to change configuration settings, as defined in the [IAM service access roles table](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam#service-access-roles). To assign access, see [Managing IAM access for users or services](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-iam#manage-access).
 
-Updating `max_connections` and `max_locks_per_transaction` with one command/API request is only feasible when you make the values both larger or smaller. If you need to make one larger and the other smaller, you need to run two commands/API requests, updating one setting at a time.
+Updating `max_connections` and `max_locks_per_transaction` with one command or API request is only feasible when you make the values both larger or smaller. If you need to make one larger and the other smaller, you need to run two commands or API requests, updating one setting at a time.
 {: important}
 
 ## Using the CLI
@@ -76,35 +147,20 @@ Two API requests are available, one for viewing the current configuration and on
 
 ## Available configuration settings
 {: #available-config-settings}
-<!--
-### Memory Settings
-{: #available-config-settings-memory}
--->
+
 
 [`shared_buffers`](https://www.postgresql.org/docs/10/runtime-config-resource.html#GUC-SHARED-BUFFERS){: external}
   - Default - `128` (MB)
   - Restarts database? - **Yes**
-  - Note - Shared memory buffers that the server use. The memory allocation for `shared_buffers` can't excceed 40% of the service instance's RAM. Setting `shared_buffers` any higher can result in memory issues that cause the database to crash. Setting `shared_buffers` equal, close to equal, or higher than the amount of allocated memory prevents the database from starting. <!--The maximum amount of total space for `shared_buffers` is 8 GB or 1048576 buffers based on recommendations from the PostgreSQL community. Your service instance can make use of additional RAM for caching and performance, even without allocating it to `shared_buffers`. You do not have to configure the database to use all of the allocated RAM in order for your deployment to use it.-->
+  - Note - Shared memory buffers that the server use. The memory allocation for `shared_buffers` can't exceed 40% of the service instance's RAM. Setting `shared_buffers` any higher can result in memory issues that cause the database to crash. Setting `shared_buffers` equal, close to equal, or higher than the amount of allocated memory prevents the database from starting. 
 
-<!--
-### General Settings
-{: #available-config-settings-general}
 
-[`synchronous_commit`](https://www.postgresql.org/docs/current/wal-async-commit.html)
-  - Default - `local`
-  - Restarts database? - No
-  - Options - `local` or `off`
-  - Notes - Setting `synchronous_commit` to `off` increases transaction commit rate at the expense of a loss of committed transactions in the event of an unclean shutdown.
--->
 [`max_locks_per_transaction`](https://www.postgresql.org/docs/10/runtime-config-locks.html){: external}
   - Default - `64`
   - Restarts database? - **Yes**
   - Note - The setting controls the average number of object locks allocated for each transaction. It's recommended to leave this setting at the default. Increase it only if you have queries that touch many different tables in a single transaction.
 
-<!--
-### WAL Settings
-{: #available-config-settings-wal}
--->
+
 [`deadlock_timeout`](https://www.postgresql.org/docs/10/runtime-config-locks.html){: external}
   - Default - `1000`
   - Restarts database? - **No**
