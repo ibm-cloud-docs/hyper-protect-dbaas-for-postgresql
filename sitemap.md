@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2021
-lastupdated: "2021-06-04"
+lastupdated: "2021-06-07"
 
 keywords: hyper protect dbaas for postgresql doc sitemap
 
@@ -260,6 +260,8 @@ Find what you are looking for in the compilation of topics that are available in
 * [Creating a service instance from the CLI](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#cli-create-service)
 
 * [Creating a service instance with the API](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#api-create-service)
+
+* [Creating a service instance with Terraform](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#terraform-create-service)
 
 * [What's next](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-create-service#create-connect)
 

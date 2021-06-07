@@ -4,7 +4,8 @@
     "introduction": "Welcome to the Hyper Protect DBaaS for PostgreSQL documentation, where you can find information about how to create and use Hyper Protect DBaaS for PostgreSQL service instances. This page also provides other related content for your reference. Hyper Protect DBaaS for PostgreSQL offers secure cloud database environments that have technology-enforced protection and high availability.",
     "section_devtools": {
       "api": "/apidocs/hyperp-dbaas/hyperp-dbaas-v3", 
-      "cli": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin"
+      "cli": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-dbaas_cli_plugin",
+      "terraform": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup"
     },
     "section_recommended": [
       {
