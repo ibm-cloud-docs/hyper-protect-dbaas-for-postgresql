@@ -33,6 +33,7 @@ Hyper Protect DBaaS for PostgreSQL
     {: .navgroup id="howto"}
     dbaasplugin_install.md
     api_auth.md
+    terraform.md
     create-service-instance.md
     manage-service-instance.md
     scaling.md

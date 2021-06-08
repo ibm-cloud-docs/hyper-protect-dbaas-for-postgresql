@@ -58,6 +58,11 @@
       "view_more": "/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-what-new",
       "tiles": [
         {
+          "date": "8 June 2021",
+          "title": "Added: Using Terraform to create a service instance",
+          "description": "Terraform is an open source software to configure and automate cloud resource provisioning and management. Now you can provision a Hyper Protect DBaaS service instance with Terraform."
+        },
+        {
           "date": "3 June 2021",
           "title": "Changed: Automatic handling in tolerance situations",
           "description": "In the tolerance situation during creating, disabling, and restoring service instances, operations on the pending node will be completed automatically later (previously by SRE)."
