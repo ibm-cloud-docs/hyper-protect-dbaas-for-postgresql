@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-05-19"
+lastupdated: "2021-06-07"
 
 keywords: database cluster, create service instance, DBaaS dashboard
 
@@ -77,6 +77,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 {:swift: data-hd-programlang="swift"}
 {:table: .aria-labeledby="caption"}
 {:term: .term}
+{:terraform: .ph data-hd-interface='terraform'}
 {:tip: .tip}
 {:tooling-url: data-tooling-url-placeholder='tooling-url'}
 {:troubleshoot: data-hd-content-type='troubleshoot'}
@@ -185,8 +186,13 @@ For more {{site.data.keyword.cloud_notm}} CLI commands, see the [REFERENCE secti
 {: api}
 
 1. [Set up authentication to use the APIs.](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-api-setup#api-auth)
-
 2. For the detailed API request, see [{{site.data.keyword.ihsdbaas_full}} RESTful APIs](/apidocs/hyperp-dbaas/hyperp-dbaas-v3#create-service){: external}.
+
+## Creating a service instance with Terraform
+{: #terraform-create-service}
+{: terraform}
+
+Follow instructions in [Step 2. Work with Hyper Protect DBaaS for MongoDB resources in Terraform](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup) to create a service instance. Complete Step 1 if you haven't set up Terraform before.
 
 ## What's next
 {: #create-connect}

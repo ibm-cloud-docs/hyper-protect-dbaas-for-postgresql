@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-06-03"
+lastupdated: "2021-06-08"
 
 keywords: release note, new, added, changed, deleted
 
@@ -96,8 +96,18 @@ subcollection: hyper-protect-dbaas-for-postgresql
 # Release notes
 {: #what-new}
 
-Stay up to date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
+Use these release notes to learn about the latest updates to {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_postgresql_full}}. The updates are grouped by date.
 {: shortdesc}
+
+
+## 8 June 2021
+{: #8-june-2021}
+
+### Added: Using Terraform to create a service instance
+{: #terraform-create-service-instance}
+
+Terraform is an open source software to configure and automate cloud resource provisioning and management. Now you can provision a {{site.data.keyword.ihsdbaas_full}} service instance with Terraform. For more information, see [Setting up Terraform for Hyper Protect DBaaS](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-terraform-setup).
+
 
 ## 3 June 2021
 {: #june-2021}
